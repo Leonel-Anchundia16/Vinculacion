@@ -1,0 +1,149 @@
+:root{
+   
+}
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url('../Imagenes/hamburguesas.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.hero  .contenedor{
+    padding: 30px;
+}
+
+.nav{
+    display: flex;
+    height: 70px ;
+    align-items: center;
+    font-weight: 700;
+    align-content: center;
+    
+}
+.nav .logo{
+    flex: 0 1 auto;
+}
+.nav .nav__navegacion{
+    flex: 1 1 auto;
+    justify-content: flex-start;
+}
+
+.nav .nav__botones{
+    
+    flex: 0 1 auto;
+    justify-content: flex-end;
+}
+
+
+.nav__items{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+}
+
+.nav__items--cta{
+    border: 1px solid white;
+   
+}
+
+.her__container{
+    display: flex;
+    height: calc(100vh - 70px);
+   
+    color: white;
+}
+
+.hero__titulo{
+    font-size: 3.2rem;
+}
+
+.hero__subtitulo{
+    font-size: 1.5rem;
+    
+    
+}
+
+
+
+
+/* ventana emergente de registro*/
+.registro{
+    background: white;
+    width: 30%;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    display: none;
+    border: solid #f48c06 ;
+}
+
+  
+  .form__titulo {
+    background: white;
+    color: #f48c06;
+  
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .arriba {
+    padding: 5px 3px;
+  }
+  
+  
+  .input-contenedor {
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  input {
+    margin-bottom: 35px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+  }
+  .input-48 {
+    width: 48%;
+  }
+  .input-100 {
+    width: 100%;
+  }
+  
+  
+  .btn-enviar {
+    width: 100%;
+    background: #f48c06;
+    border: 3px solid #f48c06;
+    cursor: pointer;
+  }
+  
+  .btn-enviar:active {
+    transform: scale(1.05);
+  }
+  .form__link {
+    width: 100%;
+    margin: 7px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .nombres{
+      display: flex;
+      
+  }

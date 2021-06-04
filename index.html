@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="contenedor">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="#"> <img src="./Imagenes/logo.png" alt="Logo_luchin"  height="60"> </a>
+                </div>
+                <div class="nav__navegacion ">
+                    <a href="#"class="nav__items"> Menu</a>
+                    <a href="#"class="nav__items"> Promociones</a>
+                    <a href="#"class="nav__items"> Contactos</a>
+
+                </div>
+                <div class="nav__botones">
+                    <a href="#"class="nav__items nav__items--cta"> Iniciar Sesion</a>
+                    <a href="javascript:registrar()"class="nav__items nav__items--cta"> Registrarme</a>
+                    <a href="#"> <img src="./Imagenes/tienda.png" alt="tienda" height="40" > </a>
+                </div>
+            </nav>
+            <section class="her__container">
+                <div class="hero__texto">
+                    <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
+                    <h1 class="hero__titulo"> La Parrilla de Luchin</h1>
+                    <p class="hero__subtitulo">Nos especializamos en carnes preparadas al carbon
+                       <br> contamos con experiencia y personal capacitdo  <br> 
+                       en atencion al cliente 
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </header>
+    <div class="registro" id="registrarme">
+        <div class="colum" id="volver">
+            <a href="javascript:cerrar_registro()"> <img src="./Imagenes/tienda.png" alt="vol" height="25px"> </a>
+        </div> <form class="formulario">
+            <p class="arriba">
+              <img src="./Imagenes/luchin.png" alt="logo" height="50">
+            <h1 class="form__titulo">Registrarse</h1>
+            </p>
+        
+        
+            <div class="contenedor_registro">
+              <div class="input-contenedor">
+                  <div class="nombres">
+                    <input type="text" class="input-48" placeholder="Nombre" required>
+                    <input type="text" class="input-48" placeholder="Apellidos" required>
+                  </div>
+
+                    <input type="date" class="input-100" placeholder="Fecha de Nacimiento" required>
+                    <input type="text" class="input-100" placeholder="Telefono" required>
+                    <input type="email" class="input-100" placeholder="Correo Electronico" required>
+                    <input type="password" class="input-100" placeholder="Contraseña" required>
+                    <input type="password" class="input-100" placeholder="Confirmar Contraseña" required>
+                    <input type="submit" class="btn-enviar" value="Crear Cuenta" required>
+                    <p class="form__link">¿Ya tienes cuenta? <a
+                        href="#"> Inicia
+                        Sesion </a></p>
+              </div>
+            </div>
+          </form>
+        
+        
+    </div>
+
+    <main>
+        <div class="contenedor">
+            <section>
+                <h2>
+                    <p>moncayo y mendoza</p>
+                </h2>
+                <p>Lorem ipsum dolor sit amet <br> 
+                consectetur adipisicing elit. <br> 
+                Aliquam amet at optio nulla quisquam, <br>
+                 fuga ex reprehenderit quo repellendus <br>
+                  tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
+                
+                  <p>Lorem ipsum dolor sit amet <br> 
+                    consectetur adipisicing elit. <br> 
+                    Aliquam amet at optio nulla quisquam, <br>
+                     fuga ex reprehenderit quo repellendus <br>
+                      tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
+              
+            </section>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor">
+            
+            <h2>Pablo</h2>
+            <p>Lorem ipsum dolor sit amet <br> 
+                consectetur adipisicing elit. <br> 
+                Aliquam amet at optio nulla quisquam, <br>
+                fuga ex reprehenderit quo repellendus <br>
+                tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
+                <p>Lorem ipsum dolor sit amet <br> 
+                    consectetur adipisicing elit. <br> 
+                    Aliquam amet at optio nulla quisquam, <br>
+                    fuga ex reprehenderit quo repellendus <br>
+                    tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
+            
+            </div>
+    </footer>
+
+    <script>
+        function registrar() {
+            document.getElementById("registrarme").style.display = "block";
+        }
+        function cerrar_registro() {
+            document.getElementById("registrarme").style.display = "none";
+        }
+    </script>
+</body>
+</html>
