@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700;900&display=swap');
-/* Moncayo gay*/
 
 :root{
     --color-vino: #370617;
@@ -233,4 +232,25 @@ body{
     }
     .nombres{
         display: flex;
+    }
+
+    /*Edit Mendoza xd*/
+    .name_luchin{
+        text-align: center;
+        font-size: 60px ;
+        color: #D00000;
+        font-family: var(--Banchscrich-font);
+    }
+    .descri_img{
+        align-items: center;
+        font-family: var(--Banchscrich-font);
+        font-size: 20px;
+        color: var(--azul-fuerte);
+        padding: 90px;
+    }
+    .img_luchin{
+        width: 30%;
+      margin-right: 6%;
+      margin-left: 8%;
+      float: left;
     }
