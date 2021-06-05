@@ -28,7 +28,8 @@ body{
 }
 
 .pdd_border{
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .contenedor{
@@ -46,7 +47,10 @@ body{
     background-attachment: fixed;
     background-position: center;
     position: relative;
-}
+}   
+    .hero>div{
+        background-color: rgba(0, 0, 0, .3);
+    }
 
 .hero  .contenedor{
     padding: 30px;
@@ -65,6 +69,9 @@ body{
     right: 0;
     z-index: 1;
 }
+    .scrolling{
+        background-color: var(--color-vino);
+    }
 .nav .logo{
     flex: 0 1 auto;
     padding: 0 30px 0 10px;
