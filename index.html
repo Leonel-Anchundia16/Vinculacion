@@ -42,17 +42,19 @@
     <div class="registro" id="registrarme">
         <div class="colum" id="volver">
             <a href="javascript:cerrar_registro()"> <img src="./Imagenes/tienda.png" alt="vol" height="25px"> </a>
-        </div> <form class="formulario">
             <p class="arriba">
-              <img src="./Imagenes/luchin.png" alt="logo" height="50">
-            <h1 class="form__titulo">Registrarse</h1>
+                <img src="./Imagenes/luchin.png" alt="logo" height="50">
             </p>
+        </div> 
+        <form class="formulario">            
+            <h1 class="form__titulo">Registrarse</h1>
         
         
             <div class="contenedor_registro">
               <div class="input-contenedor">
                   <div class="nombres">
-                    <input type="text" class="input-48" placeholder="Nombre" required>
+                      <p><label>Nombre</label><input type="text" class="input-48" placeholder="Nombre" required></p>
+                    
                     <input type="text" class="input-48" placeholder="Apellidos" required>
                   </div>
 
@@ -73,23 +75,60 @@
     </div>
 
     <main>
-        <div class="contenedor">
-            <section>
-                <h2>
-                    <p>moncayo y mendoza</p>
-                </h2>
-                <p>Lorem ipsum dolor sit amet <br> 
-                consectetur adipisicing elit. <br> 
-                Aliquam amet at optio nulla quisquam, <br>
-                 fuga ex reprehenderit quo repellendus <br>
-                  tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
-                
-                  <p>Lorem ipsum dolor sit amet <br> 
-                    consectetur adipisicing elit. <br> 
-                    Aliquam amet at optio nulla quisquam, <br>
-                     fuga ex reprehenderit quo repellendus <br>
-                      tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
-              
+        <div class="pdd_border">
+            <section class="info_luchin" style="padding-top: 50px;">
+                <h2 class="topic-category name_luchin">La Parrilla de Luchín</h2>
+                <div class="flex_group">
+                    <div class="img_lu">
+                        <img class="img_luchin" src="Imagenes/luchin_description.png" alt="Luchín">
+                    </div>
+                    <div class="descri_img">
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe Aliquam amet at optio nulla quisquam,fuga ex reprehenderit quo repellendustempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
+                    </div>
+                </div> 
+            </section>
+
+            <section class="menu__category">
+                <div class="container_carrousel">
+                    <h1 class="topic-category">Nuestro Menú</h1>
+                </div>
+                <div class="container_carrousel">
+                    <div class="carrousel">
+                        <div class="carrousel_item">
+                            <img src="./Imagenes/bebidas-imgjpg.jpg" alt="Bebidas">
+                            <div class="detalle">
+                                <div class="topic">
+                                    <p id="nameCategoria">Bebidas</p>
+                                </div>
+                                <div class="btn__category">
+                                    <a href="#" class="btn_btn_mas">Ver Menú</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrousel_item">
+                            <img src="./Imagenes/carne-img.jpg" alt="Bebidas">
+                            <div class="detalle">
+                                <div class="topic">
+                                    <p id="nameCategoria">Cortes de Carne</p>
+                                </div>
+                                <div class="btn__category">
+                                    <a href="#" class="btn_btn_mas">Ver Menú</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrousel_item">
+                            <img src="./Imagenes/hambur-img.jpg" alt="Bebidas">
+                            <div class="detalle">
+                                <div class="topic">
+                                    <p id="nameCategoria">Hamburguesas</p>
+                                </div>
+                                <div class="btn__category">
+                                    <a href="#" class="btn_btn_mas">Ver Menú</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             
         </div>
