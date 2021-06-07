@@ -1,0 +1,184 @@
+
+
+
+
+
+/*  footer  */
+/* tipo de letra y fondo*/
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 3px 0 black;
+    margin-top: 50px;
+    font-family: var(--Banchscrich-font);
+    color: var(--azul-fuerte);
+    font-size: 1.2rem;
+    font-weight: var(--weigth-BH-normal);
+}
+.main-content{
+    display: flex;
+    padding: 30px 70px;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 0 0 0 70px;
+}
+.name__categoria{
+    font-size: 1.5rem;
+    color: #faa307;
+    font-family: var(--franklin-font);
+    font-weight: var(--weigth-Flin-900);
+    margin: 0;
+    padding-top: 25px;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+/*fondo de las rayitas*/
+/* .box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100px;
+    background: #000000f3;
+    
+} */
+/* .box .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #ff9419f3;
+    top: -10px;
+} */
+.box .content>img{
+    width: 70%;
+}
+.box .content p{
+    text-align: justify;
+}
+/*logos de redes*/
+.social p{
+    margin-top: 15px;
+}
+.social a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--azul-fuerte);
+    font-style: 1.2rem;
+}
+.social p a>i{
+    margin-right: 15px;
+    font-size: 1.7rem;
+}
+/* .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 15px;
+    color:rgb(0, 0, 0);
+    
+}
+.left .content .social a span:hover{
+    color: rgb(27, 30, 218);
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all .6s;
+    border-radius: 150px;
+    
+} */
+/*logos de correo*/
+.center .content .icon{
+    font-size: 1.4375rem;
+    background: #000000;
+    background:  rgb(255, 255, 255);
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.center .content .icon:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all .6s;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+}
+.content .text{
+    font-size: 1.3rem;
+    font-family: var(--Banchscrich-font);
+    font-weight: var(--weigth-BH-normal);
+    margin: 5px 0;
+}
+.center .content .phone{
+    margin: 10px;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+
+
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #000000;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.right .form .btn button:hover{
+    background: rgb(255, 255, 255);
+    
+}
+.bottom{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background-color: var(--azul-fuerte);
+    color: #faa307;
+    padding: 10px 120px;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+.bottom>div{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+@media screen and (max-width: 900px){
+    footer{
+        position: relative;
+        top: 30px;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0px;
+    }
+}
