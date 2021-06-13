@@ -6,7 +6,6 @@
 @import url('colores.css');
 @import url('empleados.css');
 
-
 :root{
     --color-vino: #370617;
     --amarillo: #f48c06;
@@ -426,7 +425,7 @@ body{
     }
     .btn_btn_mas{
         padding: 15px 20px;
-        border: 1.5px solid var(--blanco);
+        border: 1.5px solid var(--blanco);  
         font-size: 1rem;
         text-decoration: none;
         font-weight: var(--weigth-BH-ligth);
