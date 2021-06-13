@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700;900&display=swap');
 
 @import url('footer.css');
+@import url('productos.css');
+@import url('colores.css');
 
 :root{
     --color-vino: #370617;
     --amarillo: #f48c06;
     --azul-fuerte: #03071E;
+    --azul-opacity-50: #03071e88;
     --blanco: #ffff;
+    --bg-dark: #212529;
 
     /* Banchscrich FUENTE */
     --Banchscrich-font: 'Roboto', sans-serif;; 

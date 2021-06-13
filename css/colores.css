@@ -1,0 +1,12 @@
+.bg-osc{
+    background: var(--azul-fuerte);
+    color: #ffff;
+}
+
+.bg-fondo-dark{
+    background: #e2eafc;
+}
+
+.bg-blanco{
+    background: #ffff;
+}
