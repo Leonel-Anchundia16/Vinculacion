@@ -1,13 +1,9 @@
-* {
-	box-sizing: border-box;
-}
 
-body {
-	font-family: 'Roboto', sans-serif;
-	background: white;
-}
 
-main {
+
+
+.main-empleado{
+	
 	max-width: 800px;
 	width: 90%;
 	margin: auto;
@@ -15,9 +11,7 @@ main {
     background: #E5E5E5;
 }
 
-h2{
-	text-align: left;
-}
+
 /*
 .formulario {
 	display: grid;
@@ -25,7 +19,7 @@ h2{
 	gap: 20px;
 }*/
 .datos_personales{
-	display: grid;
+	display: grid;	
 	grid-template-columns:  1fr 1fr ;
 	gap: 20px;
 }
@@ -51,6 +45,7 @@ h2{
 	background: #fff;
 	border: 3px solid transparent;
 	border-radius: 3px;
+	box-sizing: border-box;
 	height: 45px;
 	line-height: 45px;
 	padding: 0 40px 0 10px;
