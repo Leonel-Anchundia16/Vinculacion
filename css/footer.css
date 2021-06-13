@@ -115,6 +115,7 @@ footer{
     color: rgb(0, 0, 0);
 }
 .content .text{
+    flex-wrap: wrap;
     font-size: 1.3rem;
     font-family: var(--Banchscrich-font);
     font-weight: var(--weigth-BH-normal);
