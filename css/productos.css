@@ -9,7 +9,11 @@
     justify-content: center;
     display: flex;
     z-index: 4;
+    visibility: hidden;
 }
+    .overlay-ventanas.active{
+        visibility: visible;
+    }
 .container-add-pd{
     position: absolute;
     background: var(--blanco);
@@ -75,7 +79,7 @@
         padding: 20px 20px;
         justify-content: flex-end;
     }
-    .btns-box button{
+    .btns-box .button{
         border: 1px solid var(--blanco);
         padding: 7px 10px;
         margin-right: 20px;
@@ -83,6 +87,8 @@
         color: var(--blanco);
         background-color: var(--azul-fuerte);
         transition: all ease .3s;
+        text-decoration: none;
+        cursor: pointer;
     }
         .btns-box .btn-add-pd{
             background-color: var(--blanco);
