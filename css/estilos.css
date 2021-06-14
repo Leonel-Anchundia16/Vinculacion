@@ -5,6 +5,9 @@
 @import url('productos.css');
 @import url('colores.css');
 @import url('empleados.css');
+@import url('comidas.css');
+@import url('search.css');
+@import url('vent_emergen.css');
 
 :root{
     --color-vino: #370617;
@@ -425,7 +428,11 @@ body{
     }
     .btn_btn_mas{
         padding: 15px 20px;
+<<<<<<< HEAD
         border: 1.5px solid var(--blanco);  
+=======
+        border: 1.5px solid var(--blanco);
+>>>>>>> 6e577a009e3c4e861fbc6d87706508f50886471c
         font-size: 1rem;
         text-decoration: none;
         font-weight: var(--weigth-BH-ligth);
