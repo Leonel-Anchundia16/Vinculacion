@@ -1,8 +1,11 @@
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6e577a009e3c4e861fbc6d87706508f50886471c
 /*  footer  */
 /* tipo de letra y fondo*/
 footer{
@@ -115,7 +118,10 @@ footer{
     color: rgb(0, 0, 0);
 }
 .content .text{
+<<<<<<< HEAD
     flex-wrap: wrap;
+=======
+>>>>>>> 6e577a009e3c4e861fbc6d87706508f50886471c
     font-size: 1.3rem;
     font-family: var(--Banchscrich-font);
     font-weight: var(--weigth-BH-normal);
@@ -182,4 +188,8 @@ footer{
     .main-content .box{
         margin: 5px 0px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6e577a009e3c4e861fbc6d87706508f50886471c
