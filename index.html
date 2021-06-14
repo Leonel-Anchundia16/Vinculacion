@@ -42,37 +42,46 @@
     </header>
     <div class="registro" id="registrarme">
         <div class="colum" id="volver">
-            <a href="javascript:cerrar_registro()"> <img src="./Imagenes/tienda.png" alt="vol" height="25px"> </a>
+            <a href="javascript:registrar()"> <img src="./Imagenes/btn-return.png" alt="boton salir de registro"> </a>
             <p class="arriba">
-                <img src="./Imagenes/luchin.png" alt="logo" height="50">
+                <img src="./Imagenes/luchin.png" alt="logo luchin" height="50px">
             </p>
-        </div> 
-        <form class="formulario">            
+        </div>
+        <form class="formulario">
+    
             <h1 class="form__titulo">Registrarse</h1>
-        
-        
+    
+    
             <div class="contenedor_registro">
-              <div class="input-contenedor">
-                  <div class="nombres">
-                      <p><label>Nombre</label><input type="text" class="input-48" placeholder="Nombre" required></p>
+                <div class="input-contenedor">
+    
+                    <div class="two_element">
+                        <p class="riigth"><label>Nombre</label><input type="text" class="input-48" placeholder="Nombre" required></p>
+                        <p class="leeft"><label>Apellidos</label><input type="text" class="input-48" placeholder="Apellidos" required></p>    
+                    </div>
+                    <div class="f">
+                        <p><label>Fecha de Nacimiento</label><input type="date" class="input-100"
+                                placeholder="Fecha de Nacimiento" required>
+                        <p><label>Telefono</label><input type="text" class="input-100" placeholder="Telefono" required></p>
+    
+                        <p><label>Correo</label><input type="email" class="input-100" placeholder="Correo Electronico" required></p>
+                        <p><label>Contraseña</label><input type="password" class="input-100" placeholder="Contraseña"
+                                required></p>
+                        <p><label>Confirmar Contraseña</label><input type="password" class="input-100"
+                                placeholder="Confirmar Contraseña" required>
+                        </p>
+                    </div>
                     
-                    <input type="text" class="input-48" placeholder="Apellidos" required>
-                  </div>
-
-                    <input type="date" class="input-100" placeholder="Fecha de Nacimiento" required>
-                    <input type="text" class="input-100" placeholder="Telefono" required>
-                    <input type="email" class="input-100" placeholder="Correo Electronico" required>
-                    <input type="password" class="input-100" placeholder="Contraseña" required>
-                    <input type="password" class="input-100" placeholder="Confirmar Contraseña" required>
+                </div>
+                <div class="pie-form">
                     <input type="submit" class="btn-enviar" value="Crear Cuenta" required>
-                    <p class="form__link">¿Ya tienes cuenta? <a
-                        href="#"> Inicia
-                        Sesion </a></p>
-              </div>
+                    <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
+                </div>
             </div>
-          </form>
-        
-        
+    
+        </form>
+    
+    
     </div>
 
     <main>
@@ -134,7 +143,61 @@
             
         </div>
     </main>
+<<<<<<< HEAD
     
+=======
+    <footer>
+        <footer>
+            <div class="main-content">
+                <!--contenedor sobre nosotros-->
+                <div class="left box">
+                    <!--contenedor de contenido-->
+                    <div class="content">
+                        <img src="./Imagenes/logo-positivo16x.png"/> 
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur suscipit praesentium id nesciunt quidem ratione. </p>
+                    </div>
+                </div>
+                <!--contenedor de direcciones-->
+                <div class="center box">
+                    <!--contenedor de contenido-->
+                    <div class="content">
+                        <h2 class="name__categoria">Dirección:</h2>
+                        <div class="place">
+                            <p class="text">Calle 13 de octubre y Av Metropolitana</p>
+                            <p class="text">Montecristi, Manabí - Ecuador</p>
+                        </div>
+
+                        <h2 class="name__categoria">Contáctanos:</h2>                    
+                        <div class="phene">
+                            <p class="text">WhatsApp: +593 963217004</p>
+                        </div>
+                        <div class="email">
+                            <p class="text">Correo: luchinsantanacastillo@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!--contenedor de contacto-->
+                <div class="right box">
+                    <!--contenedor de contenido-->
+                    <div class="content">
+                        <h2 class="name__categoria">Redes Sociales:</h2>                    
+                        <div class="social">
+                            <p><a href="#"><i class="fab fa-facebook-f"></i></span>Facebook</a></p>
+                            <p><a href="#"><i class="fab fa-instagram"></i></span>Instagram</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--contenedor final con nombre del negocio-->
+            <div class="pdd_border bottom">
+                <div>
+                    <div class="credit">Developed and Designed for Vinculación Fase 1</div>
+                    <div class="credit">La Parrilla De Luchin &#169 2021</div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+>>>>>>> 1c56c4a966552f814817a9da95f3145344cf130d
 
     <script>
         function registrar() {

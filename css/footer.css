@@ -1,8 +1,16 @@
 
 
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 6e577a009e3c4e861fbc6d87706508f50886471c
+>>>>>>> 1c56c4a966552f814817a9da95f3145344cf130d
 /*  footer  */
 /* tipo de letra y fondo*/
 footer{
@@ -115,6 +123,13 @@ footer{
     color: rgb(0, 0, 0);
 }
 .content .text{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    flex-wrap: wrap;
+=======
+>>>>>>> 6e577a009e3c4e861fbc6d87706508f50886471c
+>>>>>>> 1c56c4a966552f814817a9da95f3145344cf130d
     font-size: 1.3rem;
     font-family: var(--Banchscrich-font);
     font-weight: var(--weigth-BH-normal);
@@ -181,4 +196,12 @@ footer{
     .main-content .box{
         margin: 5px 0px;
     }
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 6e577a009e3c4e861fbc6d87706508f50886471c
+>>>>>>> 1c56c4a966552f814817a9da95f3145344cf130d
