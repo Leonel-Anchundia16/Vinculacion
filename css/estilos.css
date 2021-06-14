@@ -31,10 +31,13 @@
         --weigth-Flin-900: 900;
 }
 
+*{
+    font-family: var(--Banchscrich-font);
+}
+
 body{
     margin: 0;
     padding: 0;
-    font-family: var(--Banchscrich-font);
 }
 
 .pdd_border{
