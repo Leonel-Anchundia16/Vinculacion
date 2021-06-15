@@ -1,1 +1,1 @@
-mendoza no hizo nda porque es vago
+mendoza no hizo nda porque es vago por andar jugando
