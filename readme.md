@@ -1,1 +1,1 @@
-mendoza no hizo nada
+mendoza no hizo nda porque es vago
