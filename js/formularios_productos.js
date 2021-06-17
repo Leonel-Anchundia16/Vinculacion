@@ -22,7 +22,6 @@ function ventanaAdd(){
         overlay.classList.remove('active');
         formulario.reset();
     });
-    
 }
 
 
