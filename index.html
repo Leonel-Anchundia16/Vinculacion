@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>La Parrilla de Luchín</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imagenes/logo.png">
     <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
 </head>
@@ -18,40 +15,38 @@
         <a href=""><i class="fab fa-whatsapp"></i></a>
     </div>
 
-    <header class="hero">
-        <div>
-            <nav id="navBar" class="nav pdd_border navbar_all">
-                <a href="#" id="logo-marca" class="logo">
-                    <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
-                    <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
-                </a>
-                <button id="btn-menu" class="btn-menu_nav active"><i class="fas fa-bars"></i></button>
-                <div class="container-items-nav active">
-                    <div class="nav__navegacion">
-                        <a href="#" class="nav__items"> Menú</a>
-                        <a href="#" class="nav__items"> Promociones</a>
-                        <a href="#" class="nav__items"> Contáctanos</a>
-                    </div>
-                    <div class="nav__botones botones-option">
-                        <a href="#"class="nav__items--cta"> Iniciar Sesión</a>
-                        <a href="javascript:registrar()"class="nav__items--cta register"> Registrarme</a>
-                    </div>
+    <!-- <div class="menu-container">
+        <div class="carrousel-menu">
+            
+        </div>
+    </div> -->
+
+    <header>
+        <nav id="navBar" class="nav pdd_border navbar_all">
+            <a href="#" id="logo-marca" class="logo">
+                <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
+                <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
+            </a>
+            <div class="group_btn">
+                <button id="btn-menu" class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="container-items-nav">
+                <div class="nav__navegacion">
+                    <a href="#" class="nav__items">Menú<i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="nav__items">Promociones</a>
+                    <a href="#" class="nav__items">Contáctanos</a>
                 </div>
-                <div class="bolsita">
-                    <a href="#"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
-                    <div class="contador">
-                        <p class="producto">0</p>
-                    </div>
+                <div class="nav__botones botones-option">
+                    <a href="#"class="nav__items--cta"> Iniciar Sesión</a>
+                    <a href="javascript:registrar()"class="nav__items--cta register"> Registrarme</a>
                 </div>
-            </nav>
-            <section class="her__container pdd_border">
-                <div class="hero__texto">
-                    <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
-                    <h2 class="hero__titulo"> La Parrilla de</h2>
-                    <h1 class="grand__text">Luchin</h1>
-                    <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbon contamos con personal capacitado en atencion al cliente para brindarles el mejor servicio a nuestros clientes</p>
+            </div>
+            <div class="bolsita">
+                <a href="#"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
+                <div class="contador">
+                    <p class="producto">0</p>
                 </div>
-            </section>
+            </div>           
         </div>
     </header>
     <div class="registro " id="registrarme">
@@ -91,14 +86,24 @@
                     <input type="submit" class="btn-enviar" value="Crear Cuenta" required>
                     <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
                 </div>
-            </div>
-    
+            </div>    
         </form>
-    
-    
     </div>
+    
 
-    <main>
+    <main style="overflow: hidden;">
+        <div class="hero">
+            <section class="her__container pdd_border">
+                <div class="hero__texto">
+                    <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
+                    <h2 class="hero__titulo"> 
+                        La Parrilla de
+                        <h1 class="hero__titulo grand__text">Luchin</h1>
+                    </h2>
+                    <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbon contamos con personal capacitado en atencion al cliente para brindarles el mejor servicio a nuestros clientes</p>
+                </div>
+            </section>
+        </div>
         <div class="pdd_border">
             <section class="info_luchin" style="padding-top: 50px;">
                 <h2 class="topic-category name_luchin">La Parrilla de Luchín</h2>
@@ -158,55 +163,53 @@
         </div>
     </main>
     <footer>
-        <footer>
-            <div class="main-content">
-                <!--contenedor sobre nosotros-->
-                <div class="left box">
-                    <!--contenedor de contenido-->
-                    <div class="content">
-                        <img src="./Imagenes/logo-positivo16x.png"/> 
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur suscipit praesentium id nesciunt quidem ratione. </p>
-                    </div>
+        <div class="grid-ftt">
+            <div class="box column_grid-ftt">
+                <!--contenedor de contenido-->
+                <div class="content">
+                    <img src="./Imagenes/logo-positivo16x.png"/> 
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur suscipit praesentium id nesciunt quidem ratione. </p>
                 </div>
-                <!--contenedor de direcciones-->
-                <div class="center box">
-                    <!--contenedor de contenido-->
-                    <div class="content">
-                        <h2 class="name__categoria">Dirección:</h2>
-                        <div class="place">
-                            <p class="text">Calle 13 de octubre y Av Metropolitana</p>
-                            <p class="text">Montecristi, Manabí - Ecuador</p>
-                        </div>
+            </div>
+            <div class="box column_grid-ftt">
+                <!--contenedor de contenido-->
+                <div class="content">
+                    <h2 class="name__categoria">Dirección:</h2>
+                    <div>
+                        <p class="text">Calle 13 de octubre y Av Metropolitana</p>
+                        <p class="text"><span class="weigth">Montecristi, Manabí - Ecuador</span></p>
+                    </div>
 
-                        <h2 class="name__categoria">Contáctanos:</h2>                    
-                        <div class="phene">
-                            <p class="text">WhatsApp: +593 963217004</p>
-                        </div>
-                        <div class="email">
-                            <p class="text">Correo: luchinsantanacastillo@gmail.com</p>
-                        </div>
+                    <h2 class="name__categoria">Contáctanos:</h2>                    
+                    <div>
+                        <p class="text"><span class="weigth">WhatsApp:</span> 0963217004</p>
                     </div>
-                </div>
-                <!--contenedor de contacto-->
-                <div class="right box">
-                    <!--contenedor de contenido-->
-                    <div class="content">
-                        <h2 class="name__categoria">Redes Sociales:</h2>                    
-                        <div class="social">
-                            <p><a href="#"><i class="fab fa-facebook-f"></i></span>Facebook</a></p>
-                            <p><a href="#"><i class="fab fa-instagram"></i></span>Instagram</a></p>
-                        </div>
+                    <div class="email">
+                        <p class="text"><span class="weigth">Correo:</span> luchinsantanacastillo@gmail.com</p>
                     </div>
                 </div>
             </div>
-            <!--contenedor final con nombre del negocio-->
-            <div class="pdd_border bottom">
-                <div>
-                    <div class="credit">Developed and Designed for Vinculación Fase 1</div>
-                    <div class="credit">La Parrilla De Luchin &#169 2021</div>
+            <div class="box column_grid-ftt">
+                <!--contenedor de contenido-->
+                <div class="content">
+                    <h2 class="name__categoria">Horarios de Atención:</h2>                    
+                    <div>
+                        <p class="text"><span class="weigth">Lunes-Viernes:</span> 08h00 - 19h00</p>
+                        <p class="text"><span class="weigth">Sábados y Domingos:</span> 08h00 - 19h00</p>
+                    </div>                   
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></span></a>
+                        <a href="#"><i class="fab fa-instagram"></i></span></a>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+        <div class="bottom">
+            <div class="legend__ftt">
+                <p class="credit"><span class="detalle">Derechos Reservados &#169 2021</span> La Parrilla De Luchin</p>
+                <p class="credit"><span class="detalle">Developed and Designed for</span> Vinculación Fase 1</p>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -221,7 +224,7 @@
         }
 
         $(window).scroll(function(){
-            if($('#navBar').offset().top > 90){
+            if($('#navBar').offset().top > 200){
                 $('#navBar').addClass('scrolling');
                 $('#logo-marca .long').removeClass('change-marca');
                 $('#logo-marca .normal').addClass('change-marca');
@@ -230,12 +233,6 @@
                 $('#logo-marca .normal').removeClass('change-marca');
                 $('#logo-marca .long').addClass('change-marca');
             }
-
-            // if($('#navBar').offset().top > 150){
-                
-            // }else{
-               
-            // }
         })
         
     </script>
