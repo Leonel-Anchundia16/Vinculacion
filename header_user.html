@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="hero">
         <div>
             <nav id="navBar" class="nav pdd_border">
-                <a href="#" class="logo"> <img src="./Imagenes/logo.png" alt="Logo_luchin"> </a>
-                <div class="nav__navegacion ">
-                    <a href="#" class="nav__items"> Menú</a>
-                    <a href="#" class="nav__items"> Promociones</a>
-                    <a href="#" class="nav__items"> Contactos</a>
-                </div>
-                <div class="nav__botones">
-                    <a href="#"class="nav__items nav__items--cta"> Iniciar Sesion</a>
-                    <a href="javascript:registrar()"class="nav__items nav__items--cta register"> Registrarme</a>
+                <a href="#" id="logo-marca" class="logo">
+                    <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
+                    <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
+                </a>
+                
+                <button id="btn-menu" class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+
+                <div class="container-items-nav active">
+                    <div class="nav__navegacion ">
+                        <a href="#" class="nav__items"> Menú</a>
+                        <a href="#" class="nav__items"> Promociones</a>
+                        <a href="#" class="nav__items"> Contactos</a>
+                    </div>
+                    <div class="nav__botones">
+                        <a href="#"class="nav__items nav__items--cta"> Iniciar Sesion</a>
+                        <a href="javascript:registrar()"class="nav__items nav__items--cta register"> Registrarme</a>
+                    </div>
                 </div>
                 <div class="nav__botones bolsita">
                     <a href="#"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra" height="40" > </a>
@@ -27,15 +36,7 @@
                         <p class="producto">0</p>
                     </div>
                 </div>
-            </nav>
-            <section class="her__container pdd_border">
-                <div class="hero__texto">
-                    <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
-                    <h2 class="hero__titulo"> La Parrilla de</h2>
-                    <h1 class="grand__text">Luchin</h1>
-                    <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbon contamos con personal capacitado en atencion al cliente para brindarles el mejor servicio a nuestros clientes</p>
-                </div>
-            </section>
+            </nav>            
         </div>
     </header>
 </body>
