@@ -6,110 +6,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>La Parrilla de Luchín</title>
+    <link rel="icon" href="Imagenes/logo.png">
+    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
 </head>
 <body>
-    <header class="hero">
-        <div>
-            <nav id="navBar" class="nav pdd_border">
-                <a href="#" class="logo"> <img src="./Imagenes/logo.png" alt="Logo_luchin"> </a>
-                <div class="nav__navegacion ">
-                    <a href="#" class="nav__items"> Menú</a>
-                    <a href="#" class="nav__items"> Promociones</a>
-                    <a href="#" class="nav__items"> Contactos</a>
+    <div class="btn-wss-ct">
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- <div class="menu-container">
+        <div class="carrousel-menu">
+            
+        </div>
+    </div> -->
+
+    <header>
+        <nav id="navBar" class="nav pdd_border navbar_all">
+            <a href="#" id="logo-marca" class="logo">
+                <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
+                <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
+            </a>
+            <div class="group_btn">
+                <button id="btn-menu" class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="container-items-nav">
+                <div class="nav__navegacion">
+                    <a href="#" class="nav__items">Menú<i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="nav__items">Promociones</a>
+                    <a href="#" class="nav__items">Contáctanos</a>
                 </div>
-                <div class="nav__botones">
-                    <a href="#"class="nav__items nav__items--cta"> Iniciar Sesion</a>
-                    <a href="javascript:registrar()"class="nav__items nav__items--cta register"> Registrarme</a>
+                <div class="nav__botones botones-option">
+                    <a href="#"class="nav__items--cta"> Iniciar Sesión</a>
+                    <a href="javascript:registrar()"class="nav__items--cta register"> Registrarme</a>
                 </div>
-                <div class="nav__botones bolsita">
-                    <a href="#"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra" height="40" > </a>
-                    <div class="contador">
-                        <p class="producto">0</p>
+            </div>
+            <div class="bolsita">
+                <a href="#"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
+                <div class="contador">
+                    <p class="producto">0</p>
+                </div>
+            </div>           
+        </div>
+    </header>
+    <div class="registro " id="registrarme">
+        <div class="colum" id="volver">
+            <a href="javascript:registrar()"> <img src="./Imagenes/btn-return.png" alt="boton salir de registro"> </a>
+            <p class="arriba">
+                <img src="./Imagenes/luchin.png" alt="logo luchin" height="50px">
+            </p>
+        </div>
+        <form class="formulario">
+    
+            <h1 class="form__titulo">Registrarse</h1>
+    
+    
+            <div class="contenedor_registro">
+                <div class="input-contenedor">
+    
+                    <div class="two_element">
+                        <p class="riigth"><label>Nombre</label><input type="text" class="input-48" placeholder="Nombre" required></p>
+                        <p class="leeft"><label>Apellidos</label><input type="text" class="input-48" placeholder="Apellidos" required></p>    
                     </div>
+                    <div class="f">
+                        <p><label>Fecha de Nacimiento</label><input type="date" class="input-100"
+                                placeholder="Fecha de Nacimiento" required>
+                        <p><label>Telefono</label><input type="text" class="input-100" placeholder="Telefono" required></p>
+    
+                        <p><label>Correo</label><input type="email" class="input-100" placeholder="Correo Electronico" required></p>
+                        <p><label>Contraseña</label><input type="password" class="input-100" placeholder="Contraseña"
+                                required></p>
+                        <p><label>Confirmar Contraseña</label><input type="password" class="input-100"
+                                placeholder="Confirmar Contraseña" required>
+                        </p>
+                    </div>
+                    
                 </div>
-            </nav>
+                <div class="pie-form">
+                    <input type="submit" class="btn-enviar" value="Crear Cuenta" required>
+                    <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
+                </div>
+            </div>    
+        </form>
+    </div>
+    
+
+    <main style="overflow: hidden;">
+        <div class="hero">
             <section class="her__container pdd_border">
                 <div class="hero__texto">
                     <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
-                    <h2 class="hero__titulo"> La Parrilla de</h2>
-                    <h1 class="grand__text">Luchin</h1>
+                    <h2 class="hero__titulo"> 
+                        La Parrilla de
+                        <h1 class="hero__titulo grand__text">Luchin</h1>
+                    </h2>
                     <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbon contamos con personal capacitado en atencion al cliente para brindarles el mejor servicio a nuestros clientes</p>
                 </div>
             </section>
         </div>
-    </header>
-    <div class="registro" id="registrarme">
-        <div class="colum" id="volver">
-            <a href="javascript:cerrar_registro()"> <img src="./Imagenes/tienda.png" alt="vol" height="25px"> </a>
-        </div> <form class="formulario">
-            <p class="arriba">
-              <img src="./Imagenes/luchin.png" alt="logo" height="50">
-            <h1 class="form__titulo">Registrarse</h1>
-            </p>
-        
-        
-            <div class="contenedor_registro">
-              <div class="input-contenedor">
-                  <div class="nombres">
-                    <input type="text" class="input-48" placeholder="Nombre" required>
-                    <input type="text" class="input-48" placeholder="Apellidos" required>
-                  </div>
+        <div class="pdd_border">
+            <section class="info_luchin" style="padding-top: 50px;">
+                <h2 class="topic-category name_luchin">La Parrilla de Luchín</h2>
+                <div class="flex_group">
+                    <div class="img_lu">
+                        <img class="img_luchin" src="Imagenes/luchin_description.png" alt="Luchín">
+                    </div>
+                    <div class="descri_img">
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe Aliquam amet at optio nulla quisquam,fuga ex reprehenderit quo repellendustempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
+                    </div>
+                </div> 
+            </section>
 
-                    <input type="date" class="input-100" placeholder="Fecha de Nacimiento" required>
-                    <input type="text" class="input-100" placeholder="Telefono" required>
-                    <input type="email" class="input-100" placeholder="Correo Electronico" required>
-                    <input type="password" class="input-100" placeholder="Contraseña" required>
-                    <input type="password" class="input-100" placeholder="Confirmar Contraseña" required>
-                    <input type="submit" class="btn-enviar" value="Crear Cuenta" required>
-                    <p class="form__link">¿Ya tienes cuenta? <a
-                        href="#"> Inicia
-                        Sesion </a></p>
-              </div>
-            </div>
-          </form>
-        
-        
-    </div>
-
-    <main>
-        <div class="contenedor">
-            <section>
-                <h2>
-                    <p>moncayo y mendoza</p>
-                </h2>
-                <p>Lorem ipsum dolor sit amet <br> 
-                consectetur adipisicing elit. <br> 
-                Aliquam amet at optio nulla quisquam, <br>
-                 fuga ex reprehenderit quo repellendus <br>
-                  tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
-                
-                  <p>Lorem ipsum dolor sit amet <br> 
-                    consectetur adipisicing elit. <br> 
-                    Aliquam amet at optio nulla quisquam, <br>
-                     fuga ex reprehenderit quo repellendus <br>
-                      tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
-              
+            <section class="menu__category">
+                <div class="container_carrousel">
+                    <h1 class="topic-category">Nuestro Menú</h1>
+                </div>
+                <div class="container_carrousel">
+                    <div class="carrousel">
+                        <div class="carrousel_item">
+                            <img src="./Imagenes/bebidas-imgjpg.jpg" alt="Bebidas">
+                            <div class="detalle">
+                                <div class="topic">
+                                    <p id="nameCategoria">Bebidas</p>
+                                </div>
+                                <div class="btn__category">
+                                    <a href="#" class="btn_btn_mas">Ver Menú</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrousel_item">
+                            <img src="./Imagenes/carne-img.jpg" alt="Bebidas">
+                            <div class="detalle">
+                                <div class="topic">
+                                    <p id="nameCategoria">Cortes de Carne</p>
+                                </div>
+                                <div class="btn__category">
+                                    <a href="#" class="btn_btn_mas">Ver Menú</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrousel_item">
+                            <img src="./Imagenes/hambur-img.jpg" alt="Bebidas">
+                            <div class="detalle">
+                                <div class="topic">
+                                    <p id="nameCategoria">Hamburguesas</p>
+                                </div>
+                                <div class="btn__category">
+                                    <a href="#" class="btn_btn_mas">Ver Menú</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             
         </div>
     </main>
     <footer>
-        <div class="contenedor">
-            
-            <h2>Pablo</h2>
-            <p>Lorem ipsum dolor sit amet <br> 
-                consectetur adipisicing elit. <br> 
-                Aliquam amet at optio nulla quisquam, <br>
-                fuga ex reprehenderit quo repellendus <br>
-                tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
-                <p>Lorem ipsum dolor sit amet <br> 
-                    consectetur adipisicing elit. <br> 
-                    Aliquam amet at optio nulla quisquam, <br>
-                    fuga ex reprehenderit quo repellendus <br>
-                    tempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
-            
+        <div class="grid-ftt">
+            <div class="box column_grid-ftt">
+                <!--contenedor de contenido-->
+                <div class="content">
+                    <img src="./Imagenes/logo-positivo16x.png"/> 
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur suscipit praesentium id nesciunt quidem ratione. </p>
+                </div>
             </div>
+            <div class="box column_grid-ftt">
+                <!--contenedor de contenido-->
+                <div class="content">
+                    <h2 class="name__categoria">Dirección:</h2>
+                    <div>
+                        <p class="text">Calle 13 de octubre y Av Metropolitana</p>
+                        <p class="text"><span class="weigth">Montecristi, Manabí - Ecuador</span></p>
+                    </div>
+
+                    <h2 class="name__categoria">Contáctanos:</h2>                    
+                    <div>
+                        <p class="text"><span class="weigth">WhatsApp:</span> 0963217004</p>
+                    </div>
+                    <div class="email">
+                        <p class="text"><span class="weigth">Correo:</span> luchinsantanacastillo@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box column_grid-ftt">
+                <!--contenedor de contenido-->
+                <div class="content">
+                    <h2 class="name__categoria">Horarios de Atención:</h2>                    
+                    <div>
+                        <p class="text"><span class="weigth">Lunes-Viernes:</span> 08h00 - 19h00</p>
+                        <p class="text"><span class="weigth">Sábados y Domingos:</span> 08h00 - 19h00</p>
+                    </div>                   
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></span></a>
+                        <a href="#"><i class="fab fa-instagram"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="legend__ftt">
+                <p class="credit"><span class="detalle">Derechos Reservados &#169 2021</span> La Parrilla De Luchin</p>
+                <p class="credit"><span class="detalle">Developed and Designed for</span> Vinculación Fase 1</p>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -124,10 +224,14 @@
         }
 
         $(window).scroll(function(){
-            if($('#navBar').offset().top > 90){
+            if($('#navBar').offset().top > 200){
                 $('#navBar').addClass('scrolling');
+                $('#logo-marca .long').removeClass('change-marca');
+                $('#logo-marca .normal').addClass('change-marca');
             }else{
                 $('#navBar').removeClass('scrolling');
+                $('#logo-marca .normal').removeClass('change-marca');
+                $('#logo-marca .long').addClass('change-marca');
             }
         })
         
