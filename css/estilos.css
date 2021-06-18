@@ -19,7 +19,10 @@
 
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
 :root{
-
+    --color-text-negro: #000103;
+    --color-text-negro-bajo: #212529;
+    --color-text-input: ##707070;
+    --color-blanco: #ffff;
     --color-vino: #370617;
     --color-vino-50: #3706177c;
     --color-amarillo: #f48c06;
@@ -46,6 +49,7 @@
         --weigth-BH-bold: 700;
 
     /* FRANKLIN FUENTE */
+    --fuente-FRANKLIN: 'Libre Franklin', sans-serif;
     --franklin-font: 'Libre Franklin', sans-serif;
         --weight-FKlin-700: 700;
         --weigth-Flin-900: 900;

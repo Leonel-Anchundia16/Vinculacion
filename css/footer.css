@@ -1,182 +1,131 @@
-
-
-
-/*  footer  */
-/* tipo de letra y fondo*/
 footer{
-    position: relative;
-    bottom: 0px;
     width: 100%;
-    background-color: rgb(255, 254, 254);
-    color: rgb(0, 0, 0);
-    box-shadow: 0 0 3px 0 black;
+    background-color: var(--color-vino);
     margin-top: 50px;
-    font-family: var(--Banchscrich-font);
-    color: var(--azul-fuerte);
-    font-size: 1.2rem;
-    font-weight: var(--weigth-BH-normal);
+    padding-bottom: 40px;
+    font-family: var(--fuente-OPENSANS);
 }
-.main-content{
-    display: flex;
+
+/* grid para dividir apartados */
+.grid-ftt{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 30px 70px;
+    grid-column-gap: 50px;
+    font-family: var(--fuente-OPENSANS);
+    color: var(--color-blanco);
 }
-.main-content .box{
-    flex-basis: 50%;
-    padding: 0 0 0 70px;
+.column_grid-ftt{
+    margin-top: 20px;
 }
 .name__categoria{
-    font-size: 1.5rem;
-    color: #faa307;
-    font-family: var(--franklin-font);
-    font-weight: var(--weigth-Flin-900);
+    font-size: 1.1rem;
+    color: var(--color-amarillo-principal);
+    font-family: var(--fuente-FRANKLIN);
+    font-weight: bolder;
     margin: 0;
-    padding-top: 25px;
+    padding-top: 20px;
 }
-.box .content{
-    margin: 20px 0 0 0;
-    position: relative;
-}
-/*fondo de las rayitas*/
-/* .box .content:before{
-    position: absolute;
-    content: '';
-    top: -10px;
-    height: 2px;
-    width: 100px;
-    background: #000000f3;
-    
-} */
-/* .box .content::after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    background: #ff9419f3;
-    top: -10px;
-} */
-.box .content>img{
+.content>img{
     width: 70%;
 }
-.box .content p{
-    text-align: justify;
-}
-/*logos de redes*/
-.social p{
-    margin-top: 15px;
+.social{
+    padding: 20px 0 0 20px;
+    display: flex;
 }
 .social a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--azul-fuerte);
-    font-style: 1.2rem;
-}
-.social p a>i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
     margin-right: 15px;
-    font-size: 1.7rem;
-}
-/* .left .content .social a span{
-    height: 40px;
-    width: 40px;
-    background-color: rgb(255, 255, 255);
-    line-height: 60px;
-    text-align: center;
-    font-size: 25px;
-    border-radius: 15px;
-    color:rgb(0, 0, 0);
-    
-}
-.left .content .social a span:hover{
-    color: rgb(27, 30, 218);
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: all .6s;
-    border-radius: 150px;
-    
-} */
-/*logos de correo*/
-.center .content .icon{
-    font-size: 1.4375rem;
-    background: #000000;
-    background:  rgb(255, 255, 255);
-    height: 45px;
-    width: 45px;
-    line-height: 45px;
-    text-align: center;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-vino);
     border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
+    font-size: 1rem;
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    transition: all ease .1s;
 }
-.center .content .icon:hover{
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: all .6s;
-    border-radius: 50px;
-    color: rgb(0, 0, 0);
-}
+    .social a:hover{
+        color: var(--color-amarillo);
+        box-shadow: 3px 3px 3px #faa307;
+    }
+
 .content .text{
-    font-size: 1.3rem;
-    font-family: var(--Banchscrich-font);
-    font-weight: var(--weigth-BH-normal);
-    margin: 5px 0;
+    font-size: .9rem;
+    font-weight: var(--weigth-OPENSANS-LIGTH-300);
+    margin: 5px 0 0 0;
 }
-.center .content .phone{
-    margin: 10px;
-}
-.right form .msg{
-    margin-top: 10px;
-}
+    .text .weigth{
+        font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    }
 
-
-.right form textarea:focus{
-    outline-color: #3498db;
-}
-.right form input{
-    height: 35px;
-}
-.right form .btn{
-    margin-top: 10px;
-}
-.right form .btn button{
-    height: 40px;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #000000;
-    font-size: 1.0625rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s;
-
-}
-.right .form .btn button:hover{
-    background: rgb(255, 255, 255);
-    
-}
 .bottom{
-    padding: 5px;
-    font-size: 0.9375rem;
-    background-color: var(--azul-fuerte);
-    color: #faa307;
-    padding: 10px 120px;
-    font-size: 1.3rem;
-    margin-bottom: 25px;
+    background-color: var(--color-blanco);
+    color: var(--color-vino);
+    padding: 10px 0;
 }
-.bottom>div{
+.bottom .legend__ftt{
+    width: 90%;
+    margin: auto;
     display: flex;
-    width: 85%;
-    margin: 0 auto;
     justify-content: space-between;
+    font-size: 1rem;
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
 }
-@media screen and (max-width: 900px){
+    .legend__ftt .credit{
+        margin: 7px 0;
+        width: 40%;
+    }
+    .legend__ftt .credit>.detalle{
+        font-family: var(--fuente-OPENSANS);
+        font-weight: var(--weigth-OPENSANS-REGULAR-400);
+    }
+
+
+@media only screen and (max-width:960px){
+    .grid-ftt{
+        padding: 30px 40px;
+    }
+    .name__categoria{
+        font-size: 1rem;
+    }
+    .content .text{
+        font-size: .75rem;
+    }
+}
+
+@media only screen and (max-width: 720px){
     footer{
-        position: relative;
-        top: 30px;
-        bottom: 0px;
+        padding-bottom: 50px;
     }
-    .main-content{
-        flex-wrap: wrap;
-        flex-direction: column;
+    .grid-ftt{
+        grid-template-columns: 1fr;
+        text-align: center;
     }
-    .main-content .box{
-        margin: 5px 0px; 
+    .content>img{
+        width: 50%;
+    }
+    .social{
+        justify-content: center;
+        padding: 30px 20px 0 20px;
+    }
+        .social a{
+            color: var(--color-vino);   
+            background-color: var(--color-blanco);
+        }
+    .bottom .legend__ftt{
+        display: block;
+        font-size: .7rem;
+    }
+    .legend__ftt .credit{
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .legend__ftt .credit>.detalle{
+        font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
     }
 }
