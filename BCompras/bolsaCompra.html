@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolsa De Compra</title>
+  <link rel="stylesheet" href="./bolsaCompra.css">
+  <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="heroB">
+
+
+    <div>
+      <nav id="navBar" class="nav pdd_border">
+        <a href="#" class="logo"> <img src="/Imagenes/luchin.png" alt="Logo_luchin"> </a>
+        <div class="nav__navegacion ">
+          <a href="#" class="nav__items"> Menú</a>
+          <a href="#" class="nav__items"> Promociones</a>
+          <a href="#" class="nav__items"> Contactos</a>
+        </div>
+        <div class="nav__botones">
+          <a href="#" class="nav__items nav__items--cta"> Iniciar Sesion</a>
+          <a href="javascript:registrar()" class="nav__items nav__items--cta register"> Registrarme</a>
+        </div>
+        <div class="nav__botones bolsita">
+          <a href="#"> <img src="/Imagenes/bolsa-borde.png" alt="Carrito de Compra" height="40"> </a>
+          <div class="contador">
+            <p class="producto">0</p>
+          </div>
+        </div>
+
+      </nav>
+      <!--<section class="her__container pdd_border">-->
+      <div class="heroB__texto">
+        <p class="heroB__subtitulo">RESUMEN DE TU BOLSA</p>
+
+      </div>
+      <!--</section>-->
+    </div>
+    <main>
+      <!--cortes-->
+      <div class="contabla">
+        <table class="product">
+
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>SubTotal</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td data-label="prod"><img src="./habur_prueba.jpg" alt="text" class="img1">
+              <P>Lorem ipsum dolor</P>
+            </td>
+            <td data-label="precio" class="precio">$12,00</td>
+            <td data-label="cantidad" class="cantidad"><input type="number" id="11-5" class="cant-producto cantidad"
+                min="1" value="1" style="padding:3px;width:40px;"></td>
+            <td id="subtotales">$12,00</td>
+            <td data-label="action" class="acti"><a href="#" class="button"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td data-label="prod"><img src="./habur_prueba.jpg" alt="text" class="img1">
+              <P>Lorem ipsum dolor</P>
+            </td>
+            <td data-label="precio" class="precio">$12,00</td>
+            <td data-label="cantidad" class="cantidad"><input type="number" id="11-5" class="cant-producto cantidad"
+                min="1" value="1" style="padding:3px;width:40px;"></td>
+            <td id="subtotales">$12,00</td>
+            <td data-label="action" class="acti"><a href="#" class="button"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+          <tr>
+            <td data-label="prod"><img src="./habur_prueba.jpg" alt="text" class="img1">
+              <P>Lorem ipsum dolor</P>
+            </td>
+            <td data-label="precio" class="precio">$12,00</td>
+            <td data-label="cantidad" class="cantidad"><input type="number" id="11-5" class="cant-producto cantidad"
+                min="1" value="1" style="padding:3px;width:40px;"></td>
+            <td id="subtotales">$12,00</td>
+            <td data-label="action" class="acti"><a href="#" class="button"><i class="fas fa-trash-alt"></i></a></td>
+          </tr>
+        </table>
+
+
+        <div class="con">
+          <div class="X">
+            <p>
+              <label>¿Tienes algun cupon? Canjealo aqui</label>
+              <input type="text" class="cupon-100" placeholder="Ingresar el codigo del Cupon">
+            </p>
+          </div>
+          <div class="sub-iva-total">
+            <p>Total a pagar:
+              <p />
+            <p class="valor" id="total">$23.90
+              <p />
+          </div>
+        </div>
+        <div class="pie">
+          <input type="submit" class="btn-enviar" value="Ver mas Producto " required>
+          <input type="submit" class="btn-enviar2" value="Procesar compra" required>
+        </div>
+
+      </div>
+
+    </main>
+
+
+
+
+  </header>
+
+</body>
+
+</html>
