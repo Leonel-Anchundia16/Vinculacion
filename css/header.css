@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: var(--color-naranja);
+    background-color: var(--color-amarillo);
     padding: 10px;
     border-radius: 50%;
     bottom: 50px;
@@ -14,7 +14,7 @@
     z-index: 10;
 }
 .btn-wss-ct>a{
-    color: var(--color-blanco);
+    color: var(--color-vino);
     font-size: 2rem;
 }
 
@@ -60,13 +60,13 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 10;
 }
     .scrolling{
         background-color: var(--color-amarillo);
     }
     .scrolling .nav__navegacion .nav__items{
-        color: var(--color-text-negro);
+        color: var(--color-vino);
     }
     .scrolling .nav__navegacion .nav__items:hover{
         border-bottom: 5px solid var(--color-vino);
@@ -99,7 +99,7 @@
 
 
 .btn-menu_nav{
-    color: var(--color-text-negro);
+    color: var(--color-vino);
     background: none;
     border: none;
     font-size: 1.3rem;
@@ -174,7 +174,7 @@
     .nav__items--cta.register{
         margin-left: 20px;   
         background-color: var(--blanco);
-        color: var(--color-text-negro);
+        color: var(--color-vino);
     }
         .nav__items--cta:not(.nav__items--cta.register):hover{
             border: 1px solid var(--color-amarillo);
@@ -270,7 +270,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 2;
+        z-index: 11;
         bottom: 0;    
     }
     .contenedor_registro{
