@@ -129,6 +129,13 @@ body {
 .heroB__subtitulo.text {
   font-size: 2.1rem;
 }
+hr {
+  border: 2px solid #faa307;
+  margin-left: 0;
+  width: 350px;
+  color: #faa307;
+  background-color: #faa307;
+}
 
 /*tablas*/
 
