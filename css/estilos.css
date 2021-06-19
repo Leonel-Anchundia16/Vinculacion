@@ -16,6 +16,7 @@
 @import url('search.css');
 @import url('vent_emergen.css');
 
+@import url('../BCompras/bolsaCompra.css');
 
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
 :root{
