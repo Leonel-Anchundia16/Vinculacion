@@ -15,6 +15,8 @@
 @import url('comidas.css');
 @import url('search.css');
 @import url('vent_emergen.css');
+@import url('./proceso_pago/header_procesopago.css');
+@import url('./proceso_pago/proceso_pago.css');
 
 
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
