@@ -11,7 +11,7 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: left;
-        color: var(--color-negro);
+        color: var(--color-text-negro);
 }
 .dat_clien{
     width: 200px;
@@ -42,7 +42,7 @@
     height: 37px;
     margin: 7.5px 0 0;
     padding: 10.5px 82px 10.5px 22px;
-    border: solid 0.3px var(--bg-dark);
+    border: solid 0.3px var(--color-text-input);
     line-height: 45px;
     background-color: var(--blanco);
     font-size: 15px;
@@ -68,7 +68,7 @@
 .bord{
     width: 230px;
     height: 5px;
-    border: solid 0.5px var(--bg-dark);
+    border: solid 0.5px var(--color-text-input);
     background-color: var(--azul-fuerte);
 }
 .deta{
@@ -110,7 +110,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: right;
-  color: var(--bg-dark);
+  color: var(--color-text-input);
 }
 .desti{
     width: 30.5px;
@@ -138,7 +138,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: right;
-  color: var(--bg-dark);
+  color: var(--color-text-input);
 }
 .pago{
     width: 94px;
@@ -190,7 +190,7 @@
   width: 40%;
   height: 40px;
   line-height: 40px;
-  background-color:brown;
+  background-color:var(--color-reprobado);
   padding: 0 10px;
   border-radius: 2px; 
   display: none;
@@ -201,7 +201,7 @@
 }
 .form_enviado{
   font-size: 14px;
-  color: green;
+  color: var(--color-aprobado);
   display: none;
 
 }
@@ -233,7 +233,7 @@
 .refere{
     width: 335px;
     padding: 10.5px 291px 10.5px 22px;
-    border: solid 0.3px var(--bg-dark);
+    border: solid 0.3px var(--color-text-input);
     background-color: var(--blanco);
     font-family: var(--fuente-OSWALD);
     font-size: 15px;
