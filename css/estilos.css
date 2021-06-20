@@ -8,6 +8,7 @@
 /*HEREDAMOS ESTILOS CSS DE ARCHIVOS EXTERNOS*/
 @import url('header.css');
 @import url('footer.css');
+@import url('home.css');
 @import url('productos.css');
 @import url('./promociones/promociones.css');
 @import url('colores.css');
@@ -21,7 +22,10 @@
 
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
 :root{
-
+    --color-text-negro: #000103;
+    --color-text-negro-bajo: #212529;
+    --color-text-input: #707070;
+    --color-blanco: #ffff;
     --color-vino: #370617;
     --color-vino-50: #3706177c;
     --color-amarillo: #f48c06;
@@ -48,6 +52,7 @@
         --weigth-BH-bold: 700;
 
     /* FRANKLIN FUENTE */
+    --fuente-FRANKLIN: 'Libre Franklin', sans-serif;
     --franklin-font: 'Libre Franklin', sans-serif;
         --weight-FKlin-700: 700;
         --weigth-Flin-900: 900;
@@ -77,43 +82,6 @@ body{
 
 
 
-/*Edit Mendoza xd*/
-.info-luchin{
-    width: 90%;
-    margin: 0 auto;
-}
-.topic-category.name_luchin{
-    text-align: center;
-    font-size: 60px ;
-    color: #D00000;
-}
-.flex_group{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.descri_img, .img_lu{
-    margin: auto;
-    width: 50%;
-    max-height: 300px;
-    overflow: hidden;
-    padding: 20px 50px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-    .descri_img .description{
-        width: 80%;
-        margin: auto;
-        font-family: var(--Banchscrich-font);
-        font-size: 1.5rem;
-        color: var(--azul-fuerte);
-    }
-.img_luchin{
-    width: 100%;
-}
 
 
 

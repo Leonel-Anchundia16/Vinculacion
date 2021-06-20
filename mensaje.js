@@ -1,3 +1,0 @@
-
-const eddyMeco =1;
-/**/ 
