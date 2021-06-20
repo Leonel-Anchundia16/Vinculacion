@@ -1,7 +1,6 @@
 footer{
     width: 100%;
     background-color: var(--color-vino);
-    margin-top: 50px;
     padding-bottom: 40px;
     font-family: var(--fuente-OPENSANS);
 }
