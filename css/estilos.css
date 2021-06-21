@@ -8,6 +8,11 @@
 /*HEREDAMOS ESTILOS CSS DE ARCHIVOS EXTERNOS*/
 @import url('header.css');
 @import url('footer.css');
+@import url('vent_add_car.css');
+
+
+@import url('./procesar-pedido/procesar-pedido.css');
+@import url('./bolsita/bolsa.css');
 @import url('home.css');
 @import url('productos.css');
 @import url('./promociones/promociones.css');
@@ -70,6 +75,20 @@
     --weigth-OPENSANS-REGULAR-400: 400;           /* ANCHO DE LETRA NORMAL DE OPEN SANS */
     --weigth-OPENSANS-SEMIBOLD-600: 600;          /* ANCHO DE LETRA SEMI ANCHA DE OPEN SANS */
     --weigth-OPENSANS-BOLD-700: 700;              /* ANCHO DE LETRA ANCHA DE OPEN SANS */
+}
+
+
+
+/* LOADING */
+.loading{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../Imagenes/loading.gif') 50% 50% no-repeat rgb(255, 255, 255);
+    opacity: 90%;
 }
 
 
