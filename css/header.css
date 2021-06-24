@@ -523,7 +523,7 @@
     font-family: var(--fuente-OPENSANS);
     background: var(--color-blanco);
     transform: translateY(-200%);
-    
+
     position: absolute;
     top: 70px;
     left: 0;
@@ -607,4 +607,4 @@
         .item-categoria:hover .name-cat-menuD{
             color: var(--color-vino);
             border-bottom: 2px solid var(--color-vino);
-        }
+        } 
