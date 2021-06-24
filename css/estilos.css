@@ -13,6 +13,7 @@
 
 @import url('./procesar-pedido/procesar-pedido.css');
 @import url('./bolsita/bolsa.css');
+@import url('./menu-product/menu-pd.css');
 @import url('home.css');
 @import url('productos.css');
 @import url('./promociones/promociones.css');
@@ -37,6 +38,7 @@
     --color-naranja-bajo: #f48c08;
     --color-rojo: #d00000;
     --color-rojo-oscuro: #9d0208;
+    --color-azul-fuerte: #03071E;
 
 
     --amarillo: #f48c06;
@@ -96,88 +98,3 @@ body{
     margin: 0;
     padding: 0;
 }
-
-
-
-
-
-
-/* SECTION CARROUSEL  */
-.container_carrousel{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.topic-category{
-    font-family: var(--Banchscrich-font);
-    font-weight: var(--weigth-BH-ligth);
-    color: var(--azul-fuerte);
-    font-size: 5rem;
-}
-.carrousel{
-    display: flex;
-}
-.carrousel_item{
-    width: 33.33%;
-    position: relative;
-    overflow: hidden;
-}
-    .carrousel_item>img{
-        width: 100%;
-    }
-    
-.carrousel_item>.detalle:hover{
-    background-color: rgba(0, 0, 0);
-}
-.carrousel_item>.detalle{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 46%;
-    background-color: rgba(0, 0, 0, .8);
-    font-family: var(--Banchscrich-font);
-
-    transition: all ease .3s;
-}
-    .detalle .topic, .btn__category{
-        justify-content: center;
-    }
-    .topic{
-        height: 45%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-    }
-    .btn__category{
-        height: 55%;
-        padding-top: 40px;
-    }
-
-    .detalle .topic>p{
-        margin: 0;
-        font-size: 1.8rem;
-        font-weight: var(--weigth-BH-ligth);
-        text-transform: uppercase;
-        color: var(--blanco);
-    }
-
-    .btn_btn_mas:hover{
-        background-color: var(--blanco);
-        color: var(--azul-fuerte);
-    }
-    .btn_btn_mas{
-        padding: 15px 20px;
-        border: 1.5px solid var(--blanco);  
-        font-size: 1rem;
-        text-decoration: none;
-        font-weight: var(--weigth-BH-ligth);
-        width: 130px;
-        text-transform: uppercase;
-        color: var(--blanco);
-
-        transition: all ease .5s;
-    }
