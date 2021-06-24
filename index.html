@@ -9,8 +9,15 @@
     <link rel="icon" href="Imagenes/logo.png">
     <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $("#loader").fadeOut('slow');
+        });
+    </script>
 </head>
 <body>
+    <div id="loader" class="loading"></div>
     <div class="btn-wss-ct">
         <a href=""><i class="fab fa-whatsapp"></i></a>
     </div>
@@ -25,7 +32,41 @@
             </div>
             <div class="container-items-nav">
                 <div class="nav__navegacion">
-                    <a href="#" class="nav__items">Menú<i class="fas fa-chevron-down"></i></a>
+                    <a href="#" id="boxMenu-Select" class="nav__items">Menú<i class="fas fa-chevron-down"></i></a>
+                    <div class="menu-container">
+                        <div class="carrousel-menu">
+                            <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
+                            <div id="catMenuDesp" class="group-items">
+                                <a href="" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Bébidas</p>
+                                </a>
+                                <a href="" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/Hamburguesa-categoria.png" alt=""></div>
+                                    <p class="name-cat-menuD">Hamburguesas</p>
+                                </a>
+                                <a href="" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/papas-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Papas</p>
+                                </a>
+                                <a href="" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/carne-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Cortes de Carne</p>
+                                </a>
+                                <a href="" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/sandwich-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Sanduches</p>
+                                </a>
+                                <a href="" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Alitas</p>
+                                </a>
+                               
+                                
+                            </div>
+                            <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>     
+                        </div>
+                    </div>
                     <a href="#" class="nav__items">Promociones</a>
                     <a href="#" class="nav__items">Contáctanos</a>
                 </div>
@@ -35,7 +76,7 @@
                 </div>
             </div>
             <div class="bolsita">
-                <a href="#"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
+                <a href=""> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
                 <div class="contador">
                     <p class="producto">0</p>
                 </div>
@@ -279,7 +320,7 @@
                 $('#logo-marca .long').addClass('change-marca');
             }
         })
-        
     </script>
 </body>
+<script src="./js/carrousel.js"></script>
 </html>

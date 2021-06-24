@@ -1,0 +1,129 @@
+.heroB {
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+.heroB > div {
+  background-color: rgba(247, 247, 247, 0.224);
+}
+.heroB .contenedor {
+  padding: 30px;
+}
+.heroB__texto {
+  padding-left: 69px;
+  margin-top: 110px;
+}
+.heroB__texto > p {
+  margin: 0;
+}
+.heroB__subtitulo {
+  font-size: 1.9rem;
+  display: flex;
+  font-family: var(--Banchscrich-font);
+  font-weight: var(--weigth-BH-ligth);
+  width: 40%;
+}
+.heroB__subtitulo > p {
+  top: 100px;
+}
+
+.heroB__subtitulo.text {
+  font-size: 2.1rem;
+}
+hr {
+  border: 2px solid #faa307;
+  margin-left: 0;
+  width: 350px;
+  color: #faa307;
+  background-color: #faa307;
+}
+/*Tabla*/
+table {
+  margin-top: 70px;
+  margin-left: 70px;
+  border-collapse: collapse;
+}
+td,
+th {
+  /*border: 2px solid black;*/
+  padding-left: 20px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+th {
+  background-color: #faa307;
+}
+td > p {
+  display: flex;
+}
+.img1 {
+  max-width: 100px;
+  float: left;
+  margin-right: 15px;
+}
+/*lo del cupon*/
+.canjeo {
+  margin-left: 890px;
+  margin-top: -367px;
+}
+.con label {
+  display: block;
+  cursor: pointer;
+  padding: 5px 0 10px 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.con {
+  margin-left: 100px;
+}
+.cupon-100 {
+  width: 360px;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: 2px solid black;
+}
+/*total pagar*/
+.sub-iva-total {
+  display: flex;
+  color: #050505;
+  text-transform: uppercase;
+  font-size: 0.2rem;
+  font-size: 16px;
+}
+.sub-iva-total .valor {
+  margin-left: 190px;
+}
+
+/*btn pie*/
+.pie {
+  margin-left: auto;
+  margin-top: 20px;
+}
+.vermas {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #141414;
+  width: 344px;
+  padding: 10px;
+  color: #050505;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.btn-enviar2 {
+  margin-top: 20px;
+  width: 370px;
+  background: #f48c06;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: 3px solid #f48c06;
+}
