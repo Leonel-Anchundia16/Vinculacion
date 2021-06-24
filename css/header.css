@@ -523,7 +523,7 @@
     font-family: var(--fuente-OPENSANS);
     background: var(--color-blanco);
     transform: translateY(-200%);
-    
+
     position: absolute;
     top: 70px;
     left: 0;
@@ -535,15 +535,15 @@
         transform: translateY(0%);
     }
 
-.sct-menu_contain, .group-items{
+.carrousel-menu, .group-items{
     display: flex;
 }
-.sct-menu_contain{
+.carrousel-menu{
     justify-content: center;
     padding: 10px 0;
     align-items: center;
 }
-.sct-menu_contain>button{
+.carrousel-menu>button{
     width: 40px;
     height: 40px;
     padding: 5px 10px;
@@ -559,7 +559,7 @@
 
     transition: background ease .2s;
 }
-    .sct-menu_contain button:hover{
+    .carrousel-menu button:hover{
         background: var(--color-amarillo-principal);
     }
 .group-items{
@@ -607,4 +607,4 @@
         .item-categoria:hover .name-cat-menuD{
             color: var(--color-vino);
             border-bottom: 2px solid var(--color-vino);
-        }
+        } 
