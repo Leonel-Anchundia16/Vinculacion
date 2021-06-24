@@ -1,6 +1,4 @@
-.heroB {
-  height: 100vh;
-
+.heroB {  
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -56,7 +54,7 @@ th {
   padding-bottom: 10px;
 }
 th {
-  background-color: #faa307;
+  background-color: var(--color-amarillo-principal);
 }
 td > p {
   display: flex;

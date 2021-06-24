@@ -1,0 +1,162 @@
+/* .navegacion{
+  font-family: 'Cabin', sans-serif;
+  font-weight: 300 ;
+}
+  
+body{
+  font-family: 'Cabin', sans-serif;
+  font-weight: 300 ;
+}
+  
+
+
+
+.card{
+    width: 200px;
+  
+    height: 240px;
+   
+    border-radius: 0px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    margin-bottom: 25px;
+    
+
+    
+    transition: all 0.25s;
+
+    padding-right: 10px;
+    
+    
+    left: 20px;
+    
+    display: inline-block;
+    position: relative;
+   
+    padding: 10px 15px;
+
+    position: relative;
+    
+
+
+}
+
+
+
+
+
+body{
+	background: #ffffff;
+}
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 900px;
+	margin: 5px auto;
+	background: rgb(255, 255, 255);               
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 5px 40px;
+	color: #000000;
+
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #ffffff;
+	transition: all .3s;
+}
+
+.agregar{
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  border: rgb(221, 13, 13) 8px outset;
+  background-color: #eba91b;
+  padding: 1px 5px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 10 ;
+  border:#eba91b solid;
+  border-radius: 20px
+  
+
+  
+}
+.navegacion li{
+  background-color: rgb(233, 153, 34);
+  
+  padding: 2px 10px;
+  position: relative;
+  top: 00px;
+  border:#eba91b solid;
+  border-radius: 30px
+  
+}
+
+ .filtro{
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+
+  position: fixed;
+  
+
+  
+
+  
+  background-color: #ffffff;
+  padding: 5px 15px;
+  
+  border:#9c9c9c solid;
+  border-radius: 100px
+
+ 
+
+
+}
+
+p.card{
+  font-weight: 100;
+} */
+
+
+
+
+
+
+
+
+
+/*------------CORREGIDO-------------*/
+.pdd-border{
+    padding: 0 70px;
+  }
+  .list-product{
+    display: flex;
+    justify-content: center;
+  }
+  .grid-product{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 720px){
+    .grid-product{
+      grid-template-columns: 1fr;
+    }
+  }

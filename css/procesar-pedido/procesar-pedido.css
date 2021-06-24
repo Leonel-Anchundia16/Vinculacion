@@ -12,6 +12,13 @@
     text-align: left;
     color: var(--color-text-negro);
 }
+    .contenido > .proceso_compra{
+        border-bottom: 5px solid var(--color-amarillo-principal);
+        margin: 50px 0;
+    }
+    .proceso_compra>p{
+        margin: 0;
+    }
 .dat_clien{
 width: 200px;
 margin: 0 340px 24px 0;

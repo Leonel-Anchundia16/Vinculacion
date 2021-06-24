@@ -219,6 +219,25 @@
 }
 
 
+/*---------------------------NUESTRO MENU--------------------------------*/
+.menu__category{
+    background: var(--color-naranja);
+}
+.section-topic>h3{
+    border-bottom: 5px solid var(--color-rojo) !important;
+}
+
+.section_carrousel{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
 /* LCOATION MAIN - LUCHIN */
 .location-main{
     width: 100%;

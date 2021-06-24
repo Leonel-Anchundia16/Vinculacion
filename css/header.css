@@ -535,15 +535,15 @@
         transform: translateY(0%);
     }
 
-.carrousel-menu, .group-items{
+.sct-menu_contain, .group-items{
     display: flex;
 }
-.carrousel-menu{
+.sct-menu_contain{
     justify-content: center;
     padding: 10px 0;
     align-items: center;
 }
-.carrousel-menu>button{
+.sct-menu_contain>button{
     width: 40px;
     height: 40px;
     padding: 5px 10px;
@@ -559,7 +559,7 @@
 
     transition: background ease .2s;
 }
-    .carrousel-menu button:hover{
+    .sct-menu_contain button:hover{
         background: var(--color-amarillo-principal);
     }
 .group-items{
