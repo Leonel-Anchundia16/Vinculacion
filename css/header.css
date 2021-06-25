@@ -32,22 +32,6 @@
     max-width: 1200px;
 }
 
-.hero{
-    height: 100vh;
-    background-image: url('../Imagenes/hamburguesas.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-}   
-    .hero>.her__container{
-        background-color: rgba(0, 0, 0, .3);
-    }
-
-.hero  .contenedor{
-    padding: 30px;
-}
 
 .nav{
     display: flex;
@@ -220,44 +204,6 @@
         bottom: 7px;
         right: -10px;
     }
-
-.her__container{
-    padding-top: 70px;
-    display: flex;
-    align-items: center;
-    height: calc(100vh - 70px);   
-    color: var(--blanco);
-}
-    .hero__texto{
-        padding-left: 50px;
-    }
-    .hero__texto>p{
-        margin: 0;
-    }
-
-.hero__titulo{
-    font-size: 3rem;
-    margin: -10px 0 0 0;
-    font-family: var(--franklin-font);
-    font-weight: var(--weigth-Flin-900);
-}
-    .grand__text{
-        font-size: 8rem;
-        margin: -35px 0 -30px -5px;
-    }
-
-.hero__subtitulo{
-    font-size: 1.25rem;
-    display: flex;
-    width: 450px;
-    font-family: var(--fuente-OPENSANS);
-    font-weight: var(--weigth-OPENSANS-LIGTH-300);
-}
-.hero__subtitulo.text{
-    font-weight: var(--weigth-OPENSANS-REGULAR-400);
-    font-size: 1.1rem;
-}
-
 
 
 /* ventana emergente de registro*/

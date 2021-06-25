@@ -1,3 +1,110 @@
+.container-slider{
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    transition: .5s;
+}
+.group-slider{
+    min-width: 100%;
+    height: 100vh;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+    .group-slider .actions{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0,0,0,.5);
+    }
+        .actions .buttons-slider{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+            transform: translateY(50%);
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+        }
+        .buttons-slider>button{
+            width: 50px;
+            height: 50px;
+            background: none;
+            border: none;
+            font-size: 2.2rem;
+            color: var(--color-blanco);
+            opacity: 60%;
+            cursor: pointer;
+        }
+        .buttons-slider>button:hover{
+            opacity: 100%;
+        }
+    .size-slider{
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        left: 0;
+        right: 0; 
+        bottom: 5%;
+    }
+        .size-slider>.icon{
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            border: none;
+            margin: 0 5px;
+            background: var(--color-blanco);
+            opacity: 50%;
+            cursor: pointer;
+
+            transition: all ease .3s;
+        }
+        .size-slider .icon.active, .size-slider .icon:hover{
+            opacity: 100%;
+        }
+    .txt-slider{
+        color: var(--color-blanco);
+        position: absolute;
+        left: 100px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+    }
+        .hero__titulo{
+            font-size: 3rem;
+            margin: -10px 0 0 0;
+            font-family: var(--franklin-font);
+            font-weight: var(--weigth-Flin-900);
+        }
+            .grand__text{
+                font-size: 8rem;
+                margin: -35px 0 -30px -5px;
+            }
+        
+        .hero__subtitulo{
+            margin: 0;
+            font-size: 1.25rem;
+            display: flex;
+            width: 450px;
+            font-family: var(--fuente-OPENSANS);
+            font-weight: var(--weigth-OPENSANS-LIGTH-300);
+        }
+        .hero__subtitulo.text{
+            font-weight: var(--weigth-OPENSANS-REGULAR-400);
+            font-size: 1.1rem;
+        }
+
+
+
+
 /* PROMOCIONES */
 .promo-general{
     background-color: var(--color-blanco);
@@ -36,6 +143,7 @@
         box-shadow: 0 10px 15px var(--color-text-input);        
     }
     .item__promo>img{
+        width: 100%;
         height: 250px;
         object-fit: cover;
         opacity: 80%;
@@ -305,3 +413,91 @@
             color: var(--color-vino);
             border-bottom: 2px solid var(--color-vino);
         }     
+
+
+
+
+
+/*------------------------RESPONSIVIDAD---------------------*/
+@media only screen and (max-width: 960px) {
+    /*------------PROMOCIONES------*/
+    .contain-promos{
+        width: 60%;
+        grid-template-rows: repeat(3, 300px);
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+        .item__promo>img{
+            height: 350px;
+        }
+        .item__promo:hover img{ 
+            height: 400px;
+        }
+}
+@media only screen and (max-width: 720px) {
+    /*-------SLIDER--------*/
+    .container-slider{
+        margin-top: 60px;
+    }
+    .group-slider{
+        height: 60vh;
+    }   
+        .actions .buttons-slider{
+            padding: 0 5px;
+        }
+        .buttons-slider>button{
+            width: 20px;   
+            height: 20px;   
+            font-size: 1.7rem;
+        }
+        .size-slider{
+            bottom: 3%;
+        }
+        .size-slider>.icon{
+            width: 10px;
+            height: 10px;
+        }
+        .txt-slider{
+            overflow: hidden;
+            justify-content: center;
+            top: 0;
+            left: 40px;
+            right: 40px;
+        }
+            .hero__subtitulo{
+                text-align: center;
+                width: 100%;
+                display: block;
+            }
+                .hero__subtitulo.text{
+                    font-size: .8rem;
+                    max-width: 50%;
+                    margin: auto;
+                }
+            .hero__titulo{
+                font-size: 2.5rem;
+                text-align: center;
+                color: var(--color-amarillo-principal);
+            }
+            .grand__text{
+                font-size: 5rem;
+                text-align: center;
+                margin: -20px 0 -15px 0;
+            }
+    /*-----------PROMOCIONES-------*/
+    .head_main_section>h1{
+        font-size: 2rem;
+    }
+    .contain-promos{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .hero__subtitulo.text{
+        max-width: 80%;
+    }
+    .contain-promos{
+        grid-template-rows: repeat(3, 200px);
+    }
+}

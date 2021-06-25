@@ -1,7 +1,7 @@
 const btnMenuClick = document.querySelector('.btn-menu_nav');
 
 
-function ventRegister(){
+function ventRegister(e){
     const ventana = document.getElementById("registrarme");
     
     if(ventana.classList.contains('active')){
