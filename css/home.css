@@ -1,0 +1,247 @@
+/* PROMOCIONES */
+.promo-general{
+    background-color: var(--color-blanco);
+    font-family: var(--fuente-OPENSANS);
+    padding: 50px 0;
+}
+.head_main_section{
+    display: flex;
+    padding: 25px 0;
+    justify-content: center;
+}
+.head_main_section>h1{
+    margin: 0;
+    font-family: var(--fuente-OSWALD);
+    color: var(--color-text-negro-bajo);
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-bottom: 8px solid var(--color-amarillo);
+}
+.contain-promos{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    padding-top: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-column-gap: 20px;
+}
+    .item__promo{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        box-shadow: 0 10px 15px var(--color-text-input);        
+    }
+    .item__promo>img{
+        height: 250px;
+        object-fit: cover;
+        opacity: 80%;
+
+        transition: all ease .4s;
+    }
+    .item__promo .detalle{
+        position: absolute;
+        bottom: 0;        
+        left: 0;
+        right: 0;
+        font-family: var(--fuente-FRANKLIN);
+        padding: 50px 25px 25px 25px;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(31, 37, 57, 0) 0%, var(--color-vino) 100%);
+    }
+    .item__promo .detalle .topic{
+        font-weight: 900;
+        color: var(--color-amarillo-principal);
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(30px);
+        
+        transition: all ease .4s;
+    }
+    .item__promo .detalle .descrip{
+            opacity: 0;
+            font-size: 1.8rem;
+            margin: 0;
+            color: var(--color-amarillo-principal);
+            display: flex;
+            justify-content: space-between;
+            
+            transition: all ease .5s;
+            /* transition-delay: .2s; */
+        }
+            .item__promo .detalle .descrip s{
+                color: var(--color-blanco);
+                font-size: 1rem;
+                justify-content: space-between;
+            }
+            
+        .item__promo:hover{ 
+            box-shadow: 0 10px 15px var(--color-text-negro);
+        }
+        .item__promo:hover img{ 
+            height: 300px;
+        }
+        .item__promo:hover .topic{
+            transform: translateY(0);
+        }
+        .item__promo:hover .descrip{
+            opacity: 1;
+        } 
+
+.more_promo{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+    .more_promo .btn_more_promo{
+        border: 2.5px solid var(--color-vino);
+        color: var(--color-vino);
+        font-weight: 900;
+        border-radius: 40px;
+        padding: 15px 20px;
+        text-decoration: none;
+        transition: all ease .5s;
+        font-size: .9rem;
+    }
+    .btn_more_promo:hover{
+        background-color: var(--color-vino);
+        color: var(--color-blanco);
+        font-size: 1rem;
+    }
+
+
+/* ASIDE DELIVERY */
+.aside-delivery{
+    margin-top: 40px;
+    background-image: url(../Imagenes/costillas\ Ahumadas.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 375px;
+}
+    .aside-delivery .over{
+        background-color: rgba(0, 0, 0, .5);
+        width: 100%;
+        height: 375px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-infor{
+        position: absolute;
+        width: 30%;
+        font-family: var(--fuente-FRANKLIN);
+        color: var(--color-blanco);
+    }
+        .content-infor p{
+            margin: 0;
+        }
+        .content-infor .theme{
+            display: flex;
+        }
+        .theme>hr{
+            background: var(--color-amarillo);
+            border: 1px solid var(--color-amarillo);
+            width: 100px;
+        }
+    .detalle_delivery{
+         text-align: center;
+    }
+    .detalle_delivery .detalle-sms{
+        font-size: 1.7rem;
+        font-weight: 900;
+        margin: 20px 0;
+    }
+    .detalle_delivery .price{
+        color: var(--color-amarillo);
+        font-size: 2.2rem;
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .detalle_delivery .price>span{
+        position: absolute;
+        float: top;
+        font-size: 1.4rem;
+    }
+    .detalle_delivery >img{
+        width: 100px;
+    }
+
+
+
+/*Edit Mendoza xd*/
+.info_luchin{
+    width: 100%;
+    /* background-color: var(--color-vino); */
+    padding: 40px 0;
+}
+.topic-category.name_luchin{
+    text-align: center;
+    font-size: 60px ;
+    color: #D00000;
+}
+.flex_group{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descri_img, .img_lu{
+    margin: auto;
+    width: 50%;
+    max-height: 300px;
+    overflow: hidden;
+    padding: 20px 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+    .descri_img .description{
+        width: 80%;
+        margin: auto;
+        font-family: var(--Banchscrich-font);
+        font-size: 1.5rem;
+        color: var(--azul-fuerte);
+    }
+.img_luchin{
+    width: 100%;
+}
+
+
+/*---------------------------NUESTRO MENU--------------------------------*/
+.menu__category{
+    background: var(--color-naranja);
+}
+.section-topic>h3{
+    border-bottom: 5px solid var(--color-rojo) !important;
+}
+
+.section_carrousel{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/* LCOATION MAIN - LUCHIN */
+.location-main{
+    width: 100%;
+}
+    .location-main div iframe{
+        width: 100%;
+    }
