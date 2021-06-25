@@ -130,92 +130,71 @@
             </div>
         </form>
     </div>
-    <div class="textoo">
-        <p class="subtitulo"> RESUMEN DE TU BOLSA </p>
-    </div>
+    <main style="overflow:hidden;">
+        <div class="textoo pdd_border">
+            <h1 class="subtitulo">RESUMEN DE TU BOLSA</h1>
+        </div>
 
-    <main>
-
-        <div class="tabla">
-
-            <table class="tablita">
-                <thead>
-                    <tr>
-                        <th class="ti">Producto</th>
-                        <th class="ti">Nombre</th>
-                        <th class="ti">Precio</th>
-                        <th class="ti">Cantidad</th>
-                        <th class="ti">SubTotal</th>
-                        <th class="ti">Eliminar</th>
-                    </tr>
-                </thead>
-
-                <tbody class="tody">
-                    <tr>
-                        <td class="dt" data-label="prod"><img src="/Imagenes/habur_prueba.jpg" alt="text" class="img1">
-                        </td>
-                        <td class="dt" data-label="nombre" class="nombre">
-                            <p>Lorem ipsum dolor sit </p>
-                        </td>
-                        <td class="dt" data-label="precio" class="precio">$12,00</td>
-                        <td class="dt" data-label="cantidad" class="cantidad"><input type="number" id="11-5"
-                                class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;">
-                        </td>
-                        <td class="dt" id="subtotales">$12,00</td>
-                        <td class="dt" data-label="action" class="acti"><a href="#" class="button"><i
-                                    class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td class="dt" data-label="prod"><img src="/Imagenes/habur_prueba.jpg" alt="text" class="img1">
-                        </td>
-                        <td class="dt" data-label="nombre" class="nombre">
-                            <p>Lorem ipsum dolor sit </p>
-                        </td>
-                        <td class="dt" data-label="precio" class="precio">$12,00</td>
-                        <td class="dt" data-label="cantidad" class="cantidad"><input type="number" id="11-5"
-                                class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;">
-                        </td>
-                        <td class="dt" id="subtotales">$12,00</td>
-                        <td class="dt" data-label="action" class="acti"><a href="#" class="button"><i
-                                    class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td class="dt" data-label="prod"><img src="/Imagenes/habur_prueba.jpg" alt="text" class="img1">
-                        </td>
-                        <td class="dt" data-label="nombre" class="nombre">
-                            <p>Lorem ipsum dolor sit </p>
-                        </td>
-                        <td class="dt" data-label="precio" class="precio">$12,00</td>
-                        <td class="dt" data-label="cantidad" class="cantidad"><input type="number" id="11-5"
-                                class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;">
-                        </td>
-                        <td class="dt" id="subtotales">$12,00</td>
-                        <td class="dt" data-label="action" class="acti"><a href="#" class="button"><i
-                                    class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-            <div class="canjeo">
-                <div class="con">
-                    <div class="X">
-                        <p class="t-cupon">
-                            <label class="tex">¿Tienes algun cupon? Canjealo aqui</label>
-                            <input type="tex" class="cupon-100" placeholder="Ingresar el codigo del Cupon">
-                        </p>
+        <div class="tabla pdd_border">
+            <div>
+                <table class="tablita">
+                    <thead>
+                        <tr>
+                            <th class="ti">Producto</th>
+                            <th class="ti">Precio</th>
+                            <th class="ti">Cantidad</th>
+                            <th class="ti">SubTotal</th>
+                            <th class="ti"></th>
+                        </tr>
+                    </thead>
+    
+                    <tbody class="tody">
+                        <tr>
+                            <td class="dt descrip-dttlle" data-label="prod">
+                                <div class="image">
+                                    <img src="/Imagenes/habur_prueba.jpg" alt="text" class="img1">
+                                </div>
+                                <div>
+                                    <h2 class="tittle-pd">Hamburguesa Rellena</h2>
+                                    <p class="infor-adicion">Lorem ipsum dolor sit</p>
+                                </div>
+                            </td>
+                            <!-- <td class="dt" data-label="nombre" class="nombre">
+                                <p>Lorem ipsum dolor sit </p>
+                            </td> -->
+                            <td class="dt precio-tabla" data-label="precio">$12,00</td>
+                            <td class="dt" data-label="cantidad" class="cantidad">
+                                <input type="number" id="11-5"
+                                    class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;">
+                            </td>
+                            <td class="dt precio-tabla" id="subtotales" >$12,00</td>
+                            <td class="dt" data-label="action" class="acti">
+                                <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+    
+                    </tbody>
+    
+                </table>
+                <div class="canjeo">
+                    <div class="con">
+                        <div class="X">
+                            <p class="t-cupon">
+                                <label class="tex">¿Tienes algun cupon? Canjealo aqui</label>
+                                <input type="tex" class="cupon-100" placeholder="Ingresar el codigo del Cupon">
+                            </p>
+                        </div>
+                        <div class="sub-iva-total">
+                            <p class="tt"> <span>Total a Pagar </span> <span class="price_total_pago">$12.99
+                                </span> </p>
+                        </div>
                     </div>
-                    <div class="sub-iva-total">
-                        <p class="tt"> <span>Total a Pagar </span> <span class="price_total_pago">$12.99
-                            </span> </p>
+                    <div class="pie">
+                        <input type="submit" class="btn-enviar" value="Ver mas Producto " required>
+                        <input type="submit" class="btn-enviar2" value="Procesar compra" required>
                     </div>
-                </div>
-                <div class="pie">
-                    <input type="submit" class="btn-enviar" value="Ver mas Producto " required>
-                    <input type="submit" class="btn-enviar2" value="Procesar compra" required>
                 </div>
             </div>
-
 
         </div>
     </main>

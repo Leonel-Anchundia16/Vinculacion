@@ -1,69 +1,91 @@
 .textoo {
-  padding-left: 69px;
   margin-top: 110px;
-}
-.subtitulo {
-  font-size: 2.1rem;
+  width: auto;
   display: flex;
-  font-family: var(--Banchscrich-font);
-  font-weight: var(--weigth-BH-ligth);
-  width: 40%;
 }
 .subtitulo {
-  border-bottom: 2px solid #faa307;
-  width: 370px;
+  font-size: 2rem;
+  font-family: var(--fuente-OSWALD);
+  color: var(--color-text-negro-bajo);
+  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+  border-bottom: 5px solid var(--color-amarillo-principal);
+  margin: 0;
 }
 /*Tabla*/
-.tabla {
+.tabla{
   margin-top: 70px;
-  margin-bottom: 200px;
+}
+.tabla>div{
   display: flex;
   justify-content: space-between;
+  padding: 0 30px;
+  font-family: var(--fuente-OPENSANS);
 }
 .tody .dt,
 .ti {
-  padding-left: 20px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.ti {
-  background-color: #f48c06;
+  padding: 15px 0;
 }
 .tablita {
-  border: 2px solid white;
-  padding-left: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  border: none;
+  margin: 0;
+}
+.tablita>thead{
+  border-bottom: 1px solid var(--color-text-input);
+  background: none;
+  text-transform: uppercase;
+  color: var(--color-text-negro-bajo);
 }
 .img1 {
   max-width: 100px;
   float: left;
   margin-right: 15px;
 }
+/*-----------------FILA DE PRODUCTOS CON DESCRIPCION-----------*/
+.descrip-dttlle{
+  display: flex;
+  align-items: center;
+}
+.descrip-dttlle .tittle-pd{
+  font-family: var(--fuente-OSWALD);
+  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+  color: var(--color-text-negro-bajo);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.descrip-dttlle .infor-adicion{
+  margin: 0;
+  color: var(--color-text-input);
+  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+}
+.precio-tabla{
+  font-family: var(--fuente-OSWALD);
+  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+  color: var(--color-text-negro-bajo);
+  font-size: 1.3rem;
+}
+
+
 
 /*CANJEO*/
 .canjeo {
   margin-left: 89px;
-  margin-right: 250px;
   margin-top: 50px;
 }
 .t-cupon {
-  border: 2px solid black;
   margin-top: 0;
   padding: 0 0 15px;
-  border-radius: 15px 15px 0 0;
 }
 .tex {
   background-color: var(--azul-fuerte);
   text-align: center;
   color: white;
   margin-bottom: 15px;
-  border: 2px solid black;
-  border-radius: 10px 10px 0 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   display: block;
   cursor: pointer;
-  padding: 5px 0 10px 0;
+  padding: 15px 10px;
   font-size: 1rem;
   font-weight: bolder;
 }
@@ -71,7 +93,7 @@
   width: 370px;
   font-size: 1rem;
   font-weight: bolder;
-  border: 2px solid black;
+  border: 2px solid black;  
 }
 
 .tt {
