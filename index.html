@@ -17,6 +17,11 @@
     </script>
 </head>
 <body>
+    <div class="box-sms">
+        <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
+        <div class="txt-sms reprobado">Error al agregar <i class="fas fa-times-circle"></i></div>
+        <div class="lay"></div>
+    </div>
     <div id="loader" class="loading"></div>
     <div class="btn-wss-ct">
         <a href=""><i class="fab fa-whatsapp"></i></a>
@@ -28,7 +33,7 @@
                 <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
             </a>
             <div class="group_btn">
-                <button id="btn-menu" class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+                <button class="btn-menu_nav"><i class="fas fa-bars"></i></button>
             </div>
             <div class="container-items-nav">
                 <div class="nav__navegacion">
@@ -67,12 +72,12 @@
                             <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>     
                         </div>
                     </div>
-                    <a href="#" class="nav__items">Promociones</a>
+                    <a href="#" class="nav__items ">Promociones</a>
                     <a href="#" class="nav__items">Contáctanos</a>
                 </div>
                 <div class="nav__botones botones-option">
                     <a href="#"class="nav__items--cta"> Iniciar Sesión</a>
-                    <a href="javascript:registrar()"class="nav__items--cta register"> Registrarme</a>
+                    <a href="#" class="nav__items--cta register" onclick="ventRegister()"> Registrarme</a>
                 </div>
             </div>
             <div class="bolsita">
@@ -83,9 +88,9 @@
             </div>           
         </div>
     </header>
-    <div class="registro " id="registrarme">
+    <div class="registro" id="registrarme">
         <div class="colum" id="volver">
-            <a href="javascript:registrar()"> <img src="./Imagenes/btn-return.png" alt="boton salir de registro"> </a>
+            <a onclick="ventRegister()" href="#"> <img src="./Imagenes/btn-return.png" alt="boton salir de registro"> </a>
             <p class="arriba">
                 <img src="./Imagenes/luchin.png" alt="logo luchin" height="50px">
             </p>
@@ -188,7 +193,7 @@
                 </div>
             </section>
 
-            <section class="info_luchin">
+            <!-- <section class="info_luchin">
                 <h2 class="topic-category name_luchin">La Parrilla de Luchín</h2>
                 <div class="flex_group">
                     <div class="img_lu">
@@ -198,43 +203,41 @@
                         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe Aliquam amet at optio nulla quisquam,fuga ex reprehenderit quo repellendustempora cupiditate iste pariatur nostrum veritatis, asperiores vel dolores commodi accusamus.</p>
                     </div>
                 </div> 
-            </section>
+            </section> -->
 
             <section class="menu__category">
                 <div class="head_main_section pdd_border section-topic">
                     <h1>Nuestro Menú</h1>
                 </div>
                 <div class="section_carrousel">
-                    <div class="sct-menu_contain">
-                        <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
-                        <div id="catMenuDesp" class="group-items">
-                            <a href="" class="item-categoria">
+                        <button id="btnPrevious" class="previous-btn btn-left"><i class="fas fa-chevron-left"></i></i></button>     
+                        <div id="catMenuDes" class="group_carrousel">
+                            <a href="" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
-                                <p class="name-cat-menuD">Bébidas</p>
+                                <p class="name-cat">Bébidas</p>
                             </a>
-                            <a href="" class="item-categoria">
+                            <a href="" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/Hamburguesa-categoria.png" alt=""></div>
-                                <p class="name-cat-menuD">Hamburguesas</p>
+                                <p class="name-cat">Hamburguesas</p>
                             </a>
-                            <a href="" class="item-categoria">
+                            <a href="" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/papas-cat.png" alt=""></div>
-                                <p class="name-cat-menuD">Papas</p>
+                                <p class="name-cat">Papas</p>
                             </a>
-                            <a href="" class="item-categoria">
+                            <a href="" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/carne-cat.png" alt=""></div>
-                                <p class="name-cat-menuD">Cortes de Carne</p>
+                                <p class="name-cat">Cortes de Carne</p>
                             </a>
-                            <a href="" class="item-categoria">
+                            <a href="" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/sandwich-cat.png" alt=""></div>
-                                <p class="name-cat-menuD">Sanduches</p>
+                                <p class="name-cat">Sanduches</p>
                             </a>
-                            <a href="" class="item-categoria">
+                            <a href="" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
-                                <p class="name-cat-menuD">Alitas</p>
+                                <p class="name-cat">Alitas</p>
                             </a>
                         </div>
-                        <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>     
-                    </div>
+                        <button id="btnNext" class="next-btn btn-rigth"><i class="fas fa-chevron-right"></i></button>     
                 </div>
             </section>
 
@@ -294,15 +297,6 @@
     </footer>
 
     <script>
-        function registrar() {
-            const ventana = document.getElementById("registrarme");
-
-            if(ventana.style.display == 'none'){
-                ventana.style.display = "block";
-            }else{
-                ventana.style.display = "none";
-            }
-        }
 
         $(window).scroll(function(){
             if($('#navBar').offset().top > 200){
@@ -318,4 +312,5 @@
     </script>
 </body>
 <script src="./js/carrousel.js"></script>
+<script src="./js/menu.js"></script>
 </html>

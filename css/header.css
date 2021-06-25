@@ -270,16 +270,21 @@
     text-align: center;
     font-size: 40px;
 }
-    .registro {
+    .registro{
         background: white;
-        display: none;
-        /* border: 1px solid #f48c06; */
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 11;
-        bottom: 0;    
+        z-index: 10;
+        bottom: 0;  
+        transform: translateX(100%);
+        transition: all ease .5s;
+        visibility: hidden;  
     }
+        .registro.active{
+            visibility: visible;  
+            transform: translateX(0);
+        }
     .contenedor_registro{
         padding: 20px 0;
     }
@@ -461,7 +466,7 @@
         line-height: normal;
         width: 100%;
         text-align: center;
-        padding: 12px 20px;
+        padding: 12px 0;
         border-bottom: 1px solid var(--color-amarillo);
     }
         .nav__items:hover{
@@ -489,6 +494,46 @@
             background: var(--color-amarillo-principal);
             color: var(--color-naranja);
         }
+
+        
+
+    /*----MENU DESPLEGABLE------*/
+    .menu-container{
+        transform: translateY(100%);
+        transition: all ease .5s;
+    }
+    .menu-container.active{
+        position: relative;
+        top: 0;
+        background: none;
+    }
+    .menu-container.active .carrousel-menu{
+        display: block;
+        padding: 0;
+    }
+    .menu-container.active .group-items{
+        display: block;
+        margin: 0;
+        max-width: 100%;
+    }
+    .menu-container.active button{
+        display: none;
+    }
+    .menu-container.active .item-categoria{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--color-amarillo);
+    }
+    .menu-container.active .item-categoria .item-img{
+        display: none;
+    }
+    .menu-container.active .item-categoria .name-cat-menuD{
+        color: var(--color-blanco);
+        font-weight: var(--weigth-OPENSANS-REGULAR-400);
+        margin: 0;
+    }
 }    
 @media only screen and (max-width:720px){
     .btn-wss-ct{

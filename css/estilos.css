@@ -80,6 +80,10 @@
 }
 
 
+body{
+    margin: 0;
+    padding: 0;
+}
 
 /* LOADING */
 .loading{
@@ -94,7 +98,47 @@
 }
 
 
-body{
-    margin: 0;
-    padding: 0;
+/*-----------MENSAJE DE ADD O NOT ADD A LA BOLSA*/
+.box-sms{
+    background-color:#fff;
+    color: var(--color-text-negro);
+    font-family: var(--fuente-OPENSANS);
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px #000;
+    transition: all ease .5s;
+    
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 100;
+    visibility: hidden;
 }
+    .box-sms.active{
+        visibility: visible;
+    }
+    .txt-sms{
+        display: flex;
+        align-items: center;
+    }
+    .txt-sms.aprobado>i{
+        padding-left: 10px;
+        color: var(--color-aprobado);    
+    }
+    .txt-sms.reprobado>i{
+        padding-left: 10px;
+        color: var(--color-reprobado);    
+    }
+    .box-sms .lay{
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        
+        position: absolute;
+        top: -5px;
+        right: 30px;
+    }

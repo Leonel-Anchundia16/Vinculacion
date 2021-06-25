@@ -123,77 +123,73 @@
             </div>    
         </form>
     </div>
-    <main class="heroB">        
-        <section class="contenido">
-            <div class="proceso_compra">
-                <p>PROCESAR COMPRA</p>
-            </div>
-            <!--cortes-->
-            <div class="contabla">
-                <table class="product">
+    <main style="overflow:hidden;">
+        <div class="textoo pdd_border">
+            <h1 class="subtitulo">RESUMEN DE TU BOLSA</h1>
+        </div>
+
+        <div class="tabla pdd_border">
+            <div>
+                <table class="tablita">
+                    <thead>
+                        <tr>
+                            <th class="ti">Producto</th>
+                            <th class="ti">Precio</th>
+                            <th class="ti">Cantidad</th>
+                            <th class="ti">SubTotal</th>
+                            <th class="ti"></th>
+                        </tr>
+                    </thead>
     
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                        <th>Cantidad</th>
-                        <th>SubTotal</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td data-label="prod"><img src="./Imagenes/alitas-cat.png" alt="text" class="img1">
-                            <P>Lorem ipsum dolor</P>
-                        </td>
-                        <td data-label="precio" class="precio">$12,00</td>
-                        <td data-label="cantidad" class="cantidad"><input type="number" id="11-5"
-                                class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;"></td>
-                        <td id="subtotales">$12,00</td>
-                        <td data-label="action" class="acti"><a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="prod"><img src="./habur_prueba.jpg" alt="text" class="img1">
-                            <P>Lorem ipsum dolor</P>
-                        </td>
-                        <td data-label="precio" class="precio">$12,00</td>
-                        <td data-label="cantidad" class="cantidad"><input type="number" id="11-5"
-                                class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;"></td>
-                        <td id="subtotales">$12,00</td>
-                        <td data-label="action" class="acti"><a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="prod"><img src="./habur_prueba.jpg" alt="text" class="img1">
-                            <P>Lorem ipsum dolor</P>
-                        </td>
-                        <td data-label="precio" class="precio">$12,00</td>
-                        <td data-label="cantidad" class="cantidad"><input type="number" id="11-5"
-                                class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;"></td>
-                        <td id="subtotales">$12,00</td>
-                        <td data-label="action" class="acti"><a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
-                        </td>
-                    </tr>
+                    <tbody class="tody">
+                        <tr>
+                            <td class="dt descrip-dttlle" data-label="prod">
+                                <div class="image">
+                                    <img src="/Imagenes/habur_prueba.jpg" alt="text" class="img1">
+                                </div>
+                                <div>
+                                    <h2 class="tittle-pd">Hamburguesa Rellena</h2>
+                                    <p class="infor-adicion">Lorem ipsum dolor sit</p>
+                                </div>
+                            </td>
+                            <!-- <td class="dt" data-label="nombre" class="nombre">
+                                <p>Lorem ipsum dolor sit </p>
+                            </td> -->
+                            <td class="dt precio-tabla" data-label="precio">$12,00</td>
+                            <td class="dt" data-label="cantidad" class="cantidad">
+                                <input type="number" id="11-5"
+                                    class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;">
+                            </td>
+                            <td class="dt precio-tabla" id="subtotales" >$12,00</td>
+                            <td class="dt" data-label="action" class="acti">
+                                <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+    
+                    </tbody>
+    
                 </table>
-    
                 <div class="canjeo">
                     <div class="con">
                         <div class="X">
-                            <p>
-                                <label>¿Tienes algun cupon? Canjealo aqui</label>
-                                <input type="text" class="cupon-100" placeholder="Ingresar el codigo del Cupon">
+                            <p class="t-cupon">
+                                <label class="tex">¿Tienes algun cupon? Canjealo aqui</label>
+                                <input type="tex" class="cupon-100" placeholder="Ingresar el codigo del Cupon">
                             </p>
                         </div>
                         <div class="sub-iva-total">
-                            <p>Total a pagar:<p />
-                            <p class="valor" id="total">$12.00<p />
-    
-                        </div>
-                        <div class="pie">
-                            <a href="#" class="vermas">Ver Mas Producto</a>
-                            <input type="submit" class="btn-enviar2" value="Procesar compra" required>
+                            <p class="tt"> <span>Total a Pagar </span> <span class="price_total_pago">$12.99
+                                </span> </p>
                         </div>
                     </div>
+                    <div class="pie">
+                        <input type="submit" class="btn-enviar" value="Ver mas Producto " required>
+                        <input type="submit" class="btn-enviar2" value="Procesar compra" required>
+                    </div>
                 </div>
-        </section>
+            </div>
+
+        </div>
     </main>
     <footer>
         <div class="grid-ftt">

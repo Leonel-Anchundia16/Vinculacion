@@ -35,14 +35,14 @@ table {
   height: 90px;
   font-family: var(--Banchscrich-font);
 }
-th {
+/* th {
   padding-left: 20px;
   padding-right: 10%;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color:var(--amarillo) ;
   color: white;
-}
+} */
 td {
   padding-left: 20px;
   padding-right: 20px;
