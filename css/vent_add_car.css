@@ -10,7 +10,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    z-index: 4;
+    visibility: hidden;
 }
+    .overlay.active{
+        visibility: visible;
+    }
 .popup{
     font-family: var(--fuente-OPENSANS);
 
