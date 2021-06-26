@@ -8,6 +8,13 @@
 /*HEREDAMOS ESTILOS CSS DE ARCHIVOS EXTERNOS*/
 @import url('header.css');
 @import url('footer.css');
+@import url('vent_add_car.css');
+
+
+@import url('./procesar-pedido/procesar-pedido.css');
+@import url('./bolsita/bolsa.css');
+@import url('./menu-product/menu-pd.css');
+@import url('home.css');
 @import url('productos.css');
 @import url('./promociones/promociones.css');
 @import url('colores.css');
@@ -22,7 +29,8 @@
 :root{
     --color-text-negro: #000103;
     --color-text-negro-bajo: #212529;
-    --color-text-input: ##707070;
+    --color-text-input: #707070;
+    --color-brd-input: #7070708c;
     --color-blanco: #ffff;
     --color-vino: #370617;
     --color-vino-50: #3706177c;
@@ -32,6 +40,7 @@
     --color-naranja-bajo: #f48c08;
     --color-rojo: #d00000;
     --color-rojo-oscuro: #9d0208;
+    --color-azul-fuerte: #03071E;
 
 
     --amarillo: #f48c06;
@@ -78,124 +87,60 @@ body{
     padding: 0;
 }
 
-
-
-/*Edit Mendoza xd*/
-.info-luchin{
-    width: 90%;
-    margin: 0 auto;
-}
-.topic-category.name_luchin{
-    text-align: center;
-    font-size: 60px ;
-    color: #D00000;
-}
-.flex_group{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.descri_img, .img_lu{
-    margin: auto;
-    width: 50%;
-    max-height: 300px;
-    overflow: hidden;
-    padding: 20px 50px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-    .descri_img .description{
-        width: 80%;
-        margin: auto;
-        font-family: var(--Banchscrich-font);
-        font-size: 1.5rem;
-        color: var(--azul-fuerte);
-    }
-.img_luchin{
+/* LOADING */
+.loading{
+    position: fixed;
+    left: 0px;
+    top: 0px;
     width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../Imagenes/loading.gif') 50% 50% no-repeat rgb(255, 255, 255);
+    opacity: 90%;
 }
 
 
-
-/* SECTION CARROUSEL  */
-.container_carrousel{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*-----------MENSAJE DE ADD O NOT ADD A LA BOLSA*/
+.box-sms{
+    background-color:#fff;
+    color: var(--color-text-negro);
+    font-family: var(--fuente-OPENSANS);
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    text-transform: uppercase;
     text-align: center;
-}
-.topic-category{
-    font-family: var(--Banchscrich-font);
-    font-weight: var(--weigth-BH-ligth);
-    color: var(--azul-fuerte);
-    font-size: 5rem;
-}
-.carrousel{
-    display: flex;
-}
-.carrousel_item{
-    width: 33.33%;
-    position: relative;
-    overflow: hidden;
-}
-    .carrousel_item>img{
-        width: 100%;
-    }
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px #000;
+    transition: all ease .5s;
     
-.carrousel_item>.detalle:hover{
-    background-color: rgba(0, 0, 0);
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 100;
+    visibility: hidden;
 }
-.carrousel_item>.detalle{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 46%;
-    background-color: rgba(0, 0, 0, .8);
-    font-family: var(--Banchscrich-font);
-
-    transition: all ease .3s;
-}
-    .detalle .topic, .btn__category{
-        justify-content: center;
+    .box-sms.active{
+        visibility: visible;
     }
-    .topic{
-        height: 45%;
+    .txt-sms{
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
+        align-items: center;
     }
-    .btn__category{
-        height: 55%;
-        padding-top: 40px;
+    .txt-sms.aprobado>i{
+        padding-left: 10px;
+        color: var(--color-aprobado);    
     }
-
-    .detalle .topic>p{
-        margin: 0;
-        font-size: 1.8rem;
-        font-weight: var(--weigth-BH-ligth);
-        text-transform: uppercase;
-        color: var(--blanco);
+    .txt-sms.reprobado>i{
+        padding-left: 10px;
+        color: var(--color-reprobado);    
     }
-
-    .btn_btn_mas:hover{
-        background-color: var(--blanco);
-        color: var(--azul-fuerte);
-    }
-    .btn_btn_mas{
-        padding: 15px 20px;
-        border: 1.5px solid var(--blanco);  
-        font-size: 1rem;
-        text-decoration: none;
-        font-weight: var(--weigth-BH-ligth);
-        width: 130px;
-        text-transform: uppercase;
-        color: var(--blanco);
-
-        transition: all ease .5s;
+    .box-sms .lay{
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        
+        position: absolute;
+        top: -5px;
+        right: 30px;
     }
