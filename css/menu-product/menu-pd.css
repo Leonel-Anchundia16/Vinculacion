@@ -1,146 +1,3 @@
-/* .navegacion{
-  font-family: 'Cabin', sans-serif;
-  font-weight: 300 ;
-}
-  
-body{
-  font-family: 'Cabin', sans-serif;
-  font-weight: 300 ;
-}
-  
-
-
-
-.card{
-    width: 200px;
-  
-    height: 240px;
-   
-    border-radius: 0px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    margin-bottom: 25px;
-    
-
-    
-    transition: all 0.25s;
-
-    padding-right: 10px;
-    
-    
-    left: 20px;
-    
-    display: inline-block;
-    position: relative;
-   
-    padding: 10px 15px;
-
-    position: relative;
-    
-
-
-}
-
-
-
-
-
-body{
-	background: #ffffff;
-}
-
-header{
-	width: 100%;
-}
-
-.navegacion{
-	width: 900px;
-	margin: 5px auto;
-	background: rgb(255, 255, 255);               
-}
-
-.navegacion ul{
-	list-style: none;
-}
-
-.menu > li{
-	position: relative;
-	display: inline-block;
-}
-
-.menu > li > a{
-	display: block;
-	padding: 5px 40px;
-	color: #000000;
-
-	text-decoration: none;
-}
-
-.menu li a:hover{
-	color: #ffffff;
-	transition: all .3s;
-}
-
-.agregar{
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  border: rgb(221, 13, 13) 8px outset;
-  background-color: #eba91b;
-  padding: 1px 5px;
-  font-family: 'Cabin', sans-serif;
-  font-weight: 10 ;
-  border:#eba91b solid;
-  border-radius: 20px
-  
-
-  
-}
-.navegacion li{
-  background-color: rgb(233, 153, 34);
-  
-  padding: 2px 10px;
-  position: relative;
-  top: 00px;
-  border:#eba91b solid;
-  border-radius: 30px
-  
-}
-
- .filtro{
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 11px;
-
-  position: fixed;
-  
-
-  
-
-  
-  background-color: #ffffff;
-  padding: 5px 15px;
-  
-  border:#9c9c9c solid;
-  border-radius: 100px
-
- 
-
-
-}
-
-p.card{
-  font-weight: 100;
-} */
-
-
-
-
-
-
-
-
-
 /*------------CORREGIDO-------------*/
 .pdd-border{
     padding: 0 70px;
@@ -154,6 +11,156 @@ p.card{
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
   }
+  
+  @media only screen and (max-width: 720px){
+    .grid-product{
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
+  /*------------CORREGIDO-------------*/
+
+/*forma de todas las tablas*/
+div.card
+{
+  border-radius: 0px;
+  width: 180px;
+  
+  height: 240px;
+ 
+  border-radius: 0px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  margin-bottom: 25px;
+  transition: all 0.25s;
+
+  padding: 12px 18px;
+  position: relative;
+
+  top: 80px;
+
+}
+/*Boton agregar color y forma*/
+button.agregar
+{
+  color: #000000;
+  justify-content: center;
+  
+  background-color: #ffba08;
+  padding: 3px 15px;
+  font-family: var(--fuente-OSWALD);
+  font-weight: 10 ;
+  border: #ffba08;
+  border-radius: 20px
+
+}
+
+
+
+.titulomenu{
+  font-size: 2rem;
+  font-family: var(--fuente-OSWALD);
+  color: var(--color-text-negro-bajo);
+  
+  
+  margin: 0;
+  text-align: center;
+}
+
+
+/* carrusel*/
+
+div.carrousel2{
+  font-family: var(--fuente-OSWALD);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f31313
+  
+  
+}
+
+.carrousel2>button{
+  
+  width: 40px;
+  height: 40px;
+  background: none;
+  color: var(--color-text-negro);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  
+
+
+}
+
+.item-categoria2{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin: 655;
+  padding-top: 25px;
+  color: #030303;
+  
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+
+  width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding: 15px;
+
+        
+       
+        
+}
+  
+
+.filtro{
+  color: #000000;
+  font-family: var(--fuente-OSWALD);
+  font-size: 12px;
+  left: 200px;
+  position: absolute;
+  background-color: #9c9c9c;
+  padding: 5px 15px;
+  border: #9c9c9c solid;
+  border-radius: 100px;
+  align-items: center;
+}
+
+
+
+.pdd-border{
+ 
+  text-align: center;
+  
+
+  }
+  .list-product{
+    display: flex;
+    justify-content: center;
+    border-radius: 110px;
+  }
+  .grid-product{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+
+ 
   
   @media only screen and (max-width: 720px){
     .grid-product{
