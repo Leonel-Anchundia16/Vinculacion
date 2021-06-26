@@ -76,8 +76,8 @@
                     <a href="#" class="nav__items">Contáctanos</a>
                 </div>
                 <div class="nav__botones botones-option">
-                    <a href="#"class="nav__items--cta"> Iniciar Sesión</a>
-                    <a href="#" class="nav__items--cta register" onclick="ventRegister()"> Registrarme</a>
+                    <button class="nav__items--cta">Iniciar Sesión</button>
+                    <button class="nav__items--cta register" onclick="ventRegister()">Registrarme</button>
                 </div>
             </div>
             <div class="bolsita">
@@ -87,56 +87,50 @@
                 </div>
             </div>           
         </div>
-    </header>
-    <div class="registro" id="registrarme">
-        <div class="colum" id="volver">
-            <a onclick="ventRegister()" href="#"> <img src="./Imagenes/btn-return.png" alt="boton salir de registro"> </a>
-            <p class="arriba">
-                <img src="./Imagenes/luchin.png" alt="logo luchin" height="50px">
-            </p>
-        </div>
-        <form class="formulario">
-    
-            <h1 class="form__titulo">Registrarse</h1>
-    
-    
-            <div class="contenedor_registro">
+        <div class="registro" id="registrarme">
+            <div class="colum" id="volver">
+                <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/luchin.png" alt="logo luchin">
+            </div>
+            <form class="formulario">
+                <h1 class="form__titulo">Crear Cuenta</h1>
                 <div class="input-contenedor">
-    
-                    <div class="two_element">
-                        <p class="riigth"><label>Nombre</label><input type="text" class="input-48" placeholder="Nombre" required></p>
-                        <p class="leeft"><label>Apellidos</label><input type="text" class="input-48" placeholder="Apellidos" required></p>    
-                    </div>
-                    <div class="f">
-                        <p><label>Fecha de Nacimiento</label><input type="date" class="input-100"
-                                placeholder="Fecha de Nacimiento" required>
-                        <p><label>Telefono</label><input type="text" class="input-100" placeholder="Telefono" required></p>
-    
-                        <p><label>Correo</label><input type="email" class="input-100" placeholder="Correo Electronico" required></p>
-                        <p><label>Contraseña</label><input type="password" class="input-100" placeholder="Contraseña"
-                                required></p>
-                        <p><label>Confirmar Contraseña</label><input type="password" class="input-100"
-                                placeholder="Confirmar Contraseña" required>
+                    <div class="row-input">
+                        <p class="col-input clm-1"><label>Nombre</label><input type="text" required>
+                            <!-- <span class="mnj-error"><i class="fas fa-exclamation-circle"></i> <span>El campo esta vació</span></span> -->
                         </p>
+                        <p class="col-input clm-2"><label>Apellidos</label><input type="text" required></p>
                     </div>
-                    
-                </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input clm-1"><label>Contraseña</label><input type="password" required></p>
+                        <p class="col-input clm-2"><label>Confirmar Contraseña</label><input type="password" required></p>
+                    </div>
+                </div>    
                 <div class="pie-form">
-                    <input type="submit" class="btn-enviar" value="Crear Cuenta" required>
+                    <input type="submit" class="btn-enviar" value="Crear Cuenta">
                     <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
                 </div>
-            </div>    
-        </form>
-    </div>
+            </form>
+        </div>
+    </header>
     
 
     <main style="overflow: hidden;">
             <section class="container-slider">
-                <div class="group-slider" style="background-image: url('../Imagenes/hamburguesas.png');">
+                <div class="group-slider">
                     <div class="actions">
                         <div class="buttons-slider">
-                            <button class="return-sld"><i class="fas fa-chevron-left"></i></i></button>     
-                            <button class="next-sld"><i class="fas fa-chevron-right"></i></i></button>     
+                            <button class="return-sld"><i class="fas fa-chevron-left"></i></button>     
+                            <button class="next-sld"><i class="fas fa-chevron-right"></i></button>     
                         </div>
                         <div class="size-slider">
                             <button class="icon active"></button>
@@ -198,9 +192,9 @@
                             <hr>
                         </div>
                         <div class="detalle_delivery">
-                            <p class="detalle-sms">Envíos solo Montecristi</p>
+                            <p class="detalle-sms">Envíos solo <span>Montecristi</span></p>
                             <p class="price">$3<span>00</span></p>
-                            <img src="./Imagenes/tienda.png"/>
+                            <img src="./Imagenes/delivery.png"/>
                         </div>
                     </div>
                 </div>
