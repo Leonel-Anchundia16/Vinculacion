@@ -1,27 +1,28 @@
 const btnMenu = document.getElementById('boxMenu-Select');
 const mostrarCategorias = document.querySelector('.menu-container');
 let estadoFuera = false;
+const menuDesplegable = document.querySelector('.menu-container');
 
-btnMenu.addEventListener('mouseover', (boton)=>{
+
+btnMenu.addEventListener('click', (boton)=>{
     boton.preventDefault();
     if(!btnMenu.classList.contains('down')){
         btnMenu.classList.add('down', 'active');
         mostrarCategorias.classList.add('active');  
-        estadoFuera = false;  
-    };
-    
-    // mostrarCategorias.addEventListener('mouseleave', ()=>{
-    //     // let estado = false;
-    //     setTimeout(()=>{
-    //         estadoFuera = true;
-    //         console.log('chao');
-    //         mostrarCategorias.addEventListener('mouseover', ()=>{
-    //             estadoFuera = false;
-    //             console.log('cancelado');
-    //         });
-    //     },1000);
-    // });
+    }else{
+        btnMenu.classList.remove('down', 'active');
+        mostrarCategorias.classList.remove('active');  
+    }
 })
+
+
+
+
+
+
+
+
+
 
 
 
