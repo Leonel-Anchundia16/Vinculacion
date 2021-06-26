@@ -147,41 +147,94 @@
                             <th class="ti"></th>
                         </tr>
                     </thead>
-    
+
                     <tbody class="tody">
                         <tr>
                             <td class="dt descrip-dttlle" data-label="prod">
                                 <div class="image">
-                                    <img src="/Imagenes/habur_prueba.jpg" alt="text" class="img1">
+                                    <img src="./Imagenes/habur_prueba.jpg" alt="text" class="img1">
                                 </div>
                                 <div>
                                     <h2 class="tittle-pd">Hamburguesa Rellena</h2>
                                     <p class="infor-adicion">Lorem ipsum dolor sit</p>
                                 </div>
                             </td>
-                            <!-- <td class="dt" data-label="nombre" class="nombre">
-                                <p>Lorem ipsum dolor sit </p>
-                            </td> -->
+
                             <td class="dt precio-tabla" data-label="precio">$12,00</td>
-                            <td class="dt" data-label="cantidad" class="cantidad">
-                                <input type="number" id="11-5"
-                                    class="cant-producto cantidad" min="1" value="1" style="padding:3px;width:40px;">
+                            <td class="dtcantidad" data-label="cantidad">
+                                <button class="btn_cantdd">-</button>
+                                <input type="text" class="can_num" value="1">
+                                <button class="btn_cantdd">+</button>
                             </td>
-                            <td class="dt precio-tabla" id="subtotales" >$12,00</td>
+
+                            <td class="dt precio-tabla" id="subtotales">$12,00</td>
                             <td class="dt" data-label="action" class="acti">
                                 <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
                             </td>
                         </tr>
-    
+
+                        <tr>
+                            <td class="dt descrip-dttlle" data-label="prod">
+                                <div class="image">
+                                    <img src="./Imagenes/habur_prueba.jpg" alt="text" class="img1">
+                                </div>
+                                <div>
+                                    <h2 class="tittle-pd">Hamburguesa Rellena</h2>
+                                    <p class="infor-adicion">Lorem ipsum dolor sit</p>
+                                </div>
+                            </td>
+
+                            <td class="dt precio-tabla" data-label="precio">$12,00</td>
+                            <td class="dtcantidad" data-label="cantidad">
+                                <button class="btn_cantdd">-</button>
+                                <input type="text" class="can_num" value="1">
+                                <button class="btn_cantdd">+</button>
+                            </td>
+
+                            <td class="dt precio-tabla" id="subtotales">$12,00</td>
+                            <td class="dt" data-label="action" class="acti">
+                                <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="dt descrip-dttlle" data-label="prod">
+                                <div class="image">
+                                    <img src="./Imagenes/habur_prueba.jpg" alt="text" class="img1">
+                                </div>
+                                <div>
+                                    <h2 class="tittle-pd">Hamburguesa Rellena</h2>
+                                    <p class="infor-adicion">Lorem ipsum dolor sit</p>
+                                </div>
+                            </td>
+
+                            <td class="dt precio-tabla" data-label="precio">$12,00</td>
+                            <td class="dtcantidad" data-label="cantidad">
+                                <button class="btn_cantdd">-</button>
+                                <input type="text" class="can_num" value="1">
+                                <button class="btn_cantdd">+</button>
+                            </td>
+
+                            <td class="dt precio-tabla" id="subtotales">$12,00</td>
+                            <td class="dt" data-label="action" class="acti">
+                                <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                        </tr>
+
                     </tbody>
-    
+
                 </table>
                 <div class="canjeo">
                     <div class="con">
-                        <div class="X">
+                        <div class="x">
                             <p class="t-cupon">
                                 <label class="tex">¿Tienes algun cupon? Canjealo aqui</label>
+
+                            <div class="contenedor-inputt">
                                 <input type="tex" class="cupon-100" placeholder="Ingresar el codigo del Cupon">
+                                <button class="inputt-boton">+</button>
+                            </div>
+
                             </p>
                         </div>
                         <div class="sub-iva-total">
@@ -202,8 +255,9 @@
         <div class="grid-ftt">
             <div class="box column_grid-ftt">
                 <div class="content">
-                    <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin"/> 
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur suscipit praesentium id nesciunt quidem ratione. </p>
+                    <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin" />
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur
+                        suscipit praesentium id nesciunt quidem ratione. </p>
                 </div>
             </div>
             <div class="box column_grid-ftt">
@@ -214,7 +268,7 @@
                         <p class="text"><span class="weigth">Montecristi, Manabí - Ecuador</span></p>
                     </div>
 
-                    <h2 class="name__categoria">Contáctanos:</h2>                    
+                    <h2 class="name__categoria">Contáctanos:</h2>
                     <div>
                         <p class="text"><span class="weigth">WhatsApp:</span> 0963217004</p>
                     </div>
@@ -225,11 +279,11 @@
             </div>
             <div class="box column_grid-ftt">
                 <div class="content">
-                    <h2 class="name__categoria">Horarios de Atención:</h2>                    
+                    <h2 class="name__categoria">Horarios de Atención:</h2>
                     <div>
                         <p class="text"><span class="weigth">Lunes-Viernes:</span> 08h00 - 19h00</p>
                         <p class="text"><span class="weigth">Sábados y Domingos:</span> 08h00 - 19h00</p>
-                    </div>                   
+                    </div>
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></span></a>
                         <a href="#"><i class="fab fa-instagram"></i></span></a>
