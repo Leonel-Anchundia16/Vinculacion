@@ -1,37 +1,39 @@
 .textoo {
-  margin-top: 110px;
-  width: auto;
-  display: flex;
+    margin-top: 110px;
+    width: auto;
+    display: flex;
 }
 .subtitulo {
-  font-size: 2rem;
-  font-family: var(--fuente-OSWALD);
-  color: var(--color-text-negro-bajo);
-  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
-  border-bottom: 5px solid var(--color-amarillo-principal);
-  margin: 0;
+    font-size: 1.7rem;
+    font-family: var(--fuente-OSWALD);
+    color: var(--color-text-negro-bajo);
+    font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+    border-bottom: 5px solid var(--color-amarillo-principal);
+    margin: 0;
 }
 /*Tabla*/
 .tabla {
-  margin-top: 70px;
+  margin-top: 50px;
 }
-.tabla > div {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
-  font-family: var(--fuente-OPENSANS);
-  /*se aumento*/
-  margin-bottom: 197px;
-}
-.tody .dt,
-.ti {
-  /*se aumento 35px estaba 15px 0*/
-  padding: 15px 35px;
-}
-.tablita {
-  border: none;
-  margin: 0;
-}
+  .tabla > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+      font-family: var(--fuente-OPENSANS);
+      /*se aumento*/
+      margin-bottom: 197px;
+  }
+  .tablita {
+      margin: 0;
+  }
+    /* SEPARAR POR COLUMNA */
+    .tablita .producto-table{
+      width: 300px;
+    }
+    .tablita .precio-table{
+      width: 70px;
+    }
+
 .tablita > thead {
   border-bottom: 1px solid var(--color-text-input);
   background: none;

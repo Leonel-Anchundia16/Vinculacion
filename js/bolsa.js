@@ -95,12 +95,68 @@ class Carrito{
         producto=this.obtenerDatosLS();
         producto.push(datos);
         localStorage.setItem('bolsa', JSON.stringify(producto));
-        // this.insertarDatosLS(datos);
+        this.insertarDatosLS(datos);
     }
 
 
     
     insertarDatosLS(producto){
-        
+        const etiqueta = document.createElement('tr');
+        etiqueta.innerHTML = `
+            <td class="dt descrip-dttlle producto-table" data-label="prod">
+                <div class="image">
+                    <img src="${producto.imagen}" alt="text" class="img1">
+                </div>
+                <div>
+                    <h2 class="tittle-pd">${producto.nombre}</h2>
+                    <p class="infor-adicion">${producto.inf_adicional}</p>
+                </div>
+            </td>
+
+            <td class="dt precio-tabla precio-table" data-label="precio">$<span>${producto.precio}</span></td>
+            <td class="dtcantidad" data-label="cantidad">
+                <button class="btn_cantdd">-</button>
+                <input type="text" class="can_num" value="${producto.cantidad}">
+                <button class="btn_cantdd">+</button>
+            </td>
+
+            <td class="dt precio-tabla" id="subtotales">$12,00</td>
+            <td class="dt" data-label="action" class="acti">
+                <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
+            </td>
+        `;
+        tablaProductos.appendChild(etiqueta);
+    }
+
+
+    leerDatosLS(){
+        let productosLS;
+        productosLS = this.obtenerDatosLS();
+
+        productosLS.forEach(e => {
+            etiqueta.innerHTML = `
+                <td class="dt descrip-dttlle producto-table" data-label="prod">
+                    <div class="image">
+                        <img src="${e.imagen}" alt="text" class="img1">
+                    </div>
+                    <div>
+                        <h2 class="tittle-pd">${e.nombre}</h2>
+                        <p class="infor-adicion">${e.inf_adicional}</p>
+                    </div>
+                </td>
+
+                <td class="dt precio-tabla precio-table" data-label="precio">$<span>${e.precio}</span></td>
+                <td class="dtcantidad" data-label="cantidad">
+                    <button class="btn_cantdd">-</button>
+                    <input type="text" class="can_num" value="${e.cantidad}">
+                    <button class="btn_cantdd">+</button>
+                </td>
+
+                <td class="dt precio-tabla" id="subtotales">$12,00</td>
+                <td class="dt" data-label="action" class="acti">
+                    <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            `;
+        });
     }
 }
