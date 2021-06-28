@@ -2,8 +2,8 @@ class Carrito{
 
     //seleccionar producto
     obtenerProducto(e){
-        if(e.target.classList.contains('card')){
-            const producto = e.target;
+        if(e.target.classList.contains('btn-agregar')){
+            const producto = e.target.parentElement.parentElement;
             this.guardarDatosProducto(producto);
         }
     }
@@ -15,7 +15,7 @@ class Carrito{
             descripcion: producto.querySelector('.descrip-product').textContent,
             precio: producto.querySelector('.price-product').textContent,
             imagen: producto.querySelector('.img-product img').src,
-            cantidad: 3
+            cantidad: 1
         }
         this.insertarProducto(datos);
     }
@@ -23,11 +23,11 @@ class Carrito{
 
     insertarProducto(datos){
         const etiqueta = document.createElement('div');
+        etiqueta.classList.add('popup');
         etiqueta.innerHTML = `
-        <div class="popup">
             <div class="iz">
                 <div class="ret">
-                    <a href="#" class="bnt_regresar" > Regresar</a>
+                    <a href="#" class="btn_regresar" ><i class="fas fa-chevron-left"></i>Regresar</a>
                 </div>
                 <div class="photo_comida">
                     <h2 class="titulo">${datos.descripcion}</h2>
@@ -46,18 +46,14 @@ class Carrito{
                 </div>
                 <div class="des">
                     <h3>Descripcion:</h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, velit beatae error adipisci omnis minima? Minima debitis quos modi! Cumque ad aliquid dolor fuga nesciunt obcaecati eos, quis perspiciatis tempora? </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, velit beatae error adipisci omnis minima? Minima debitis quos modi! Cumque ad aliquid dolor fuga nesciunt obcaecati eos, quis perspiciatis tempora?</p>
                 </div>
                 <div class="adicional">
-                    <h3>Agrege una información adicional o complementos de su pedido:</h3>
-                    <input type="text" class="input-adicional">
+                    <h3>Agrege una información adicional o complementos a su pedido:</h3>
+                    <textarea name="complemento" class="input-adicional" rows="1" placeholder="Ejemplo: Porción de Papas"></textarea>
                 </div>
-                
-                <div class="pedir">
-                    <a href="#" class="bnt_añadir"> Añadir a la Bolsa</a>
-                </div>
+                <button id="btnAddCar" class="btn_añadir"> Añadir a la Bolsa</button>
             </div>
-        </div>
         `;
         ventanaAdd.appendChild(etiqueta);
     }
@@ -66,21 +62,21 @@ class Carrito{
 
     // GUARDAR DATOS EN LA LOCAL STORAGE CUANDO ACEPTEMOS GUARDAR AL CARRITO
     obtenerDatosFinales(datosProduct){
-        if(datosProduct.target.classList.contains('popup')){
-            const detalleProducto = datosProduct.target.parentElement;
+        if(datosProduct.target.classList.contains('btn_añadir')){
+            const detalleProducto = datosProduct.target.parentElement.parentElement;
             this.guardarDatosLS(detalleProducto);
         }
     }
 
     obtenerDatosLS(){
-        let productoLS;
+        let bolsaLS;
 
-        if(localStorage.getItem('productos')===null){
-            productoLS = [];
+        if(localStorage.getItem('bolsa')===null){
+            bolsaLS = [];
         }else{
-            productoLS=JSON.parse(localStorage.getItem('productos'));
+            bolsaLS=JSON.parse(localStorage.getItem('bolsa'));
         }
-        return productoLS;
+        return bolsaLS;
     }
 
     //guardar datos del producto a la Base de datos del usuario
@@ -89,22 +85,22 @@ class Carrito{
 
         const datos = {
             id: 1,
-            imagen: detalle.querySelector('.photo_comida .food_img'),
-            nombre: detalle.querySelector('.photo_comida .titulo'),
-            inf_adicional: detalle.querySelector('.adicional .input-adicional'),
-            precio: detalle.querySelector('.precio'),
-            cantidad: detalle.querySelector('.num_can')
+            imagen: detalle.querySelector('.photo_comida .food_img').src,
+            nombre: detalle.querySelector('.photo_comida .titulo').textContent,
+            inf_adicional: detalle.querySelector('.adicional .input-adicional').value,
+            precio: detalle.querySelector('.precio').textContent,
+            cantidad: detalle.querySelector('.num_can').value
         }
 
         producto=this.obtenerDatosLS();
-        productos.push(producto);
-        localStorage.setItem('productos', JSON.stringify(productos));
-        this.insertarDatosLS(datos);
+        producto.push(datos);
+        localStorage.setItem('bolsa', JSON.stringify(producto));
+        // this.insertarDatosLS(datos);
     }
 
 
     
     insertarDatosLS(producto){
-
+        
     }
 }
