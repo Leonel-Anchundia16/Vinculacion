@@ -17,6 +17,9 @@
     </script>
 </head>
 <body>
+    <div id="ventanaDetalle" class="overlay">
+        
+    </div>
 
     <main>
         
@@ -73,7 +76,7 @@
 
 
         <section class="list-product pdd-border">
-            <div class="grid-product">
+            <div id="grid-product" class="grid-product">
                 <!--Imagen 1-->
                 <div class="card">
                     <div class="img-product">
@@ -81,8 +84,8 @@
                     </div>
         
                     <div class="descripciones">
-                        <p>Hamburguesa Rellena</p>
-                        <p> $ 5.00</p>
+                        <p class="descrip-product">Hamburguesa Rellena</p>
+                        <p>$  <span class="price_product"> 5.00</span> </p>
                     </div>
                     <div class="btn-cargar">            
                         <button class="agregar" type="submit">Agregar &#x1F6D2</button>
@@ -90,54 +93,12 @@
                     
         
                 </div>                               
-                <div class="card">
-                    <div class="img-product">
-                        <img src="Imagenes/habur_prueba.jpg" width= "100px" alt=""/>
-                    </div> 
-        
-                    <div class="descripciones">
-                        <p>Hamburguesa Rellena</p>
-                        <p> $ 5.00</p>
-                    </div>
-                    <div class="btn-cargar">            
-                        <button class="agregar" type="submit">Agregar &#x1F6D2</button>
-                    </div class="btn-cargar">
-                    
-        
-                </div>                               
-                <div class="card">
-                    <div class="img-product">
-                        <img src="Imagenes/habur_prueba.jpg" width= "100px" alt=""/>
-                    </div>
-        
-                    <div class="descripciones">
-                        <p>Hamburguesa Rellena</p>
-                        <p> $ 5.00</p>
-                    </div>
-                    <div class="btn-cargar">            
-                        <button class="agregar" type="submit">Agregar &#x1F6D2</button>
-                    </div class="btn-cargar">
-                    
-        
-                </div>                               
-                <div class="card">
-                    <div class="img-product">
-                        <img src="Imagenes/habur_prueba.jpg" width= "100px" alt=""/>
-                    </div>
-        
-                    <div class="descripciones">
-                        <p>Hamburguesa Rellena</p>
-                        <p> $ 5.00</p>
-                    </div>
-                    <div class="btn-cargar">            
-                        <button class="agregar" type="submit">Agregar &#x1F6D2</button>
-                    </div class="btn-cargar">
-                                
-                   
-                </div>                               
-            
+                                          
+ 
             </div>
         </section>
     </main>
 </body>
+<script src="js/bolsa.js"></script>
+<script src="js/pedido.js"></script>
 </html>
