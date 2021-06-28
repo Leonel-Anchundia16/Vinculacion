@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>La Parrilla de Luchín</title>
+    <title>Promociones - La Parrilla de Luchín</title>
     <link rel="icon" href="Imagenes/logo.png">
     <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
-        $(window).load(function () {
+        $(window).load(function() {
             $("#loader").fadeOut('slow');
         });
     </script>
 </head>
-
 <body>
     <div class="box-sms">
         <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
@@ -45,6 +42,10 @@
                         <div class="carrousel-menu">
                             <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
                             <div id="catMenuDesp" class="group-items">
+                                <a href="menu-productos.html" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Todos los Productos</p>
+                                </a>
                                 <a href="" class="item-categoria">
                                     <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
                                     <p class="name-cat-menuD">Bébidas</p>
@@ -89,7 +90,7 @@
                     <p class="producto">0</p>
                 </div>
             </div>           
-        </div>
+        </nav>
         <div class="registro" id="registrarme">
             <div class="colum" id="volver">
                 <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
@@ -124,64 +125,137 @@
                 </div>
             </form>
         </div>
-    </header>
-
-
-    <main style="overflow:hidden;">
-        <div class="textoo pdd_border">
-            <h1 class="subtitulo">RESUMEN DE TU BOLSA</h1>
-        </div>
-
-        <div class="tabla pdd_border">
-            <div>
-                <table class="tablita" >
-                    <thead>
-                        <tr>
-                            <th class="ti producto-table">Producto</th>
-                            <th class="ti precio-table">Precio</th>
-                            <th class="ti cantidad-table">Cantidad</th>
-                            <th class="ti subtotal-table">SubTotal</th>
-                            <th class="ti acciones-table"></th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="tody" id="lista-product">                        
-                    </tbody>
-                </table>
-                <div class="canjeo">
-                    <div class="con">
-                        <div class="x">
-                            <p class="t-cupon">
-                                <label class="tex">¿Tienes algun cupon? Canjealo aqui</label>
-
-                            <div class="contenedor-inputt">
-                                <input type="tex" class="cupon-100" placeholder="Ingresar el codigo del Cupon">
-                                <button class="inputt-boton">+</button>
-                            </div>
-
-                            </p>
-                        </div>
-                        <div class="sub-iva-total">
-                            <p class="tt"> <span>Total a Pagar </span> <span class="price_total_pago">$12.99
-                                </span> </p>
-                        </div>
-                    </div>
-                    <div class="pie">
-                        <input type="submit" class="btn-enviar" value="Ver mas Producto " required>
-                        <input type="submit" class="btn-enviar2" value="Procesar compra" required>
+    </header> 
+    
+    <main>
+        <!--Codificado Mendoza-->
+        <div id="main-banner">
+            <div class="main-banner-out">
+                <div class="main-banner-inner">
+                    <div class="main-banner-img" alt="Promociones Luchin">
+                        <img src="../Imagenes/copia.jpg" alt="Mc donald">
                     </div>
                 </div>
             </div>
-
         </div>
+        <div class="ttlo">
+            <h2 class="sub-ttlo">PROMOCIONES</h2>
+        </div>
+        <div class="contenido-grid">
+            <div class="promo-principal">
+                <img src="../Imagenes/i.png" alt="">
+                <div class="promo-descri">
+                    <h2>HAMBURGUESA RELLENA</h2>
+                    <h4>
+                        <span>PROMOCION</span>
+                        Lorem ipsum dolor sit amet.
+                    </h4>
+                    <p>$3,50</p>
+                    <a href="#" class="submit-promo">Agregar</a>
+                </div>
+            </div>
+            <div class="promo-principal">
+                <img src="../Imagenes/i.png" alt="">
+                <div class="promo-descri">
+                    <h2>HAMBURGUESA RELLENA</h2>
+                    <h4>
+                        <span>PROMOCION</span>
+                        Lorem ipsum dolor sit amet.
+                    </h4>
+                    <p>$3,50</p>
+                    <a href="#" class="submit-promo">Agregar</a>
+                </div>
+            </div>
+        </div>
+        <!--Codificado Eddy-->
+        <section class="cajas">
+    
+            <div class="contenedor">
+                <div class="caja_columna">
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+    
+    
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </section>
+    
     </main>
+   
+
     <footer>
         <div class="grid-ftt">
             <div class="box column_grid-ftt">
                 <div class="content">
-                    <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin" />
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur
-                        suscipit praesentium id nesciunt quidem ratione. </p>
+                    <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin"/> 
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur suscipit praesentium id nesciunt quidem ratione. </p>
                 </div>
             </div>
             <div class="box column_grid-ftt">
@@ -192,7 +266,7 @@
                         <p class="text"><span class="weigth">Montecristi, Manabí - Ecuador</span></p>
                     </div>
 
-                    <h2 class="name__categoria">Contáctanos:</h2>
+                    <h2 class="name__categoria">Contáctanos:</h2>                    
                     <div>
                         <p class="text"><span class="weigth">WhatsApp:</span> 0963217004</p>
                     </div>
@@ -203,11 +277,11 @@
             </div>
             <div class="box column_grid-ftt">
                 <div class="content">
-                    <h2 class="name__categoria">Horarios de Atención:</h2>
+                    <h2 class="name__categoria">Horarios de Atención:</h2>                    
                     <div>
                         <p class="text"><span class="weigth">Lunes-Viernes:</span> 08h00 - 19h00</p>
                         <p class="text"><span class="weigth">Sábados y Domingos:</span> 08h00 - 19h00</p>
-                    </div>
+                    </div>                   
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></span></a>
                         <a href="#"><i class="fab fa-instagram"></i></span></a>
@@ -223,8 +297,6 @@
         </div>
     </footer>
 </body>
-<script src="./js/menu.js"></script>
 <script src="./js/carrousel.js"></script>
-<script src="./js/bolsa.js"></script>
-<script src="./js/pedido.js"></script>
+<script src="./js/menu.js"></script>
 </html>

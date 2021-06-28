@@ -9,20 +9,21 @@
 	right: 0;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+    z-index: 4;
+    visibility: hidden;
 }
+    .overlay.active{
+        visibility: visible;
+    }
 .popup{
+    width: 750px;
+    margin: 0 auto;
     font-family: var(--fuente-OPENSANS);
 
-    background: white;
-	/* margin: auto; */
+    background: var(--color-blanco);
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
 	text-align: center;
-	max-width: 1200px;
-	width: 65%;
     display: flex;
-	/* display: grid; */
-	/* grid-template-columns: 40% 60%; */
 	
 }
 .iz{
@@ -31,43 +32,55 @@
     padding: 15px 25px;	
 }
     .ret{
-        padding: 10px 0;
+        padding: 10px 0 5px 0;
         text-align: left;
     }
-    .bnt_regresar{
+    .btn_regresar{
         font-family: var(--fuente-OSWALD);
         color: var(--color-blanco);
         text-decoration: none;
-        font-size: .9rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
     }
-    .bnt_regresar:hover{
+        .btn_regresar>i{
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+    .btn_regresar:hover{
         color: var(--color-vino);
     }
     .photo_comida{
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 90%;
+        display: flex;
     }
-    .popup .titulo{
-        line-height: 2.2rem;
-        font-family: var(--fuente-OSWALD);
-        color: var(--color-blanco);
-        width: 80%;
-        font-size: 2.1rem;
-        text-align: left;
-        margin: 10px 0;
+        .popup .titulo{
+            text-transform: uppercase;
+            flex-wrap: wrap;
+            line-height: 100%;
+            font-family: var(--fuente-OSWALD);
+            color: var(--color-blanco);
+            width: 100%;
+            font-size: 2.1rem;
+            text-align: left;
+            margin: 10px 0;
 
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    .photo_comida .food_img{
-        width: 90%;
-    }
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .photo_comida .food_img{
+            width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
 .der{
-	width: 100%;
-	padding: 15px 50px;	
+	width: 55%;
+    position: relative;
+	padding: 30px 50px;	
 	margin: 0;
 }
     .primer{
@@ -75,7 +88,7 @@
         justify-content: space-between;
         align-items: center;
         font-family: var(--fuente-OSWALD);
-        padding: 20px 0;
+        padding: 10px 0;
         color: var(--color-text-negro-bajo);
     }
         .primer .precio{
@@ -84,27 +97,31 @@
         }
         .primer .cant{
             display: flex;
+            align-items: center;
         }
         .cant>p{
             margin: 0;
             padding-right: 15px;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         .cant .btn_can{
             background:  var(--color-amarillo-principal);
             border: none;
-            width: 30px;
-            font-size: 1.3rem;
+            width: 25px;
+            height: 25px;
+            font-size: 1.2rem;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            height: 30px;
             color: var(--color-vino);
             font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
         }
+            .cant .btn_can.disable{
+                cursor: no-drop;
+            }
         .cant>input{
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: var(--color-vino);
             width: 30px;
             border: none;
@@ -124,38 +141,54 @@
             padding: 15px 0 5px 0 ;
         }
         .des>p{
+            height: 72px;
             margin: 0;
-            font-size: .9rem;
+            font-size: .8rem;
             color: var(--color-text-input);
             font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
         }
     .adicional{
         text-align: start;
         width: 100%;
+        margin-bottom: 60px;
     }
+        .adicional>h3{
+            font-size: .9rem;
+        }
         .input-adicional{
             width: 90%;
             padding: 5px 15px;
+            font-family: var(--fuente-OPENSANS);
+            font-size: .8rem;
+            max-width: 350px;
+            max-height: 80px;
         }
 
-.pedir{
-	text-align: end;
-}
-.bnt_añadir{
+.btn_añadir{
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
 	background-color: var(--color-vino);
     color: var(--color-blanco);
     font-family: var(--fuente-OSWALD);
     text-decoration: none;
-	padding: 10px 25px;	
+	padding: 7px 25px;	
+    border: none;
+    cursor: pointer;
 	
 	font-size: .9rem;
-
+    transition: all ease .3s;
 }
+    .btn_añadir:hover{
+        background-color: var(--color-aprobado);
+        color: var(--color-text-negro);
+        
+    }
 
 
 
 
-@media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 1150px) {
 	.popup{
 		width: 90%;
 	}
@@ -188,4 +221,4 @@
 		display: grid;
 		grid-template-columns: 1fr;
 	}
-}
+} */
