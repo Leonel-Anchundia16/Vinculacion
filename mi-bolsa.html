@@ -20,25 +20,30 @@
 </head>
 
 <body>
+    <div class="box-sms">
+        <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
+        <div class="txt-sms reprobado">Error al agregar <i class="fas fa-times-circle"></i></div>
+        <div class="lay"></div>
+    </div>
     <div id="loader" class="loading"></div>
     <div class="btn-wss-ct">
         <a href=""><i class="fab fa-whatsapp"></i></a>
     </div>
     <header>
         <nav id="navBar" class="nav pdd_border navbar_all scrolling">
-            <a href="index.html" id="logo-marca" class="logo">
+            <a href="#" id="logo-marca" class="logo">
                 <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
                 <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
             </a>
             <div class="group_btn">
-                <button id="btn-menu" class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+                <button class="btn-menu_nav"><i class="fas fa-bars"></i></button>
             </div>
             <div class="container-items-nav">
                 <div class="nav__navegacion">
                     <a href="#" id="boxMenu-Select" class="nav__items">Menú<i class="fas fa-chevron-down"></i></a>
                     <div class="menu-container">
                         <div class="carrousel-menu">
-                            <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>
+                            <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
                             <div id="catMenuDesp" class="group-items">
                                 <a href="" class="item-categoria">
                                     <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
@@ -64,72 +69,64 @@
                                     <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
                                     <p class="name-cat-menuD">Alitas</p>
                                 </a>
-
-
+                               
+                                
                             </div>
-                            <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>
+                            <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>     
                         </div>
                     </div>
-                    <a href="#" class="nav__items">Promociones</a>
+                    <a href="#" class="nav__items ">Promociones</a>
                     <a href="#" class="nav__items">Contáctanos</a>
                 </div>
                 <div class="nav__botones botones-option">
-                    <a href="#" class="nav__items--cta"> Iniciar Sesión</a>
-                    <a href="javascript:registrar()" class="nav__items--cta register"> Registrarme</a>
+                    <button class="nav__items--cta">Iniciar Sesión</button>
+                    <button class="nav__items--cta register" onclick="ventRegister()">Registrarme</button>
                 </div>
             </div>
             <div class="bolsita">
-                <a href="mi-bolsa.html"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
+                <a href=""> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
                 <div class="contador">
                     <p class="producto">0</p>
                 </div>
-            </div>
-            </div>
-    </header>
-    <div class="registro " id="registrarme">
-        <div class="colum" id="volver">
-            <a href="javascript:registrar()"> <img src="./Imagenes/btn-return.png" alt="boton salir de registro"> </a>
-            <p class="arriba">
-                <img src="./Imagenes/luchin.png" alt="logo luchin" height="50px">
-            </p>
+            </div>           
         </div>
-        <form class="formulario">
-
-            <h1 class="form__titulo">Registrarse</h1>
-
-
-            <div class="contenedor_registro">
+        <div class="registro" id="registrarme">
+            <div class="colum" id="volver">
+                <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/luchin.png" alt="logo luchin">
+            </div>
+            <form class="formulario">
+                <h1 class="form__titulo">Crear Cuenta</h1>
                 <div class="input-contenedor">
-
-                    <div class="two_element">
-                        <p class="riigth"><label>Nombre</label><input type="text" class="input-48" placeholder="Nombre"
-                                required></p>
-                        <p class="leeft"><label>Apellidos</label><input type="text" class="input-48"
-                                placeholder="Apellidos" required></p>
-                    </div>
-                    <div class="f">
-                        <p><label>Fecha de Nacimiento</label><input type="date" class="input-100"
-                                placeholder="Fecha de Nacimiento" required>
-                        <p><label>Telefono</label><input type="text" class="input-100" placeholder="Telefono" required>
+                    <div class="row-input">
+                        <p class="col-input clm-1"><label>Nombre</label><input type="text" required>
+                            <!-- <span class="mnj-error"><i class="fas fa-exclamation-circle"></i> <span>El campo esta vació</span></span> -->
                         </p>
-
-                        <p><label>Correo</label><input type="email" class="input-100" placeholder="Correo Electronico"
-                                required></p>
-                        <p><label>Contraseña</label><input type="password" class="input-100" placeholder="Contraseña"
-                                required></p>
-                        <p><label>Confirmar Contraseña</label><input type="password" class="input-100"
-                                placeholder="Confirmar Contraseña" required>
-                        </p>
+                        <p class="col-input clm-2"><label>Apellidos</label><input type="text" required></p>
                     </div>
-
-                </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input clm-1"><label>Contraseña</label><input type="password" required></p>
+                        <p class="col-input clm-2"><label>Confirmar Contraseña</label><input type="password" required></p>
+                    </div>
+                </div>    
                 <div class="pie-form">
-                    <input type="submit" class="btn-enviar" value="Crear Cuenta" required>
+                    <input type="submit" class="btn-enviar" value="Crear Cuenta">
                     <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
                 </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    </header>
+
+
     <main style="overflow:hidden;">
         <div class="textoo pdd_border">
             <h1 class="subtitulo">RESUMEN DE TU BOLSA</h1>
@@ -137,93 +134,22 @@
 
         <div class="tabla pdd_border">
             <div>
-                <table class="tablita">
-                    <thead>
-                        <tr>
-                            <th class="ti">Producto</th>
-                            <th class="ti">Precio</th>
-                            <th class="ti">Cantidad</th>
-                            <th class="ti">SubTotal</th>
-                            <th class="ti"></th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="tody">
-                        <tr>
-                            <td class="dt descrip-dttlle" data-label="prod">
-                                <div class="image">
-                                    <img src="./Imagenes/habur_prueba.jpg" alt="text" class="img1">
-                                </div>
-                                <div>
-                                    <h2 class="tittle-pd">Hamburguesa Rellena</h2>
-                                    <p class="infor-adicion">Lorem ipsum dolor sit</p>
-                                </div>
-                            </td>
-
-                            <td class="dt precio-tabla" data-label="precio">$12,00</td>
-                            <td class="dtcantidad" data-label="cantidad">
-                                <button class="btn_cantdd">-</button>
-                                <input type="text" class="can_num" value="1">
-                                <button class="btn_cantdd">+</button>
-                            </td>
-
-                            <td class="dt precio-tabla" id="subtotales">$12,00</td>
-                            <td class="dt" data-label="action" class="acti">
-                                <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="dt descrip-dttlle" data-label="prod">
-                                <div class="image">
-                                    <img src="./Imagenes/habur_prueba.jpg" alt="text" class="img1">
-                                </div>
-                                <div>
-                                    <h2 class="tittle-pd">Hamburguesa Rellena</h2>
-                                    <p class="infor-adicion">Lorem ipsum dolor sit</p>
-                                </div>
-                            </td>
-
-                            <td class="dt precio-tabla" data-label="precio">$12,00</td>
-                            <td class="dtcantidad" data-label="cantidad">
-                                <button class="btn_cantdd">-</button>
-                                <input type="text" class="can_num" value="1">
-                                <button class="btn_cantdd">+</button>
-                            </td>
-
-                            <td class="dt precio-tabla" id="subtotales">$12,00</td>
-                            <td class="dt" data-label="action" class="acti">
-                                <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="dt descrip-dttlle" data-label="prod">
-                                <div class="image">
-                                    <img src="./Imagenes/habur_prueba.jpg" alt="text" class="img1">
-                                </div>
-                                <div>
-                                    <h2 class="tittle-pd">Hamburguesa Rellena</h2>
-                                    <p class="infor-adicion">Lorem ipsum dolor sit</p>
-                                </div>
-                            </td>
-
-                            <td class="dt precio-tabla" data-label="precio">$12,00</td>
-                            <td class="dtcantidad" data-label="cantidad">
-                                <button class="btn_cantdd">-</button>
-                                <input type="text" class="can_num" value="1">
-                                <button class="btn_cantdd">+</button>
-                            </td>
-
-                            <td class="dt precio-tabla" id="subtotales">$12,00</td>
-                            <td class="dt" data-label="action" class="acti">
-                                <a href="#" class="button"><i class="fas fa-trash-alt"></i></a>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
+                <div id="tabla-list" class="cl-table">
+                    <table class="tablita">
+                        <thead>
+                            <tr>
+                                <th class="ti producto-table">Producto</th>
+                                <th class="ti precio-table">Precio</th>
+                                <th class="ti cantidad-table">Cantidad</th>
+                                <th class="ti subtotal-table">SubTotal</th>
+                                <th class="ti acciones-table"></th>
+                            </tr>
+                        </thead>
+    
+                        <tbody class="tody" id="lista-product">                        
+                        </tbody>
+                    </table>
+                </div>
                 <div class="canjeo">
                     <div class="con">
                         <div class="x">
@@ -238,8 +164,8 @@
                             </p>
                         </div>
                         <div class="sub-iva-total">
-                            <p class="tt"> <span>Total a Pagar </span> <span class="price_total_pago">$12.99
-                                </span> </p>
+                            <p class="tt"> <span>Precio de Recargo:</span> <span class="price_total_pago">$2.99</span> </p>
+                            <p class="tt"> <span>Total a Pagar:</span> <span id="price_total_pago" class="price_total_pago">$12.99</span> </p>
                         </div>
                     </div>
                     <div class="pie">
@@ -299,4 +225,8 @@
         </div>
     </footer>
 </body>
+<script src="./js/menu.js"></script>
+<script src="./js/carrousel.js"></script>
+<script src="./js/bolsa.js"></script>
+<script src="./js/compra.js"></script>
 </html>

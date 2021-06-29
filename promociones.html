@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Menú - La Parrilla de Luchín</title>
+    <title>Promociones - La Parrilla de Luchín</title>
     <link rel="icon" href="Imagenes/logo.png">
     <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
@@ -17,9 +17,9 @@
     </script>
 </head>
 <body>
-    <div id="alertCar" class="box-sms">
+    <div class="box-sms">
         <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
-        <!-- <div class="txt-sms reprobado">Error al agregar <i class="fas fa-times-circle"></i></div> -->
+        <div class="txt-sms reprobado">Error al agregar <i class="fas fa-times-circle"></i></div>
         <div class="lay"></div>
     </div>
     <div id="loader" class="loading"></div>
@@ -42,6 +42,10 @@
                         <div class="carrousel-menu">
                             <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
                             <div id="catMenuDesp" class="group-items">
+                                <a href="menu-productos.html" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Todos los Productos</p>
+                                </a>
                                 <a href="" class="item-categoria">
                                     <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
                                     <p class="name-cat-menuD">Bébidas</p>
@@ -81,12 +85,12 @@
                 </div>
             </div>
             <div class="bolsita">
-                <a href="mi-bolsa.html"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
+                <a href=""> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
                 <div class="contador">
                     <p class="producto">0</p>
                 </div>
             </div>           
-        </div>
+        </nav>
         <div class="registro" id="registrarme">
             <div class="colum" id="volver">
                 <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
@@ -121,147 +125,130 @@
                 </div>
             </form>
         </div>
-    </header>
-
-
-    <div id="ventanaDetalle" class="overlay">
-    </div>
-
-
-    <main class="main-contains">
-        <div class="head_main_section">
-            <h1 class="menuPin">Menú Completo</h1>
+    </header> 
+    
+    <main>
+        <!--Codificado Mendoza-->
+        <div id="main-banner">
+            <div class="main-banner-out">
+                <div class="main-banner-inner">
+                    <div class="main-banner-img" alt="Promociones Luchin">
+                        <img src="../Imagenes/copia.jpg" alt="Mc donald">
+                    </div>
+                </div>
+            </div>
         </div>
-        <section class="carru">
-            <div class="carrousel2">
-                <button id="btnPrevious" class="previous-btn"><i class="fas fa-chevron-left"></i></button>
-                <div id="carru-nombres" class="items-carru">
-                    <a href="" class="item-categoria2 active">
-                        <div class="img-cat">
-                            <img src="./Imagenes/alitas-cat.png" alt="">
-                        </div>
-                        <p class="name-cat">Todos los Productos</p>
-                    </a>
-                    <a href="" class="item-categoria2">
-                        <div class="img-cat">
-                            <img src="./Imagenes/bebida-cat.png" alt="">
-                        </div>
-                        <p class="name-cat">Bébidas</p>
-                    </a>
-                    <a href="" class="item-categoria2">
-                        <div class="img-cat">
-                            <img src="./Imagenes/Hamburguesa-categoria.png" alt="">
-                        </div>
-                        <p class="name-cat">Hamburguesas</p>
-                    </a>
-                    <a href="" class="item-categoria2">
-                        <div class="img-cat">
-                            <img src="./Imagenes/papas-cat.png" alt="">
-                        </div>
-                        <p class="name-cat">Papas</p>
-                    </a>
-                    <a href="" class="item-categoria2">
-                        <div class="img-cat">
-                            <img src="./Imagenes/sandwich-cat.png" alt="">
-                        </div>
-                        <p class="name-cat">Sanduches</p>
-                    </a>
-                </div>
-                <button id="btnNext" class="next-btn"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </section>
-        <section class="filter-menu">
-            <div class="container-filtros">
-                <div class="filter">
-                    <p>Ordenar por: </p>
-                    <select name="menu2" class="select">
-                        <option disabled="menor"> Seleccione una opcion</option>
-                        <option>Menor a Mayor</option>
-                        <option>Mayor a Menor</option>
-                    </select>
+        <div class="ttlo">
+            <h2 class="sub-ttlo">PROMOCIONES</h2>
+        </div>
+        <div class="contenido-grid">
+            <div class="promo-principal">
+                <img src="../Imagenes/i.png" alt="">
+                <div class="promo-descri">
+                    <h2>HAMBURGUESA RELLENA</h2>
+                    <h4>
+                        <span>PROMOCION</span>
+                        Lorem ipsum dolor sit amet.
+                    </h4>
+                    <p>$3,50</p>
+                    <a href="#" class="submit-promo">Agregar</a>
                 </div>
             </div>
-        </section>
-        <section class="list-product pdd-border">
-            <div id="grid-product" class="grid-product">
-                <div class="card">
-                    <input type="hidden" value="1">
-                    <div>
-                        <div class="img-product">
-                            <img src="./Imagenes/Hamburguesa-categoria.png" alt=""/>
-                        </div>
-                        <div class="descripciones">
-                            <p class="descrip-product">Hamburguesa</p>
-                            <p class="precio">$<span class="price-product">5.00</span></p>
-                        </div>
-                    </div>
-                    <div class="cont-add">            
-                        <button class="btn-agregar" type="submit"><img src="./Imagenes/bolsa-borde.png" height="20px"> Agregar</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="hidden" value="2">
-                    <div>
-                        <div class="img-product">
-                            <img src="./Imagenes/papas-cat.png" alt=""/>
-                        </div>
-                        <div class="descripciones">
-                            <p class="descrip-product">Papas fritas</p>
-                            <p class="precio">$<span class="price-product">5.00</span></p>
-                        </div>
-                    </div>
-                    <div class="cont-add">            
-                        <button class="btn-agregar" type="submit"><img src="./Imagenes/bolsa-borde.png" height="20px"> Agregar</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="hidden" value="3">
-                    <div>
-                        <div class="img-product">
-                            <img src="./Imagenes/sandwich-cat.png" alt=""/>
-                        </div>
-                        <div class="descripciones">
-                            <p class="descrip-product">Sanduche grande</p>
-                            <p class="precio">$<span class="price-product">5.00</span></p>
-                        </div>
-                    </div>
-                    <div class="cont-add">            
-                        <button class="btn-agregar" type="submit"><img src="./Imagenes/bolsa-borde.png" height="20px"> Agregar</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="hidden" value="4">
-                    <div>
-                        <div class="img-product">
-                            <img src="./Imagenes/carne-cat.png" alt=""/>
-                        </div>
-                        <div class="descripciones">
-                            <p class="descrip-product">Costillas ahumadas</p>
-                            <p class="precio">$<span class="price-product">5.00</span></p>
-                        </div>
-                    </div>
-                    <div class="cont-add">            
-                        <button class="btn-agregar" type="submit"><img src="./Imagenes/bolsa-borde.png" height="20px"> Agregar</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <input type="hidden" value="5">
-                    <div>
-                        <div class="img-product">
-                            <img src="./Imagenes/bebida-cat.png" alt=""/>
-                        </div>
-                        <div class="descripciones">
-                            <p class="descrip-product">Pepsi 1.5Ltr - Mediana</p>
-                            <p class="precio">$<span class="price-product">1.75</span></p>
-                        </div>
-                    </div>
-                    <div class="cont-add">            
-                        <button class="btn-agregar" type="submit"><img src="./Imagenes/bolsa-borde.png" height="20px"> Agregar</button>
-                    </div>
+            <div class="promo-principal">
+                <img src="../Imagenes/i.png" alt="">
+                <div class="promo-descri">
+                    <h2>HAMBURGUESA RELLENA</h2>
+                    <h4>
+                        <span>PROMOCION</span>
+                        Lorem ipsum dolor sit amet.
+                    </h4>
+                    <p>$3,50</p>
+                    <a href="#" class="submit-promo">Agregar</a>
                 </div>
             </div>
+        </div>
+        <!--Codificado Eddy-->
+        <section class="cajas">
+    
+            <div class="contenedor">
+                <div class="caja_columna">
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+    
+    
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+                    <div class="caja">
+                        <img class="img1" src="../Imagenes/i.png" alt="">
+                        <div class="descripcion-producto">
+                            <div class="nombre-producto">15 presas solas</div>
+                            <div class="product-component-price">$18.99</div>
+                            <a href="#" class="boton-primario">AGREGAR</a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
         </section>
+    
     </main>
+   
 
     <footer>
         <div class="grid-ftt">
@@ -310,8 +297,6 @@
         </div>
     </footer>
 </body>
-<script src="js/carrousel.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/bolsa.js"></script>
-<script src="js/pedido.js"></script>
+<script src="./js/carrousel.js"></script>
+<script src="./js/menu.js"></script>
 </html>

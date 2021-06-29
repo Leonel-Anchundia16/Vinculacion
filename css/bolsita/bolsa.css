@@ -1,87 +1,120 @@
 .textoo {
-  margin-top: 110px;
-  width: auto;
-  display: flex;
+    margin-top: 110px;
+    width: auto;
+    display: flex;
 }
 .subtitulo {
-  font-size: 2rem;
-  font-family: var(--fuente-OSWALD);
-  color: var(--color-text-negro-bajo);
-  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
-  border-bottom: 5px solid var(--color-amarillo-principal);
-  margin: 0;
+    font-size: 1.7rem;
+    font-family: var(--fuente-OSWALD);
+    color: var(--color-text-negro-bajo);
+    font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+    border-bottom: 5px solid var(--color-amarillo-principal);
+    margin: 0;
 }
 /*Tabla*/
 .tabla {
-  margin-top: 70px;
+  margin-top: 50px;
 }
-.tabla > div {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
-  font-family: var(--fuente-OPENSANS);
-  /*se aumento*/
-  margin-bottom: 197px;
-}
-.tody .dt,
-.ti {
-  /*se aumento 35px estaba 15px 0*/
-  padding: 15px 35px;
-}
-.tablita {
-  border: none;
-  margin: 0;
-}
-.tablita > thead {
-  border-bottom: 1px solid var(--color-text-input);
+  .tabla > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      font-family: var(--fuente-OPENSANS);
+      overflow: hidden;
+  }
+  .tablita {
+      margin: 0;
+      border-collapse: collapse;
+  }
+    /* SEPARAR POR COLUMNA */
+    .tablita .producto-table{
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .tablita .precio-table{
+        min-width: 80px;
+        max-width: 80px;
+    }
+    .tablita .cantidad-table{
+        min-width: 100px;
+        max-width: 100px;
+    }
+    .tablita .subtotal-table{
+        min-width: 90px;
+        max-width: 90px;
+    }
+    .tablita .acciones-table{
+        min-width: 50px;
+        max-width: 50px;
+    }
+    .precio-table,.cantidad-table,.subtotal-table, .acciones-table{
+        text-align: center;
+    }
+
+.tablita thead th{
+  border-bottom: 2px solid var(--color-brd-input);
   background: none;
+  padding: 7px 0;
   text-transform: uppercase;
   color: var(--color-text-negro-bajo);
 }
-.img1 {
-  max-width: 100px;
-  float: left;
-  margin-right: 15px;
+.tablita tbody tr{
+  border-bottom: 1px solid var(--color-brd-input);
 }
 /*-----------------FILA DE PRODUCTOS CON DESCRIPCION-----------*/
 .descrip-dttlle {
   display: flex;
   align-items: center;
 }
-.descrip-dttlle .tittle-pd {
-  font-family: var(--fuente-OSWALD);
-  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
-  color: var(--color-text-negro-bajo);
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  margin: 0;
-}
-.descrip-dttlle .infor-adicion {
-  margin: 0;
-  color: var(--color-text-input);
-  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
-}
+    .descrip-dttlle .image{
+      min-width: 80px;
+      max-width: 80px;
+      min-height: 80px;
+      max-height: 80px;
+    }
+      .image .img1 {
+        width: 100%;
+        max-height: 100%;
+      }
+    .descrip-dttlle .tittle-pd {
+      font-family: var(--fuente-OSWALD);
+      font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+      color: var(--color-text-negro-bajo);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .descrip-dttlle .infor-adicion {
+      margin: 0;
+      font-size: .9rem;
+      line-height: 100%;
+      color: var(--color-text-input);
+      font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    }
 .precio-tabla {
   font-family: var(--fuente-OSWALD);
   font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
   color: var(--color-text-negro-bajo);
   font-size: 1.3rem;
 }
-/*se agrego dt cantidad y los otros dtcantidad*/
-.dtcantidad {
-  padding: 0 61px;
+
+/*estilos de cantidad*/
+.dtcantidad .container-cantidad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .dtcantidad .btn_cantdd {
   background: var(--color-amarillo-principal);
   border: none;
-  width: 30px;
+  width: 25px;
+  height: 25px;
   font-size: 1.3rem;
   cursor: pointer;
-  height: 30px;
   font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
   color: var(--color-vino);
 }
-.dtcantidad > input {
+.container-cantidad > input {
   border: none;
   font-size: 1.1rem;
   color: var(--color-vino);
@@ -90,14 +123,10 @@
   text-align: center;
 }
 /*se aumento esta clase para el icono de la basura*/
-.button {
+.button-delete{
   color: red;
 }
 /*CANJEO*/
-.canjeo {
-  margin-left: 89px;
-  margin-top: 50px;
-}
 .t-cupon {
   margin: 0;
 }
