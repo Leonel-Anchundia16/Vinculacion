@@ -7,6 +7,12 @@
     <title>HEADER PLANTILLA</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $("#loader").fadeOut('slow');
+        });
+    </script>
 </head>
 <body>
     <div id="loader" class="loading"></div>
@@ -15,12 +21,12 @@
     </div>
     <header>
         <nav id="navBar" class="nav pdd_border navbar_all scrolling">
-            <a href="index.html" id="logo-marca" class="logo">
+            <a href="#" id="logo-marca" class="logo">
                 <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
                 <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
             </a>
             <div class="group_btn">
-                <button id="btn-menu" class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+                <button class="btn-menu_nav"><i class="fas fa-bars"></i></button>
             </div>
             <div class="container-items-nav">
                 <div class="nav__navegacion">
@@ -29,6 +35,10 @@
                         <div class="carrousel-menu">
                             <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
                             <div id="catMenuDesp" class="group-items">
+                                <a href="menu-productos.html" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Todos los Productos</p>
+                                </a>
                                 <a href="" class="item-categoria">
                                     <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
                                     <p class="name-cat-menuD">Bébidas</p>
@@ -59,61 +69,58 @@
                             <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>     
                         </div>
                     </div>
-                    <a href="#" class="nav__items">Promociones</a>
+                    <a href="#" class="nav__items ">Promociones</a>
                     <a href="#" class="nav__items">Contáctanos</a>
                 </div>
                 <div class="nav__botones botones-option">
-                    <a href="#"class="nav__items--cta"> Iniciar Sesión</a>
-                    <a href="javascript:registrar()"class="nav__items--cta register"> Registrarme</a>
+                    <button class="nav__items--cta">Iniciar Sesión</button>
+                    <button class="nav__items--cta register" onclick="ventRegister()">Registrarme</button>
                 </div>
             </div>
             <div class="bolsita">
-                <a href="mi-bolsa.html"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
+                <a href=""> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
                 <div class="contador">
                     <p class="producto">0</p>
                 </div>
             </div>           
-        </div>
-    </header>
-    <div class="registro " id="registrarme">
-        <div class="colum" id="volver">
-            <a href="javascript:registrar()"> <img src="./Imagenes/btn-return.png" alt="boton salir de registro"> </a>
-            <p class="arriba">
-                <img src="./Imagenes/luchin.png" alt="logo luchin" height="50px">
-            </p>
-        </div>
-        <form class="formulario">
-    
-            <h1 class="form__titulo">Registrarse</h1>
-    
-    
-            <div class="contenedor_registro">
+        </nav>
+        <div class="registro" id="registrarme">
+            <div class="colum" id="volver">
+                <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/luchin.png" alt="logo luchin">
+            </div>
+            <form class="formulario">
+                <h1 class="form__titulo">Crear Cuenta</h1>
                 <div class="input-contenedor">
-    
-                    <div class="two_element">
-                        <p class="riigth"><label>Nombre</label><input type="text" class="input-48" placeholder="Nombre" required></p>
-                        <p class="leeft"><label>Apellidos</label><input type="text" class="input-48" placeholder="Apellidos" required></p>    
-                    </div>
-                    <div class="f">
-                        <p><label>Fecha de Nacimiento</label><input type="date" class="input-100"
-                                placeholder="Fecha de Nacimiento" required>
-                        <p><label>Telefono</label><input type="text" class="input-100" placeholder="Telefono" required></p>
-    
-                        <p><label>Correo</label><input type="email" class="input-100" placeholder="Correo Electronico" required></p>
-                        <p><label>Contraseña</label><input type="password" class="input-100" placeholder="Contraseña"
-                                required></p>
-                        <p><label>Confirmar Contraseña</label><input type="password" class="input-100"
-                                placeholder="Confirmar Contraseña" required>
+                    <div class="row-input">
+                        <p class="col-input clm-1"><label>Nombre</label><input type="text" required>
+                            <!-- <span class="mnj-error"><i class="fas fa-exclamation-circle"></i> <span>El campo esta vació</span></span> -->
                         </p>
+                        <p class="col-input clm-2"><label>Apellidos</label><input type="text" required></p>
                     </div>
-                    
-                </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input clm-1"><label>Contraseña</label><input type="password" required></p>
+                        <p class="col-input clm-2"><label>Confirmar Contraseña</label><input type="password" required></p>
+                    </div>
+                </div>    
                 <div class="pie-form">
-                    <input type="submit" class="btn-enviar" value="Crear Cuenta" required>
+                    <input type="submit" class="btn-enviar" value="Crear Cuenta">
                     <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
                 </div>
-            </div>    
-        </form>
-    </div>
+            </form>
+        </div>
+    </header> 
 </body>
+<script src="./js/carrousel.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/validacion_navbar.js"></script>
 </html>
