@@ -1,0 +1,217 @@
+.textoo {
+    margin-top: 110px;
+    width: auto;
+    display: flex;
+}
+.subtitulo {
+    font-size: 1.7rem;
+    font-family: var(--fuente-OSWALD);
+    color: var(--color-text-negro-bajo);
+    font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+    border-bottom: 5px solid var(--color-amarillo-principal);
+    margin: 0;
+}
+/*Tabla*/
+.tabla {
+  margin: 50px 0;
+}
+  .tabla > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      font-family: var(--fuente-OPENSANS);
+      overflow: hidden;
+  }
+  .tablita {
+      margin: 0;
+      border-collapse: collapse;
+  }
+    /* SEPARAR POR COLUMNA */
+    .tablita .producto-table{
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .tablita .precio-table{
+        min-width: 80px;
+        max-width: 80px;
+    }
+    .tablita .cantidad-table{
+        min-width: 100px;
+        max-width: 100px;
+    }
+    .tablita .subtotal-table{
+        min-width: 90px;
+        max-width: 90px;
+    }
+    .tablita .acciones-table{
+        min-width: 50px;
+        max-width: 50px;
+    }
+    .precio-table,.cantidad-table,.subtotal-table, .acciones-table{
+        text-align: center;
+    }
+
+.tablita thead th{
+  border-bottom: 2px solid var(--color-brd-input);
+  background: none;
+  padding: 7px 0;
+  text-transform: uppercase;
+  color: var(--color-text-negro-bajo);
+}
+.tablita tbody tr{
+  border-bottom: 1px solid var(--color-brd-input);
+}
+/*-----------------FILA DE PRODUCTOS CON DESCRIPCION-----------*/
+.descrip-dttlle {
+  display: flex;
+  align-items: center;
+}
+    .descrip-dttlle .image{
+      min-width: 80px;
+      max-width: 80px;
+      min-height: 80px;
+      max-height: 80px;
+    }
+      .image .img1 {
+        width: 100%;
+        max-height: 100%;
+      }
+    .descrip-dttlle .tittle-pd {
+      font-family: var(--fuente-OSWALD);
+      font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+      color: var(--color-text-negro-bajo);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .descrip-dttlle .infor-adicion {
+      margin: 0;
+      font-size: .9rem;
+      line-height: 100%;
+      color: var(--color-text-input);
+      font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    }
+.precio-tabla {
+  font-family: var(--fuente-OSWALD);
+  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+  color: var(--color-text-negro-bajo);
+  font-size: 1.3rem;
+}
+
+/*estilos de cantidad*/
+.dtcantidad .container-cantidad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dtcantidad .btn_cantdd {
+  background: var(--color-amarillo-principal);
+  border: none;
+  width: 25px;
+  height: 25px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+  color: var(--color-vino);
+}
+.container-cantidad > input {
+  border: none;
+  font-size: 1.1rem;
+  color: var(--color-vino);
+  width: 30px;
+  outline: none;
+  text-align: center;
+}
+/*se aumento esta clase para el icono de la basura*/
+.button-delete{
+  color: red;
+}
+/*CANJEO*/
+.t-cupon {
+  margin: 0;
+}
+.tex {
+    background-color: var(--azul-fuerte);
+    text-align: center;
+    color: white;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: block;
+    cursor: pointer;
+    padding: 15px 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.cupon-100 {
+  color: var(--azul-fuerte);
+  width: 100%;
+  padding: 5px 7px;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: 1px solid var(--azul-fuerte);
+  /*se agrego el font y text*/
+  font-family: var(--weigth-OSWALD-SEMIBOLD-600);
+}
+.contenedor-inputt {
+  padding: 20px 30px;
+  display: flex;
+  border: 1px solid var(--azul-fuerte);
+}
+.inputt-boton {
+  background: var(--azul-fuerte);
+  color: var(--color-blanco);
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+}
+
+/*se agrego .sub-iva-total*/
+.sub-iva-total {
+  font-family: var(--Banchscrich-font);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 0 30px;
+}
+
+.tt {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text-negro-bajo);
+}
+.price_total_pago {
+  font-family: var(--fuente-OSWALD);
+  font-size: 1.5rem;
+}
+.pie {
+  margin-top: 20px;
+}
+.btn-enviar {
+  background-color: var(--color-blanco);
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-azul-fuerte);
+  display: block;
+  width: calc(100% - 16px);
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: 1px solid var(--color-azul-fuerte);
+  margin-bottom: 20px;
+}
+.btn-enviar2 {
+  background-color: var(--color-amarillo-principal);
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-azul-fuerte);
+  width: calc(100% - 16px);
+  display: block;
+  padding: 10px;
+  padding: 8px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
