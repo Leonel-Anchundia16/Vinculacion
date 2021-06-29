@@ -32,7 +32,7 @@ btnMenuClick.addEventListener('click', ()=>{
 
 
 
-
+//funcion para abrir y cerrar ventana de detalle de productos, cada vez que se haga clic en los botones indicados
 function ventanaAddCar(contenedor){
     const ventana = document.getElementById('ventanaDetalle');
 
@@ -53,7 +53,7 @@ function ventanaAddCar(contenedor){
     }
 }
 
-
+//funcion para cerrar ventana detalle y mostrar mensaje al usuario
 function AddCarrito(e){
     if(e.target.classList.contains('btn_añadir')){
         const ventana = document.getElementById('ventanaDetalle');

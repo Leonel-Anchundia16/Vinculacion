@@ -134,20 +134,22 @@
 
         <div class="tabla pdd_border">
             <div>
-                <table class="tablita" >
-                    <thead>
-                        <tr>
-                            <th class="ti producto-table">Producto</th>
-                            <th class="ti precio-table">Precio</th>
-                            <th class="ti cantidad-table">Cantidad</th>
-                            <th class="ti subtotal-table">SubTotal</th>
-                            <th class="ti acciones-table"></th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="tody" id="lista-product">                        
-                    </tbody>
-                </table>
+                <div id="tabla-list" class="cl-table">
+                    <table class="tablita">
+                        <thead>
+                            <tr>
+                                <th class="ti producto-table">Producto</th>
+                                <th class="ti precio-table">Precio</th>
+                                <th class="ti cantidad-table">Cantidad</th>
+                                <th class="ti subtotal-table">SubTotal</th>
+                                <th class="ti acciones-table"></th>
+                            </tr>
+                        </thead>
+    
+                        <tbody class="tody" id="lista-product">                        
+                        </tbody>
+                    </table>
+                </div>
                 <div class="canjeo">
                     <div class="con">
                         <div class="x">
@@ -162,8 +164,8 @@
                             </p>
                         </div>
                         <div class="sub-iva-total">
-                            <p class="tt"> <span>Total a Pagar </span> <span class="price_total_pago">$12.99
-                                </span> </p>
+                            <p class="tt"> <span>Precio de Recargo:</span> <span class="price_total_pago">$2.99</span> </p>
+                            <p class="tt"> <span>Total a Pagar:</span> <span id="price_total_pago" class="price_total_pago">$12.99</span> </p>
                         </div>
                     </div>
                     <div class="pie">
@@ -226,5 +228,5 @@
 <script src="./js/menu.js"></script>
 <script src="./js/carrousel.js"></script>
 <script src="./js/bolsa.js"></script>
-<script src="./js/pedido.js"></script>
+<script src="./js/compra.js"></script>
 </html>
