@@ -1,7 +1,5 @@
 const formulario =document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
-const container =document.getElementById('container');
-
 nombre.addEventListener('keyup', (e) => {
 	let valorInput = e.target.value;
     //Eliminamos los numeros
