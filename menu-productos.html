@@ -28,7 +28,7 @@
     </div>
     <header>
         <nav id="navBar" class="nav pdd_border navbar_all scrolling">
-            <a href="#" id="logo-marca" class="logo">
+            <a href="index.html" id="logo-marca" class="logo">
                 <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
                 <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
             </a>
@@ -42,6 +42,10 @@
                         <div class="carrousel-menu">
                             <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
                             <div id="catMenuDesp" class="group-items">
+                                <a href="menu-productos.html" class="item-categoria">
+                                    <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
+                                    <p class="name-cat-menuD">Todos los Productos</p>
+                                </a>
                                 <a href="" class="item-categoria">
                                     <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
                                     <p class="name-cat-menuD">Bébidas</p>
@@ -72,11 +76,11 @@
                             <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>     
                         </div>
                     </div>
-                    <a href="#" class="nav__items ">Promociones</a>
-                    <a href="#" class="nav__items">Contáctanos</a>
+                    <a href="promociones.html" class="nav__items ">Promociones</a>
+                    <a href="contactanos.html" class="nav__items">Contáctanos</a>
                 </div>
                 <div class="nav__botones botones-option">
-                    <button class="nav__items--cta">Iniciar Sesión</button>
+                    <button class="nav__items--cta" onclick="ventRegister()">Iniciar Sesión</button>
                     <button class="nav__items--cta register" onclick="ventRegister()">Registrarme</button>
                 </div>
             </div>
@@ -86,6 +90,32 @@
                     <p class="producto">0</p>
                 </div>
             </div>           
+        </nav>
+        <div class="registro" id="registrarme">
+            <div class="colum" id="volver">
+                <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/luchin.png" alt="logo luchin">
+            </div>
+            <form class="formulario">
+                <h1 class="form__titulo">Iniciar Sesión</h1>
+                <div class="input-contenedor">
+                    <div class="row-input">
+
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required></p>
+                    </div>
+
+                    <div class="row-input">
+                        <p class="col-input clm-1"><label>Contraseña</label><input type="password" required></p>
+
+                    </div>
+                </div>
+                <div class="pie-form">
+                    <input type="submit" class="btn-enviar" value="Iniciar Sesión">
+                    <p class="form__link">¿No Tienes Cuenta? <a href="#">Crea una Cuenta </a></p>
+                </div>
+            </form>
         </div>
         <div class="registro" id="registrarme">
             <div class="colum" id="volver">
@@ -121,7 +151,7 @@
                 </div>
             </form>
         </div>
-    </header>
+    </header> 
 
 
     <div id="ventanaDetalle" class="overlay">
@@ -185,12 +215,13 @@
         <section class="list-product pdd-border">
             <div id="grid-product" class="grid-product">
                 <div class="card">
+                    <input type="hidden" value="1">
                     <div>
                         <div class="img-product">
                             <img src="./Imagenes/Hamburguesa-categoria.png" alt=""/>
                         </div>
                         <div class="descripciones">
-                            <p class="descrip-product">Hamburguesa</p>
+                            <p class="descrip-product">Hamburguesa Rellena</p>
                             <p class="precio">$<span class="price-product">5.00</span></p>
                         </div>
                     </div>
@@ -199,13 +230,14 @@
                     </div>
                 </div>
                 <div class="card">
+                    <input type="hidden" value="2">
                     <div>
                         <div class="img-product">
                             <img src="./Imagenes/papas-cat.png" alt=""/>
                         </div>
                         <div class="descripciones">
-                            <p class="descrip-product">Papas fritas</p>
-                            <p class="precio">$<span class="price-product">5.00</span></p>
+                            <p class="descrip-product">Papas con queso y chorizo</p>
+                            <p class="precio">$<span class="price-product">3.50</span></p>
                         </div>
                     </div>
                     <div class="cont-add">            
@@ -213,13 +245,14 @@
                     </div>
                 </div>
                 <div class="card">
+                    <input type="hidden" value="3">
                     <div>
                         <div class="img-product">
                             <img src="./Imagenes/sandwich-cat.png" alt=""/>
                         </div>
                         <div class="descripciones">
-                            <p class="descrip-product">Sanduche grande</p>
-                            <p class="precio">$<span class="price-product">5.00</span></p>
+                            <p class="descrip-product">Sanduche de Cerdo</p>
+                            <p class="precio">$<span class="price-product">4.00</span></p>
                         </div>
                     </div>
                     <div class="cont-add">            
@@ -227,13 +260,14 @@
                     </div>
                 </div>
                 <div class="card">
+                    <input type="hidden" value="4">
                     <div>
                         <div class="img-product">
                             <img src="./Imagenes/carne-cat.png" alt=""/>
                         </div>
                         <div class="descripciones">
                             <p class="descrip-product">Costillas ahumadas</p>
-                            <p class="precio">$<span class="price-product">5.00</span></p>
+                            <p class="precio">$<span class="price-product">10.00</span></p>
                         </div>
                     </div>
                     <div class="cont-add">            
@@ -241,13 +275,44 @@
                     </div>
                 </div>
                 <div class="card">
+                    <input type="hidden" value="5">
+                    <div>
+                        <div class="img-product">
+                            <img src="./Imagenes/batidos-png.png" alt=""/>
+                        </div>
+                        <div class="descripciones">
+                            <p class="descrip-product">Batidos</p>
+                            <p class="precio">$<span class="price-product">1.75</span></p>
+                        </div>
+                    </div>
+                    <div class="cont-add">            
+                        <button class="btn-agregar" type="submit"><img src="./Imagenes/bolsa-borde.png" height="20px"> Agregar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="hidden" value="6">
+                    <div>
+                        <div class="img-product">
+                            <img src="./Imagenes/jugos-png.png" alt=""/>
+                        </div>
+                        <div class="descripciones">
+                            <p class="descrip-product">Jugos naturales (frozen)</p>
+                            <p class="precio">$<span class="price-product">1.50</span></p>
+                        </div>
+                    </div>
+                    <div class="cont-add">            
+                        <button class="btn-agregar" type="submit"><img src="./Imagenes/bolsa-borde.png" height="20px"> Agregar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <input type="hidden" value="7">
                     <div>
                         <div class="img-product">
                             <img src="./Imagenes/bebida-cat.png" alt=""/>
                         </div>
                         <div class="descripciones">
-                            <p class="descrip-product">Pepsi 1.5Ltr - Mediana</p>
-                            <p class="precio">$<span class="price-product">1.75</span></p>
+                            <p class="descrip-product">Colas</p>
+                            <p class="precio">$<span class="price-product">1.50</span></p>
                         </div>
                     </div>
                     <div class="cont-add">            
@@ -307,6 +372,7 @@
 </body>
 <script src="js/carrousel.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/menu-productos.js"></script>
 <script src="js/bolsa.js"></script>
 <script src="js/pedido.js"></script>
 </html>

@@ -76,21 +76,47 @@
                             <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>     
                         </div>
                     </div>
-                    <a href="#" class="nav__items ">Promociones</a>
-                    <a href="#" class="nav__items">Contáctanos</a>
+                    <a href="promociones.html" class="nav__items ">Promociones</a>
+                    <a href="contactanos.html" class="nav__items">Contáctanos</a>
                 </div>
                 <div class="nav__botones botones-option">
-                    <button class="nav__items--cta">Iniciar Sesión</button>
+                    <button class="nav__items--cta" onclick="ventRegister()">Iniciar Sesión</button>
                     <button class="nav__items--cta register" onclick="ventRegister()">Registrarme</button>
                 </div>
             </div>
             <div class="bolsita">
-                <a href=""> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"> </a>
+                <a href="mi-bolsa.html"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"/> </a>
                 <div class="contador">
                     <p class="producto">0</p>
                 </div>
             </div>           
         </nav>
+        <div class="registro" id="login_user">
+            <div class="colum" id="volver">
+                <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/luchin.png" alt="logo luchin">
+            </div>
+            <form class="formulario">
+                <h1 class="form__titulo">Iniciar Sesión</h1>
+                <div class="input-contenedor">
+                    <div class="row-input">
+
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required></p>
+                    </div>
+
+                    <div class="row-input">
+                        <p class="col-input clm-1"><label>Contraseña</label><input type="password" required></p>
+
+                    </div>
+                </div>
+                <div class="pie-form">
+                    <input type="submit" class="btn-enviar" value="Iniciar Sesión">
+                    <p class="form__link">¿No Tienes Cuenta? <a href="#">Crea una Cuenta </a></p>
+                </div>
+            </form>
+        </div>
         <div class="registro" id="registrarme">
             <div class="colum" id="volver">
                 <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
@@ -183,7 +209,7 @@
                     </a>
                 </div>
                 <div class="more_promo">
-                    <a href="#" class="btn_more_promo">Ver más Promociones</a>
+                    <a href="promociones.html" class="btn_more_promo">Ver más Promociones</a>
                 </div>
             </section>
 
@@ -210,27 +236,27 @@
                 <div class="section_carrousel">
                         <button id="btnPrevious" class="previous-btn btn-left"><i class="fas fa-chevron-left"></i></i></button>     
                         <div id="catMenuDes" class="group_carrousel">
-                            <a href="" class="item-cat_menu">
+                            <a href="menu-productos.html" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
                                 <p class="name-cat">Bébidas</p>
                             </a>
-                            <a href="" class="item-cat_menu">
+                            <a href="menu-productos.html" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/Hamburguesa-categoria.png" alt=""></div>
                                 <p class="name-cat">Hamburguesas</p>
                             </a>
-                            <a href="" class="item-cat_menu">
+                            <a href="menu-productos.html" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/papas-cat.png" alt=""></div>
                                 <p class="name-cat">Papas</p>
                             </a>
-                            <a href="" class="item-cat_menu">
+                            <a href="menu-productos.html" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/carne-cat.png" alt=""></div>
                                 <p class="name-cat">Cortes de Carne</p>
                             </a>
-                            <a href="" class="item-cat_menu">
+                            <a href="menu-productos.html" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/sandwich-cat.png" alt=""></div>
                                 <p class="name-cat">Sanduches</p>
                             </a>
-                            <a href="" class="item-cat_menu">
+                            <a href="menu-productos.html" class="item-cat_menu">
                                 <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
                                 <p class="name-cat">Alitas</p>
                             </a>
