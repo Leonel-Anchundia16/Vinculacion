@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>La Parrilla de Luchín</title>
+    <title>Contáctanos - La Parrilla de Luchín</title>
     <link rel="icon" href="Imagenes/logo.png">
     <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
@@ -17,11 +17,6 @@
     </script>
 </head>
 <body>
-    <div class="box-sms">
-        <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
-        <div class="txt-sms reprobado">Error al agregar <i class="fas fa-times-circle"></i></div>
-        <div class="lay"></div>
-    </div>
     <div id="loader" class="loading"></div>
     <div class="btn-wss-ct">
         <a href=""><i class="fab fa-whatsapp"></i></a>
@@ -127,126 +122,128 @@
         </div>
     </header> 
     
-
-    <main style="overflow: hidden;">
-            <section class="container-slider">
-                <div class="group-slider">
-                    <div class="actions">
-                        <div class="buttons-slider">
-                            <button class="return-sld"><i class="fas fa-chevron-left"></i></button>     
-                            <button class="next-sld"><i class="fas fa-chevron-right"></i></button>     
+    <main>
+    
+        <div class="contenedor_contac">
+            <form class="contac_izq">
+                <h3 class="title_contac_izq">
+                    Ponerse en Contacto
+                </h3>
+                <div class="contac_nombre">
+    
+                    <p class="con_label"><label>Nombre</label><input type="text" class="input_nom" placeholder="Nombre"
+                            required></p>
+                    <p class="con_label"><label>Apellidos</label><input type="text" class="input_nom"
+                            placeholder="Apellidos" required></p>
+                </div>
+                <div class="contac_email">
+                    <p><label>Correo</label><input type="email" class="con_email" placeholder="Correo Electronico" required>
+                    </p>
+                </div>
+                <div class="contac_mensaje">
+                    <textarea name="texto" rows="4" placeholder="Escriba algo"></textarea>
+                </div>
+    
+                <div class="btn_enviar">
+                    <button class="contac_envio" type="submit">Enviar</button>
+                </div>
+            </form>
+            <div class="contac_der">
+                <div class="contac_contac">
+                    <div class="anuncio">
+                        <div class="contac_icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <div class="size-slider">
-                            <button class="icon active"></button>
-                            <button class="icon"></button>
-                            <button class="icon"></button>
+                        <div class="contac_description">
+                            <p class="topic">
+                                Telefono
+                            </p>
+                            <p class="detalle">
+                                0987654321
+                            </p>
+    
                         </div>
                     </div>
-                    <div class="txt-slider">
-                        <div class="texto">
-                            <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
-                            <h2 class="hero__titulo"> 
-                                La Parrilla de
-                                <h1 class="hero__titulo grand__text">Luchin</h1>
-                            </h2>
-                            <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbón contamos con personal capacitado en atención al cliente para brindarles el mejor servicio a nuestros clientes</p>
+                    <hr class="linea">
+                    <div class="anuncio">
+                        <div class="contac_icon">
+                            <i class="fas fa-envelope-square"></i>
                         </div>
+                        <div class="contac_description">
+                            <p class="topic">
+                                Correo Electronico
+                                </h3>
+                            <p class="detalle">
+                                Luchin@luchin.com
+                            </p>
+                        </div>
+    
+                    </div>
+                    <hr class="linea">
+                </div>
+                <div class="contac_redes_atencion">
+                    <div class="contac_redes">
+                        <p class="topic">
+                            Redes Sociales
+                        </p>
+                        <div class="ico">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </div>
+    
+    
+                    </div>
+                    <div class="contac_atencion">
+                        <p class="topic">
+                            Hora Atencion
+                        </p>
+                        <p class="detalle">
+                            De Jueves a Domingo
+                        </p>
+                        <p class="detalle">
+                            Desde 17:00 Hasta 23:00
+                        </p>
+    
+    
                     </div>
                 </div>
-            </section>
-
-            <section class="promo-general">
-                <div class="head_main_section pdd_border">
-                    <h1>Promociones</h1>
-                </div>
-                <div class="contain-promos">
-                    <a href="#" class="item__promo">
-                        <img src="./Imagenes/hamburguesas.png">
-                        <div class="detalle">
-                            <p class="topic">Hamburguesa Rellena</p>
-                            <p class="descrip"><span class="price-new">$9.99</span><span><s>$10.99</s></span></p>
-                        </div>
-                    </a>
-                    <a href="#" class="item__promo">
-                        <img src="./Imagenes/batidos.jpg">
-                        <div class="detalle">
-                            <p class="topic">Batidos</p>
-                            <p class="descrip"><span class="price-new">$2.50</span><span><s>$3.00</s></span></p>
-                        </div>
-                    </a>
-                    <a href="#" class="item__promo">
-                        <img src="./Imagenes/cerveza.png">
-                        <div class="detalle">
-                            <p class="topic">Cervezas</p>
-                            <p class="descrip"><span class="price-new">$1.75</span><span><s>$2.00</s></span></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="more_promo">
-                    <a href="#" class="btn_more_promo">Ver más Promociones</a>
-                </div>
-            </section>
-
-            <section class="aside-delivery">
-                <div class="over">
-                    <div class="content-infor">
-                        <div class="theme">
-                            <hr>
-                            <p>Servicio Delivery</p>
-                            <hr>
-                        </div>
-                        <div class="detalle_delivery">
-                            <p class="detalle-sms">Envíos solo <span>Montecristi</span></p>
-                            <p class="price">$3<span>00</span></p>
-                            <img src="./Imagenes/delivery.png"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="menu__category">
-                <div class="head_main_section pdd_border section-topic">
-                    <h1>Nuestro Menú</h1>
-                </div>
-                <div class="section_carrousel">
-                        <button id="btnPrevious" class="previous-btn btn-left"><i class="fas fa-chevron-left"></i></i></button>     
-                        <div id="catMenuDes" class="group_carrousel">
-                            <a href="" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
-                                <p class="name-cat">Bébidas</p>
-                            </a>
-                            <a href="" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/Hamburguesa-categoria.png" alt=""></div>
-                                <p class="name-cat">Hamburguesas</p>
-                            </a>
-                            <a href="" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/papas-cat.png" alt=""></div>
-                                <p class="name-cat">Papas</p>
-                            </a>
-                            <a href="" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/carne-cat.png" alt=""></div>
-                                <p class="name-cat">Cortes de Carne</p>
-                            </a>
-                            <a href="" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/sandwich-cat.png" alt=""></div>
-                                <p class="name-cat">Sanduches</p>
-                            </a>
-                            <a href="" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
-                                <p class="name-cat">Alitas</p>
-                            </a>
-                        </div>
-                        <button id="btnNext" class="next-btn btn-rigth"><i class="fas fa-chevron-right"></i></button>     
-                </div>
-            </section>
-
-            <section class="location-main">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63826.51149409486!2d-80.69629358598279!3d-1.0432379873241444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x902be555b3991ab1%3A0x6900289d39a0fe14!2sla%20parrilla%20de%20Luchin%20montecristi!3m2!1d-1.043324!2d-80.6612741!5e0!3m2!1ses!2sec!4v1624141824849!5m2!1ses!2sec" height="450" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </section>
-            
+    
+            </div>
         </div>
+        <br>
+    
+        <div class="ubi">
+            <div class="ubi_detalle">
+                <div class="ico_ubi">
+                    <i class="fas fa-thumbtack"></i>
+                </div>
+                <div class="ubi_detalle">
+                    <p class="topic">Ubicacion:</p>
+                </div>
+                <div class="ubi_detalle">
+                    <p class="topic">Av. Metropolitana y Calle 10 de Octubre</p>
+                </div>
+            </div>
+            <div class="ubi_mapa">
+    
+            </div>
+        </div>
+    
+        <section class="location-main">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63826.51149409486!2d-80.69629358598279!3d-1.0432379873241444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x902be555b3991ab1%3A0x6900289d39a0fe14!2sla%20parrilla%20de%20Luchin%20montecristi!3m2!1d-1.043324!2d-80.6612741!5e0!3m2!1ses!2sec!4v1624141824849!5m2!1ses!2sec"
+                    height="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    
+    
+    
+    
+    
+    
     </main>
+   
     <footer>
         <div class="grid-ftt">
             <div class="box column_grid-ftt">

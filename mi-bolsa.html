@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEADER PLANTILLA</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <title>La Parrilla de Luchín</title>
+    <link rel="icon" href="Imagenes/logo.png">
     <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
-        $(window).load(function() {
+        $(window).load(function () {
             $("#loader").fadeOut('slow');
         });
     </script>
 </head>
+
 <body>
+    <div class="box-sms">
+        <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
+        <div class="txt-sms reprobado">Error al agregar <i class="fas fa-times-circle"></i></div>
+        <div class="lay"></div>
+    </div>
     <div id="loader" class="loading"></div>
     <div class="btn-wss-ct">
         <a href=""><i class="fab fa-whatsapp"></i></a>
@@ -35,10 +45,6 @@
                         <div class="carrousel-menu">
                             <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
                             <div id="catMenuDesp" class="group-items">
-                                <a href="menu-productos.html" class="item-categoria">
-                                    <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
-                                    <p class="name-cat-menuD">Todos los Productos</p>
-                                </a>
                                 <a href="" class="item-categoria">
                                     <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
                                     <p class="name-cat-menuD">Bébidas</p>
@@ -83,7 +89,7 @@
                     <p class="producto">0</p>
                 </div>
             </div>           
-        </nav>
+        </div>
         <div class="registro" id="registrarme">
             <div class="colum" id="volver">
                 <button onclick="ventRegister()" href="#"><i class="fas fa-chevron-left"></i></button>
@@ -118,9 +124,109 @@
                 </div>
             </form>
         </div>
-    </header> 
+    </header>
+
+
+    <main style="overflow:hidden;">
+        <div class="textoo pdd_border">
+            <h1 class="subtitulo">RESUMEN DE TU BOLSA</h1>
+        </div>
+
+        <div class="tabla pdd_border">
+            <div>
+                <div id="tabla-list" class="cl-table">
+                    <table class="tablita">
+                        <thead>
+                            <tr>
+                                <th class="ti producto-table">Producto</th>
+                                <th class="ti precio-table">Precio</th>
+                                <th class="ti cantidad-table">Cantidad</th>
+                                <th class="ti subtotal-table">SubTotal</th>
+                                <th class="ti acciones-table"></th>
+                            </tr>
+                        </thead>
+    
+                        <tbody class="tody" id="lista-product">                        
+                        </tbody>
+                    </table>
+                </div>
+                <div class="canjeo">
+                    <div class="con">
+                        <div class="x">
+                            <p class="t-cupon">
+                                <label class="tex">¿Tienes algun cupon? Canjealo aqui</label>
+
+                            <div class="contenedor-inputt">
+                                <input type="tex" class="cupon-100" placeholder="Ingresar el codigo del Cupon">
+                                <button class="inputt-boton">+</button>
+                            </div>
+
+                            </p>
+                        </div>
+                        <div class="sub-iva-total">
+                            <p class="tt"> <span>Precio de Recargo:</span> <span class="price_total_pago">$2.99</span> </p>
+                            <p class="tt"> <span>Total a Pagar:</span> <span id="price_total_pago" class="price_total_pago">$12.99</span> </p>
+                        </div>
+                    </div>
+                    <div class="pie">
+                        <input type="submit" class="btn-enviar" value="Ver mas Producto " required>
+                        <input type="submit" class="btn-enviar2" value="Procesar compra" required>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="grid-ftt">
+            <div class="box column_grid-ftt">
+                <div class="content">
+                    <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin" />
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur
+                        suscipit praesentium id nesciunt quidem ratione. </p>
+                </div>
+            </div>
+            <div class="box column_grid-ftt">
+                <div class="content">
+                    <h2 class="name__categoria">Dirección:</h2>
+                    <div>
+                        <p class="text">Calle 13 de octubre y Av Metropolitana</p>
+                        <p class="text"><span class="weigth">Montecristi, Manabí - Ecuador</span></p>
+                    </div>
+
+                    <h2 class="name__categoria">Contáctanos:</h2>
+                    <div>
+                        <p class="text"><span class="weigth">WhatsApp:</span> 0963217004</p>
+                    </div>
+                    <div class="email">
+                        <p class="text"><span class="weigth">Correo:</span> luchinsantanacastillo@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box column_grid-ftt">
+                <div class="content">
+                    <h2 class="name__categoria">Horarios de Atención:</h2>
+                    <div>
+                        <p class="text"><span class="weigth">Lunes-Viernes:</span> 08h00 - 19h00</p>
+                        <p class="text"><span class="weigth">Sábados y Domingos:</span> 08h00 - 19h00</p>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></span></a>
+                        <a href="#"><i class="fab fa-instagram"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="legend__ftt">
+                <p class="credit"><span class="detalle">Derechos Reservados &#169 2021</span> La Parrilla De Luchin</p>
+                <p class="credit"><span class="detalle">Developed and Designed for</span> Vinculación Fase 1</p>
+            </div>
+        </div>
+    </footer>
 </body>
-<script src="./js/carrousel.js"></script>
 <script src="./js/menu.js"></script>
-<script src="./js/validacion_navbar.js"></script>
+<script src="./js/carrousel.js"></script>
+<script src="./js/bolsa.js"></script>
+<script src="./js/compra.js"></script>
 </html>
