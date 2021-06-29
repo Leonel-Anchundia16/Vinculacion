@@ -1,16 +1,4 @@
 class Carrito{
-<<<<<<< HEAD
-    obtenerProducto(e){
-        if(e.target.classList.contains('card')){
-          //  console.log(e)
-          const producto = e.target;
-          this.guardarDatosProducto(producto);
-        }
-
-    }
-
-    //guardar datos del producto
-=======
 
     //seleccionar producto
     obtenerProducto(e){
@@ -21,35 +9,17 @@ class Carrito{
     }
 
     //guardar datos de producto seleccionado
->>>>>>> f8c17efbd94ff2564c0a0ed0ca1c442cd0a413b1
     guardarDatosProducto(producto){
         const datos = {
             id: 1,
             descripcion: producto.querySelector('.descrip-product').textContent,
-<<<<<<< HEAD
-            precio: producto.querySelector('.price_product').textContent,
-            imagen:producto.querySelector('.img-product img').src,
-=======
             precio: producto.querySelector('.price-product').textContent,
             imagen: producto.querySelector('.img-product img').src,
->>>>>>> f8c17efbd94ff2564c0a0ed0ca1c442cd0a413b1
             cantidad: 1
         }
         this.insertarProducto(datos);
     }
 
-<<<<<<< HEAD
-    insertarProducto(datos){
-        const etiqueta = document.createElement('div');
-        etiqueta.innerHTML = `
-        <div   class="popup">
-            <div class="iz">
-                <div class="ret">
-                    <a href="#" class="bnt_regresar" > Regresar</a>
-                </div>
-                <div class="photo_comida">
-                    <h2 class="titulo"> ${datos.descripcion} </h2>     
-=======
 
     insertarProducto(datos){
         const etiqueta = document.createElement('div');
@@ -61,7 +31,6 @@ class Carrito{
                 </div>
                 <div class="photo_comida">
                     <h2 class="titulo">${datos.descripcion}</h2>
->>>>>>> f8c17efbd94ff2564c0a0ed0ca1c442cd0a413b1
                     <img class="food_img" src="${datos.imagen}"/>
                 </div>                    
             </div>
@@ -77,20 +46,6 @@ class Carrito{
                 </div>
                 <div class="des">
                     <h3>Descripcion:</h3>
-<<<<<<< HEAD
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, velit beatae error adipisci omnis minima? Minima debitis quos modi! Cumque ad aliquid dolor fuga nesciunt obcaecati eos, quis perspiciatis tempora? </p>
-                </div>
-                <div class="adicional">
-                    <h3>Agrege una información adicional o complementos de su pedido:</h3>
-                    <input type="text" class="input-adicional">
-                </div>
-        
-                <div class="pedir">
-                    <a href="#" class="bnt_añadir"> Añadir a la Bolsa</a>
-                </div>
-            </div>
-        </div>    
-=======
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, velit beatae error adipisci omnis minima? Minima debitis quos modi! Cumque ad aliquid dolor fuga nesciunt obcaecati eos, quis perspiciatis tempora?</p>
                 </div>
                 <div class="adicional">
@@ -99,38 +54,11 @@ class Carrito{
                 </div>
                 <button id="btnAddCar" class="btn_añadir"> Añadir a la Bolsa</button>
             </div>
->>>>>>> f8c17efbd94ff2564c0a0ed0ca1c442cd0a413b1
         `;
         ventanaAdd.appendChild(etiqueta);
     }
 
 
-<<<<<<< HEAD
-    // guardar en localstore
-    obtenerDatosFinales(datosProduct){
-        if(datosProduct.target.classList.contains('popup')){
-            const detalleProduct= datosProduct.target.parentElement;
-            this.guardarDatosLS(detalleProduct);
-        }
-
-    }
-
-    //guardar datos del producto en la bd del usuario
-    guardarDatosLS(detalle){
-        const datos={
-            id: 1,
-            imagen: detalle.querySelector('.photo_comida .food_img'),
-            nombre: detalle.querySelector('.photo_comida .titulo'),
-            inf_adicional: detalle.querySelector('.adicional .input-adicional'),
-            precio: detalle.querySelector('.precio'),
-            cantidad: detalle.querySelector('.num_can')
-        }
-        this.insertarDatosLS(datos);
-    }
-
-    insertarDatosLS(producto){
-
-=======
 
     // GUARDAR DATOS EN LA LOCAL STORAGE CUANDO ACEPTEMOS GUARDAR AL CARRITO
     obtenerDatosFinales(datosProduct){
@@ -174,6 +102,5 @@ class Carrito{
     
     insertarDatosLS(producto){
         
->>>>>>> f8c17efbd94ff2564c0a0ed0ca1c442cd0a413b1
     }
 }
