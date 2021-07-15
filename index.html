@@ -126,27 +126,29 @@
                 <h1 class="form__titulo">Crear Cuenta</h1>
                 <div class="input-contenedor">
                     <div class="row-input">
-                        <p class="col-input clm-1"><label>Nombre</label><input type="text" required>
-                            <!-- <span class="mnj-error"><i class="fas fa-exclamation-circle"></i> <span>El campo esta vació</span></span> -->
+                        <p class="col-input clm-1"><label>Nombre</label><input type="text" required name="name">
+                            <span class="mnj-error alert-firstName"></span>
                         </p>
-                        <p class="col-input clm-2"><label>Apellidos</label><input type="text" required></p>
+                        <p class="col-input clm-2"><label>Apellidos</label><input type="text" required name="apellido">
+                            <span class="mnj-error alert-lastName"></span>
+                        </p>
                     </div>
                     <div class="row-input">
-                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required></p>
+                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required name="dateNac"><span class="mnj-error alert-dateNacm"></span></p>
                     </div>
                     <div class="row-input">
-                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required></p>
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required name="email-user"><span class="mnj-error alert-email"></span></p>
                     </div>
                     <div class="row-input">
-                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required></p>
+                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required name="telef" maxlength="10"><span class="mnj-error alert-telephone"></span></p>
                     </div>
                     <div class="row-input">
-                        <p class="col-input clm-1"><label>Contraseña</label><input type="password" required></p>
-                        <p class="col-input clm-2"><label>Confirmar Contraseña</label><input type="password" required></p>
+                        <p class="col-input clm-1"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>                        
+                        <p class="col-input clm-2"><label>Confirmar Contraseña</label><input class="pass2" type="password" required name="secondPass"><span class="mnj-error alert-password2"></span></p>
                     </div>
                 </div>    
                 <div class="pie-form">
-                    <input type="submit" class="btn-enviar" value="Crear Cuenta">
+                    <button type="submit" class="btn-enviar">Crear Cuenta</button>
                     <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
                 </div>
             </form>
@@ -308,6 +310,7 @@
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></span></a>
                         <a href="#"><i class="fab fa-instagram"></i></span></a>
+                        <a href="#"><i class="fab fa-twitter"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -337,4 +340,5 @@
 </body>
 <script src="./js/carrousel.js"></script>
 <script src="./js/menu.js"></script>
+<script src="./js/validacion_navbar.js"></script>
 </html>

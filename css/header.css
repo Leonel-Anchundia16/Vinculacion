@@ -312,8 +312,13 @@
                 width: 100%;
                 color: var(--color-reprobado);
                 font-weight: bolder;
-                font-size: .75rem;
+                font-size: .72rem;
                 padding: 0 10px;
+
+                display: none;
+            }
+            .mnj-error.active{
+                display: block;
             }
         .col-input input:focus{
             border: none;
