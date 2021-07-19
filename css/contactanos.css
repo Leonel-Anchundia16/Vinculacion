@@ -1,3 +1,5 @@
+/* 
+color del fondo amarillo */
 .contenedor_contac{
     display: flex;
     position: relative;
@@ -6,6 +8,8 @@
     padding: 20px;
 
 }
+
+/* formulario */
 .contac_izq{
     background-color: white;
     position: absolute;
@@ -16,6 +20,7 @@
     bottom: 50px;
 
 }
+/* titulo del formulario */
 .title_contac_izq{
     color: var(--color-text-negro);
     font-family: var(--fuente-OPENSANS);
@@ -79,18 +84,20 @@
 }
 
 
-
+/* lado derecho, de contactanos */
 .contac_der{
     width: 50%;
     background-color: #370617;
     padding: 10px 30px;
 }
+/* titulos de lado derecho */
 .contac_description .topic{
 
     font-family: var(--fuente-OSWALD);
     color: #f48c06;
     font-size: 1.5rem;
 }
+/* detalle o descripcion del lado derecho */
 .contac_description .detalle{
     color: white;
     font-family: var(--fuente-OSWALD);
@@ -114,6 +121,7 @@
 .contac_description{
     padding: 10px 15px;
 }
+/* cntenedor d la seccion redes y hora de atencion */
 .contac_redes_atencion{
     display: flex;
     justify-content: space-between;
@@ -121,11 +129,13 @@
     padding: 0 15px;
     
 }
+/* titulo de redes */
 .contac_redes .topic{
     font-family: var(--fuente-OSWALD);
     color: #f48c06;
     font-size: 1.5rem;
 }
+/* color de los iconos de redes */
 .contac_redes .ico{
     color: white;
 }
@@ -139,7 +149,7 @@
     color: white;
     font-family: var(--fuente-OSWALD);
 }
-
+/* div de ubicacion */
 .ubi_detalle{
     display: flex;
     align-items: center;
@@ -147,13 +157,14 @@
     padding: 8px 30px ;
     
 }
+/* icono de ubicacion */
 .ubi_detalle .ico_ubi{
     padding: 8px;
     color: white;
     background-color:#f48c06 ;
     border-radius: 100%;
 }
-
+/* letras de ubicacion */
 .ubi_detalle .topic{
     font-family: var(--fuente-OPENSANS);
     color: white;

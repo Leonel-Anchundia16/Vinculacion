@@ -69,6 +69,8 @@
         .size-slider .icon.active, .size-slider .icon:hover{
             opacity: 100%;
         }
+
+        /* eslogan de la empresa y nombre de la empresa (slider) */
     .txt-slider{
         color: var(--color-blanco);
         position: absolute;
