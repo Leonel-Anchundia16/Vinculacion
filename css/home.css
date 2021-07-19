@@ -337,6 +337,7 @@
 /* LCOATION MAIN - LUCHIN */
 .location-main{
     width: 100%;
+    overflow: hidden;
 }
     .location-main div iframe{
         width: 100%;
