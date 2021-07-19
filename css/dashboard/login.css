@@ -1,0 +1,83 @@
+.main-login{
+    display: flex;
+    width: 100%;
+    font-family: var(--fuente-OPENSANS);
+}
+.carrousel-sign{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+    .carrousel-sign .overflow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    .carrousel-sign img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.form-login{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-blanco);
+}
+    .container-form .brand-logo{
+        width: 20%;
+        margin: 0 auto;
+    }
+    .container-form>h2{
+        color: var(--color-text-negro);
+        margin: 20px 0 0 0 ;
+    }
+    .container-form .form-sign{
+        padding: 20px 50px;
+        text-align: left;
+        width: 400px;
+        margin: auto;
+    }
+        .form-login .box-input{
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .box-input input{
+            border: 2px solid var(--bg-admin-hv);
+            outline: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            border-radius: 10px;
+            width: calc(100% - 30px);
+            color: var(--color-text-negro-bajo);
+            font-weight: var(--weigth-OPENSANS-REGULAR-400);
+            transition: all ease .5s;
+        }
+            .box-input input:focus{
+                border: none;
+                border-bottom: 5px solid var(--color-rojo-oscuro);
+            }
+        .box-input label{
+            display: block;
+            color: var(--color-text-negro-bajo);
+            padding: 7px 0;
+        }
+        .form-sign .btn-signin-form{
+            border: none;
+            color: var(--color-blanco);
+            background: var(--color-rojo-oscuro);
+            font-weight: bold;
+            padding: 12px 10px;
+            width: 100%;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: .9rem;
+            cursor: pointer;
+        }

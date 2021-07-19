@@ -92,7 +92,7 @@
                 <img src="./Imagenes/luchin.png" alt="logo luchin">
             </div>
             <form class="formulario">
-                <h1 class="form__titulo">Iniciar Sesión</h1>
+                <h1 class="form__tisulo">Iniciar Sesión</h1>
                 <div class="input-contenedor">
                     <div class="row-input">
 
@@ -118,7 +118,7 @@
                 <img src="./Imagenes/luchin.png" alt="logo luchin">
             </div>
             <form class="formulario">
-                <h1 class="form__titulo">Crear Cuenta</h1>
+                <h1 class="form__tisulo">Crear Cuenta</h1>
                 <div class="input-contenedor">
                     <div class="row-input">
                         <p class="col-input clm-1"><label>Nombre</label><input type="text" required>
@@ -148,78 +148,57 @@
         </div>
     </header> 
     <main>
-        <div class="container">
-            <div class="izquierda">
-                <div class="bord"></div>
-                <p class="deta">Resumen de Pedido</p>
-                <p class="entrega">Para: <p class="cli">Nombre cliente</p></p>
-                <p class="desti">Hacia:<p class="destino">Dirección-referencia</p></p>
-                <p class="pago">Total a pagar:<p class="pago1">$1,5</p></p>
-                <div class="form_group  form_group_button_pago">
-                    <p class="form_error" id="form_error"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <b>Error:</b> Formulario vacio</p>
-                    <p class="form_enviado" id="form_enviado"><i class="fa fa-check" aria-hidden="true"></i> Formulario registrado</p>
-                    <button type="submit" class="guardar_pago">GUARDAR Y ENVIAR PAGO</button>
-                </div>
-            </div>
-        </div>
-        <div class="contenido">
+        <div class="main_process-pay pdd_border">
             <div class="proceso_compra">
                 <p>PROCESAR COMPRA</p>
             </div>
-            <div class="dtos">
-                <p class="dat_clien">DATOS DEL CLIENTE</p>
-            </div>
-                <form class="client" id="formulario"  action="">
-                   <!--Nombre-->
-            <div class="form_group" id="group_nombre"> 
-                <label for="nombre" class="form_label">Nombre</label>
-                <div class="form_group-input">
-                    <input type="text" class="form_input" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+            <form action="" class="pdd_border">
+                <div class="infor-general">
+                    <div>
+                        <p class="title-group-item">DATOS DEL CLIENTE</p>
+                        <div class="group-inputs">
+                            <div class="form_group" id="group_nombre"> 
+                                <label for="nombre" class="form_label">Nombre</label>
+                                <input type="text" class="form_input" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                            </div>
+                            <div class="form_group" id="group_apellido"> 
+                                <label for="apellidos" class="form_label">Apellido</label>
+                                <input type="text" class="form_input" name="apellidos" id="apellidos" placeholder="Ingrese su Apellidos">
+                            </div>
+                            <div class="form_group" id="group_correo"> 
+                                <label for="correo" class="form_label">Correo Electrónico</label>
+                                <input type="email" class="form_input" name="correo" id="correo" placeholder="Ingrese su Correo">
+                            </div>
+                            <div class="form_group" id="group_telefono"> 
+                                <label for="telefono" class="form_label">Teléfono</label>
+                                <input type="text" class="form_input" name="telefono" id="telefono" placeholder="Ingrese su Número de Telefono">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="title-group-item">DIRECCIÓN DEL ENVÍO</p>
+                        <div class="form_group" id="group_dirección"> 
+                            <label for="direccion" class="form_label">Dirección</label>
+                            <input type="text" class="form_input dire" id="direccion" placeholder="Ingrese su dirección principal">
+                        </div>
+                        <div class="form_group" id="group_referencia"> 
+                            <label for="referencia" class="form_label">Información adicional de dirección</label>
+                            <input type="text" class="form_input refere" id="ref_dire" placeholder="Referencia de domicilio, frente a...">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!--Apellidos-->
-            <div class="form_group" id="group_apellido"> 
-                <label for="apellidos" class="form_label">Apellidos</label>
-                <div class="form_group-input">
-                    <input type="text" class="form_input" name="apellidos" id="apellidos" placeholder="Ingresa tu apellidos">
+                <div>
+                    <div class="resume">
+                        <p class="topic-resume">Resumen del Pedido</p>
+                        <p class="group-detalle_res"><span class="topic">Para:</span><span class="data-resume">Nombre cliente y apellido del cliente</span></p>
+                        <p class="group-detalle_res"><span class="topic">Hacia:</span><span class="data-resume">Dirección-referencia</span></p>
+                        <p class="group-detalle_res pago"><span class="topic">Total a Pagar:</span><span class="data-resume">$15.25</span></p>
+                        <p class="form_error" id="form_error"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <b>Error:</b> Formulario vacio</p>
+                        <p class="form_enviado" id="form_enviado"><i class="fa fa-check" aria-hidden="true"></i> Formulario registrado</p>
+                    </div>
+                    <button type="submit" class="guardar_pago">GUARDAR Y ENVIAR PAGO</button>
                 </div>
-             </div>
-             <!--Correo-->
-            <div class="form_group" id="group_correo"> 
-                <label for="correo" class="form_label">Correo Electronico</label>
-                <div class="form_group-input">
-                    <input type="email" class="form_input" name="correo" id="correo" placeholder="Ingresa tu correo">
-                </div>
-                </div>
-                <!--Telefono-->
-            <div class="form_group" id="group_telefono"> 
-                <label for="telefono" class="form_label">Telefono</label>
-                <div class="form_group-input">
-                    <input type="text" class="form_input" name="telefono" id="telefono" placeholder="Ingresa tu número de telefono">
-                </div>
-                </div>
-                </form>
-                <div class="direccion">
-                    <p>DIRECCIÓN DEL ENVÍO</p>
-                </div>
-                <form class="envio" id="formulario" action="">
-                    <!--Dirección-->
-            <div class="form_group" id="group_dirección"> 
-                <label for="direccion" class="form_label">Dirección</label>
-                <div class="form_group-input">
-                    <input type="text" class="form_input dire" id="direccion" placeholder="Ingresa tu dirección principal">
-                </div>
-            </div>
-             <!--Información adicional dirección-->
-             <div class="form_group" id="group_referencia"> 
-                <label for="referencia" class="form_label">Información adicional de dirección</label>
-                <div class="form_group-input">
-                    <input type="text" class="form_input refere" id="ref_dire" placeholder="Referencia de domicilio, frente a...">
-                </div>
-            </div>
-            
-                </form>
-            </div>
+            </form>
         </div>
     </main>
 
@@ -228,14 +207,14 @@
             <div class="box column_grid-ftt">
                 <div class="content">
                     <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin"/> 
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur suscipit praesentium id nesciunt quidem ratione. </p>
+                    <p class="text">Lorem ipsum dolor sit amet consectesur adipisicing elit. Vitae hic voluptate tenesur suscipit praesentium id nesciunt quidem ratione. </p>
                 </div>
             </div>
             <div class="box column_grid-ftt">
                 <div class="content">
                     <h2 class="name__categoria">Dirección:</h2>
                     <div>
-                        <p class="text">Calle 13 de octubre y Av Metropolitana</p>
+                        <p class="text">Calle 13 de ocsubre y Av Metropolitana</p>
                         <p class="text"><span class="weigth">Montecristi, Manabí - Ecuador</span></p>
                     </div>
 
