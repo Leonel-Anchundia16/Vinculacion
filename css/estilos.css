@@ -23,10 +23,13 @@
 @import url('comidas.css');
 @import url('search.css');
 @import url('vent_emergen.css');
+@import url('profile-user.css');
 
 
 
 @import url('./dashboard/asidebar.css');
+@import url('./dashboard/login.css');
+@import url('./dashboard/home.css');
 
 
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
