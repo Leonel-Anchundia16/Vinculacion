@@ -25,6 +25,12 @@
 @import url('vent_emergen.css');
 
 
+
+@import url('./dashboard/asidebar.css');
+@import url('./dashboard/login.css');
+@import url('./dashboard/home.css');
+
+
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
 :root{
     --color-text-negro: #000103;
@@ -41,6 +47,9 @@
     --color-rojo: #d00000;
     --color-rojo-oscuro: #9d0208;
     --color-azul-fuerte: #03071E;
+
+    --bg-admin: #E2E7F1;
+    --bg-admin-hv: #d3d7dd;
 
 
     --amarillo: #f48c06;

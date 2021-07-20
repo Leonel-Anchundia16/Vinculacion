@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,10 @@
     <title>La Parrilla de Luchín</title>
     <link rel="icon" href="Imagenes/logo.png">
     <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
         $(window).load(function() {
@@ -16,6 +20,7 @@
         });
     </script>
 </head>
+
 <body>
     <div class="box-sms">
         <div class="txt-sms aprobado">Agregado <i class="fas fa-check-circle"></i></div>
@@ -40,7 +45,7 @@
                     <a href="#" id="boxMenu-Select" class="nav__items">Menú<i class="fas fa-chevron-down"></i></a>
                     <div class="menu-container">
                         <div class="carrousel-menu">
-                            <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>     
+                            <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>
                             <div id="catMenuDesp" class="group-items">
                                 <a href="menu-productos.html" class="item-categoria">
                                     <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
@@ -70,10 +75,10 @@
                                     <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
                                     <p class="name-cat-menuD">Alitas</p>
                                 </a>
-                               
-                                
+
+
                             </div>
-                            <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>     
+                            <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>
                         </div>
                     </div>
                     <a href="promociones.html" class="nav__items ">Promociones</a>
@@ -85,11 +90,11 @@
                 </div>
             </div>
             <div class="bolsita">
-                <a href="mi-bolsa.html"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra"/> </a>
+                <a href="mi-bolsa.html"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra" /> </a>
                 <div class="contador">
                     <p class="producto">0</p>
                 </div>
-            </div>           
+            </div>
         </nav>
         <div class="registro" id="login_user">
             <div class="colum" id="volver">
@@ -126,158 +131,161 @@
                 <h1 class="form__titulo">Crear Cuenta</h1>
                 <div class="input-contenedor">
                     <div class="row-input">
-                        <p class="col-input clm-1"><label>Nombre</label><input type="text" required>
-                            <!-- <span class="mnj-error"><i class="fas fa-exclamation-circle"></i> <span>El campo esta vació</span></span> -->
+                        <p class="col-input clm-1"><label>Nombre</label><input type="text" required name="name">
+                            <span class="mnj-error alert-firstName"></span>
                         </p>
-                        <p class="col-input clm-2"><label>Apellidos</label><input type="text" required></p>
+                        <p class="col-input clm-2"><label>Apellidos</label><input type="text" required name="apellido">
+                            <span class="mnj-error alert-lastName"></span>
+                        </p>
                     </div>
                     <div class="row-input">
-                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required></p>
+                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required name="dateNac"><span class="mnj-error alert-dateNacm"></span></p>
                     </div>
                     <div class="row-input">
-                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required></p>
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required name="email-user"><span class="mnj-error alert-email"></span></p>
                     </div>
                     <div class="row-input">
-                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required></p>
+                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required name="telef" maxlength="10"><span class="mnj-error alert-telephone"></span></p>
                     </div>
                     <div class="row-input">
-                        <p class="col-input clm-1"><label>Contraseña</label><input type="password" required></p>
-                        <p class="col-input clm-2"><label>Confirmar Contraseña</label><input type="password" required></p>
+                        <p class="col-input clm-1"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                        <p class="col-input clm-2"><label>Confirmar Contraseña</label><input class="pass2" type="password" required name="secondPass"><span class="mnj-error alert-password2"></span></p>
                     </div>
-                </div>    
+                </div>
                 <div class="pie-form">
-                    <input type="submit" class="btn-enviar" value="Crear Cuenta">
+                    <button type="submit" class="btn-enviar">Crear Cuenta</button>
                     <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
                 </div>
             </form>
         </div>
-    </header> 
-    
+    </header>
 
-    <main style="overflow: hidden;">
-            <section class="container-slider">
-                <div class="group-slider">
-                    <div class="actions">
-                        <div class="buttons-slider">
-                            <button class="return-sld"><i class="fas fa-chevron-left"></i></button>     
-                            <button class="next-sld"><i class="fas fa-chevron-right"></i></button>     
-                        </div>
-                        <div class="size-slider">
-                            <button class="icon active"></button>
-                            <button class="icon"></button>
-                            <button class="icon"></button>
-                        </div>
+
+    <main>
+        <section class="container-slider">
+            <div class="group-slider">
+                <div class="actions">
+                    <div class="buttons-slider">
+                        <button class="return-sld"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-sld"><i class="fas fa-chevron-right"></i></button>
                     </div>
-                    <div class="txt-slider">
-                        <div class="texto">
-                            <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
-                            <h2 class="hero__titulo"> 
-                                La Parrilla de
-                                <h1 class="hero__titulo grand__text">Luchin</h1>
-                            </h2>
-                            <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbón contamos con personal capacitado en atención al cliente para brindarles el mejor servicio a nuestros clientes</p>
-                        </div>
+                    <div class="size-slider">
+                        <button class="icon active"></button>
+                        <button class="icon"></button>
+                        <button class="icon"></button>
                     </div>
                 </div>
-            </section>
-
-            <section class="promo-general">
-                <div class="head_main_section pdd_border">
-                    <h1>Promociones</h1>
-                </div>
-                <div class="contain-promos">
-                    <a href="#" class="item__promo">
-                        <img src="./Imagenes/hamburguesas.png">
-                        <div class="detalle">
-                            <p class="topic">Hamburguesa Rellena</p>
-                            <p class="descrip"><span class="price-new">$9.99</span><span><s>$10.99</s></span></p>
-                        </div>
-                    </a>
-                    <a href="#" class="item__promo">
-                        <img src="./Imagenes/batidos.jpg">
-                        <div class="detalle">
-                            <p class="topic">Batidos</p>
-                            <p class="descrip"><span class="price-new">$2.50</span><span><s>$3.00</s></span></p>
-                        </div>
-                    </a>
-                    <a href="#" class="item__promo">
-                        <img src="./Imagenes/cerveza.png">
-                        <div class="detalle">
-                            <p class="topic">Cervezas</p>
-                            <p class="descrip"><span class="price-new">$1.75</span><span><s>$2.00</s></span></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="more_promo">
-                    <a href="promociones.html" class="btn_more_promo">Ver más Promociones</a>
-                </div>
-            </section>
-
-            <section class="aside-delivery">
-                <div class="over">
-                    <div class="content-infor">
-                        <div class="theme">
-                            <hr>
-                            <p>Servicio Delivery</p>
-                            <hr>
-                        </div>
-                        <div class="detalle_delivery">
-                            <p class="detalle-sms">Envíos solo <span>Montecristi</span></p>
-                            <p class="price">$3<span>00</span></p>
-                            <img src="./Imagenes/delivery.png"/>
-                        </div>
+                <div class="txt-slider">
+                    <div class="texto">
+                        <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
+                        <h2 class="hero__titulo">
+                            La Parrilla de
+                            <h1 class="hero__titulo grand__text">Luchin</h1>
+                        </h2>
+                        <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbón contamos con personal capacitado en atención al cliente para brindarles el mejor servicio a nuestros clientes</p>
                     </div>
                 </div>
-            </section>
-            <section class="menu__category">
-                <div class="head_main_section pdd_border section-topic">
-                    <h1>Nuestro Menú</h1>
-                </div>
-                <div class="section_carrousel">
-                        <button id="btnPrevious" class="previous-btn btn-left"><i class="fas fa-chevron-left"></i></i></button>     
-                        <div id="catMenuDes" class="group_carrousel">
-                            <a href="menu-productos.html" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
-                                <p class="name-cat">Bébidas</p>
-                            </a>
-                            <a href="menu-productos.html" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/Hamburguesa-categoria.png" alt=""></div>
-                                <p class="name-cat">Hamburguesas</p>
-                            </a>
-                            <a href="menu-productos.html" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/papas-cat.png" alt=""></div>
-                                <p class="name-cat">Papas</p>
-                            </a>
-                            <a href="menu-productos.html" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/carne-cat.png" alt=""></div>
-                                <p class="name-cat">Cortes de Carne</p>
-                            </a>
-                            <a href="menu-productos.html" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/sandwich-cat.png" alt=""></div>
-                                <p class="name-cat">Sanduches</p>
-                            </a>
-                            <a href="menu-productos.html" class="item-cat_menu">
-                                <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
-                                <p class="name-cat">Alitas</p>
-                            </a>
-                        </div>
-                        <button id="btnNext" class="next-btn btn-rigth"><i class="fas fa-chevron-right"></i></button>     
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="location-main">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63826.51149409486!2d-80.69629358598279!3d-1.0432379873241444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x902be555b3991ab1%3A0x6900289d39a0fe14!2sla%20parrilla%20de%20Luchin%20montecristi!3m2!1d-1.043324!2d-80.6612741!5e0!3m2!1ses!2sec!4v1624141824849!5m2!1ses!2sec" height="450" allowfullscreen="" loading="lazy"></iframe>
+        <section class="promo-general">
+            <div class="head_main_section pdd_border">
+                <h1>Promociones</h1>
+            </div>
+            <div class="contain-promos">
+                <a href="#" class="item__promo">
+                    <img src="./Imagenes/hamburguesas.png">
+                    <div class="detalle">
+                        <p class="topic">Hamburguesa Rellena</p>
+                        <p class="descrip"><span class="price-new">$9.99</span><span><s>$10.99</s></span></p>
+                    </div>
+                </a>
+                <a href="#" class="item__promo">
+                    <img src="./Imagenes/batidos.jpg">
+                    <div class="detalle">
+                        <p class="topic">Batidos</p>
+                        <p class="descrip"><span class="price-new">$2.50</span><span><s>$3.00</s></span></p>
+                    </div>
+                </a>
+                <a href="#" class="item__promo">
+                    <img src="./Imagenes/cerveza.png">
+                    <div class="detalle">
+                        <p class="topic">Cervezas</p>
+                        <p class="descrip"><span class="price-new">$1.75</span><span><s>$2.00</s></span></p>
+                    </div>
+                </a>
+            </div>
+            <div class="more_promo">
+                <a href="promociones.html" class="btn_more_promo">Ver más Promociones</a>
+            </div>
+        </section>
+
+        <section class="aside-delivery">
+            <div class="over">
+                <div class="content-infor">
+                    <div class="theme">
+                        <hr>
+                        <p>Servicio Delivery</p>
+                        <hr>
+                    </div>
+                    <div class="detalle_delivery">
+                        <p class="detalle-sms">Envíos solo <span>Montecristi</span></p>
+                        <p class="price">$3<span>00</span></p>
+                        <img src="./Imagenes/delivery.png" />
+                    </div>
                 </div>
-            </section>
-            
+            </div>
+        </section>
+        <section class="menu__category">
+            <div class="head_main_section pdd_border section-topic">
+                <h1>Nuestro Menú</h1>
+            </div>
+            <div class="section_carrousel">
+                <button id="btnPrevious" class="previous-btn btn-left"><i class="fas fa-chevron-left"></i></i></button>
+                <div id="catMenuDes" class="group_carrousel">
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
+                        <p class="name-cat">Bébidas</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/Hamburguesa-categoria.png" alt=""></div>
+                        <p class="name-cat">Hamburguesas</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/papas-cat.png" alt=""></div>
+                        <p class="name-cat">Papas</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/carne-cat.png" alt=""></div>
+                        <p class="name-cat">Cortes de Carne</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/sandwich-cat.png" alt=""></div>
+                        <p class="name-cat">Sanduches</p>
+                    </a>
+                    <a href="menu-productos.html" class="item-cat_menu">
+                        <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
+                        <p class="name-cat">Alitas</p>
+                    </a>
+                </div>
+                <button id="btnNext" class="next-btn btn-rigth"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="location-main">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63826.51149409486!2d-80.69629358598279!3d-1.0432379873241444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x902be555b3991ab1%3A0x6900289d39a0fe14!2sla%20parrilla%20de%20Luchin%20montecristi!3m2!1d-1.043324!2d-80.6612741!5e0!3m2!1ses!2sec!4v1624141824849!5m2!1ses!2sec"
+                    height="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
         </div>
     </main>
     <footer>
         <div class="grid-ftt">
             <div class="box column_grid-ftt">
                 <div class="content">
-                    <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin"/> 
+                    <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin" />
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic voluptate tenetur suscipit praesentium id nesciunt quidem ratione. </p>
                 </div>
             </div>
@@ -289,7 +297,7 @@
                         <p class="text"><span class="weigth">Montecristi, Manabí - Ecuador</span></p>
                     </div>
 
-                    <h2 class="name__categoria">Contáctanos:</h2>                    
+                    <h2 class="name__categoria">Contáctanos:</h2>
                     <div>
                         <p class="text"><span class="weigth">WhatsApp:</span> 0963217004</p>
                     </div>
@@ -300,14 +308,15 @@
             </div>
             <div class="box column_grid-ftt">
                 <div class="content">
-                    <h2 class="name__categoria">Horarios de Atención:</h2>                    
+                    <h2 class="name__categoria">Horarios de Atención:</h2>
                     <div>
                         <p class="text"><span class="weigth">Lunes-Viernes:</span> 08h00 - 19h00</p>
                         <p class="text"><span class="weigth">Sábados y Domingos:</span> 08h00 - 19h00</p>
-                    </div>                   
+                    </div>
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></span></a>
                         <a href="#"><i class="fab fa-instagram"></i></span></a>
+                        <a href="#"><i class="fab fa-twitter"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -321,13 +330,12 @@
     </footer>
 
     <script>
-
-        $(window).scroll(function(){
-            if($('#navBar').offset().top > 200){
+        $(window).scroll(function() {
+            if ($('#navBar').offset().top > 200) {
                 $('#navBar').addClass('scrolling');
                 $('#logo-marca .long').removeClass('change-marca');
                 $('#logo-marca .normal').addClass('change-marca');
-            }else{
+            } else {
                 $('#navBar').removeClass('scrolling');
                 $('#logo-marca .normal').removeClass('change-marca');
                 $('#logo-marca .long').addClass('change-marca');
@@ -337,4 +345,6 @@
 </body>
 <script src="./js/carrousel.js"></script>
 <script src="./js/menu.js"></script>
+<script src="./js/validacion_navbar.js"></script>
+
 </html>
