@@ -43,6 +43,16 @@ footer{
     color: var(--color-blanco);
     background-color: var(--color-vino);
     border-radius: 50%;
+    font-size: 1.3rem;
+    font-family: var(--Banchscrich-font);
+    font-weight: var(--weigth-BH-normal);
+    margin: 5px 0;
+}
+.center .content .phone{
+    margin: 10px;
+}
+.right form .msg{
+    margin-top: 10px;
     font-size: 1rem;
     font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
     transition: all ease .1s;
