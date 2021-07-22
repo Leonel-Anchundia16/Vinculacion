@@ -30,6 +30,8 @@
 @import url('./dashboard/asidebar.css');
 @import url('./dashboard/login.css');
 @import url('./dashboard/home.css');
+@import url('./dashboard/add_promo.css');
+@import url('./dashboard/add_orden.css');
 
 
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
