@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body class="body-admin left-navbr">
+    <nav class="navbar-admin">
+        <div class="aside-bar image-navbar">
+            <img src="../Imagenes/luchin.png" alt="logo-luchin">
+        </div>
+        <div class="navbar-align">
+            <button class="btn__menu"><i class="fal fa-bars"></i></button>
+            <div class="group-items-navbar">
+                <div class="item-navbar">
+                    <div class="image">
+                        <img src="../Imagenes/user-admin-profilejpg.jpg" alt="">
+                    </div>
+                    <p class="name_user">Nombre de usuario</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside id="navbar-admin" class="aside-bar aside">
+        <div class="legend">PRINCIPAL</div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class="icon-item far fa-border-all"></i>
+                <p class="topic-item">Resumen</p>
+                <i class="down-more fas fa-angle-down"></i>
+            </a>
+            <div class="subitem-aside">
+                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+            </div>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside active">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-burger-soda"></i>
+                <p class="topic-item">Menú</p>
+                <i class="down-more fas fa-angle-down"></i>
+            </a>
+            <div class="subitem-aside">
+                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+            </div>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-bags-shopping"></i>
+                <p class="topic-item">Ordenes</p>
+            </a>
+        </div>
+        <div class="legend">ADMINISTRACIÓN</div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class="icon-item far fa-users"></i>
+                <p class="topic-item">Clientes</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-analytics"></i>
+                <p class="topic-item">Ventas</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-badge-percent"></i>
+                <p class="topic-item">Promociones</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-luggage-cart"></i>
+                <p class="topic-item">Productos</p>
+            </a>
+            <div class="subitem-aside">
+                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+            </div>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-person-dolly"></i>
+                <p class="topic-item">Proveedores</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-poll-people"></i>
+                <p class="topic-item">Empleados</p>
+            </a>
+        </div>
+    </aside>
+    <main class="contenido-admin">
+        <div class="theme-apart">
+            <h2><span class="name-user">Agregar orden</span></h2>
+        </div>
+        <section class="container-main">
+            <div class="conte_all">
+            <div class="add-orden_client bd__sect">
+                <div class="dt-resume">
+                    <h2 class="subtittle_date title_card_cl"> Datos del Cliente</h2>
+                    <form action="">
+                        <label for="" class="label_nombre">Nombres</label>
+                        <input type="text" class="name_input" placeholder="Ingrese los nombres">
+                        <label for="" class="label_ape">Apellidos</label>
+                        <input type="text" class="ape_input" placeholder="Ingrese los apellidos">
+                        <label for="" class="label_tel">Teléfono</label>
+                        <input type="text" class="tel_input" placeholder="Ingrese el telefono">
+                        <label for="" class="label_cedu">Número de cedula</label>
+                        <input type="text" class="cedu_input" placeholder="Ingrese cedula">
+                        <h2 class="subtittle_dire title_card_cl"> Dirección del Cliente</h2>
+                    </form>
+
+                </div>
+                
+            </div>
+
+            <div class="add-deta_order bd__sect">
+                <div class="dt-resume">
+                    
+                </div>
+                
+            </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

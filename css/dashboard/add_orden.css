@@ -1,0 +1,43 @@
+/*datos cliente*/
+.add-orden_client{
+  width: 420px;
+  height: 387px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 53px 196px 25px;
+  color: var(--color-text-negro);
+  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+  background: var(--color-blanco);
+}
+.label_nombre{
+    width: 89px;
+    height: 16px;
+    margin: 7px 131px 10px 13px;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
+}
+.name_input{
+
+}
+/*Detalle orden*/
+.add-deta_order{
+  width: 420px;
+  height: 387px;
+  padding: 20px 30px;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  margin: -623px 60px 19px 525px;
+  color: var(--color-text-negro);
+  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+  background: var(--color-blanco);
+}
