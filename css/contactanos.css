@@ -1,184 +1,180 @@
-/* 
-color del fondo amarillo */
+main section[class*='contact-']{
+    /* background: var(--color-vino); */
+    font-family: var(--fuente-OPENSANS);
+    padding: 40px 0 50px 0;
+}
+    section[class*='contact-'] .theme-section{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: var(--color-azul-fuerte);
+        margin: 0;
+        padding-bottom: 60px;
+        font-size: 2.2rem;
+    }
 .contenedor_contac{
+    width: 85%;
+    margin: auto;
     display: flex;
-    position: relative;
-    background: #f48c06;
-    justify-content: flex-end;
-    padding: 20px;
-
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor_contac .column{
+    width: 50%;
 }
 
-/* formulario */
-.contac_izq{
-    background-color: white;
-    position: absolute;
-    padding: 10px 20px;
-    width: 500px;
-    top: 50px;
-    left: 50px;
-    bottom: 50px;
-
+.form-contact{
+    /* background-color: var(--color-azul-fuerte); */
+    padding: 20px 30px;
+    width: 400px;
 }
 /* titulo del formulario */
 .title_contac_izq{
-    color: var(--color-text-negro);
-    font-family: var(--fuente-OPENSANS);
+    color: var(--color-text-negro-bajo);
     font-size: 1.5rem;
+    text-align: center;
+    margin: 0 0 20px 0;
 }
-
-.contac_nombre label{
+.contact_item p{
+    margin: 0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+    .contact_item.group{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+.contact_item label{
     display: block;
-    color: var(--color-azul-fuerte);
-    font-size: 1rem;
-    font-weight: 600;
-
-}
-.contac_email label{
-    display: block;
-    color: var(--color-azul-fuerte);
-    font-size: 1rem;
-    font-weight: 600;
-}
-.contac_nombre .con_label{
-    padding-right: 15px;
-}
-.contac_nombre .input_nom{
-    display: block;
-    width: calc(100% - 30px);
-    padding: 7px 15px;
-    margin-top: 5px;
-    outline: none;
-    border: 1px solid var(--color-azul-fuerte);
-    border-radius: 7px;
-    background: none;
-    color: var(--color-azul-fuerte);
-}
-.contac_email .con_email{
-    width: calc(100% - 30px);
-    display: block;
-    padding: 7px 15px;
-    margin-top: 5px;
-    outline: none;
-    border: 1px solid var(--color-azul-fuerte);
-    border-radius: 7px;
-    background: none;
-    color: var(--color-azul-fuerte);
-}
-
-
-.contac_nombre{
-    display: flex;
+    color: var(--color-text-negro-bajo);
+    font-weight: var(--weigth-OPENSANS-REGULAR-400);
+    font-size: .9rem;
     padding-bottom: 10px;
-    
 }
-.btn_enviar .contac_envio {
+.contact_item .input_contact{
+    display: block;
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid var(--color-brd-input);
+    border-radius: 5px;
+    background: none;
+    color: var(--color-text-negro-bajo);
+    font-size: .95rem;
+}
+    .input_contact.text{
+        font-family: var(--fuente-OPENSANS);
+        text-align: left;
+        width: calc(400px - 30px);
+        height: 70px;
+        display: block;
+        resize: none;
+    }
+
+.btn_send-contact{
     cursor: pointer;
-    color: white;
-    background-color: #03071E;
-    padding: 1px 15px;
-    font-family: 'Cabin', sans-serif;
-    font-weight: 10 ;
-    border:#03071E solid;
-    border-radius: 300px
-}
-
-
-/* lado derecho, de contactanos */
-.contac_der{
-    width: 50%;
-    background-color: #370617;
+    color: var(--color-blanco);
+    background-color: var(--color-azul-fuerte);
+    border: none;
     padding: 10px 30px;
+    margin: 10px 0;
+    border-radius: 7px;
 }
-/* titulos de lado derecho */
-.contac_description .topic{
-
-    font-family: var(--fuente-OSWALD);
-    color: #f48c06;
-    font-size: 1.5rem;
-}
-/* detalle o descripcion del lado derecho */
-.contac_description .detalle{
-    color: white;
-    font-family: var(--fuente-OSWALD);
-}
-
 
 .anuncio{
-    display: flex;
+    display: grid;
+    grid-template-columns: 100px 300px;
+    justify-content: flex-end;
+    grid-gap: 20px;
     align-items: center;
-    padding: 5px 15px;
-    
+    padding-bottom: 40px;
 }
+    .contac_icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto ;
+        background-color:var(--color-amarillo-principal);
+        border-radius: 50%;
+        color: var(--color-azul-fuerte);
+        font-size: 2rem;
+    }
+    .contac_description p{
+        margin: 0;
+    }
+        .contac_description p:hover:not(.topic, .detalle.iconos){
+            color: var(--color-amarillo);
+        }
+    .contac_description .topic{
+        color: var(--color-azul-fuerte);
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    .contac_description .detalle{
+        color: var(--color-azul-fuerte);
+        font-size: 1rem;
+    }
+        .contac_description .detalle.iconos{
+            display: grid;
+            grid-template-columns: repeat(2, 25px);
+            font-size: 1.3rem;
+            grid-gap: 15px;
+        }
+        .detalle.iconos>a{
+            color: var(--color-azul-fuerte);
+            text-decoration: none;
+            margin: auto;
+        }
+        .detalle.iconos>a:hover{
+            color:  var(--color-amarillo);
+        }
 
-
-.contac_icon{
-    text-align: center;
-    padding: 30px;
-    background-color:#f48c06 ;
-    color: white;
-}
-.contac_description{
-    padding: 10px 15px;
-}
-/* cntenedor d la seccion redes y hora de atencion */
-.contac_redes_atencion{
+.section-ubi{
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 0 15px;
-    
-}
-/* titulo de redes */
-.contac_redes .topic{
-    font-family: var(--fuente-OSWALD);
-    color: #f48c06;
-    font-size: 1.5rem;
-}
-/* color de los iconos de redes */
-.contac_redes .ico{
-    color: white;
-}
-.contac_atencion .topic{
-    font-family: var(--fuente-OSWALD);
-    color: #f48c06;
-    font-size: 1.5rem;
-}
-
-.contac_atencion .detalle{
-    color: white;
-    font-family: var(--fuente-OSWALD);
-}
-/* div de ubicacion */
-.ubi_detalle{
-    display: flex;
-    align-items: center;
-    background-color: #03071E ;
-    padding: 8px 30px ;
-    
-}
-/* icono de ubicacion */
-.ubi_detalle .ico_ubi{
-    padding: 8px;
-    color: white;
-    background-color:#f48c06 ;
-    border-radius: 100%;
-}
-/* letras de ubicacion */
-.ubi_detalle .topic{
+    justify-content: center;
+    background-color: var(--color-azul-fuerte);
+    color: var(--color-blanco);
+    padding: 30px 0;
     font-family: var(--fuente-OPENSANS);
-    color: white;
 }
-
-
-textarea{
-	border: 10px;
-	border-radius:10px;
-	background-color:#f6f6f6;			
-	margin:8px 0;
-    text-align: center;
-	display:block;
-    width: 100%;
-    max-width: 500px;
-    max-height: 100px;
+    .section-ubi .container-ubicacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+    }
+    .section-ubi .container-ubicacion>h1{
+        font-family: var(--fuente-FRANKLIN);
+        font-weight: bold;
+        margin: 0;
+        line-height: 100%;
+    }
+.container-ubicacion .ubi_detalle{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 80px 100%;
 }
+    .ubi_detalle .ico_ubi{
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        color: var(--color-azul-fuerte);
+        background-color: var(--color-amarillo-principal) ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.8rem;
+    }
+    .ubi_detalle .descr>p{
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    .ubi_detalle .descr>p.bold{
+        font-weight: bold;
+    }
+    
