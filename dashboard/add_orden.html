@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promociones</title>
+    <title>Orden</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -112,34 +112,33 @@
             <h2><span class="name-user">Agregar orden</span></h2>
         </div>
         <section class="container-main">
-            <div class="add-promo_deta dt-resume bd__sect">
-                <h2 class="subtittle_promo title_card_cl"> Información Promoción</h2>
-                <form action="" class="col-form">
-                    <div class="grup-casilla">
-                        <p><label>Nombre promoción</label><input type="text" placeholder="Ingrese nombre promoción"></p>
-                        <p><label>Código para cupón</label><input type="text" placeholder="Ingrese código"></p>
-                    </div>
-                    <div class="grup-casilla">
-                        <p><label>Fecha inicio promoción</label><input type="date"></p>
-                        <p><label>Fecha fin promoción</label><input type="date"></p>
-                    </div>
-                    <div class="grup-casilla">
-                        <p><label>porcentaje promoción</label><input type="text" placeholder="Ingrese porcentaje"></p>
-                        <p>
-                            <label>Imagen promoción</label>
-                            <div class="custom-input-file col-md-6 col-sm-6 col-xs-6">
-                                <input type="file" id="fichero-tarifas" class="input-file" value="">
-                                <!-- <input type="file" class="img-promo"></p> -->
-                                Subir fichero...
-                            </div>
-                    </div>
-                    <div class="grupo-casilla">
-                        <p><label>descripción promoción</label><textarea ></textarea></p>
-                    </div>
-                    <button class="btn-add-data-promo" type="submit">Agregar promoción</button>
-                </form>
+            <div class="conte_all">
+            <div class="add-orden_client bd__sect">
+                <div class="dt-resume">
+                    <h2 class="subtittle_date title_card_cl"> Datos del Cliente</h2>
+                    <form action="">
+                        <label for="" class="label_nombre">Nombres</label>
+                        <input type="text" class="name_input" placeholder="Ingrese los nombres">
+                        <label for="" class="label_ape">Apellidos</label>
+                        <input type="text" class="ape_input" placeholder="Ingrese los apellidos">
+                        <label for="" class="label_tel">Teléfono</label>
+                        <input type="text" class="tel_input" placeholder="Ingrese el telefono">
+                        <label for="" class="label_cedu">Número de cedula</label>
+                        <input type="text" class="cedu_input" placeholder="Ingrese cedula">
+                        <h2 class="subtittle_dire title_card_cl"> Dirección del Cliente</h2>
+                    </form>
 
-            </div>   
+                </div>
+                
+            </div>
+
+            <div class="add-deta_order bd__sect">
+                <div class="dt-resume">
+                    
+                </div>
+                
+            </div>
+        </div>
         </section>
     </main>
 </body>

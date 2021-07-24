@@ -1,7 +1,102 @@
+/* slider */
 .container-slider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    overflow: hidden;
+    align-items: center;
     scroll-behavior: smooth;
+    background-color: var(--color-vino);
+} 
+    button[class*='btn-slider-']{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: none;
+        font-size: 4vw;
+        color: var(--color-blanco);
+        opacity: 60%;
+        cursor: pointer;
+    }
+    
+        button[class*='btn-slider-']:hover{
+            opacity: 100%;
+            text-shadow: 0px 0px 10px var(--color-blanco);
+        }
+        
+        .btn-slider-previous{
+            left: 0;
+            margin-left: 20px;
+        }
+        .btn-slider-next{
+            margin-right: 20px;
+            right: 0;
+        }
+.size-slider{
+    position: absolute;
+    left: 0;
+    right: 0; 
+    bottom: 5%;
+
+    display: flex;
+    justify-content: center;
+}
+    .size-slider>.icon{
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        border: none;
+        margin: 0 5px;
+        background: var(--color-blanco);
+        opacity: 50%;
+        cursor: pointer;
+
+        transition: all ease .3s;
+    }
+    .size-slider .icon:hover{
+        -webkit-box-shadow: 0px 0px 18px -1px rgba(255,255,255,1);
+        -moz-box-shadow: 0px 0px 22px -1px rgba(255,255,255,1);
+        box-shadow: 0px 0px 18px -1px rgba(255,255,255,1);
+    }
+    .size-slider .icon.active, .size-slider .icon:hover{
+        opacity: 100%;        
+    }
+.container-slider .txt-slider{
+    width: 40%;
+    margin: 0 0 0 10%;
+    color: var(--color-blanco);
+}
+
+    .hero__titulo{
+        font-size: 4vw;
+        margin: -10px 0 0 0;
+        font-family: var(--franklin-font);
+        font-weight: var(--weigth-Flin-900);
+    }
+        .grand__text{
+            font-size: 10.5vw;
+            line-height: 90%;
+        }
+    
+    .hero__subtitulo{
+        margin: 0;
+        font-size: 2vw;
+        display: flex;
+        width: 450px;
+        font-family: var(--fuente-OPENSANS);
+        font-weight: var(--weigth-OPENSANS-LIGTH-300);
+    }
+    .hero__subtitulo.text{
+        font-weight: var(--weigth-OPENSANS-REGULAR-400);
+        font-size: 1.2vw;
+    }
+
+
+/* .container-slider{
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
     transition: .5s;
 }
 .group-slider{
@@ -69,8 +164,6 @@
         .size-slider .icon.active, .size-slider .icon:hover{
             opacity: 100%;
         }
-
-        /* eslogan de la empresa y nombre de la empresa (slider) */
     .txt-slider{
         color: var(--color-blanco);
         position: absolute;
@@ -103,7 +196,7 @@
         .hero__subtitulo.text{
             font-weight: var(--weigth-OPENSANS-REGULAR-400);
             font-size: 1.1rem;
-        }
+        } */
 
 
 
@@ -430,6 +523,9 @@
 
 /*------------------------RESPONSIVIDAD---------------------*/
 @media only screen and (max-width: 960px) {
+    .container-slider{
+        margin-top: 60px;
+    }
     /*------------PROMOCIONES------*/
     .contain-promos{
         width: 60%;
@@ -459,10 +555,7 @@
 
 }
 @media only screen and (max-width: 720px) {
-    /*-------SLIDER--------*/
-    .container-slider{
-        margin-top: 60px;
-    }
+    /*-------SLIDER--------*/    
     .group-slider{
         height: 60vh;
         background-attachment: local;

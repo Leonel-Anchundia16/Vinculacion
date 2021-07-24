@@ -1,3 +1,39 @@
+/* STYLE GENERAL ADMIN */
+div[class*='popup-admin']{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+}      
+
+    div[class*='popup-admin']>.box-pop{
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: var(--color-blanco);
+        margin: 0 0 10px 0;
+        font-size: .8rem;
+        font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+        font-family: var(--fuente-OPENSANS);
+        max-width: 230px;
+        display: flex;
+        align-items: center;
+    }
+        .popup-admin> .box-pop.success{
+            background: var(--color-aprobado);
+        }
+        .popup-admin> .box-pop.warning{
+            background: var(--color-reprobado-alert);
+        }
+    div[class*='popup-admin'] .box-pop>i{
+        font-size: 1.2rem;
+    }
+    div[class*='popup-admin'] .box-pop>p{
+        margin: 0 0 0 15px;
+    }
+    
+
+/* ---------------- */
+
 .flex-container{
     display: flex;
 }

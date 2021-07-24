@@ -115,7 +115,6 @@
     display: flex;
     align-items: center;
 }
-/* botones de la izquierda (menu,contactanos, promociones) */
 .nav__items{
     color: var(--color-blanco);
     height: 70px;
@@ -153,8 +152,6 @@
     font-family: var(--fuente-OPENSANS);
     padding: 0 20px;
 }
-
-/* botonoes de inicio de seccion y registro */
 .nav__items--cta{
     border: 2px solid var(--blanco);
     color: var(--color-blanco);

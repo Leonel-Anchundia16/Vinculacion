@@ -172,7 +172,6 @@ class Carrito{
         for(let i=0; i<productLS.length; i++){
             let element = Number(productLS[i].precio * productLS[i].cantidad);
             totalProduct += element;
-            
         }
         document.getElementById('price_total_pago').innerHTML = `$ ${parseFloat(totalProduct + delivery).toFixed(2)}`;
     }
