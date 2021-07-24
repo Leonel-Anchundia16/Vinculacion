@@ -112,31 +112,62 @@
             <h2><span class="name-user">Agregar orden</span></h2>
         </div>
         <section class="container-main">
-            <div class="conte_all">
-            <div class="add-orden_client bd__sect">
-                <div class="dt-resume">
+            <div class="conte_client">
+            <div class="add-orden_client">
+                <div class="dt-resume bd__sect">
                     <h2 class="subtittle_date title_card_cl"> Datos del Cliente</h2>
-                    <form action="">
-                        <label for="" class="label_nombre">Nombres</label>
-                        <input type="text" class="name_input" placeholder="Ingrese los nombres">
-                        <label for="" class="label_ape">Apellidos</label>
-                        <input type="text" class="ape_input" placeholder="Ingrese los apellidos">
-                        <label for="" class="label_tel">Teléfono</label>
-                        <input type="text" class="tel_input" placeholder="Ingrese el telefono">
-                        <label for="" class="label_cedu">Número de cedula</label>
-                        <input type="text" class="cedu_input" placeholder="Ingrese cedula">
-                        <h2 class="subtittle_dire title_card_cl"> Dirección del Cliente</h2>
+                    <form action="" class="col-form">
+                        <div class="grup-casilla">
+                            <p><label>Nombres del cliente</label><input type="text" placeholder="Ingrese nombres"></p>
+                            <p><label>Apellidos del cliente</label><input type="text" placeholder="Ingrese apellidos"></p>
+                        </div>
+                        <div class="grup-casilla">
+                            <p><label>Teléfono</label><input type="text" placeholder="Ingrese teléfono"></p>
+                            <p><label>Número de cédula</label><input type="text" placeholder="Ingrese cédula"></p>
+                        </div> 
                     </form>
-
+                    <h2 class="subtittle_date title_card_cl">Dirección del cliente</h2>
+                    <form action="" class="col-form">
+                        <div class="grup-casilla">
+                            <p><label>Información dirección</label><input type="text" placeholder="Ingrese dirección"></p>
+                            <p><label>Ciudad</label><input type="text" placeholder="Ingrese ciudad"></p>
+                        </div>
+                        <div class="grup-casilla">
+                            <p><label>Calle</label><input type="text" placeholder="Ingrese calle"></p>
+                        </div> 
+                    </form>
                 </div>
                 
             </div>
-
-            <div class="add-deta_order bd__sect">
-                <div class="dt-resume">
-                    
-                </div>
-                
+            <div class="add-deta_order">
+                <div class="dt-resume bd__sect">
+                    <h2 class="subtittle_date title_card_cl"> Detalles Orden</h2>
+                    <div class="cuadro_resume">
+                        <div class="cuadro_info">
+                        <p class="resu_cua">Hamburguesa rellena</p>
+                        <p class="resu_cua">Hamburguesa Rellena</p>
+                        <p class="resu_cua">Hamburguesa Rellena</p>
+                        <p class="resu_cua">Hamburguesa Rellena</p>
+                        <p class="resu_cua">Hamburguesa Rellena</p>
+                        </div>
+                        <div class="cuadro_boton">
+                        <button class="btn-add-deta" type="submit">Agregar producto</button>
+                        </div>
+                    </div>
+                    <div class="resu_pago">
+                        <p class="grupo_detalle_res pago"><span class="topic">Precio Total:</span><span class="data-resume">$15.25</span></p>
+                        <p class="grupo_detalle_res pago"><span class="topic">Estado Orden:</span><span class="data-resume">
+                            <select name="estado_orden" class="select_orden">
+                                <option disabled>Seleccione un estado</option>
+                                <option value="sent">Enviado</option>
+                                <option value="pending">Pedido</option>
+                                <option value="served">Servido</option>
+                                <option value="caceled">Cancelado</option>
+                            </select></span>
+                        </p>
+                    </div>
+                    <button class="btn-add-deta-orden" type="submit">guardar y enviar</button>
+                </div>             
             </div>
         </div>
         </section>

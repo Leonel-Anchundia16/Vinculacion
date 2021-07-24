@@ -1,41 +1,82 @@
-/*datos cliente*/
-.add-orden_client{
-  width: 420px;
-  height: 387px;
-  padding: 20px 30px;
+.conte_client{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 53px 196px 25px;
-  color: var(--color-text-negro);
-  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
-  background: var(--color-blanco);
 }
-.label_nombre{
-    width: 89px;
-    height: 16px;
-    margin: 7px 131px 10px 13px;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #a3a3a3;
+.conte_client .add-orden_client{
+  width: 100%;
 }
-
-/*Detalle orden*/
-.add-deta_order{
-  width: 420px;
-  height: 387px;
+.conte_client .add-deta_order{
+  width: 100%;
+}
+.subtittle_date{
+  color: var(--color-amarillo-principal);
+}
+.dt-resume{
   padding: 20px 30px;
+  margin: 0 15px;
+  height: 400px;
+}
+/*agregar porducto*/
+.cuadro_resume{
   display: flex;
-  
+}
+.cuadro_resume .cuadro_info{
+  width: 100%;
+}
+.cuadro_resume .cuadro_boton{
+  width: 100%;
+}
+.resu_cua{
+  margin-left: 35px;
+  font-family: var(--fuente-OSWALD);
+  font-size:  15px;
+}
+.btn-add-deta{
+  width: 139px;
+  height: 29px;
+  border-radius: 4px;
+  margin-top: 25%;
+  background-color: var(--color-amarillo-principal);
+  font-family: var(--fuente-OSWALD);
+  cursor: pointer;
+}
+/*precio,estado y boton*/
+.grupo_detalle_res{
+  margin: 0;
+  display: flex;
+  text-align: left;
+}
+.grupo_detalle_res.pago{
+  margin-top: 20px;
   align-items: center;
-  justify-content: space-between;
-  margin: -623px 60px 19px 525px;
-  color: var(--color-text-negro);
-  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
-  background: var(--color-blanco);
+}
+.grupo_detalle_res.pago .topic{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.grupo_detalle_res .data-resume{ 
+  width: 50%;
+}
+.grupo_detalle_res.pago .data-resume{
+  text-align: end;
+  font-family: var(--fuente-OSWALD);
+  font-size: 1.6rem;
+}
+.select_orden{
+border: 2px solid var(--color-brd-input);
+font-size: 15px;
+font-family: var(--fuente-OSWALD);
+border: none;
+background-color: var(--color-rojo-oscuro);
+color: var(--color-blanco);
+border-radius: 7px;
+}
+.btn-add-deta-orden{
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-rojo-oscuro);
+  color: var(--color-blanco);
+  font-family: var(--fuente-OSWALD);
+  font-size: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
 }
