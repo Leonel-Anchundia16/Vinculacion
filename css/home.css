@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     scroll-behavior: smooth;
-    background-color: var(--color-vino);
 } 
     button[class*='btn-slider-']{
         position: absolute;
@@ -83,121 +82,38 @@
         margin: 0;
         font-size: 2vw;
         display: flex;
-        width: 450px;
         font-family: var(--fuente-OPENSANS);
         font-weight: var(--weigth-OPENSANS-LIGTH-300);
     }
     .hero__subtitulo.text{
         font-weight: var(--weigth-OPENSANS-REGULAR-400);
-        font-size: 1.2vw;
+        font-size: 1.3vw;
     }
+.slider-pictures{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 
-
-/* .container-slider{
     display: flex;
-    scroll-behavior: smooth;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
-    transition: .5s;
+    background-color: rgba(0, 0, 0);
 }
-.group-slider{
-    background-image: url('../Imagenes/hamburguesas.png');
-    min-width: 100%;
-    height: 100vh;    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-}
-    .group-slider .actions{
-        position: relative;
+    .slider-pictures li{
+        min-width: 100%;
+        height: 100%;
+    }
+    .slider-pictures li>img{
         width: 100%;
         height: 100%;
-        z-index: 1;
-        background-color: rgba(0,0,0,.5);
+        object-fit: cover;
+        opacity: 60%;
     }
-        .actions .buttons-slider{
-            display: flex;
-            justify-content: space-between;
-            padding: 0 30px;
-            transform: translateY(50%);
-
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 50%;
-        }
-        .buttons-slider>button{
-            width: 50px;
-            height: 50px;
-            background: none;
-            border: none;
-            font-size: 2.2rem;
-            color: var(--color-blanco);
-            opacity: 60%;
-            cursor: pointer;
-        }
-        .buttons-slider>button:hover{
-            opacity: 100%;
-        }
-    .size-slider{
-        display: flex;
-        justify-content: center;
-
-        position: absolute;
-        left: 0;
-        right: 0; 
-        bottom: 5%;
-    }
-        .size-slider>.icon{
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            border: none;
-            margin: 0 5px;
-            background: var(--color-blanco);
-            opacity: 50%;
-            cursor: pointer;
-
-            transition: all ease .3s;
-        }
-        .size-slider .icon.active, .size-slider .icon:hover{
-            opacity: 100%;
-        }
-    .txt-slider{
-        color: var(--color-blanco);
-        position: absolute;
-        left: 100px;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        z-index: 2;
-    }
-        .hero__titulo{
-            font-size: 3rem;
-            margin: -10px 0 0 0;
-            font-family: var(--franklin-font);
-            font-weight: var(--weigth-Flin-900);
-        }
-            .grand__text{
-                font-size: 8rem;
-                margin: -35px 0 -30px -5px;
-            }
-        
-        .hero__subtitulo{
-            margin: 0;
-            font-size: 1.25rem;
-            display: flex;
-            width: 450px;
-            font-family: var(--fuente-OPENSANS);
-            font-weight: var(--weigth-OPENSANS-LIGTH-300);
-        }
-        .hero__subtitulo.text{
-            font-weight: var(--weigth-OPENSANS-REGULAR-400);
-            font-size: 1.1rem;
-        } */
-
 
 
 
@@ -324,16 +240,11 @@
 /* ASIDE DELIVERY */
 .aside-delivery{
     margin-top: 40px;
-    background-image: url(../Imagenes/hamburguesas.png);
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     height: 375px;
 }
     .aside-delivery .over{
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0);
         width: 100%;
         height: 375px;
         position: relative;
@@ -345,6 +256,7 @@
         position: absolute;
         font-family: var(--fuente-FRANKLIN);
         color: var(--color-blanco);
+        z-index: 1;
     }
         .content-infor .theme{
             display: flex;
@@ -386,7 +298,23 @@
     .detalle_delivery >img{
         width: 150px;
     }
-
+    .over .public-aside{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .over .public-aside>img{
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            opacity: 50%;
+        }
 
 
 /*Edit Mendoza xd*/
@@ -523,9 +451,23 @@
 
 /*------------------------RESPONSIVIDAD---------------------*/
 @media only screen and (max-width: 960px) {
+    /* -----SLIDER-------- */
     .container-slider{
         margin-top: 60px;
+        height: 70vh;
     }
+        .hero__subtitulo{
+            font-size: 2.2vw;
+        }
+        .hero__titulo{
+            font-size: 4.5vw;
+        }
+        .grand__text{
+            font-size: 11.5vw;
+        }
+        .hero__subtitulo.text{
+            font-size: 1.5vw;
+        }
     /*------------PROMOCIONES------*/
     .contain-promos{
         width: 60%;
@@ -556,52 +498,41 @@
 }
 @media only screen and (max-width: 720px) {
     /*-------SLIDER--------*/    
+    .container-slider{
+        height: 60vh;
+    }
+        button[class*='btn-slider-']{
+            font-size: 5vw;
+        }
+        .size-slider{
+            bottom: 4%;
+        }
+        .container-slider .txt-slider{
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .hero__subtitulo{
+            text-align: center;
+            display: block;
+            font-size: 1.5rem;
+        }
+            .hero__subtitulo.text{
+                font-size: .95rem;
+            }
+        .hero__titulo{
+            font-size: 3rem;
+            color: var(--color-amarillo-principal);
+        }
+        .grand__text{
+            font-size: 6rem;
+            line-height: 100%;
+        }
+
     .group-slider{
         height: 60vh;
         background-attachment: local;
     }   
-        .actions .buttons-slider{
-            padding: 0 5px;
-        }
-        .buttons-slider>button{
-            width: 20px;   
-            height: 20px;   
-            font-size: 1.7rem;
-        }
-        .size-slider{
-            bottom: 3%;
-        }
-        .size-slider>.icon{
-            width: 10px;
-            height: 10px;
-        }
-        .txt-slider{
-            overflow: hidden;
-            justify-content: center;
-            top: 0;
-            left: 40px;
-            right: 40px;
-        }
-            .hero__subtitulo{
-                text-align: center;
-                width: 100%;
-                display: block;
-            }
-                .hero__subtitulo.text{
-                    font-size: .8rem;
-                    max-width: 50%;
-                    margin: auto;
-                }
-            .hero__titulo{
-                font-size: 2.5rem;
-                text-align: center;
-                color: var(--color-amarillo-principal);
-            }
-            .grand__text{
-                font-size: 5rem;
-                text-align: center;
-                margin: -20px 0 -15px 0;
-            }
     /*-----------PROMOCIONES-------*/
     .head_main_section>h1{
         font-size: 2rem;
@@ -630,9 +561,36 @@
     }
 }
 @media only screen and (max-width: 540px) {
-    .hero__subtitulo.text{
-        max-width: 80%;
+    /* ---------------SLIDER------------- */
+    button[class*='btn-slider-']{
+        width: 20px;
+        height: 20px;
+        font-size: 1.7rem;
     }
+        .btn-slider-previous{
+            margin-left: 10px;
+        }
+        .btn-slider-next{
+            margin-right: 10px;
+        }
+        .container-slider .txt-slider{
+            width: 80%;
+        }
+        .hero__subtitulo{
+            font-size: 1.3rem;
+        }
+            .hero__subtitulo.text{
+                width: 80%;
+                margin: 0 auto;
+                font-size: .8rem;
+            }
+        .hero__titulo{
+            font-size: 2.4rem;
+        }
+        .grand__text{
+            font-size: 5rem;
+        }
+    /* ---------PROMOCIONES-------- */
     .contain-promos{
         grid-template-rows: repeat(3, 200px);
     }
