@@ -4,11 +4,8 @@
 }
 
 .bg-fondo-dark{
-<<<<<<< HEAD
     background: #e2eafc;
-=======
     background: var(--azul-fuerte);
->>>>>>> 6e577a009e3c4e861fbc6d87706508f50886471c
 }
 
 .bg-blanco{

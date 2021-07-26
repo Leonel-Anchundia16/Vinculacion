@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body class="body-admin left-navbr">
+    <nav class="navbar-admin">
+        <div class="aside-bar image-navbar">
+            <img src="../Imagenes/luchin.png" alt="logo-luchin">
+        </div>
+        <div class="navbar-align">
+            <button class="btn__menu"><i class="fal fa-bars"></i></button>
+            <div class="group-items-navbar">
+                <div class="item-navbar">
+                    <div class="image">
+                        <img src="../Imagenes/user-admin-profilejpg.jpg" alt="">
+                    </div>
+                    <p class="name_user">Nombre de usuario</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside id="navbar-admin" class="aside-bar aside">
+        <div class="legend">PRINCIPAL</div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class="icon-item far fa-border-all"></i>
+                <p class="topic-item">Resumen</p>
+                <i class="down-more fas fa-angle-down"></i>
+            </a>
+            <div class="subitem-aside">
+                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+            </div>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside active">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-burger-soda"></i>
+                <p class="topic-item">Menú</p>
+                <i class="down-more fas fa-angle-down"></i>
+            </a>
+            <div class="subitem-aside">
+                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+            </div>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-bags-shopping"></i>
+                <p class="topic-item">Ordenes</p>
+            </a>
+        </div>
+        <div class="legend">ADMINISTRACIÓN</div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class="icon-item far fa-users"></i>
+                <p class="topic-item">Clientes</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-analytics"></i>
+                <p class="topic-item">Ventas</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-badge-percent"></i>
+                <p class="topic-item">Promociones</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-luggage-cart"></i>
+                <p class="topic-item">Productos</p>
+            </a>
+            <div class="subitem-aside">
+                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+            </div>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-person-dolly"></i>
+                <p class="topic-item">Proveedores</p>
+            </a>
+        </div>
+        <div class="container-item">
+            <a href="#" class="item-aside">
+                <i class="estado"></i>
+                <i class=" icon-item far fa-poll-people"></i>
+                <p class="topic-item">Empleados</p>
+            </a>
+        </div>
+    </aside>
+    <main class="contenido-admin">
+        <div class="theme-apart">
+            <h2><span class="name-user">Agregar orden</span></h2>
+        </div>
+        <section class="container-main">
+            <div class="conte_client">
+            <div class="add-orden_client">
+                <div class="columna-detalle dt-resume bd__sect">
+                    <h2 class="title_card_cl"> Datos del Cliente</h2>
+                    <form action="" class="col-form">
+                        <div class="grup-casilla">
+                            <p><label>Nombres del cliente</label><input type="text" placeholder="Ingrese nombres"></p>
+                            <p><label>Apellidos del cliente</label><input type="text" placeholder="Ingrese apellidos"></p>
+                        </div>
+                        <div class="grup-casilla">
+                            <p><label>Teléfono</label><input type="text" placeholder="Ingrese teléfono"></p>
+                            <p><label>Número de cédula</label><input type="text" placeholder="Ingrese cédula"></p>
+                        </div> 
+                    </form>
+                    <h2 class="title_card_cl">Dirección del cliente</h2>
+                    <form action="" class="col-form">
+                        <div class="grup-casilla">
+                            <p><label>Información dirección</label><input type="text" placeholder="Ingrese dirección"></p>
+                            <p><label>Ciudad</label><input type="text" placeholder="Ingrese ciudad"></p>
+                        </div>
+                        <div class="grup-casilla">
+                            <p><label>Calle</label><input type="text" placeholder="Ingrese calle"></p>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+
+            <div class="add-deta_order">
+                <div class="columna-detalle dt-resume bd__sect">
+                    <h2 class="title_card_cl">Detalles Orden</h2>
+                    <div class="cuadro_resume">
+                        <div class="cuadro_info">
+                            <p class="resu_cua">Hamburguesa rellena</p>
+                            <p class="resu_cua">Hamburguesa Rellena</p>
+                            <p class="resu_cua">Hamburguesa Rellena</p>
+                            <p class="resu_cua">Hamburguesa Rellena</p>
+                            <p class="resu_cua">Hamburguesa Rellena</p>
+                        </div>
+                        <div class="cuadro_boton">
+                            <button class="btn-add-deta" type="submit">Agregar producto</button>
+                        </div>
+                    </div>
+                    <div class="resu_pago">
+                        <p class="grupo_detalle_res pago"><span class="topic">Precio Total:</span><span class="data-resume">$15.25</span></p>
+                        <p class="grupo_detalle_res pago"><span class="topic">Estado Orden:</span><span class="data-resume">
+                            <select name="estado_orden" class="select_orden">
+                                <option disabled>Seleccione un estado</option>
+                                <option value="sent">Enviado</option>
+                                <option value="pending">Pedido</option>
+                                <option value="served">Servido</option>
+                                <option value="caceled">Cancelado</option>
+                            </select></span>
+                        </p>
+                    </div>
+                    <button class="btn-add-deta-orden" type="submit">Guardar y Enviar</button>
+                </div>             
+            </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

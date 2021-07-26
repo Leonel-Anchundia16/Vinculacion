@@ -1,0 +1,73 @@
+.conte_client{
+  display: flex;
+}
+.conte_client .add-orden_client{
+  width: 100%;
+}
+.conte_client .add-deta_order{
+  width: 100%;
+}
+.columna-detalle{
+  padding: 20px 30px;
+  margin: 0 15px;
+}
+/*agregar porducto*/
+.cuadro_resume{
+  display: flex;
+  justify-content: space-between;
+}
+.resu_cua{
+  margin-left: 35px;
+  font-size:  15px;  
+  color: var(--color-text-input);
+}
+.btn-add-deta{
+  border-radius: 4px;
+  background-color: var(--color-amarillo-principal);
+  color: var(--color-text-negro-bajo);
+  font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+  cursor: pointer;
+  border: none;
+  padding: 7px 10px;
+}
+/*precio,estado y boton*/
+.grupo_detalle_res{
+  margin: 0;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+  .grupo_detalle_res .topic{
+    font-size: 1.3rem;
+    font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+  }
+.grupo_detalle_res.pago .data-resume{
+  font-family: var(--fuente-OSWALD);
+  font-size: 1.6rem;
+}
+
+/*estilos de select*/
+.select_orden{
+    outline: none;
+    border: 2px solid var(--color-brd-input);
+    font-size: 1rem;
+    font-family: var(--fuente-OPENSANS);
+    background-color: var(--color-blanco);
+    color: var(--color-text-negro-bajo);
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    border-radius: 7px;
+    padding: 5px;
+}
+/* ---------------------- */
+.btn-add-deta-orden{
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-rojo-oscuro);
+  color: var(--color-blanco);
+  font-family: var(--fuente-OPENSANS);
+  font-size: .9rem;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px 15px;
+}

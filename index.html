@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <title>La Parrilla de Luchín</title>
     <link rel="icon" href="Imagenes/logo.png">
-    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -163,29 +163,24 @@
 
     <main>
         <section class="container-slider">
-            <div class="group-slider">
-                <div class="actions">
-                    <div class="buttons-slider">
-                        <button class="return-sld"><i class="fas fa-chevron-left"></i></button>
-                        <button class="next-sld"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="size-slider">
-                        <button class="icon active"></button>
-                        <button class="icon"></button>
-                        <button class="icon"></button>
-                    </div>
-                </div>
-                <div class="txt-slider">
-                    <div class="texto">
-                        <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
-                        <h2 class="hero__titulo">
-                            La Parrilla de
-                            <h1 class="hero__titulo grand__text">Luchin</h1>
-                        </h2>
-                        <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbón contamos con personal capacitado en atención al cliente para brindarles el mejor servicio a nuestros clientes</p>
-                    </div>
-                </div>
+            <button class="btn-slider-previous"><i class="fal fa-chevron-left"></i></button>
+            <button class="btn-slider-next"><i class="fal fa-chevron-right"></i></button>
+            <div class="size-slider">
+                <button class="icon active"></button>
+                <button class="icon"></button>
+                <button class="icon"></button>
             </div>
+            <div class="txt-slider">
+                <p class="hero__subtitulo">¡Bienvenido al Portal!</p>
+                <h2 class="hero__titulo">La Parrilla de<h1 class="hero__titulo grand__text">Luchin</h1></h2>
+                <p class="hero__subtitulo text">Nos especializamos en carnes preparadas al carbón contamos con personal capacitado en atención al cliente para brindarles el mejor servicio a nuestros clientes</p>                
+            </div>
+            <ul class="slider-pictures">
+                <li><img src="./Imagenes/vino.jpg" alt=""/></li>
+                <li><img src="./Imagenes/vino.jpg" alt=""/></li>
+                <li><img src="./Imagenes/batidos.jpg" alt=""/></li>
+                <li><img src="./Imagenes/hamburguesas.png" alt=""/></li>
+            </ul>
         </section>
 
         <section class="promo-general">
@@ -234,6 +229,7 @@
                         <img src="./Imagenes/delivery.png" />
                     </div>
                 </div>
+                <div class="public-aside"><img src="./Imagenes/hamburguesas.png" alt=""/></div>
             </div>
         </section>
         <section class="menu__category">
