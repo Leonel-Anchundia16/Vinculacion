@@ -7,6 +7,7 @@
 
 /*HEREDAMOS ESTILOS CSS DE ARCHIVOS EXTERNOS*/
 @import url('header.css');
+@import url('./dashboard/stylesAdmin.css');
 @import url('footer.css');
 @import url('vent_add_car.css');
 
@@ -30,8 +31,13 @@
 @import url('./dashboard/asidebar.css');
 @import url('./dashboard/login.css');
 @import url('./dashboard/home.css');
+/* mendoza */
 @import url('./dashboard/add_orden.css');
 @import url('./dashboard/add_promo.css');
+/* eddy */
+@import url('./dashboard/add_platillo.css');
+@import url('./dashboard/lista_menu.css');
+
 
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
 :root{

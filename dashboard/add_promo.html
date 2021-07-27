@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promociones</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
+
 <body class="body-admin left-navbr">
     <nav class="navbar-admin">
         <div class="aside-bar image-navbar">
@@ -36,8 +40,12 @@
                 <i class="down-more fas fa-angle-down"></i>
             </a>
             <div class="subitem-aside">
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                <a href="#" class="item-aside-sub active">
+                    <p class="topic-item sub">Agregar Plato</p>
+                </a>
+                <a href="#" class="item-aside-sub">
+                    <p class="topic-item sub">Lista de Menú</p>
+                </a>
             </div>
         </div>
         <div class="container-item">
@@ -48,8 +56,12 @@
                 <i class="down-more fas fa-angle-down"></i>
             </a>
             <div class="subitem-aside">
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                <a href="#" class="item-aside-sub">
+                    <p class="topic-item sub">Lista de Menú</p>
+                </a>
+                <a href="#" class="item-aside-sub active">
+                    <p class="topic-item sub">Agregar Plato</p>
+                </a>
             </div>
         </div>
         <div class="container-item">
@@ -88,8 +100,12 @@
                 <p class="topic-item">Productos</p>
             </a>
             <div class="subitem-aside">
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                <a href="#" class="item-aside-sub">
+                    <p class="topic-item sub">Lista de Menú</p>
+                </a>
+                <a href="#" class="item-aside-sub active">
+                    <p class="topic-item sub">Agregar Plato</p>
+                </a>
             </div>
         </div>
         <div class="container-item">
@@ -116,27 +132,32 @@
                 <h2 class="title_card_cl"> Información Promoción</h2>
                 <form action="" class="col-form">
                     <div class="grup-casilla">
-                        <p><label>Nombre promoción</label><input type="text" placeholder="Ingrese nombre promoción"></p>
-                        <p><label>Código para cupón</label><input type="text" placeholder="Ingrese código"></p>
+                        <p><label class="labels-dash-sty">Nombre promoción</label><input class="input-dash-sty"
+                                type="text" placeholder="Ingrese nombre promoción"></p>
+                        <p><label class="labels-dash-sty">Código para cupón</label><input class="input-dash-sty"
+                                type="text" placeholder="Ingrese código de cupón"></p>
                     </div>
                     <div class="grup-casilla">
-                        <p><label>Fecha inicio promoción</label><input type="date"></p>
-                        <p><label>Fecha fin promoción</label><input type="date"></p>
+                        <p><label class="labels-dash-sty">Fecha inicio promoción</label><input class="input-dash-sty"
+                                type="date"></p>
+                        <p><label class="labels-dash-sty">Fecha fin promoción</label><input class="input-dash-sty"
+                                type="date"></p>
                     </div>
                     <div class="grup-casilla">
-                        <p><label>porcentaje promoción</label><input type="text" placeholder="Ingrese porcentaje"></p>
+                        <p><label class="labels-dash-sty">Descuento que aplica en <strong>porcentaje</strong></label><input class="input-dash-sty" type="text" placeholder="Ingrese porcentaje"></p>
                         <div>
-                        <p><label>Imagen promoción</label>
-                            <div class="file_input-text"> <input type="file" class="file_text" value="">Subir imagen</p></div>
+                            <p>
+                                <label class="labels-dash-sty">Seleccione una imagen para la Promoción</label>
+                                <div class="file_input_text"><input type="file" class="file_text">Subir imagen</div>
+                            </p>
                         </div>
                     </div>
-                    <div class="grupo-casilla">
-                        <p><label>descripción promoción</label><textarea></textarea></p>
-                    </div>
-                    <button class="btn-add-data-promo" type="submit">Agregar promoción</button>
-                </form>
+                    <button class="btn-add-data-promo" type="submit">Agregar Promoción</button>
+            </div>
+            </form>
             </div>
         </section>
     </main>
 </body>
+
 </html>

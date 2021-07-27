@@ -1,0 +1,32 @@
+.add-promo_deta {
+    padding: 30px 40px;
+    margin: 0 15px;
+    display: block;
+    justify-content: center;
+}
+.add-promo_deta .col-form {
+    width: 97%;
+    margin: 0 auto;
+}
+.add-promo_deta .col-form .grup-casilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+.btn-add-data-lista {
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-amarillo-principal);
+    color: var(--color-text-negro-bajo);
+    font-family: var(--fuente-OPENSANS);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    margin-top: 10px;
+}
+
+    .btn-add-data-lista:hover, .file_input_text:hover{
+        background-color: var(--color-amarillo);
+        color: var(--color-blanco);
+    }

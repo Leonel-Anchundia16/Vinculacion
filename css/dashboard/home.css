@@ -176,12 +176,6 @@ div[ class*=card-rsm]{
     height: 70vh;
     font-family: var(--fuente-OPENSANS);
 }
-.title_card_cl{
-    font-family: var(--fuente-OSWALD);
-    font-weight: var(--weigth-OPENSANS-REGULAR-400);
-    margin: 0;
-    color: var(--color-text-negro);
-}
 .container-tille__order{
     display: flex;
     align-items: center;
