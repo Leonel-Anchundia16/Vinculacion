@@ -10,250 +10,403 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body class="body-admin left-navbr">
-    <div class="popup-admin">
-        <div class="box-pop success">
-            <i class="fas fa-shield-check"></i>
-            <p>Empleado agregado correctamente</p>
-        </div>
-        <div class="box-pop warning">
-            <i class="fas fa-exclamation-circle"></i>
-            <p>Error inesperado</p>
-        </div>
-    </div>
-    <nav class="navbar-admin">
-        <div class="aside-bar image-navbar">
-            <img src="../Imagenes/luchin.png" alt="logo-luchin">
-        </div>
-        <div class="navbar-align">
-            <button class="btn__menu"><i class="fal fa-bars"></i></button>
-            <div class="group-items-navbar">
+    <div id="root">
+        <aside class="aside-bar aside">
+            <button class="btn__menu" id="button-menu-admin"><i class="fal fa-bars"></i></button>
+            <div class="image-navbar">
+                <img src="../Imagenes/luchin.png" alt="logo-luchin">
+            </div>
+            <div class="legend">PRINCIPAL</div>
+            <div class="container-item">
+                <a href="#" class="item-aside">
+                    <i class="estado"></i>
+                    <i class="icon-item far fa-border-all"></i>
+                    <p class="topic-item">Resumen</p>
+                    <i class="down-more fas fa-angle-down"></i>
+                </a>
+                <div class="subitem-aside">
+                    <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                    <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                </div>
+            </div>
+            <div class="container-item">
+                <a href="#" class="item-aside active">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-burger-soda"></i>
+                    <p class="topic-item">Menú</p>
+                    <i class="down-more fas fa-angle-down"></i>
+                </a>
+                <div class="subitem-aside">
+                    <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                    <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                </div>
+            </div>
+            <div class="container-item">
+                <a href="#" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-bags-shopping"></i>
+                    <p class="topic-item">Ordenes</p>
+                </a>
+            </div>
+            <div class="legend">ADMINISTRACIÓN</div>
+            <div class="container-item">
+                <a href="#" class="item-aside">
+                    <i class="estado"></i>
+                    <i class="icon-item far fa-users"></i>
+                    <p class="topic-item">Clientes</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="#" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-analytics"></i>
+                    <p class="topic-item">Ventas</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="#" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-badge-percent"></i>
+                    <p class="topic-item">Promociones</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="#" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-poll-people"></i>
+                    <p class="topic-item">Empleados</p>
+                </a>
+            </div>
+        </aside>
+
+        <div class="ctn-main-dash">
+            <div class="navbar-align">
                 <div class="item-navbar">
                     <div class="image">
                         <img src="../Imagenes/user-admin-profilejpg.jpg" alt="">
                     </div>
                     <p class="name_user">Nombre de usuario</p>
                 </div>
+                <div class="item-navbar">
+                    <button type="button" class="btn-unlogin"><i class="fal fa-sign-out"></i></button>
+                </div>
             </div>
+            <main class="contenido-admin pos-main-rel">
+                <div class="class-overlay">
+                    <div class="modal-reut">
+                        <div class="head__modal">
+                            <h1 class="title_card_cl">Agregar producto a la orden</h1>
+                            <button class="button-close-modal" type="button"><i class="fal fa-times"></i></button>
+                        </div>
+                        <div class="details-modal-inf">
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="theme-apart">
+                    <h2>Bienvenido, <span class="name-user">Nombre de usuario</span></h2>
+                </div>
+                <section class="container-main">
+                    <div class="flex-container">
+                        <div class="cl1">
+                            <div class="group-resume">
+                                <div class="card-rsm bd__sect">
+                                    <p class="title">TOTAL DE CLIENTES</p>
+                                    <div class="dt-resume up">
+                                        <div>
+                                            <h1 class="total">05</h1>
+                                            <div class="porcentaje"><i class="fas fa-arrow-up"></i><span>12.5%</span></div>
+                                        </div>
+                                        <div class="icon"><i class="fal fa-users"></i></div>
+                                    </div>
+                                    <p class="dsc-porc">No pongas wbds nomas</p>
+                                </div>
+                                <div class="card-rsm bd__sect">
+                                    <p class="title">Platillos Vendidos</p>
+                                    <div class="dt-resume down">
+                                        <div>
+                                            <h1 class="total">15</h1>
+                                            <div class="porcentaje"><i class="fas fa-arrow-up"></i><span>1.5%</span></div>
+                                        </div>
+                                        <div class="icon"><i class="fal fa-burger-soda"></i></div>
+                                    </div>
+                                    <p class="dsc-porc">Nuevos este mes</p>
+                                </div>
+                                <div class="card-rsm bd__sect">
+                                    <p class="title">total de ordenes</p>
+                                    <div class="dt-resume">
+                                        <div>
+                                            <h1 class="total">25</h1>
+                                            <div class="porcentaje down"><i class="fas fa-arrow-up"></i><span>12.5%</span></div>
+                                        </div>
+                                        <div class="icon"><i class="fal fa-calendar-check"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-orders bd__sect">
+                                <h2 class="title_card_cl">Ordenes Recientes</h2>
+                                <div class="ct-table_orders">
+                                    <table>
+                                        <thead>
+                                            <th>Productos</th>
+                                            <th>Cliente</th>
+                                            <th>Price</th>
+                                            <th>Estado</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Hamburguesa Relena</li>
+                                                        <li>Coca Cola</li>
+                                                        <li>Pepsi 1.5 Ltr</li>
+                                                    </ul>
+                                                </td>
+                                                <td>Manolo Angulo</td>
+                                                <td>$25.50</td>
+                                                <td><p class="state-order pendiente">Pendiente</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Hamburguesa Relena</li>
+                                                        <li>Coca Cola</li>
+                                                        <li>Pepsi 1.5 Ltr</li>
+                                                    </ul>
+                                                </td>
+                                                <td>Manolo Angulo</td>
+                                                <td>$25.50</td>
+                                                <td><p class="state-order entregado">Pendiente</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Hamburguesa Relena</li>
+                                                        <li>Coca Cola</li>
+                                                        <li>Pepsi 1.5 Ltr</li>
+                                                    </ul>
+                                                </td>
+                                                <td>Manolo Angulo</td>
+                                                <td>$25.50</td>
+                                                <td><p class="state-order en_entrega">Pendiente</p></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cl2">
+                            <div class="view-order bd__sect">
+                                <div class="container-tille__order">
+                                    <h2 class="title_card_cl">Ordenes Pendientes</h2>
+                                    <p class="contador">10</p>
+                                </div>
+                                <div class="container-card_order">
+                                    <div class="card-order">
+                                        <p class="num-order">ID Pedido: <span>101</span></p>
+                                        <div class="dtlle-order_pend">
+                                            <ul class="cl-products">
+                                                <li>Hamburguesa Rellena Mixta</li>
+                                                <li>Coca-cola</li>
+                                                <li>Coca-cola</li>
+                                                <li>Coca-cola</li>
+                                                <li>Coca-cola</li>
+                                                <li>Batido</li>
+                                            </ul>
+                                            <p class="cl-price">$151.95</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-order">
+                                        <p class="num-order">ID Pedido: <span>101</span></p>
+                                        <div class="dtlle-order_pend">
+                                            <ul class="cl-products">
+                                                <li>Hamburguesa Rellena Mixta</li>
+                                                <li>Coca-cola</li>
+                                                <li>Batido</li>
+                                            </ul>
+                                            <p class="cl-price">$151.95</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-order">
+                                        <p class="num-order">ID Pedido: <span>101</span></p>
+                                        <div class="dtlle-order_pend">
+                                            <ul class="cl-products">
+                                                <li>Hamburguesa Rellena Mixta</li>
+                                                <li>Coca-cola</li>
+                                                <li>Batido</li>
+                                            </ul>
+                                            <p class="cl-price">$151.95</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-    </nav>
-    <aside id="navbar-admin" class="aside-bar aside">
-        <div class="legend">PRINCIPAL</div>
-        <div class="container-item">
-            <a href="#" class="item-aside">
-                <i class="estado"></i>
-                <i class="icon-item far fa-border-all"></i>
-                <p class="topic-item">Resumen</p>
-                <i class="down-more fas fa-angle-down"></i>
-            </a>
-            <div class="subitem-aside">
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+        <!-- <main class="contenido-admin pos-main-rel">
+            <div class="class-overlay">
+                <div class="modal-reut">
+                    <div class="head-modal">
+                        <h1 class="title_card_cl">Agregar producto a la orden.</h1>
+                        <button class="button-close-modal" type="button"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="details-modal-inf">
+                        <h1>Titulo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minus unde enim deleniti cumque voluptas, assumenda quaerat quia nesciunt nam quae a ipsa magni harum! Cumque ut inventore fuga et!</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="container-item">
-            <a href="#" class="item-aside active">
-                <i class="estado"></i>
-                <i class=" icon-item far fa-burger-soda"></i>
-                <p class="topic-item">Menú</p>
-                <i class="down-more fas fa-angle-down"></i>
-            </a>
-            <div class="subitem-aside">
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
-            </div>
-        </div>
-        <div class="container-item">
-            <a href="#" class="item-aside">
-                <i class="estado"></i>
-                <i class=" icon-item far fa-bags-shopping"></i>
-                <p class="topic-item">Ordenes</p>
-            </a>
-        </div>
-        <div class="legend">ADMINISTRACIÓN</div>
-        <div class="container-item">
-            <a href="#" class="item-aside">
-                <i class="estado"></i>
-                <i class="icon-item far fa-users"></i>
-                <p class="topic-item">Clientes</p>
-            </a>
-        </div>
-        <div class="container-item">
-            <a href="#" class="item-aside">
-                <i class="estado"></i>
-                <i class=" icon-item far fa-analytics"></i>
-                <p class="topic-item">Ventas</p>
-            </a>
-        </div>
-        <div class="container-item">
-            <a href="#" class="item-aside">
-                <i class="estado"></i>
-                <i class=" icon-item far fa-badge-percent"></i>
-                <p class="topic-item">Promociones</p>
-            </a>
-        </div>
-        <div class="container-item">
-            <a href="#" class="item-aside">
-                <i class="estado"></i>
-                <i class=" icon-item far fa-luggage-cart"></i>
-                <p class="topic-item">Productos</p>
-            </a>
-            <div class="subitem-aside">
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
-            </div>
-        </div>
-        <div class="container-item">
-            <a href="#" class="item-aside">
-                <i class="estado"></i>
-                <i class=" icon-item far fa-person-dolly"></i>
-                <p class="topic-item">Proveedores</p>
-            </a>
-        </div>
-        <div class="container-item">
-            <a href="#" class="item-aside">
-                <i class="estado"></i>
-                <i class=" icon-item far fa-poll-people"></i>
-                <p class="topic-item">Empleados</p>
-            </a>
-        </div>
-    </aside>
 
-    <main class="contenido-admin">
-        <div class="theme-apart">
-            <h2>Bienvenido, <span class="name-user">Nombre de usuario</span></h2>
-        </div>
-        <section class="container-main">
-            <div class="flex-container">
-                <div class="cl1">
-                    <div class="group-resume">
-                        <div class="card-rsm-yll bd__sect">
-                            <div class="dt-resume">
-                                <p class="title">TOTAL DE CLIENTES</p>
-                                <h1 class="total">150</h1>
-                                <p class="porcentaje down"><i class="fas fa-arrow-up"></i><span>12.5%</span></p>
-                            </div>
-                            <div class="icon"><i class="fas fa-users"></i></div>
-                        </div>
-                        <div class="card-rsm-blue bd__sect">
-                            <div class="dt-resume">
-                                <p class="title">PLATOS VENDIDOS</p>
-                                <h1 class="total">150</h1>
-                                <p class="porcentaje down"><i class="fas fa-arrow-up"></i><span>12.5%</span></p>
-                            </div>
-                            <div class="icon"><i class="fas fa-users"></i></div>
-                        </div>
-                        <div class="card-rsm-pink bd__sect">
-                            <div class="dt-resume">
-                                <p class="title">TOTAL DE ORDENES</p>
-                                <h1 class="total">150</h1>
-                                <p class="porcentaje up"><i class="fas fa-arrow-up"></i><span>12.5%</span></p>
-                            </div>
-                            <div class="icon"><i class="fas fa-users"></i></div>
-                        </div>
-                    </div>
-                    <div class="table-orders bd__sect">
-                        <h2 class="title_card_cl">Ordenes Recientes</h2>
-                        <div class="ct-table_orders">
-                            <table>
-                                <thead>
-                                    <th>Productos</th>
-                                    <th>Cliente</th>
-                                    <th>Price</th>
-                                    <th>Estado</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <ul>
-                                                <li>Hamburguesa Relena</li>
-                                                <li>Coca Cola</li>
-                                                <li>Pepsi 1.5 Ltr</li>
-                                            </ul>
-                                        </td>
-                                        <td>Manolo Angulo</td>
-                                        <td>$25.50</td>
-                                        <td><p class="state-order pendiente">Pendiente</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul>
-                                                <li>Hamburguesa Relena</li>
-                                                <li>Coca Cola</li>
-                                                <li>Pepsi 1.5 Ltr</li>
-                                            </ul>
-                                        </td>
-                                        <td>Manolo Angulo</td>
-                                        <td>$25.50</td>
-                                        <td><p class="state-order entregado">Pendiente</p></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul>
-                                                <li>Hamburguesa Relena</li>
-                                                <li>Coca Cola</li>
-                                                <li>Pepsi 1.5 Ltr</li>
-                                            </ul>
-                                        </td>
-                                        <td>Manolo Angulo</td>
-                                        <td>$25.50</td>
-                                        <td><p class="state-order en_entrega">Pendiente</p></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="cl2">
-                    <div class="view-order bd__sect">
-                        <div class="container-tille__order">
-                            <h2 class="title_card_cl">Ordenes Pendientes</h2>
-                            <p class="contador">10</p>
-                        </div>
-                        <div class="container-card_order">
-                            <div class="card-order">
-                                <p class="num-order">ID Pedido: <span>101</span></p>
-                                <div class="dtlle-order_pend">
-                                    <ul class="cl-products">
-                                        <li>Hamburguesa Rellena Mixta</li>
-                                        <li>Coca-cola</li>
-                                        <li>Batido</li>
-                                    </ul>
-                                    <p class="cl-price">$151.95</p>
-                                </div>
-                            </div>
-                            <div class="card-order">
-                                <p class="num-order">ID Pedido: <span>101</span></p>
-                                <div class="dtlle-order_pend">
-                                    <ul class="cl-products">
-                                        <li>Hamburguesa Rellena Mixta</li>
-                                        <li>Coca-cola</li>
-                                        <li>Batido</li>
-                                    </ul>
-                                    <p class="cl-price">$151.95</p>
-                                </div>
-                            </div>
-                            <div class="card-order">
-                                <p class="num-order">ID Pedido: <span>101</span></p>
-                                <div class="dtlle-order_pend">
-                                    <ul class="cl-products">
-                                        <li>Hamburguesa Rellena Mixta</li>
-                                        <li>Coca-cola</li>
-                                        <li>Batido</li>
-                                    </ul>
-                                    <p class="cl-price">$151.95</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="theme-apart">
+                <h2>Bienvenido, <span class="name-user">Nombre de usuario</span></h2>
             </div>
-        </section>
-    </main>
+            <section class="container-main">
+                <div class="flex-container">
+                    <div class="cl1">
+                        <div class="group-resume">
+                            <div class="card-rsm bd__sect">
+                                <p class="title">TOTAL DE CLIENTES</p>
+                                <div class="dt-resume up">
+                                    <div>
+                                        <h1 class="total">05</h1>
+                                        <div class="porcentaje"><i class="fas fa-arrow-up"></i><span>12.5%</span></div>
+                                    </div>
+                                    <div class="icon"><i class="fal fa-users"></i></div>
+                                </div>
+                                <p class="dsc-porc">No pongas wbds nomas</p>
+                            </div>
+                            <div class="card-rsm bd__sect">
+                                <p class="title">Platillos Vendidos</p>
+                                <div class="dt-resume down">
+                                    <div>
+                                        <h1 class="total">15</h1>
+                                        <div class="porcentaje"><i class="fas fa-arrow-up"></i><span>1.5%</span></div>
+                                    </div>
+                                    <div class="icon"><i class="fal fa-burger-soda"></i></div>
+                                </div>
+                                <p class="dsc-porc">Nuevos este mes</p>
+                            </div>
+                            <div class="card-rsm bd__sect">
+                                <p class="title">total de ordenes</p>
+                                <div class="dt-resume">
+                                    <div>
+                                        <h1 class="total">25</h1>
+                                        <div class="porcentaje down"><i class="fas fa-arrow-up"></i><span>12.5%</span></div>
+                                    </div>
+                                    <div class="icon"><i class="fal fa-calendar-check"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-orders bd__sect">
+                            <h2 class="title_card_cl">Ordenes Recientes</h2>
+                            <div class="ct-table_orders">
+                                <table>
+                                    <thead>
+                                        <th>Productos</th>
+                                        <th>Cliente</th>
+                                        <th>Price</th>
+                                        <th>Estado</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <ul>
+                                                    <li>Hamburguesa Relena</li>
+                                                    <li>Coca Cola</li>
+                                                    <li>Pepsi 1.5 Ltr</li>
+                                                </ul>
+                                            </td>
+                                            <td>Manolo Angulo</td>
+                                            <td>$25.50</td>
+                                            <td><p class="state-order pendiente">Pendiente</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <ul>
+                                                    <li>Hamburguesa Relena</li>
+                                                    <li>Coca Cola</li>
+                                                    <li>Pepsi 1.5 Ltr</li>
+                                                </ul>
+                                            </td>
+                                            <td>Manolo Angulo</td>
+                                            <td>$25.50</td>
+                                            <td><p class="state-order entregado">Pendiente</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <ul>
+                                                    <li>Hamburguesa Relena</li>
+                                                    <li>Coca Cola</li>
+                                                    <li>Pepsi 1.5 Ltr</li>
+                                                </ul>
+                                            </td>
+                                            <td>Manolo Angulo</td>
+                                            <td>$25.50</td>
+                                            <td><p class="state-order en_entrega">Pendiente</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cl2">
+                        <div class="view-order bd__sect">
+                            <div class="container-tille__order">
+                                <h2 class="title_card_cl">Ordenes Pendientes</h2>
+                                <p class="contador">10</p>
+                            </div>
+                            <div class="container-card_order">
+                                <div class="card-order">
+                                    <p class="num-order">ID Pedido: <span>101</span></p>
+                                    <div class="dtlle-order_pend">
+                                        <ul class="cl-products">
+                                            <li>Hamburguesa Rellena Mixta</li>
+                                            <li>Coca-cola</li>
+                                            <li>Coca-cola</li>
+                                            <li>Coca-cola</li>
+                                            <li>Coca-cola</li>
+                                            <li>Batido</li>
+                                        </ul>
+                                        <p class="cl-price">$151.95</p>
+                                    </div>
+                                </div>
+                                <div class="card-order">
+                                    <p class="num-order">ID Pedido: <span>101</span></p>
+                                    <div class="dtlle-order_pend">
+                                        <ul class="cl-products">
+                                            <li>Hamburguesa Rellena Mixta</li>
+                                            <li>Coca-cola</li>
+                                            <li>Batido</li>
+                                        </ul>
+                                        <p class="cl-price">$151.95</p>
+                                    </div>
+                                </div>
+                                <div class="card-order">
+                                    <p class="num-order">ID Pedido: <span>101</span></p>
+                                    <div class="dtlle-order_pend">
+                                        <ul class="cl-products">
+                                            <li>Hamburguesa Rellena Mixta</li>
+                                            <li>Coca-cola</li>
+                                            <li>Batido</li>
+                                        </ul>
+                                        <p class="cl-price">$151.95</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> -->
+    </div>
     <script>
+        const body = document.getElementById('root');
         const menuBtn = document.querySelector('.btn__menu');
         
         menuBtn.addEventListener('click', ()=>{
-            const body = document.querySelector('.body-admin');
             const imageAside = document.querySelector('.image-navbar');
 
             if(body.classList.contains('left-navbar')){
@@ -267,7 +420,7 @@
 
         document.querySelectorAll('.aside-bar .container-item').forEach(item =>{
             item.addEventListener('mouseenter', (e)=>{
-                if(document.body.classList.contains('left-navbar')){
+                if(body.classList.contains('left-navbar')){
                     e.target.classList.add('view');
                     if(e.target.lastElementChild.classList.contains('subitem-aside')){
                         e.target.lastElementChild.classList.add('active');
@@ -275,7 +428,7 @@
                 }
             });
             item.addEventListener('mouseleave', (e)=>{
-                if(document.body.classList.contains('left-navbar')){
+                if(body.classList.contains('left-navbar')){
                     e.target.classList.remove('view');
                     if(e.target.lastElementChild.classList.contains('subitem-aside')){
                         e.target.lastElementChild.classList.remove('active');

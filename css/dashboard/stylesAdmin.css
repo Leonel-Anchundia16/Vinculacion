@@ -1,3 +1,41 @@
+#root{
+    width: 100%;  
+    background-color: var(--bg-admin);
+    font-family: var(--fuente-OPENSANS);  
+}
+
+
+/*ESTILOS PARA MAIN DE ADMINISTRACION*/
+main[class*='contenido-admin']{
+    overflow: hidden;
+    transition: all ease .3s;
+    padding-bottom: 40px;
+}
+    .theme-apart{
+        background-color: var(--color-rojo-oscuro);
+        color: var(--color-blanco);
+        display: flex;
+        align-items: flex-end;
+        height: 75px;
+        padding: 0 30px 95px 30px;
+    }
+        .theme-apart>h2{
+            margin: 0;
+            font-size: 1.6rem;
+        }
+        main[class*='contenido-admin'] .container-main{
+            margin: -60px 15px 0 15px;
+            overflow: hidden;
+            min-height: 500px;
+        }
+        .bd__sect{
+            border-radius: 20px;
+            background-color: var(--color-blanco);
+            -webkit-box-shadow: -2px 12px 19px -16px rgba(0,0,0,0.75);
+            -moz-box-shadow: -2px 12px 19px -16px rgba(0,0,0,0.75);
+            box-shadow: -2px 12px 19px -16px rgba(0,0,0,0.75);
+        }
+
 /* ------subitulos de apartados----- */
 .title_card_cl{
     font-family: var(--fuente-OSWALD);
