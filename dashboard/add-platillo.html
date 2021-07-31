@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Platillo al Menu</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body class="body-admin left-navbr">
+  <nav class="navbar-admin">
+    <div class="aside-bar image-navbar">
+      <img src="../Imagenes/luchin.png" alt="logo-luchin">
+    </div>
+    <div class="navbar-align">
+      <button class="btn__menu"><i class="fal fa-bars"></i></button>
+      <div class="group-items-navbar">
+        <div class="item-navbar">
+          <div class="image">
+            <img src="../Imagenes/user-admin-profilejpg.jpg" alt="">
+          </div>
+          <p class="name_user">Nombre de usuario</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <aside id="navbar-admin" class="aside-bar aside">
+    <div class="legend">PRINCIPAL</div>
+    <div class="container-item">
+      <a href="#" class="item-aside">
+        <i class="estado"></i>
+        <i class="icon-item far fa-border-all"></i>
+        <p class="topic-item">Resumen</p>
+        <i class="down-more fas fa-angle-down"></i>
+      </a>
+      <div class="subitem-aside">
+        <a href="#" class="item-aside-sub active">
+          <p class="topic-item sub">Agregar Plato</p>
+        </a>
+        <a href="#" class="item-aside-sub">
+          <p class="topic-item sub">Lista de Menú</p>
+        </a>
+      </div>
+    </div>
+    <div class="container-item">
+      <a href="#" class="item-aside active">
+        <i class="estado"></i>
+        <i class=" icon-item far fa-burger-soda"></i>
+        <p class="topic-item">Menú</p>
+        <i class="down-more fas fa-angle-down"></i>
+      </a>
+      <div class="subitem-aside">
+        <a href="#" class="item-aside-sub">
+          <p class="topic-item sub">Lista de Menú</p>
+        </a>
+        <a href="#" class="item-aside-sub active">
+          <p class="topic-item sub">Agregar Plato</p>
+        </a>
+      </div>
+    </div>
+    <div class="container-item">
+      <a href="#" class="item-aside">
+        <i class="estado"></i>
+        <i class=" icon-item far fa-bags-shopping"></i>
+        <p class="topic-item">Ordenes</p>
+      </a>
+    </div>
+    <div class="legend">ADMINISTRACIÓN</div>
+    <div class="container-item">
+      <a href="#" class="item-aside">
+        <i class="estado"></i>
+        <i class="icon-item far fa-users"></i>
+        <p class="topic-item">Clientes</p>
+      </a>
+    </div>
+    <div class="container-item">
+      <a href="#" class="item-aside">
+        <i class="estado"></i>
+        <i class=" icon-item far fa-analytics"></i>
+        <p class="topic-item">Ventas</p>
+      </a>
+    </div>
+    <div class="container-item">
+      <a href="#" class="item-aside">
+        <i class="estado"></i>
+        <i class=" icon-item far fa-badge-percent"></i>
+        <p class="topic-item">Promociones</p>
+      </a>
+    </div>
+    <div class="container-item">
+      <a href="#" class="item-aside">
+        <i class="estado"></i>
+        <i class=" icon-item far fa-luggage-cart"></i>
+        <p class="topic-item">Productos</p>
+      </a>
+      <div class="subitem-aside">
+        <a href="#" class="item-aside-sub">
+          <p class="topic-item sub">Lista de Menú</p>
+        </a>
+        <a href="#" class="item-aside-sub active">
+          <p class="topic-item sub">Agregar Plato</p>
+        </a>
+      </div>
+    </div>
+    <div class="container-item">
+      <a href="#" class="item-aside">
+        <i class="estado"></i>
+        <i class=" icon-item far fa-person-dolly"></i>
+        <p class="topic-item">Proveedores</p>
+      </a>
+    </div>
+    <div class="container-item">
+      <a href="#" class="item-aside">
+        <i class="estado"></i>
+        <i class=" icon-item far fa-poll-people"></i>
+        <p class="topic-item">Empleados</p>
+      </a>
+    </div>
+  </aside>
+
+  <main class="contenido-admin">
+    <div class="theme-apart">
+      <h2 class="name-user">Agregar Platillo al Menu</h2>
+    </div>
+    <section class="container-main">
+      <div class="add-promo_deta bd__sect">
+        <h2 class="title_card_cl"> Detalles del Platillo</h2>
+        <form action="" class="col-form">
+          <div class="grup-casilla">
+            <p><label class="labels-dash-sty">Nombre promoción</label><input class="input-dash-sty" type="text" placeholder="Ingrese nombre promoción"></p>
+            <p><label class="labels-dash-sty">Código para cupón</label><input class="input-dash-sty" type="text" placeholder="Ingrese código"></p>
+          </div>
+          <div class="grup-casilla">
+            <p>
+              <label class="labels-dash-sty">Seleccione una Categoria</label>
+              <select name="select-cat-plat" class="select-dash-sty">
+                <option value="0">Seleccione Categoria</option>
+                <option value="1">Hamburguesas</option>
+                <option value="2">Sanduches</option>
+                <option value="3">Varios</option>
+                <option value="4">Bebidas</option>
+                <option value="5">Cortes</option>
+                <option value="6">Alitas de Pollo</option>
+              </select>
+            </p>
+            <p>
+              <label class="labels-dash-sty">Seleccione una Subcategoria</label>
+              <select name="select-subcat-plat" class="select-dash-sty">
+                <option value="0">Seleccione Subcategoria</option>
+                <option value="1">Alcoholicas</option>
+                <option value="2">No Alcoholicas</option>
+                <option value="3">Agua</option>
+              </select>
+            </p>
+          </div>
+          <div class="grup-casilla">
+            <div>
+              <p>
+                <label class="labels-dash-sty">Seleccione una imagen para el Platillo</label>
+                <div class="file_input_text"><input type="file" class="file_text">Subir imagen</div>
+              </p>
+            </div>            
+          </div>
+          <div class="grupo-casilla">
+            <p><label class="labels-dash-sty">Descripción del Platillo</label><textarea class="textarea-dash-sty"></textarea></p>
+          </div>
+          <button class="btn-add-data-lista" type="submit">Agregar Platillo</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script>
+    const menuBtn = document.querySelector('.btn__menu');
+
+    menuBtn.addEventListener('click', () => {
+      const body = document.querySelector('.body-admin');
+      const imageAside = document.querySelector('.image-navbar');
+
+      if (body.classList.contains('left-navbar')) {
+        body.classList.remove('left-navbar');
+        imageAside.innerHTML = '<img src="../Imagenes/luchin.png" alt="logo-luchin">';
+      } else {
+        body.classList.add('left-navbar');
+        imageAside.innerHTML = '<img class="small" src="../Imagenes/logo.png" alt="logo-luchin">';
+      }
+    })
+
+    document.querySelectorAll('.aside-bar .container-item').forEach(item => {
+      item.addEventListener('mouseenter', (e) => {
+        if (document.body.classList.contains('left-navbar')) {
+          e.target.classList.add('view');
+          if (e.target.lastElementChild.classList.contains('subitem-aside')) {
+            e.target.lastElementChild.classList.add('active');
+          }
+        }
+      });
+      item.addEventListener('mouseleave', (e) => {
+        if (document.body.classList.contains('left-navbar')) {
+          e.target.classList.remove('view');
+          if (e.target.lastElementChild.classList.contains('subitem-aside')) {
+            e.target.lastElementChild.classList.remove('active');
+          }
+        }
+      })
+    })
+
+    document.querySelectorAll('.aside-bar .container-item .item-aside').forEach(item => {
+      item.addEventListener('click', (e) => {
+        if (!document.body.classList.contains('left-navbar')) {
+          const itemClick = this.document.activeElement;
+          const subitem = this.document.activeElement.nextElementSibling;
+          // console.log(this.document.activeElement.nextElementSibling);
+          if (subitem != null) {
+            if (subitem.classList.contains('active')) {
+              subitem.classList.remove('active');
+              itemClick.classList.remove('view');
+            } else {
+              subitem.classList.add('active');
+              itemClick.classList.add('view');
+            }
+          }
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>

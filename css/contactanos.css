@@ -104,7 +104,7 @@ main section[class*='contact-']{
     .contac_description p{
         margin: 0;
     }
-        .contac_description p:hover:not(.topic, .detalle.iconos){
+        .contac_description .detalle:hover:not(.topic, .detalle.iconos){
             color: var(--color-amarillo);
         }
     .contac_description .topic{
@@ -116,6 +116,7 @@ main section[class*='contact-']{
     .contac_description .detalle{
         color: var(--color-azul-fuerte);
         font-size: 1rem;
+        text-decoration: none;
     }
         .contac_description .detalle.iconos{
             display: grid;

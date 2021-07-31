@@ -34,14 +34,66 @@ div[class*='popup-admin']{
 
 /* ---------------- */
 
-.flex-container{
+/* -------------VENTANA EMERGENTE REUTILIZABLE ADMINISTRACION------------- */
+.class-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all ease .3s;
+}
+    .class-overlay .modal-reut{
+        background-color: var(--color-blanco);
+        padding: 1.3rem 2rem;
+        min-width: 40%;
+        max-width: 80%;
+    }
+    .modal-reut .head__modal{
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+        .modal-reut .button-close-modal{
+            padding: 0;
+            width: 25px;
+            height: 25px;
+            border: none;
+            background-color: transparent;
+            color: var(--color-amarillo);   
+            font-size: 2.7vw; 
+            cursor: pointer;
+
+            position: absolute;     
+            top: 0;
+            right: 0;
+            transition: .3 ease all;
+        }
+            .button-close-modal:hover{
+                font-size: 2.6vw;
+                color: var(--color-rojo-oscuro);      
+            }
+    .details-modal-inf{
+        padding: 10px;
+    }
+
+/* ---------------------------------------- */
+
+.flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .flex-container .cl1{
-    width: 100%;
+    width: 70%;
 }
 .flex-container .cl2{
-    width: 450px;
+    width: 25%;
 }
     .flex-container div[class*=cl]{
         padding: 0 15px;
@@ -52,42 +104,29 @@ div[class*='popup-admin']{
     justify-content: center;
 }
 div[ class*=card-rsm]{
-    padding: 20px 30px;
-    display: flex;
-    align-items: center;
-    width: calc(70% / 3);
-    height: 100px;
-    justify-content: space-between;
-    margin: auto;
-    color: var(--color-text-negro);
+    padding: 15px 20px;
+    width: calc(75% / 3);
+    margin: 0 auto;
+    color: var(--color-text-negro-bajo);
     font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
-    background: var(--color-blanco);
+    border-bottom: 6px solid var(--color-amarillo-principal);
 }
-    .card-rsm-yll .icon{
+    .card-rsm .icon{
         color: var(--color-amarillo-principal);
-    }
-    .card-rsm-yll{
-        border-bottom: 8px solid var(--color-amarillo-principal);
-    }
-    .card-rsm-blue .icon{
-        color: #185ADB;
-    }
-    .card-rsm-blue{
-        border-bottom: 8px solid #185ADB;
-    }
-    .card-rsm-pink{
-        border-bottom: 8px solid #D62AD0;
-    }
-    .card-rsm-pink .icon{
-        color: #D62AD0;
     }
     div[class*=card-rsm] .icon{
         text-align: center;
-        font-size: 3rem;
+        font-size: 4vw;
     }
-    .dt-resume .title{
-        font-size: .8rem;
+    .card-rsm .dt-resume{
+        display: flex;
+        justify-content: space-between;
         width: 100%;
+    }
+    .card-rsm .title{
+        font-size: 1vw;
+        text-transform: uppercase;
+        line-height: 100%;
         margin: 0;
         font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
     }
@@ -95,28 +134,43 @@ div[ class*=card-rsm]{
         margin: 0;
         font-weight: normal;
         font-family: var(--fuente-OSWALD);
-        font-size: 3rem;
+        font-size: 3.5vw;
         line-height: 100%;
     }
     .dt-resume .porcentaje{
-        width: 70px;
+        width: fit-content;
         color: var(--color-blanco);
-        border-radius: 15px;
-        padding: 3px 5px;
-        text-align: center;
-        font-size: .8rem;
-        margin: 7px 0 0;
+        border-radius: 25px;
+        padding: 3px 6px;
+        font-size: .8vw;
+        margin-top: 7px;
+        font-weight: bold;
+        background-color: var(--bg-admin);
     }
-        .dt-resume .porcentaje>i{
+        .dt-resume .porcentaje i{
             margin-right: 5px;
-            transition: all ease .5;
+            transition: transform ease .5s;
+            transform: rotate(0deg);
         }
-        .dt-resume .porcentaje.up{
+        .dt-resume.down .porcentaje{
+            background-color: var(--color-reprobado);
+        }        
+        .dt-resume.up .porcentaje{
             background-color: var(--color-aprobado);
         }
-        .dt-resume .porcentaje.down{
-            background-color: var(--color-reprobado);
-        }
+            .dt-resume.up .porcentaje i{
+                transform: rotate(0deg);
+            }
+            .dt-resume.down .porcentaje i{
+                transform: rotate(-180deg);
+            }        
+    .card-rsm .dsc-porc{
+        margin: 5px 0 0 0;
+        line-height: 100%;
+        font-size: .9vw;
+        font-weight: 600;
+        color: var(--color-text-input);
+    }
 
 
 /* TABLE LISTA DE ORDENES*/
@@ -173,14 +227,8 @@ div[ class*=card-rsm]{
 /*-----------ORDENEES PENDIENTES------------*/
 .view-order{
     padding: 20px;
-    height: 70vh;
+    height: calc(100% - 40px);
     font-family: var(--fuente-OPENSANS);
-}
-.title_card_cl{
-    font-family: var(--fuente-OSWALD);
-    font-weight: var(--weigth-OPENSANS-REGULAR-400);
-    margin: 0;
-    color: var(--color-text-negro);
 }
 .container-tille__order{
     display: flex;
@@ -201,7 +249,7 @@ div[ class*=card-rsm]{
 .card-order{
     background-color: var(--bg-admin-hv);
     margin-top: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
 }
     .card-order .num-order{
@@ -209,8 +257,9 @@ div[ class*=card-rsm]{
         color: var(--color-blanco);
         margin: 0;
         padding: 5px;
-        font-size: .9rem;
+        font-size: .8rem;
         text-align: center;
+        text-transform: uppercase;
         font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
     }
     .card-order .dtlle-order_pend{
@@ -231,6 +280,5 @@ div[ class*=card-rsm]{
             margin: 0;
             font-size: 1.3rem;
             font-family: var(--fuente-OSWALD);
-            font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
             text-align: center;
         }

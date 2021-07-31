@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orden</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
+
 <body class="body-admin left-navbr">
     <nav class="navbar-admin">
         <div class="aside-bar image-navbar">
@@ -36,8 +40,12 @@
                 <i class="down-more fas fa-angle-down"></i>
             </a>
             <div class="subitem-aside">
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                <a href="#" class="item-aside-sub active">
+                    <p class="topic-item sub">Agregar Plato</p>
+                </a>
+                <a href="#" class="item-aside-sub">
+                    <p class="topic-item sub">Lista de Menú</p>
+                </a>
             </div>
         </div>
         <div class="container-item">
@@ -48,8 +56,12 @@
                 <i class="down-more fas fa-angle-down"></i>
             </a>
             <div class="subitem-aside">
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                <a href="#" class="item-aside-sub">
+                    <p class="topic-item sub">Lista de Menú</p>
+                </a>
+                <a href="#" class="item-aside-sub active">
+                    <p class="topic-item sub">Agregar Plato</p>
+                </a>
             </div>
         </div>
         <div class="container-item">
@@ -88,8 +100,12 @@
                 <p class="topic-item">Productos</p>
             </a>
             <div class="subitem-aside">
-                <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
-                <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                <a href="#" class="item-aside-sub">
+                    <p class="topic-item sub">Lista de Menú</p>
+                </a>
+                <a href="#" class="item-aside-sub active">
+                    <p class="topic-item sub">Agregar Plato</p>
+                </a>
             </div>
         </div>
         <div class="container-item">
@@ -112,65 +128,151 @@
             <h2><span class="name-user">Agregar orden</span></h2>
         </div>
         <section class="container-main">
-            <div class="conte_client">
-            <div class="add-orden_client">
-                <div class="columna-detalle dt-resume bd__sect">
+            <form action="" class="conte_client">
+                <div class="column-order dt-resume bd__sect">
                     <h2 class="title_card_cl"> Datos del Cliente</h2>
-                    <form action="" class="col-form">
+                    <div class="col-form">
                         <div class="grup-casilla">
-                            <p><label>Nombres del cliente</label><input type="text" placeholder="Ingrese nombres"></p>
-                            <p><label>Apellidos del cliente</label><input type="text" placeholder="Ingrese apellidos"></p>
+                            <p><label class="labels-dash-sty">Nombres del cliente</label><input required class="input-dash-sty" type="text" placeholder="Ingrese nombres"></p>
+                            <p><label class="labels-dash-sty">Apellidos del cliente</label><input required class="input-dash-sty" type="text" placeholder="Ingrese apellidos"></p>
                         </div>
                         <div class="grup-casilla">
-                            <p><label>Teléfono</label><input type="text" placeholder="Ingrese teléfono"></p>
-                            <p><label>Número de cédula</label><input type="text" placeholder="Ingrese cédula"></p>
-                        </div> 
-                    </form>
-                    <h2 class="title_card_cl">Dirección del cliente</h2>
-                    <form action="" class="col-form">
-                        <div class="grup-casilla">
-                            <p><label>Información dirección</label><input type="text" placeholder="Ingrese dirección"></p>
-                            <p><label>Ciudad</label><input type="text" placeholder="Ingrese ciudad"></p>
-                        </div>
-                        <div class="grup-casilla">
-                            <p><label>Calle</label><input type="text" placeholder="Ingrese calle"></p>
-                        </div> 
-                    </form>
-                </div>
-            </div>
-
-            <div class="add-deta_order">
-                <div class="columna-detalle dt-resume bd__sect">
-                    <h2 class="title_card_cl">Detalles Orden</h2>
-                    <div class="cuadro_resume">
-                        <div class="cuadro_info">
-                            <p class="resu_cua">Hamburguesa rellena</p>
-                            <p class="resu_cua">Hamburguesa Rellena</p>
-                            <p class="resu_cua">Hamburguesa Rellena</p>
-                            <p class="resu_cua">Hamburguesa Rellena</p>
-                            <p class="resu_cua">Hamburguesa Rellena</p>
-                        </div>
-                        <div class="cuadro_boton">
-                            <button class="btn-add-deta" type="submit">Agregar producto</button>
+                            <p><label class="labels-dash-sty">Teléfono</label><input required class="input-dash-sty" type="text" placeholder="Ingrese teléfono"></p>
+                            <p><label class="labels-dash-sty">Número de cédula</label><input required class="input-dash-sty" type="text" placeholder="Ingrese cédula"></p>
                         </div>
                     </div>
-                    <div class="resu_pago">
-                        <p class="grupo_detalle_res pago"><span class="topic">Precio Total:</span><span class="data-resume">$15.25</span></p>
-                        <p class="grupo_detalle_res pago"><span class="topic">Estado Orden:</span><span class="data-resume">
-                            <select name="estado_orden" class="select_orden">
-                                <option disabled>Seleccione un estado</option>
-                                <option value="sent">Enviado</option>
-                                <option value="pending">Pedido</option>
-                                <option value="served">Servido</option>
-                                <option value="caceled">Cancelado</option>
-                            </select></span>
+                    <h2 class="title_card_cl">Dirección del cliente</h2>
+                    <div class="col-form">
+                        <div class="grup-casilla">
+                            <p><label class="labels-dash-sty">Información dirección</label><input required
+                                    class="input-dash-sty" type="text" placeholder="Ingrese dirección"></p>
+                            <p><label class="labels-dash-sty">Ciudad</label><input required class="input-dash-sty"
+                                    type="text" placeholder="Ingrese ciudad"></p>
+                        </div>
+                        <div class="grup-casilla">
+                            <p><label class="labels-dash-sty">Calle</label><input required class="input-dash-sty" type="text"
+                                    placeholder="Ingrese calle"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-order bd__sect">
+                    <h2 class="title_card_cl">Detalles Orden</h2>
+                    <div class="detalle_order_row list">
+                        <div class="labels-dash-sty">Agregue Platillos para realizar una orden:</div>
+                        <div class="comidas">
+                            <p class="tr-product_order">
+                                <span class="desc_order">Hamburguesa Rellena</span>
+                                <span class="cant_order"><button type="button">-</button><input type="text" value="1"><button type="button">+</button></span>
+                                <span class="price_order">$15.99</span>
+                            </p>
+                            <p class="tr-product_order">
+                                <span class="desc_order">Hamburguesa Rellena</span>
+                                <span class="cant_order"><button type="button">-</button><input type="text" value="1"><button type="button">+</button></span>
+                                <span class="price_order">$15.99</span>
+                            </p>
+                            <p class="tr-product_order">
+                                <span class="desc_order">Hamburguesa Rellena</span>
+                                <span class="cant_order"><button type="button">-</button><input type="text" value="1"><button type="button">+</button></span>
+                                <span class="price_order">$15.99</span>
+                            </p>
+                            <p class="tr-product_order">
+                                <span class="desc_order">Hamburguesa Rellena</span>
+                                <span class="cant_order"><button type="button">-</button><input type="text" value="1"><button type="button">+</button></span>
+                                <span class="price_order">$15.99</span>
+                            </p>
+                            <p class="tr-product_order">
+                                <span class="desc_order">Hamburguesa Rellena</span>
+                                <span class="cant_order"><button type="button">-</button><input type="text" value="1"><button type="button">+</button></span>
+                                <span class="price_order">$15.99</span>
+                            </p>
+                        </div>
+                        <button class="btn-add-deta" type="button">Agregar producto</button>
+                    </div>                    
+                    <p class="detalle_order_r pago">
+                        <label class="labels-dash-sty">Indique el Estado de la Orden</label>
+                        <select name="estado_orden" class="select-dash-sty">
+                            <option value="0">Seleccione un estado</option>
+                            <option value="1">Enviado</option>
+                            <option value="2">Pedido</option>
+                            <option value="3">Servido</option>
+                            <option value="4">Cancelado</option>
+                        </select>
+                    </p>
+                    <div class="total-pago_order">
+                        <p class="detalle_order_row pago">
+                            <span class="topic">SubTotal:</span>
+                            <span class="data-resume">$15.25</span>
+                        </p>
+                        <p class="detalle_order_row pago">
+                            <span class="topic">Transporte:</span>
+                            <span class="data-resume">$3.00</span>
+                        </p>
+                        <p class="detalle_order_row pago">
+                            <span class="topic">Total a Pagar:</span>
+                            <span class="data-resume">$15.25</span>
                         </p>
                     </div>
-                    <button class="btn-add-deta-orden" type="submit">Guardar y Enviar</button>
-                </div>             
-            </div>
-        </div>
+                    <button class="btn-add-data-lista" type="submit">Guardar y Enviar</button>
+                </div>
+            </form>
         </section>
     </main>
+
+    <script>
+        const menuBtn = document.querySelector('.btn__menu');
+        
+        menuBtn.addEventListener('click', ()=>{
+            const body = document.querySelector('.body-admin');
+            const imageAside = document.querySelector('.image-navbar');
+
+            if(body.classList.contains('left-navbar')){
+                body.classList.remove('left-navbar');
+                imageAside.innerHTML = '<img src="../Imagenes/luchin.png" alt="logo-luchin">';
+            }else{
+                body.classList.add('left-navbar');
+                imageAside.innerHTML = '<img class="small" src="../Imagenes/logo.png" alt="logo-luchin">';
+            }
+        })
+
+        document.querySelectorAll('.aside-bar .container-item').forEach(item =>{
+            item.addEventListener('mouseenter', (e)=>{
+                if(document.body.classList.contains('left-navbar')){
+                    e.target.classList.add('view');
+                    if(e.target.lastElementChild.classList.contains('subitem-aside')){
+                        e.target.lastElementChild.classList.add('active');
+                    }
+                }
+            });
+            item.addEventListener('mouseleave', (e)=>{
+                if(document.body.classList.contains('left-navbar')){
+                    e.target.classList.remove('view');
+                    if(e.target.lastElementChild.classList.contains('subitem-aside')){
+                        e.target.lastElementChild.classList.remove('active');
+                    }
+                }
+            })
+        })
+
+        document.querySelectorAll('.aside-bar .container-item .item-aside').forEach(item =>{
+            item.addEventListener('click', (e)=>{
+                if(!document.body.classList.contains('left-navbar')){
+                    const itemClick = this.document.activeElement;
+                    const subitem = this.document.activeElement.nextElementSibling;
+                    // console.log(this.document.activeElement.nextElementSibling);
+                    if(subitem != null){
+                        if(subitem.classList.contains('active')){
+                            subitem.classList.remove('active');
+                            itemClick.classList.remove('view');
+                        }else{
+                            subitem.classList.add('active');
+                            itemClick.classList.add('view');
+                        }
+                    }
+                }
+            })
+        })
+    </script>
 </body>
+
 </html>
