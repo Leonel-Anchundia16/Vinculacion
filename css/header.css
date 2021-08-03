@@ -1,3 +1,5 @@
+@import url(estilos.css);
+
 /* BOTON DE WSSÇ */
 .btn-wss-ct{
     width: 35px;
@@ -58,7 +60,7 @@
     .scrolling .nav__navegacion .nav__items:hover{
         border-bottom: 5px solid var(--color-vino);
     }
-    .scrolling .nav__items--cta:not(.nav__items--cta.register):hover{
+    .scrolling .nav__items--cta:not(.nav__items--cta.register, .nav__items--cta.account):hover{
         border: 1px solid var(--color-vino);
         color: var(--color-vino);
     }
@@ -154,6 +156,23 @@
     font-family: var(--fuente-OPENSANS);
     padding: 0 20px;
 }
+
+/* -------------------------ESTILOS DE ITEMS USUARIO LOGEADO------------------------- */
+.nav__botones.account{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+    .nav__botones.account .nav__items--cta{
+        border: none;
+        width: 35px;
+        padding: 0;
+        margin: 0 10px;
+        fill: var(--color-blanco);
+    }
+        .nav__botones.account .nav__items--cta>svg{
+            width: 100%;
+        }
     .nav__items--cta{
         border: 2px solid var(--blanco);
         color: var(--color-blanco);
@@ -175,7 +194,7 @@
         background-color: var(--blanco);
         color: var(--color-vino);
     }
-        .nav__items--cta:not(.nav__items--cta.register):hover{
+        .nav__items--cta:not(.nav__items--cta.register, .nav__items--cta.account):hover{
             border: 1px solid var(--color-amarillo-principal);
             color: var(--color-amarillo-principal);
         }
@@ -184,6 +203,37 @@
             background: var(--color-amarillo-principal);
             color: var(--color-vino);
         }
+    .nav__botones.account .option-account{
+        background-color: var(--color-blanco);
+        width: 170px;
+        -webkit-box-shadow: -2px 3px 21px -5px rgba(0,0,0,0.3);
+        -moz-box-shadow: -2px 3px 21px -5px rgba(0,0,0,0.3);
+        box-shadow: -2px 3px 21px -5px rgba(0,0,0,0.3);
+        display: none;
+
+        position: absolute;
+        bottom: -100%;
+        right: 20px;
+    }   
+            .nav__botones.account .option-account.active{
+                display: block;
+            }
+        .option-account .opt-acc-item{
+            color: var(--color-text-negro-bajo);
+            text-decoration: none;
+            display: block;
+            text-align: end;
+            font-weight: var(--weigth-OSWALD-REGULAR-400);
+            padding: 8px 20px;
+            font-size: .9rem;
+        }
+            .opt-acc-item>i{
+                margin-left: 10px;
+            }
+        .option-account .opt-acc-item:hover{
+            background-color: var(--bg-admin);
+        }
+/* ------------------------------------------------------------------------ */
 
 
     .bolsita{
@@ -194,9 +244,59 @@
         display: flex;
         align-items: center;
     }
-        .bolsita a>img{
+        .bolsita a>svg{
             height: 40px;
+            fill: var(--color-blanco);
         }
+            .bolsita a[class=add] {
+                animation: tada 1.7s infinite;
+            }
+            @-webkit-keyframes tada {
+                0% {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+                10%, 20% {
+                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                }
+                30%, 50%, 70%, 90% {
+                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                }
+                40%, 60%, 80% {
+                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                }
+                100% {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+            }
+            @keyframes tada {
+                0% {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+                10%, 20% {
+                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                }
+                30%, 50%, 70%, 90% {
+                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                }
+                40%, 60%, 80% {
+                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                }
+                100% {
+                    -webkit-transform: scale3d(1, 1, 1);
+                    transform: scale3d(1, 1, 1);
+                }
+            } 
+
+
     .bolsita>.contador{
         background-color: var(--blanco);
         width: 23px;
@@ -662,6 +762,34 @@
         color: var(--color-vino);
     }
 
+
+    /* -------------------------ESTILOS DE ITEMS USUARIO LOGEADO------------------------- */
+    .nav__botones.account{
+        display: flex;
+    }
+    .nav__botones.account .option-account{
+        background-color: transparent;
+        display: block;
+        box-shadow: none;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+    }
+        .option-account .opt-acc-item{
+            color: var(--color-amarillo-principal);
+            text-align: start;
+            padding: 8px 10px;
+        }
+        .option-account .opt-acc-item:hover{
+            background-color: transparent;
+        }
+        .nav__botones.account .nav__items--cta{
+            width: 70px;
+            margin: 0;
+        }
+
 }    
 @media only screen and (max-width:720px){
     .btn-wss-ct{
@@ -687,9 +815,19 @@
             color: var(--color-vino);
         }
       /* ------FORMULARIOS----------  */
-     .vent-form-user{
-        width: 100%;
+        .vent-form-user{
+            width: 100%;
+        }
+
+    /* -------------------------ESTILOS DE ITEMS USUARIO LOGEADO------------------------- */
+    .nav__botones.account{
+        padding-top: 25px;
+        justify-content: start;
     }
+    .nav__botones.account .nav__items--cta{
+        display: none;
+    }
+
 }
 @media only screen and (max-width: 540px){ 
     .nav .nav__navegacion{

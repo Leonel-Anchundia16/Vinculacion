@@ -9,27 +9,134 @@
 </head>
 <body>
     <header>
-        <div>
-            <nav id="navBar" class="hed pd_border">
-                <a href="#" class="logo"> <img src="../Imagenes/luchin.png" alt="Logo_luchin"> </a>
-                <div class="navegacion ">
-                    <a href="#" class="items"> Menú</a>
-                    <a href="#" class="items"> Promociones</a>
-                    <a href="#" class="items"> Contactos</a>
-                </div>
-                <div class="buttons">
-                    <a href="#"class="items items--cte"> Iniciar Sesion</a>
-                    <a href="javascript:registrar()"class="items items--cte register"> Registrarme</a>
-                </div>
-                <div class="buttons bol">
-                    <a href="#"> <img src="../Imagenes//bolsa_negro.png" alt="Carrito de Compra" height="40" > </a>
-                    <div class="conta">
-                        <p class="producto">0</p>
+        <nav id="navBar" class="nav pdd_border navbar_all scrolling">
+            <a href="#" id="logo-marca" class="logo">
+                <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
+                <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
+            </a>
+            <div class="group_btn">
+                <button class="btn-menu_nav"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="container-items-nav">
+                <div class="grup-items-scroll">
+                    <div class="nav__navegacion">
+                        <a href="#" id="boxMenu-Select" class="nav__items">Menú<i class="fas fa-chevron-down"></i></a>
+                        <div class="menu-container">
+                            <div class="carrousel-menu">
+                                <button id="btnPrevious" class="previous-btn"><i class="fas fa-angle-left"></i></button>
+                                <div id="catMenuDesp" class="group-items">
+                                    <a href="menu-productos.html" class="item-categoria">
+                                        <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
+                                        <p class="name-cat-menuD">Todos los Productos</p>
+                                    </a>
+                                    <a href="" class="item-categoria">
+                                        <div class="item-img"><img src="./Imagenes/bebida-cat.png" alt=""></div>
+                                        <p class="name-cat-menuD">Bébidas</p>
+                                    </a>
+                                    <a href="" class="item-categoria">
+                                        <div class="item-img"><img src="./Imagenes/Hamburguesa-categoria.png" alt=""></div>
+                                        <p class="name-cat-menuD">Hamburguesas</p>
+                                    </a>
+                                    <a href="" class="item-categoria">
+                                        <div class="item-img"><img src="./Imagenes/papas-cat.png" alt=""></div>
+                                        <p class="name-cat-menuD">Papas</p>
+                                    </a>
+                                    <a href="" class="item-categoria">
+                                        <div class="item-img"><img src="./Imagenes/carne-cat.png" alt=""></div>
+                                        <p class="name-cat-menuD">Cortes de Carne</p>
+                                    </a>
+                                    <a href="" class="item-categoria">
+                                        <div class="item-img"><img src="./Imagenes/sandwich-cat.png" alt=""></div>
+                                        <p class="name-cat-menuD">Sanduches</p>
+                                    </a>
+                                    <a href="" class="item-categoria">
+                                        <div class="item-img"><img src="./Imagenes/alitas-cat.png" alt=""></div>
+                                        <p class="name-cat-menuD">Alitas</p>
+                                    </a>
+    
+                                </div>
+                                <button id="btnNext" class="next-btn"><i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                        <a href="promociones.html" class="nav__items ">Promociones</a>
+                        <a href="contactanos.html" class="nav__items">Contáctanos</a>
+                    </div>
+                    <div class="nav__botones botones-option">
+                        <button class="nav__items--cta login" onclick="AbrirFormulario()">Iniciar Sesión</button>
+                        <button class="nav__items--cta register" onclick="AbrirFormulario()">Registrarme</button>
                     </div>
                 </div>
-            </nav>
+            </div>
+            <div class="bolsita">
+                <a href="mi-bolsa.html"> <img src="./Imagenes/bolsa-borde.png" alt="Carrito de Compra" /> </a>
+                <div class="contador">
+                    <p class="producto">0</p>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="vent-form-user loginForm form_autent">
+            <div class="head_wind">
+                <button class="login" onclick="AbrirFormulario()"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/luchin.png" alt="logo luchin">
+            </div>
+            <form class="form-send">
+                <h1 class="form__titulo">Iniciar Sesión</h1>
+                <div class="input-contenedor">
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required name="emailUser"><span class="mnj-error alert-email"></span></p>
+                    </div>
+
+                    <div class="row-input">
+                        <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                    </div>
+                </div>
+                <div class="pie-form">
+                    <button type="submit" onclick="ComprobarDatos()" class="btn-send-infor">Iniciar Sesión</button>
+                    <p class="form__link">¿No Tienes Cuenta? <a href="#">Crea una Cuenta </a></p>
+                </div>
+            </form>
         </div>
-    </header>
+
+        <div class="vent-form-user registerForm form_autent">
+            <div class="head_wind">
+                <button class="register" onclick="AbrirFormulario()"><i class="fas fa-chevron-left"></i></button>
+                <img src="./Imagenes/luchin.png" alt="logo luchin">
+            </div>
+            <form class="form-send">
+                <h1 class="form__titulo">Crear Cuenta</h1>
+                <div class="input-contenedor">
+                    <div class="row-input div">
+                        <p class="col-input"><label>Nombre(s)</label><input type="text" required name="name">
+                            <span class="mnj-error alert-firstName"></span>
+                        </p>
+                        <p class="col-input"><label>Apellido(s)</label><input type="text" required name="apellido">
+                            <span class="mnj-error alert-lastName"></span>
+                        </p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Fecha de Nacimiento</label><input type="date" required name="dateNac"><span class="mnj-error alert-dateNacm"></span></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required name="emailUser"><span class="mnj-error alert-email"></span></p>
+                    </div>
+                    <div class="row-input">
+                        <p class="col-input"><label>Número de Teléfono</label><input type="text" required name="telef" maxlength="10"><span class="mnj-error alert-telephone"></span></p>
+                    </div>
+                    <div class="row-input div">
+                        <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                        <p class="col-input"><label>Confirmar Contraseña</label><input class="pass2" type="password" required name="secondPass"><span class="mnj-error alert-password2"></span></p>
+                    </div>
+                </div>
+                <div class="pie-form">
+                    <button type="submit" onclick="ComprobarDatos()" class="btn-send-infor">Crear Cuenta</button>
+                    <p class="form__link">¿Ya tienes cuenta? <a href="#">Inicia Sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </header> 
+    
     <main>
         <div class="container">
             <div class="izquierda">
