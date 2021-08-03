@@ -36,6 +36,24 @@ div[ class*=card-rsn]{
     border-bottom: 8px solid var(--color-amarillo-principal);
 }
 
+.edi { 
+    background: var(--color-amarillo-principal);
+    color: var(--color-blanco);
+    border-radius: 5px;
+    padding: 2px 6px;
+    width: 40%;
+    text-align: center;
+  }
+  .eli {
+
+    background: var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+    border-radius: 5px;
+    padding: 2px 6px;
+    width: 40%;
+    text-align: center;
+  }
+
 /* fin de prueba de estilos promociones  */
 .flex-container{
     display: flex;
