@@ -1,0 +1,181 @@
+.flex-container{
+    display: flex;
+}
+.flex-container .cl1{
+    width: 100%;
+}
+.flex-container .cl2{
+    width: 450px;
+}
+    .flex-container div[class*=cl]{
+        padding: 0 15px;
+        font-family: var(--fuente-OPENSANS);
+    }
+.group-resume{
+    display: flex;
+    justify-content: center;
+}
+div[ class*=card-rsm]{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    width: calc(70% / 3);
+    height: 100px;
+    justify-content: space-between;
+    margin: auto;
+    color: var(--color-text-negro);
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    background: var(--color-blanco);
+}
+    .card-rsm-yll .icon{
+        color: var(--color-amarillo-principal);
+    }
+    .card-rsm-yll{
+        border-bottom: 8px solid var(--color-amarillo-principal);
+    }
+    .card-rsm-blue .icon{
+        color: #185ADB;
+    }
+    .card-rsm-blue{
+        border-bottom: 8px solid #185ADB;
+    }
+    .card-rsm-pink{
+        border-bottom: 8px solid #D62AD0;
+    }
+    .card-rsm-pink .icon{
+        color: #D62AD0;
+    }
+    div[class*=card-rsm] .icon{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .dt-resume .title{
+        font-size: .8rem;
+        width: 100%;
+        margin: 0;
+        font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    }
+    .dt-resume .total{
+        margin: 0;
+        font-weight: normal;
+        font-family: var(--fuente-OSWALD);
+        font-size: 3rem;
+        line-height: 100%;
+    }
+    .dt-resume .porcentaje{
+        width: 70px;
+        color: var(--color-blanco);
+        border-radius: 15px;
+        padding: 3px 5px;
+        text-align: center;
+        font-size: .8rem;
+        margin: 7px 0 0;
+    }
+        .dt-resume .porcentaje>i{
+            margin-right: 5px;
+            transition: all ease .5;
+        }
+        .dt-resume .porcentaje.up{
+            background-color: var(--color-aprobado);
+        }
+        .dt-resume .porcentaje.down{
+            background-color: var(--color-reprobado);
+        }
+
+
+/* TABLE LISTA DE ORDENES*/
+.table-orders{
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.ct-table_ventas table{
+    width: 100%;
+    margin: 25px 0;
+    text-align: left;
+    border-collapse: collapse;
+    color: var(--color-text-negro-bajo);
+}
+.ct-table_ventas table thead th{
+    border-top: 1.3px solid var(--bg-admin-hv);
+    border-bottom: 1.7px solid var(--bg-admin-hv);
+    padding: 15px 20px;
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    text-align: center;
+}
+.ct-table_ventas table tbody td{
+    font-weight: var(--weigth-OPENSANS-REGULAR-400);
+    color: var(--color-text-input);
+    text-align: center;
+}
+
+.ct-table_ventas table tbody tr:hover{
+    background-color: var(--bg-admin);
+}
+.ct-table_ventas table tbody .state-order{
+    padding: 3px 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: .9rem;
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+}
+
+/*-----------ORDENEES PENDIENTES------------*/
+.view-order{
+    padding: 20px;
+    height: 70vh;
+    font-family: var(--fuente-OPENSANS);
+}
+.title_card_cl{
+    font-family: var(--fuente-OSWALD);
+    font-weight: var(--weigth-OPENSANS-REGULAR-400);
+    margin: 0;
+    color: var(--color-text-negro);
+}
+.container-tille__order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .contador{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        background-color: var(--color-rojo-oscuro);
+        color: var(--color-blanco);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        line-height: 100%;
+    }
+.card-vent{
+    background-color: var(--bg-admin-hv);
+    margin-top: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+    .card-vent .num-vent{
+        background-color: var(--color-rojo-oscuro);
+        color: var(--color-blanco);
+        margin: 0;
+        padding: 5px;
+        font-size: .9rem;
+        text-align: center;
+        font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    }
+    .card-vent .dtlle-venta{
+        display: flex;
+        padding: 5px 15px;
+        font-size: .7rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+        
+        .dtlle-venta .cl-unidad{
+            width: 100%;
+            margin: 0;
+            font-size: 1.3rem;
+            font-family: var(--fuente-OSWALD);
+            font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+            text-align: center;
+        }
