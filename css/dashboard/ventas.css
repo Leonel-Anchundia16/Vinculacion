@@ -120,8 +120,8 @@ div[ class*=card-rsm]{
     font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
 }
 
-/*-----------ORDENEES PENDIENTES------------*/
-.view-order{
+/*-----------Top vendidos------------*/
+.view-order-v{
     padding: 20px;
     height: 70vh;
     font-family: var(--fuente-OPENSANS);
@@ -137,25 +137,15 @@ div[ class*=card-rsm]{
     align-items: center;
     justify-content: space-between;
 }
-    .contador{
-        width: 30px;
-        height: 30px;
-        display: flex;
-        background-color: var(--color-rojo-oscuro);
-        color: var(--color-blanco);
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        line-height: 100%;
-    }
+    
 .card-vent{
     background-color: var(--bg-admin-hv);
     margin-top: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
 }
     .card-vent .num-vent{
-        background-color: var(--color-rojo-oscuro);
+        background-color: var(--color-azul-fuerte);
         color: var(--color-blanco);
         margin: 0;
         padding: 5px;

@@ -1,0 +1,68 @@
+.grid_promo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+}
+
+/* nuevo */
+.card-prom-list{
+    padding: 20px 30px;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    color: var(--color-text-negro);
+    font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+    background: var(--color-blanco);
+    border-bottom: 8px solid var(--color-azul-fuerte);
+}
+
+.row_dt_prom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row_dates_p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.btn_edit-prom{
+    background: var(--color-amarillo-principal);
+    color: var(--color-blanco);
+    border-radius: 5px;
+    padding: 2px 6px;
+    width: 40%;
+    text-align: center;
+
+}
+.btn_eli_prom{
+    background: var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+    border-radius: 5px;
+    padding: 2px 6px;
+    width: 40%;
+    text-align: center;
+}
+.desc_prom{
+    background-color: var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+    border-radius: 8px;
+    text-align: center;
+}
+.status_prom{
+    color: var(--color-rojo-oscuro);
+    
+}
+
+/* nuevo */
+
+
+
+
+
+  
