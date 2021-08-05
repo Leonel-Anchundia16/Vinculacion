@@ -215,3 +215,42 @@
   font-size: 1rem;
   font-weight: bolder;
 }
+
+/*Resposive*/
+@media (max-width: 767px) {
+  .tablita thead {
+    display: none;
+  }
+  .tablita,
+  .tablita tbody,
+  .tablita tr,
+  .tablita td {
+    display: block;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  
+@media (max-width: 670px){
+  .cupon-100{
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 650px){
+  .tt , .price_total_pago{
+    font-size: 0.8rem;
+  }
+  
+}
+
+@media (max-width: 580px){
+  .tabla > div{
+    display: block;
+    width: 70%;
+  }
+}
+@media (max-width: 300px){
+  .tt , .price_total_pago{
+    font-size: 0.7rem;
+  }
+}
