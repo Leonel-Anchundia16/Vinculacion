@@ -37,6 +37,9 @@
 /* eddy */
 @import url('./dashboard/add_platillo.css');
 @import url('./dashboard/lista_menu.css');
+/*leonel*/
+@import url('./dashboard/promociones.css');
+@import url('./dashboard/ventas.css');
 
 
 /*VARIABLES DE FUENTES, COLOR, ETC QUE SE USAN MULTIPLES VECES*/
