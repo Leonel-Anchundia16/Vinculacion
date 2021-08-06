@@ -23,11 +23,11 @@
 @import url('empleados.css');
 @import url('comidas.css');
 @import url('search.css');
-@import url('vent_emergen.css');
 @import url('profile-user.css');
 
 
 
+@import url('vent_emergen.css');
 @import url('./dashboard/asidebar.css');
 @import url('./dashboard/login.css');
 @import url('./dashboard/home.css');
@@ -104,6 +104,35 @@ body{
     margin: 0;
     padding: 0;
 }
+
+[data-title]:hover:after{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.1s ease 0.5s;
+}
+[data-title]:after{
+    content: attr(data-title);
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--fuente-OPENSANS);
+    position: absolute;
+    padding: 3px 20px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 6px;
+}
+[data-title] {
+    position: relative;
+}
+
+
 
 /* LOADING */
 .loading{
