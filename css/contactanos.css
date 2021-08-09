@@ -15,8 +15,6 @@ main section[class*='contact-']{
 .contenedor_contac{
     width: 85%;
     margin: auto;
-    /* display: grid;
-    grid-template-columns: repeat(2, 65%); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +28,6 @@ main section[class*='contact-']{
     padding: 20px 30px;
     width: 400px;
 }
-/* titulo del formulario */
 .title_contac_izq{
     color: var(--color-text-negro-bajo);
     font-size: 1.5rem;
@@ -107,7 +104,7 @@ main section[class*='contact-']{
     .contac_description p{
         margin: 0;
     }
-        .contac_description p:hover:not(.topic, .detalle.iconos){
+        .contac_description .detalle:hover:not(.topic, .detalle.iconos){
             color: var(--color-amarillo);
         }
     .contac_description .topic{
@@ -119,6 +116,7 @@ main section[class*='contact-']{
     .contac_description .detalle{
         color: var(--color-azul-fuerte);
         font-size: 1rem;
+        text-decoration: none;
     }
         .contac_description .detalle.iconos{
             display: grid;
@@ -179,42 +177,4 @@ main section[class*='contact-']{
     .ubi_detalle .descr>p.bold{
         font-weight: bold;
     }
-
-    @media  screen and (max-width: 960px) {
-        .contenedor_contac{
-            width: 50%;
-            display: block;  
-        } 
-        .contenedor_contac .column{
-            width: 100%;
-        }
-    }
-
-    @media screen and (max-width: 720px){
-        .contenedor_contac{
-            width: 60%;
-        }
-        .section-ubi .container-ubicacion{
-            width: 90%;
-            justify-content: center;
-        } 
-        
-        .section-ubi .container-ubicacion h1{
-            display: none;
-        }
-        
-    }
-    @media  screen and (max-width: 540px){
-        .contenedor_contac{
-            width: 80%;
-        }
-        .section-ubi .container-ubicacion{
-            width: 90%;
-            justify-content: center;
-        } 
-    }
-
-
-    
-
     

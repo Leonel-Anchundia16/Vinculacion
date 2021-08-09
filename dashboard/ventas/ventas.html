@@ -5,27 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEADER PLANTILLA</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body class="left-navbr">
+<body class="body-admin left-navbr">
     <div id="root">
-        <div class="popup-admin">
-            <div class="box-pop success">
-                <i class="fas fa-shield-check"></i>
-                <p>Empleado agregado correctamente</p>
-            </div>
-            <div class="box-pop warning">
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error inesperado</p>
-            </div>
-        </div>
-
-       <aside class="aside-bar aside">
+        <aside class="aside-bar aside">
             <button class="btn__menu" id="button-menu-admin"><i class="fal fa-bars"></i></button>
             <div class="image-navbar">
-                <img src="../Imagenes/luchin.png" alt="logo-luchin">
+                <img src="/Imagenes/luchin.png" alt="logo-luchin">
             </div>
             <div class="legend">PRINCIPAL</div>
             <div class="container-item">
@@ -102,33 +91,76 @@
                     <button type="button" class="btn-unlogin"><i class="fal fa-sign-out"></i></button>
                 </div>
             </div>
+
             <main class="contenido-admin pos-main-rel">
+    
                 <div class="theme-apart">
-                    <h2>Bienvenido, <span class="name-user">Nombre de usuario</span></h2>
+                    <h2>Ventas</h2>
                 </div>
+
                 <section class="container-main">
+                    <div class="row-ventas-flex">
+                        <div class="cards_sales">
+                            <div class="ctn-card">
+                                <p class="cant_cd">2600</p>
+                                <p class="tema_cd">Ingresos Estimados</p>
+                                <p class="slogan_cd">Agosto</p>
+                            </div>
+                            <div class="ctn-card">
+                                <p class="cant_cd">2600</p>
+                                <p class="tema_cd">Ingresos Estimados</p>
+                                <p class="slogan_cd">Mas Vendido</p>
+                            </div>
+                        </div>
+                        <div class="tb_cl_orders bd__sect">
+                            <h2 class="title_card_cl">Clientes con mayor compras</h2>
+                            <div class="ct-table_customers">
+                                <table>
+                                    <thead>
+                                        <th>Cliente</th>
+                                        <th>Correo Electrónico</th>
+                                        <th>Teléfono</th>
+                                        <th>Pedidos</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Eddy Meco</td>
+                                            <td>tuprima@eddy.meco</td>
+                                            <td>6969696969</td>
+                                            <td>69</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row_rk_sales bd__sect">
+                        <h2 class="title_card_cl">Ranking de productos vendidos</h2>
+                        <div class="ct_sales_tb">
+                            <table>
+                                <thead>
+                                    <th>#</th>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Ingresos Alcanzados</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Hamburguesa Rellena</td>
+                                        <td>50</td>
+                                        <td>$150.99</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                 </section>
             </main>
         </div>
-    </di
-
-    
-
-    <!-- -----------VENTANA MODAL REUTILIZABLE PARA INFORMACION Y DETALLE GENERAL------------ -->
-    <!-- <div class="class-overlay">
-        <div class="modal-reut">
-            <div class="head__modal">
-                <h1 class="title_card_cl">Agregar producto a la orden</h1>
-                <button class="button-close-modal" type="button"><i class="fal fa-times"></i></button>
-            </div>
-            <div class="details-modal-inf">
-                
-            </div>
-        </div>
-    </div> -->
-    
-
-    
+    </div>
     <script>
         const body = document.getElementById('root');
         const menuBtn = document.querySelector('.btn__menu');
@@ -185,3 +217,4 @@
     </script>
 </body>
 </html>
+

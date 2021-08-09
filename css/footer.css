@@ -60,6 +60,10 @@ footer{
     .text .weigth{
         font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
     }
+    .content .text>a{
+        color: var(--color-blanco);
+        text-decoration: none;
+    }
 
 .bottom{
     background-color: var(--color-blanco);

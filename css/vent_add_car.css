@@ -1,14 +1,13 @@
-
-
 .overlay{
     background: rgba(0,0,0,.3);
 	position: fixed;
-	top: 0;
+	top: 60px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	display: flex;
 	align-items: center;
+    justify-content: center;
     z-index: 4;
     visibility: hidden;
 }
@@ -17,9 +16,7 @@
     }
 .popup{
     width: 750px;
-    margin: 0 auto;
     font-family: var(--fuente-OPENSANS);
-
     background: var(--color-blanco);
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
 	text-align: center;
@@ -31,14 +28,12 @@
     background-color: var(--color-amarillo-principal);
     padding: 15px 25px;	
 }
-    .ret{
-        padding: 10px 0 5px 0;
-        text-align: left;
-    }
     .btn_regresar{
         font-family: var(--fuente-OSWALD);
+        background-color: transparent;
         color: var(--color-blanco);
-        text-decoration: none;
+        border: none;
+        cursor: pointer;
         font-size: 1rem;
         display: flex;
         align-items: center;
@@ -79,21 +74,23 @@
         }
 .der{
 	width: 55%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 	padding: 30px 50px;	
-	margin: 0;
 }
     .primer{
+        flex: 0 1 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-family: var(--fuente-OSWALD);
-        padding: 10px 0;
         color: var(--color-text-negro-bajo);
+        margin-bottom: 15px;
     }
         .primer .precio{
             font-size: 2.3rem;
             margin: 0;
+            line-height: 100%;
         }
         .primer .cant{
             display: flex;
@@ -109,16 +106,16 @@
             border: none;
             width: 25px;
             height: 25px;
-            font-size: 1.2rem;
             display: flex;
+            font-size: calc(1rem - 6px);
             align-items: center;
             justify-content: center;
             cursor: pointer;
             color: var(--color-vino);
             font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
         }
-            .cant .btn_can.disable{
-                cursor: no-drop;
+            .cant .btn_can:hover{
+                background: var(--color-amarillo);
             }
         .cant>input{
             font-size: 1rem;
@@ -130,129 +127,240 @@
         }
 
     .des{
+        flex: 0 1 auto;
         text-align: start;
         width: 100%;
+        margin-bottom: 15px;
     }
-        .des>h3, .adicional>h3{
-            color: var(--color-text-negro);
+        .des>h3{
+            color: var(--color-text-negro-bajo);
             font-family: var(--fuente-OSWALD);
-            font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+            font-weight: var(--weigth-OSWALD-REGULAR-400);
             margin: 0;
-            padding: 15px 0 5px 0 ;
+            font-size: .9rem;
         }
         .des>p{
-            height: 72px;
+            overflow: auto;
+            max-height: 72px;
             margin: 0;
-            font-size: .8rem;
+            font-size: .75rem;
             color: var(--color-text-input);
-            font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
         }
     .adicional{
         text-align: start;
         width: 100%;
-        margin-bottom: 60px;
+        margin-bottom: 15px;
     }
         .adicional>h3{
-            font-size: .9rem;
+            color: var(--color-text-negro-bajo);
+            font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+            line-height: 110%;
+            margin: 0;
+            font-size: .8rem;
         }
         .input-adicional{
-            width: 90%;
-            padding: 5px 15px;
+            margin-top: 10px;
+            width: calc(100% - 24px);
+            resize: none;
+            outline: none;
+            padding: 5px 12px;
             font-family: var(--fuente-OPENSANS);
             font-size: .8rem;
-            max-width: 350px;
-            max-height: 80px;
+            height: 70px;
+            border: 1px solid var(--color-brd-input);
+            border-radius: 5px;
+            color: var(--color-vino);
+        }
+        .adicional>.inf-import{
+            font-size: .6rem;
+            line-height: 100%;
+            margin: 0;
+            color: rgba(0,0,0,.6);
         }
 
-.btn_añadir{
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
-	background-color: var(--color-vino);
-    color: var(--color-blanco);
-    font-family: var(--fuente-OSWALD);
-    text-decoration: none;
-	padding: 7px 25px;	
-    border: none;
-    cursor: pointer;
-	
-	font-size: .9rem;
-    transition: all ease .3s;
-}
-    .btn_añadir:hover{
-        background-color: var(--color-aprobado);
-        color: var(--color-text-negro);
-        
+    .cl-btn-agg{
+        display: flex;
+        justify-content: flex-end;
     }
+        .btn_añadir{
+            width: 150px;
+            height: 32px;
+            background-color: var(--color-vino);
+            color: var(--color-blanco);
+            font-family: var(--fuente-OSWALD);
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            
+            font-size: .9rem;
+            transition: all ease .3s;
+        }
+            .btn_añadir:hover{
+                background-color: var(--color-aprobado);
+                color: var(--color-text-negro);
+                
+            }
 
-
-@media  screen and (max-width: 960px) {
+@media only screen and (max-width:960px){
     .popup{
-        position: fixed;
-        top: 30%;
-        width: 100%;
+        width: 650px;
     }
-    
 }
-@media screen and (max-width: 720px){
-  
-    .popup{
-        position: fixed;
-        top: 50px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0;
+@media only screen and (max-width:720px){
+    .overlay{
         display: block;
+    }
+    .popup{
+        overflow: scroll;
         width: 100%;
-
+        height: 100%;
+        display: block;
+        padding-bottom: 50px;
     }
     .iz{
         width: 100%;
-        background-color: var(--color-amarillo-principal);
-        padding: 15px 25px;	
-        height: 50%;
+        padding: 50px 0;
     }
+        .btn_regresar{
+            margin-left: 7%;
+        }
+        .btn_regresar, .btn_regresar>i{
+            font-size: 5vw;
+        }
+            .btn_regresar>i{
+                margin-right: 15px;
+            }
+        .photo_comida{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .popup .titulo{
+            left: 10%;
+            right: 10%;
+            font-size: 10vw;
+            bottom: 0;
+            top: auto;
+            width: auto
+        }
+        .photo_comida .food_img{
+            width: 80%;
+        }
     .der{
         width: 80%;
-        position: absolute;
-        padding: 30px 50px;	
-        margin: 0;
-        top: 50%;
+        margin: 0 auto;
+        padding: 50px 0;
     }
+        .prime{
+            margin-bottom: 20px;
+        }
+        .primer .precio{
+            font-size: 7vw;
+        }
+            .cant>p{
+                font-size: 4vw;
+            }
+            .cant .btn_can{
+                width: 35px;
+                height: 35px;
+                font-size: 2.5vw;
+            }
+            .cant>input{
+                font-size: 2.7vw;
+            }
+        .des{
+            margin-bottom: 20px;
+        }
+            .des>h3{
+                font-size: 4vw;
+            }
+            .des>p{
+                font-size: 1.2rem;
+                max-height: 100%;
+            }
+        .adicional{
+            margin-bottom: 40px;
+        }
+            .adicional>h3{
+                font-size: 3.6vw;
+            }
+            .input-adicional{
+                margin-top: 15px;
+                font-size: 1.2rem;
+                height: 100px;
+            }
+            .adicional>.inf-import{
+                font-size: 1.19rem;
+            }
+        .btn_añadir{
+            width: 100%;
+            height: 55px;
+            font-size: 1.3rem;
+        }
 }
 
-/* @media screen and (max-width: 1150px) {
-	.popup{
-		width: 90%;
-	}
-	.iz{
-		width: 90%;
-	}
-	.der{
-		width: 90%;
-	}
+@media only screen and (max-width:540px){
+    .popup .titulo{
+        left: 7.5%;
+        right: 7.5%;
+        font-size: 10vw;
+        bottom: 0;
+        top: auto;
+        width: auto
+    }
+        .btn_regresar, .btn_regresar>i{
+            font-size: 7vw;
+        }
+    .photo_comida .food_img{
+        width: 85%;
+    }
+    .der{
+        width: 85%;
+    }
+        .primer{
+            margin-bottom: 25px;
+        }
+        .primer .precio{
+            font-size: 8vw;
+        }
+            .cant>p{
+                font-size: 4.5vw;
+            }
+            .cant .btn_can{
+                width: 30px;
+                height: 30px;
+                font-size: 3vw;
+            }
+            .cant>input{
+                font-size: 5vw;
+            }
 
+        .des{
+            margin-bottom: 25px;
+        }
+            .des>h3{
+                font-size: 5.7vw;
+            }
+            .des>p{
+                font-size: 3.7vw;
+            }
+        .adicional{
+            margin-bottom: 40px;
+        }
+            .adicional>h3{
+                font-size: 4vw;
+            }
+            .input-adicional{
+                margin-top: 15px;
+                font-size: 3.5vw;
+                height: 100px;
+            }
+            .adicional>.inf-import{
+                font-size: 2.8vw;
+            }
+        .btn_añadir{
+            width: 100%;
+            height: 50px;
+            font-size: 5vw;
+        }
 }
-@media screen and (max-width: 880px) {
-	.popup{
-		width: 100%;
-	}
-	.iz{
-		width: 100%;
-	}
-	.der{
-		width: 100%;
-	}
-}
-@media screen and (max-width: 700px) {
-	.popup{
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-} */

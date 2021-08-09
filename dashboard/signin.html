@@ -10,27 +10,64 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <main class="main-login">
-        <div class="carrousel-sign">
+    <!-- <main>
+        <div class="olay-confirm">
+            <div class="vent-modal-mssg">
+                <div class="brand-logo"><img src="/Imagenes/logo.png" alt="luchin_description"/></div>
+                <div class="mssg">
+                    <h3 class="title_mssg">Verificación de Correo</h3>
+                    <div class="details_mssg">
+                        <p>Su cuenta se ha verificada correctamente. Para restablecer su contraseña ingrese al enlace que le envíamos a este mismo correo electrónico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> -->
+
+    <!-- <main class="main-auth-users">
+        <div class="present-slide">
+            <div class="overflow"></div>
+            <img src="../Imagenes/luchin_description.png">
+        </div>
+        <div class="autentif-forms">
+            <div class="head-form">
+                <div class="brand-logo"><img src="../Imagenes/luchin.png"  alt="Logo la parrilla de luchin ventana dashboard"></div>
+                <h3 class="topic-form-aut">¡Bienvenido de nuevo!</h3>
+                <p class="instruct-form">Ingrese su dirección de correo electrónico y contraseña para acceder al panel de administración.</p>
+            </div>
+            <form class="form-dash-ctn" action="">
+                <div class="box-input">
+                    <label for="user-name">Correo electrónico</label>
+                    <input type="email" name="user-name" required placeholder="Ingrese su dirección de correo">
+                </div>
+                <div class="box-input">
+                    <label for="user-password">Contraseña</label>
+                    <input type="password" name="user-password" required placeholder="Ingrese Contraseña">
+                </div>
+                <button class="send_form-dash" type="submit">Iniciar Sesión</button>
+            </form>
+            <div class="more_actionn"><a href="#" class="redirect-page">¿Olvidaste tu Contraseña?</a></div>
+        </div>
+    </main> -->
+    <main class="main-auth-users">
+        <div class="present-slide">
             <div class="overflow"></div>
             <img src="../Imagenes/carne-img.jpg">
         </div>
-        <div class="form-login">
-            <div class="container-form">
-                <img src="../Imagenes/logo.png"  alt="Logo la parrilla de luchin ventana dashboard" class="brand-logo">
-                <h2>Iniciar Sesión</h2>
-                <form class="form-sign" action="">
-                    <div class="box-input">
-                        <label for="user-name">Nombre de Usuario</label>
-                        <input type="text" name="user-name" required placeholder="Ingrese Nombre de Usuario">
-                    </div>
-                    <div class="box-input">
-                        <label for="user-password">Contraseña</label>
-                        <input type="password" name="user-password" required placeholder="Ingrese Contraseña">
-                    </div>
-                    <button class="btn-signin-form" type="submit">Iniciar Sesión</button>
-                </form>
+        <div class="autentif-forms">
+            <div class="head-form">
+                <div class="brand-logo"><img src="../Imagenes/logo.png"  alt="Logo la parrilla de luchin ventana dashboard"></div>
+                <h3 class="topic-form-aut">Recuperar Contraseña</h3>
+                <p class="instruct-form">Ingrese la dirección de correo electrónico con la que inicio sesión anteriormente y le enviaremos un correo electrónico con instrucciones para restablecer su contraseña.</p>
             </div>
+            <form class="form-dash-ctn" action="">
+                <div class="box-input">
+                    <label for="user-name">Correo electrónico</label>
+                    <input type="email" name="user-name" required placeholder="Ingrese su dirección de correo">
+                </div>
+                <button class="send_form-dash" type="submit">Recibir Correo</button>
+            </form>
+            <div class="more_actionn">Prefiero <a href="#" class="redirect-page">Iniciar Sesión</a></div>
         </div>
     </main>
 </body>

@@ -4,26 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <title>Procesar Compra - La Parrilla de Luchín</title>
-    <link rel="icon" href="Imagenes/logo.png">
-    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-        $(window).load(function() {
-            $("#loader").fadeOut('slow');
-        });
-    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <div id="loader" class="loading"></div>
-    <div class="btn-wss-ct">
-        <a href=""><i class="fab fa-whatsapp"></i></a>
-    </div>
     <header>
         <nav id="navBar" class="nav pdd_border navbar_all scrolling">
-            <a href="index.html" id="logo-marca" class="logo">
+            <a href="#" id="logo-marca" class="logo">
                 <img class="normal" src="./Imagenes/logo.png" alt="Logo luchin">
                 <img class="long change-marca" src="./Imagenes/luchin.png" alt="Logo luchin">
             </a>
@@ -94,7 +81,7 @@
                 <button class="login" onclick="AbrirFormulario()"><i class="fas fa-chevron-left"></i></button>
                 <img src="./Imagenes/luchin.png" alt="logo luchin">
             </div>
-            <form class="form-send log">
+            <form class="form-send">
                 <h1 class="form__titulo">Iniciar Sesión</h1>
                 <div class="input-contenedor">
                     <div class="row-input">
@@ -149,111 +136,82 @@
             </form>
         </div>
     </header> 
+    
     <main>
-        <div class="main_process-pay pdd_border">
+        <div class="container">
+            <div class="izquierda">
+                <div class="bord"></div>
+                <p class="deta">Resumen de Pedido</p>
+                <p class="entrega">Para: <p class="cli">Nombre cliente</p></p>
+                <p class="desti">Hacia:<p class="destino">Dirección-referencia</p></p>
+                <p class="pago">Total a pagar:<p class="pago1">$1,5</p></p>
+                <div class="form_group  form_group_button_pago">
+                    <p class="form_error" id="form_error"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <b>Error:</b> Formulario vacio</p>
+                    <p class="form_enviado" id="form_enviado"><i class="fa fa-check" aria-hidden="true"></i> Formulario registrado</p>
+                    <button type="submit" class="guardar_pago">GUARDAR Y ENVIAR PAGO</button>
+                </div>
+            </div>
+        <div class="contenido">
             <div class="proceso_compra">
                 <p>PROCESAR COMPRA</p>
             </div>
-            <form action="" class="pdd_border">
-                <div class="infor-general">
-                    <div>
-                        <p class="title-group-item">DATOS DEL CLIENTE</p>
-                        <div class="group-inputs">
-                            <div class="form_group" id="group_nombre"> 
-                                <label for="nombre" class="form_label">Nombre</label>
-                                <input type="text" class="form_input" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
-                            </div>
-                            <div class="form_group" id="group_apellido"> 
-                                <label for="apellidos" class="form_label">Apellido</label>
-                                <input type="text" class="form_input" name="apellidos" id="apellidos" placeholder="Ingrese su Apellidos">
-                            </div>
-                            <div class="form_group" id="group_correo"> 
-                                <label for="correo" class="form_label">Correo Electrónico</label>
-                                <input type="email" class="form_input" name="correo" id="correo" placeholder="Ingrese su Correo">
-                            </div>
-                            <div class="form_group" id="group_telefono"> 
-                                <label for="telefono" class="form_label">Teléfono</label>
-                                <input type="text" class="form_input" name="telefono" id="telefono" placeholder="Ingrese su Número de Telefono">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="title-group-item">DIRECCIÓN DEL ENVÍO</p>
-                        <div class="form_group" id="group_dirección"> 
-                            <label for="direccion" class="form_label">Dirección</label>
-                            <input type="text" class="form_input dire" id="direccion" placeholder="Ingrese su dirección principal">
-                        </div>
-                        <div class="form_group" id="group_referencia"> 
-                            <label for="referencia" class="form_label">Información adicional de dirección</label>
-                            <input type="text" class="form_input refere" id="ref_dire" placeholder="Referencia de domicilio, frente a...">
-                        </div>
-                    </div>
+            <div class="dtos">
+                <p class="dat_clien">DATOS DEL CLIENTE</p>
+            </div>
+                <form class="client" id="formulario"  action="">
+                   <!--Nombre-->
+            <div class="form_group" id="group_nombre"> 
+                <label for="nombre" class="form_label">Nombre</label>
+                <div class="form_group-input">
+                    <input type="text" class="form_input" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
                 </div>
-                <div>
-                    <div class="resume">
-                        <p class="topic-resume">Resumen del Pedido</p>
-                        <p class="group-detalle_res"><span class="topic">Para:</span><span class="data-resume">Nombre cliente y apellido del cliente</span></p>
-                        <p class="group-detalle_res"><span class="topic">Hacia:</span><span class="data-resume">Dirección-referencia</span></p>
-                        <p class="group-detalle_res pago"><span class="topic">Total a Pagar:</span><span class="data-resume">$15.25</span></p>
-                        <p class="form_error" id="form_error"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <b>Error:</b> Formulario vacio</p>
-                        <p class="form_enviado" id="form_enviado"><i class="fa fa-check" aria-hidden="true"></i> Formulario registrado</p>
-                    </div>
-                    <button type="submit" class="guardar_pago">GUARDAR Y ENVIAR PAGO</button>
+            </div>
+            <!--Apellidos-->
+            <div class="form_group" id="group_apellido"> 
+                <label for="apellidos" class="form_label">Apellidos</label>
+                <div class="form_group-input">
+                    <input type="text" class="form_input" name="apellidos" id="apellidos" placeholder="Ingresa tu apellidos">
                 </div>
-            </form>
+             </div>
+             <!--Correo-->
+            <div class="form_group" id="group_correo"> 
+                <label for="correo" class="form_label">Correo Electronico</label>
+                <div class="form_group-input">
+                    <input type="email" class="form_input" name="correo" id="correo" placeholder="Ingresa tu correo">
+                </div>
+                </div>
+                <!--Telefono-->
+            <div class="form_group" id="group_telefono"> 
+                <label for="telefono" class="form_label">Telefono</label>
+                <div class="form_group-input">
+                    <input type="text" class="form_input" name="telefono" id="telefono" placeholder="Ingresa tu número de telefono">
+                </div>
+                </div>
+                </form>
+                <div class="direccion">
+                    <p>DIRECCIÓN DEL ENVÍO</p>
+                </div>
+                <form class="envio" id="formulario" action="">
+                    <!--Dirección-->
+            <div class="form_group" id="group_dirección"> 
+                <label for="direccion" class="form_label">Dirección</label>
+                <div class="form_group-input">
+                    <input type="text" class="form_input dire" id="direccion" placeholder="Ingresa tu dirección principal">
+                </div>
+            </div>
+             <!--Información adicional dirección-->
+             <div class="form_group" id="group_referencia"> 
+                <label for="referencia" class="form_label">Información adicional de dirección</label>
+                <div class="form_group-input">
+                    <input type="text" class="form_input refere" id="ref_dire" placeholder="Referencia de domicilio, frente a...">
+                </div>
+            </div>
+            
+                </form>
+            </div>
         </div>
     </main>
-
-    <footer>
-        <div class="grid-ftt">
-            <div class="box column_grid-ftt">
-                <div class="content">
-                    <img src="./Imagenes/logo-positivo16x.png" alt="Logo Parrilla de Luchin"/> 
-                    <p class="text">Lorem ipsum dolor sit amet consectesur adipisicing elit. Vitae hic voluptate tenesur suscipit praesentium id nesciunt quidem ratione. </p>
-                </div>
-            </div>
-            <div class="box column_grid-ftt">
-                <div class="content">
-                    <h2 class="name__categoria">Dirección:</h2>
-                    <div>
-                        <p class="text">Calle 13 de ocsubre y Av Metropolitana</p>
-                        <p class="text"><span class="weigth">Montecristi, Manabí - Ecuador</span></p>
-                    </div>
-
-                    <h2 class="name__categoria">Contáctanos:</h2>                    
-                    <div>
-                        <p class="text"><span class="weigth">WhatsApp:</span> 0963217004</p>
-                    </div>
-                    <div class="email">
-                        <p class="text"><span class="weigth">Correo:</span> luchinsantanacastillo@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box column_grid-ftt">
-                <div class="content">
-                    <h2 class="name__categoria">Horarios de Atención:</h2>                    
-                    <div>
-                        <p class="text"><span class="weigth">Lunes-Viernes:</span> 08h00 - 19h00</p>
-                        <p class="text"><span class="weigth">Sábados y Domingos:</span> 08h00 - 19h00</p>
-                    </div>                   
-                    <div class="social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></span></a>
-                        <a href="#"><i class="fab fa-instagram"></i></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="legend__ftt">
-                <p class="credit"><span class="detalle">Derechos Reservados &#169 2021</span> La Parrilla De Luchin</p>
-                <p class="credit"><span class="detalle">Developed and Designed for</span> Vinculación Fase 1</p>
-            </div>
-        </div>
-    </footer>
-    <script src="./js/procesar-pedido.js"></script>
+    <script src="../js/proceso.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
-<script src="./js/carrousel.js"></script>
-<script src="./js/menu.js"></script>
-<script src="./js/validacion_navbar.js"></script>
 </html>

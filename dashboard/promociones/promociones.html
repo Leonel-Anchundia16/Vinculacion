@@ -5,27 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEADER PLANTILLA</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<body class="left-navbr">
+<body class="body-admin left-navbr">
     <div id="root">
-        <div class="popup-admin">
-            <div class="box-pop success">
-                <i class="fas fa-shield-check"></i>
-                <p>Empleado agregado correctamente</p>
-            </div>
-            <div class="box-pop warning">
-                <i class="fas fa-exclamation-circle"></i>
-                <p>Error inesperado</p>
-            </div>
-        </div>
-
-       <aside class="aside-bar aside">
+        <aside class="aside-bar aside">
             <button class="btn__menu" id="button-menu-admin"><i class="fal fa-bars"></i></button>
             <div class="image-navbar">
-                <img src="../Imagenes/luchin.png" alt="logo-luchin">
+                <img src="/Imagenes/luchin.png" alt="logo-luchin">
             </div>
             <div class="legend">PRINCIPAL</div>
             <div class="container-item">
@@ -103,32 +92,106 @@
                 </div>
             </div>
             <main class="contenido-admin pos-main-rel">
+    
                 <div class="theme-apart">
-                    <h2>Bienvenido, <span class="name-user">Nombre de usuario</span></h2>
+                    <h2>Promociones</h2>
+                    <button type="button" class="button_th_head">Agregar</button>
                 </div>
+
                 <section class="container-main">
+                    <div class="grid_promo">
+                        <div class="card-prom-list bd__sect">
+                            <div class="row_dt_prom">
+                                <div class="col_dt_promo">
+                                    <p class="name_prom">hamburguesa rellena con queso chedar</p>
+                                    <p class="tick_prom">Cupón: 1202-5455-6633</p>
+                                </div>
+                                <div class="col_dt_promo_bt">
+                                    <p class="desc_prom">-10%</p>
+                                    <p class="status_prom desact"><span>Desactivado</span></p>
+                                </div>
+                            </div> 
+                            <div class="row_dates_p">
+                                <div class="f_inicio">
+                                    <p class="ttl-date">Fecha Inicio</p>
+                                    <p class="date">00/00/0000</p>
+                                </div>
+                                <div class="f_fin">
+                                    <p class="ttl-date">Fecha Fin </p>
+                                    <p class="date">00/00/0000</p>
+                                </div>
+                            </div>
+                            <div class="row_descrip_prom">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In possimus provident quam? Quaerat provident, </p>
+                            </div>
+                            <div class="row_buttons">
+                                <button class="btn_edit-prom" type="button">Editar</button>
+                                <button class="btn_eli_prom" type="btn_edit-prom">Eliminar</button>
+                            </div>
+                        </div>
+                        <div class="card-prom-list bd__sect">
+                            <div class="row_dt_prom">
+                                <div class="col_dt_promo">
+                                    <p class="name_prom">hamburguesa rellena</p>
+                                    <p class="tick_prom">Cupón: 1202-5455-6633</p>
+                                </div>
+                                <div class="col_dt_promo_bt">
+                                    <p class="desc_prom">-10%</p>
+                                    <p class="status_prom act"><span>Activo</span></p>
+                                </div>
+                            </div> 
+                            <div class="row_dates_p">
+                                <div class="f_inicio">
+                                    <p class="ttl-date">Fecha Inicio</p>
+                                    <p class="date">00/00/0000</p>
+                                </div>
+                                <div class="f_fin">
+                                    <p class="ttl-date">Fecha Fin </p>
+                                    <p class="date">00/00/0000</p>
+                                </div>
+                            </div>
+                            <div class="row_descrip_prom">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In possimus provident quam? Quaerat provident, </p>
+                            </div>
+                            <div class="row_buttons">
+                                <button class="btn_edit-prom" type="button">Editar</button>
+                                <button class="btn_eli_prom" type="btn_edit-prom">Eliminar</button>
+                            </div>
+                        </div>
+                        <div class="card-prom-list bd__sect">
+                            <div class="row_dt_prom">
+                                <div class="col_dt_promo">
+                                    <p class="name_prom">hamburguesa rellena</p>
+                                    <p class="tick_prom">Cupón: 1202-5455-6633</p>
+                                </div>
+                                <div class="col_dt_promo_bt">
+                                    <p class="desc_prom">-10%</p>
+                                    <p class="status_prom sprar"><span>En Espera</span></p>
+                                </div>
+                            </div> 
+                            <div class="row_dates_p">
+                                <div class="f_inicio">
+                                    <p class="ttl-date">Fecha Inicio</p>
+                                    <p class="date">00/00/0000</p>
+                                </div>
+                                <div class="f_fin">
+                                    <p class="ttl-date">Fecha Fin </p>
+                                    <p class="date">00/00/0000</p>
+                                </div>
+                            </div>
+                            <div class="row_descrip_prom">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In possimus provident quam? Quaerat provident, </p>
+                            </div>
+                            <div class="row_buttons">
+                                <button class="btn_edit-prom" type="button">Editar</button>
+                                <button class="btn_eli_prom" type="btn_edit-prom">Eliminar</button>
+                            </div>
+                        </div>                        
+                    </div>
                 </section>
             </main>
         </div>
-    </di
-
-    
-
-    <!-- -----------VENTANA MODAL REUTILIZABLE PARA INFORMACION Y DETALLE GENERAL------------ -->
-    <!-- <div class="class-overlay">
-        <div class="modal-reut">
-            <div class="head__modal">
-                <h1 class="title_card_cl">Agregar producto a la orden</h1>
-                <button class="button-close-modal" type="button"><i class="fal fa-times"></i></button>
-            </div>
-            <div class="details-modal-inf">
-                
-            </div>
-        </div>
-    </div> -->
-    
-
-    
+    </div>
     <script>
         const body = document.getElementById('root');
         const menuBtn = document.querySelector('.btn__menu');
@@ -185,3 +248,4 @@
     </script>
 </body>
 </html>
+
