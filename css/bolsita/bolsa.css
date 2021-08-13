@@ -13,7 +13,7 @@
 }
 /*Tabla*/
 .tabla {
-  margin: 50px 0;
+    margin: 50px 0;
 }
   .tabla > div {
       display: flex;
@@ -22,12 +22,16 @@
       font-family: var(--fuente-OPENSANS);
       overflow: hidden;
   }
+  .tabla .cl-table{
+      width: 65%;
+  }
   .tablita {
+      width: 100%;
       margin: 0;
       border-collapse: collapse;
   }
     /* SEPARAR POR COLUMNA */
-    .tablita .producto-table{
+    /* .tablita .producto-table{
         min-width: 300px;
         max-width: 300px;
     }
@@ -46,211 +50,358 @@
     .tablita .acciones-table{
         min-width: 50px;
         max-width: 50px;
-    }
+    } */
     .precio-table,.cantidad-table,.subtotal-table, .acciones-table{
         text-align: center;
     }
 
 .tablita thead th{
-  border-bottom: 2px solid var(--color-brd-input);
-  background: none;
-  padding: 7px 0;
-  text-transform: uppercase;
-  color: var(--color-text-negro-bajo);
+    border-bottom: 2px solid var(--color-brd-input);
+    background: none;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    color: var(--color-text-negro-bajo);
 }
 .tablita tbody tr{
-  border-bottom: 1px solid var(--color-brd-input);
+    border-bottom: 1px solid var(--color-brd-input);
 }
 /*-----------------FILA DE PRODUCTOS CON DESCRIPCION-----------*/
 .descrip-dttlle {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
     .descrip-dttlle .image{
-      min-width: 80px;
-      max-width: 80px;
-      min-height: 80px;
-      max-height: 80px;
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        max-height: 80px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
       .image .img1 {
-        width: 100%;
-        max-height: 100%;
+          width: 100%;
+          max-height: 100%;
       }
     .descrip-dttlle .tittle-pd {
-      font-family: var(--fuente-OSWALD);
-      font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
-      color: var(--color-text-negro-bajo);
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      margin: 0;
+        font-family: var(--fuente-OSWALD);
+        font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+        color: var(--color-text-negro-bajo);
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin: 0;
     }
     .descrip-dttlle .infor-adicion {
-      margin: 0;
-      font-size: .9rem;
-      line-height: 100%;
-      color: var(--color-text-input);
-      font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
+        margin: 0;
+        font-size: .9rem;
+        line-height: 100%;
+        color: var(--color-text-input);
+        font-weight: var(--weigth-OPENSANS-SEMIBOLD-600);
     }
 .precio-tabla {
-  font-family: var(--fuente-OSWALD);
-  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
-  color: var(--color-text-negro-bajo);
-  font-size: 1.3rem;
+    font-family: var(--fuente-OSWALD);
+    font-weight: 400;
+    color: var(--color-text-negro-bajo);
+    font-size: 1.3rem;
 }
+    .precio-table, .subtotal-table{
+        padding: 0 10px;
+    }
 
 /*estilos de cantidad*/
 .dtcantidad .container-cantidad{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .dtcantidad .btn_cantdd {
-  background: var(--color-amarillo-principal);
-  border: none;
-  width: 25px;
-  height: 25px;
-  font-size: 1.3rem;
-  cursor: pointer;
-  font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
-  color: var(--color-vino);
+    background: var(--color-amarillo-principal);
+    border: none;
+    width: 25px;
+    height: 25px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: var(--weigth-OSWALD-SEMIBOLD-600);
+    color: var(--color-vino);
 }
-.container-cantidad > input {
-  border: none;
-  font-size: 1.1rem;
-  color: var(--color-vino);
-  width: 30px;
-  outline: none;
-  text-align: center;
+.container-cantidad > input.can_num{
+    border: none;
+    font-size: 1.1rem;
+    color: var(--color-vino);
+    width: 30px;
+    outline: none;
+    text-align: center;
 }
 /*se aumento esta clase para el icono de la basura*/
-.button-delete{
-  color: red;
-}
-/*CANJEO*/
-.t-cupon {
-  margin: 0;
-}
-.tex {
-    background-color: var(--azul-fuerte);
-    text-align: center;
-    color: white;
-
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    display: block;
-    cursor: pointer;
-    padding: 15px 10px;
-    font-size: 1rem;
-    font-weight: bolder;
-}
-.cupon-100 {
-  color: var(--azul-fuerte);
-  width: 100%;
-  padding: 5px 7px;
-  font-size: 1rem;
-  font-weight: bolder;
-  border: 1px solid var(--azul-fuerte);
-  /*se agrego el font y text*/
-  font-family: var(--weigth-OSWALD-SEMIBOLD-600);
-}
-.contenedor-inputt {
-  padding: 20px 30px;
-  display: flex;
-  border: 1px solid var(--azul-fuerte);
-}
-.inputt-boton {
-  background: var(--azul-fuerte);
-  color: var(--color-blanco);
-  font-size: 1.2rem;
-  width: 40px;
-  height: 40px;
+.acciones-table .button-delete{
+    color: var(--color-rojo);
 }
 
-/*se agrego .sub-iva-total*/
-.sub-iva-total {
-  font-family: var(--Banchscrich-font);
-  font-size: 1.05rem;
-  text-transform: uppercase;
-  font-weight: bolder;
-  padding: 0 30px;
-}
 
-.tt {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--color-text-negro-bajo);
+/*--------------RESUMEN DE BOLSA-------------*/
+.cont-totales{
+    max-width: 400px;
 }
-.price_total_pago {
-  font-family: var(--fuente-OSWALD);
-  font-size: 1.5rem;
-}
-.pie {
-  margin-top: 20px;
-}
-.btn-enviar {
-  background-color: var(--color-blanco);
-  text-align: center;
-  text-decoration: none;
-  color: var(--color-azul-fuerte);
-  display: block;
-  width: calc(100% - 16px);
-  padding: 8px;
-  font-size: 1rem;
-  font-weight: bolder;
-  border: 1px solid var(--color-azul-fuerte);
-  margin-bottom: 20px;
-}
-.btn-enviar2 {
-  background-color: var(--color-amarillo-principal);
-  text-decoration: none;
-  text-align: center;
-  color: var(--color-azul-fuerte);
-  width: calc(100% - 16px);
-  display: block;
-  padding: 10px;
-  padding: 8px;
-  margin-top: 20px;
-  font-size: 1rem;
-  font-weight: bolder;
-}
+    /* -------CUPON------- */
+    .topic-cpp {
+        background-color: var(--azul-fuerte);
+        color: var(--color-blanco);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 13px 20px;
+        text-align: center;
+        font-size: .8rem;
+        font-weight: bolder;
+    }
+    .contenedor-inputt {
+        display: flex;
+        padding: 20px 25px;
+        border: 1px solid var(--azul-fuerte);
+    }
+    .cupon-100 {
+        color: var(--color-text-negro-bajo);
+        outline: none;
+        width: 100%;
+        padding: 5px 10px;
+        font-size: .8rem;
+        font-weight: 400;
+        border: 1px solid var(--azul-fuerte);
+    }
+    .inputt-boton {
+        border: none;
+        background: var(--azul-fuerte);
+        color: var(--color-blanco);
+        font-size: 1.2rem;
+        min-width: 30px;
+        min-height: 30px;
+        cursor: pointer;
+
+        transition: all ease .3s;
+    }
+        .inputt-boton:hover{
+            background-color: var(--color-aprobado);
+        }
+    /* --------precio---------- */
+    .sub-iva-total {
+        padding: 10px 0;
+        font-family: var(--fuente-OPENSANS);
+        text-transform: uppercase;
+        width: 80%;
+        margin: auto;
+    }
+        .sub-iva-total>p{
+            display: grid;
+            grid-template-columns: 63% 32%;
+            grid-gap: 10px;
+            align-items: center;
+            line-height: 100%;
+            margin: 0;
+            padding-bottom: 12px;
+        }
+            .sub-iva-total .tema-rsm{
+                color: var(--color-text-negro-bajo);
+                font-weight: 700;
+                font-size: .8rem;
+            }
+            .sub-iva-total .price_total_pago {
+                font-family: var(--fuente-OSWALD);
+                font-size: 1.2rem;
+                text-align: end;
+            }
+    /* --------OPTION BOTONES--------- */
+    a[class*=button-resume-]{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; height: 30px;
+        text-decoration: none;
+        text-align: center;
+        font-size: .85rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+        .button-resume-edit{
+            background-color: var(--color-blanco);
+            color: var(--color-azul-fuerte);
+            border: 1px solid var(--color-azul-fuerte);
+        }
+            .button-resume-edit:hover, .button-resume-delete:hover{
+                box-shadow: -3px 7px 0 -1px rgba(0, 0, 0, .5);
+            }
+        .button-resume-delete{
+            background-color: var(--color-amarillo-principal);
+            color: var(--color-azul-fuerte);
+        }
+
 
 /*Resposive*/
-@media (max-width: 767px) {
-  .tablita thead {
-    display: none;
-  }
-  .tablita,
-  .tablita tbody,
-  .tablita tr,
-  .tablita td {
-    display: block;
-    width: 100%;
-    margin-bottom: 5%;
-  }
+@media (max-width: 960px) {
+    .tabla>div{
+        display: block;
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+        .tabla div .cl-table{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .tabla div .cont-totales{
+            width: 100%;
+            max-width: none;
+        }
+
+    .tablita thead {
+        display: none;
+    }
+    .tablita tbody tr{
+        position: relative;
+        display: flex;
+        min-height: 100px;
+        flex-direction: column;
+        margin-left: 140px;
+        align-items: flex-start;
+        border: none;
+        padding: 20px 20px 50px 20px;
+    }
+            .tablita tbody tr::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                left: -140px;
+                bottom: 0;
+                border-bottom: 1px solid var(--color-brd-input);
+                width: -100%;
+            }
+
+        .tablita .descrip-dttlle{
+            width: 100%;
+            display: block;
+            height: auto;
+            position: relative;
+        }
+            .tablita tbody tr td.descrip-dttlle .image{
+                position: absolute;
+                margin: auto;
+                left: -140px;
+                min-width: 120px;
+                max-width: 120px;
+                min-height: 120px;
+                max-height: 120px;
+            }
+        .precio-tabla{
+            margin-top: 7px;
+        }
+        .precio-tabla.price_unit{
+            display: none;
+        }
+
+        .cantidad-table{
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+        }
+
+        .acciones-table{
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+        }
+    /*-------CUPON-----*/
+    .recl-cupon, .cont-botones{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .topic-cpp{
+            background-color: transparent;
+            color: var(--color-azul-fuerte);
+            font-size: 1.1rem;
+            justify-content: flex-start;
+        }
+        .contenedor-inputt{
+            padding: 0;
+            border: none;
+        }
+            .contenedor-inputt .cupon-100{
+                width: 200px;
+                border: none;
+                font-size: .9rem;
+            }
+        .sub-iva-total{
+            width: 40%;
+            margin: 0 0 0 auto;
+            padding: 20px 0;
+        }
+
+        .cont-botones a[class*=button-resume-]{
+            width: 40%;
+        }
+}
 
   
-@media (max-width: 670px){
-  .cupon-100{
-    font-size: 0.7rem;
-  }
+@media (max-width: 720px){
+    .recl-cupon{
+        display: block;
+    }
+    .topic-cpp{
+        font-size: 1rem;
+        padding: 13px 0;
+        text-align: start;
+    }
+    .contenedor-inputt .cupon-100{
+        width: 100%;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .contenedor-inputt .inputt-boton{
+        min-width: 35px;
+        min-height: 35px;
+    }
 }
-@media (max-width: 650px){
-  .tt , .price_total_pago{
-    font-size: 0.8rem;
-  }
-  
-}
+@media (max-width: 540px){
+    .tabla>div{
+        width: 100%;
+    }
+    .tablita tbody tr{
+        position: relative;
+        display: flex;
+        min-height: 100px;
+        flex-direction: column;
+        margin-left: 110px;
+        align-items: flex-start;
+        border: none;
+        padding: 20px 20px 50px 20px;
+    }
+        .tablita tbody tr::after{
+            left: -110px;
+        }
+        .tablita tbody tr td.descrip-dttlle .image{
+            left: -110px;
+            min-width: 100px;
+            max-width: 100px;
+            min-height: 100px;
+            max-height: 100px;
+        }
+        .descrip-dttlle .infor-adicion{
+            font-size: .85rem;
+            font-weight: 400;
+            line-height: .95rem;
+        }
 
-@media (max-width: 580px){
-  .tabla > div{
-    display: block;
-    width: 70%;
-  }
-}
-@media (max-width: 300px){
-  .tt , .price_total_pago{
-    font-size: 0.7rem;
-  }
+    .sub-iva-total{
+        width: 75%;
+    }
+    .cont-botones{
+        display: block;
+    }
+        .cont-botones a[class*=button-resume-]{
+            width: 90%;
+            margin: 0 auto 15px auto;
+        }
 }

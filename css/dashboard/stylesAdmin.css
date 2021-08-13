@@ -16,6 +16,7 @@ main[class*='contenido-admin']{
         color: var(--color-blanco);
         display: flex;
         align-items: flex-end;
+        justify-content: space-between;
         height: 75px;
         padding: 0 30px 95px 30px;
     }
@@ -23,6 +24,24 @@ main[class*='contenido-admin']{
             margin: 0;
             font-size: 1.6rem;
         }
+        .theme-apart .button_th_head{
+            border: none;
+            cursor: pointer;
+            background-color: var(--color-blanco);
+            color: var(--color-rojo-oscuro);
+            font-family: var(--fuente-OPENSANS);
+            font-size: .9rem;
+            height: 30px;
+            padding: 0 15px;
+            border-radius: .3rem;
+            margin-top: 25px;
+        }
+            .theme-apart .button_th_head:hover{
+                box-shadow: -5px 5px 0 -1px rgba(255,255,255,0.5);
+            }
+            .theme-apart .button_th_head>i{
+                margin-right: 10px;
+            }
         main[class*='contenido-admin'] .container-main{
             margin: -60px 15px 0 15px;
             overflow: hidden;

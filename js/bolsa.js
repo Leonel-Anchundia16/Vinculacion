@@ -145,7 +145,7 @@ class Carrito{
                     </div>
                 </td>
 
-                <td class="dt precio-tabla precio-table " data-label="precio">$<span>${e.precio}</span></td>
+                <td class="dt precio-tabla precio-table price_unit" data-label="precio">$<span>${e.precio}</span></td>
                 <td class="dtcantidad cantidad-table" data-label="cantidad">
                     <div class="container-cantidad">
                         <button class="btn_cantdd">-</button>
@@ -173,6 +173,6 @@ class Carrito{
             let element = Number(productLS[i].precio * productLS[i].cantidad);
             totalProduct += element;
         }
-        document.getElementById('price_total_pago').innerHTML = `$ ${parseFloat(totalProduct + delivery).toFixed(2)}`;
+        document.getElementById('price_total_pago').innerHTML = `$${parseFloat(totalProduct + delivery).toFixed(2)}`;
     }
 }
