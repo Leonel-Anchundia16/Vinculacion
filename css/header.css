@@ -313,8 +313,7 @@
         right: -10px;
     }
 
-
-/*---------------VENTANA DE vent-form-user------------------*/
+/*---------------VENTANA DE form-user------------------*/
 .vent-form-user{
     background: var(--color-blanco);
     position: fixed;
