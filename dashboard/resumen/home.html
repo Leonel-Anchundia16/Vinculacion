@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEADER PLANTILLA</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Administración</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -14,31 +14,26 @@
         <aside class="aside-bar aside">
             <button class="btn__menu" id="button-menu-admin"><i class="fal fa-bars"></i></button>
             <div class="image-navbar">
-                <img src="../Imagenes/luchin.png" alt="logo-luchin">
+                <img src="../../Imagenes/luchin.png" alt="logo-luchin">
             </div>
             <div class="legend">PRINCIPAL</div>
             <div class="container-item">
-                <a href="#" class="item-aside">
+                <a href="../resumen/home.html" class="item-aside active">
                     <i class="estado"></i>
                     <i class="icon-item far fa-border-all"></i>
                     <p class="topic-item">Resumen</p>
-                    <i class="down-more fas fa-angle-down"></i>
                 </a>
-                <div class="subitem-aside">
-                    <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
-                    <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
-                </div>
             </div>
             <div class="container-item">
-                <a href="#" class="item-aside active">
+                <a href="#" class="item-aside">
                     <i class="estado"></i>
                     <i class=" icon-item far fa-burger-soda"></i>
                     <p class="topic-item">Menú</p>
-                    <i class="down-more fas fa-angle-down"></i>
+                    <i class="down-more fas fa-angle-down"></i>                    
                 </a>
                 <div class="subitem-aside">
-                    <a href="#" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
-                    <a href="#" class="item-aside-sub active"><p class="topic-item sub">Agregar Plato</p></a>
+                    <a href="../menu/lista-menu.html" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                    <a href="../menu/add-platillo.html" class="item-aside-sub"><p class="topic-item sub">Agregar Plato</p></a>
                 </div>
             </div>
             <div class="container-item">
@@ -46,32 +41,37 @@
                     <i class="estado"></i>
                     <i class=" icon-item far fa-bags-shopping"></i>
                     <p class="topic-item">Ordenes</p>
+                    <i class="down-more fas fa-angle-down"></i>
                 </a>
+                <div class="subitem-aside">
+                    <a href="../ordenes/new-orden.html" class="item-aside-sub"><p class="topic-item sub">Nueva Orden</p></a>
+                    <a href="../ordenes/ordenes.html" class="item-aside-sub"><p class="topic-item sub">Lista de Ordenes</p></a>
+                </div>
             </div>
             <div class="legend">ADMINISTRACIÓN</div>
             <div class="container-item">
-                <a href="#" class="item-aside">
+                <a href="../clientes/clientes.html" class="item-aside">
                     <i class="estado"></i>
                     <i class="icon-item far fa-users"></i>
                     <p class="topic-item">Clientes</p>
                 </a>
             </div>
             <div class="container-item">
-                <a href="#" class="item-aside">
+                <a href="../ventas/ventas.html" class="item-aside">
                     <i class="estado"></i>
                     <i class=" icon-item far fa-analytics"></i>
                     <p class="topic-item">Ventas</p>
                 </a>
             </div>
             <div class="container-item">
-                <a href="#" class="item-aside">
+                <a href="../promociones/promociones.html" class="item-aside">
                     <i class="estado"></i>
                     <i class=" icon-item far fa-badge-percent"></i>
                     <p class="topic-item">Promociones</p>
                 </a>
             </div>
             <div class="container-item">
-                <a href="#" class="item-aside">
+                <a href="../empleados/empleados.html" class="item-aside">
                     <i class="estado"></i>
                     <i class=" icon-item far fa-poll-people"></i>
                     <p class="topic-item">Empleados</p>
@@ -83,7 +83,7 @@
             <div class="navbar-align">
                 <div class="item-navbar">
                     <div class="image">
-                        <img src="../Imagenes/user-admin-profilejpg.jpg" alt="">
+                        <img src="../../Imagenes/user-admin-profilejpg.jpg" alt="">
                     </div>
                     <p class="name_user">Nombre de usuario</p>
                 </div>
@@ -92,20 +92,9 @@
                 </div>
             </div>
             <main class="contenido-admin pos-main-rel">
-                <div class="class-overlay">
-                    <div class="modal-reut">
-                        <div class="head__modal">
-                            <h1 class="title_card_cl">Agregar producto a la orden</h1>
-                            <button class="button-close-modal" type="button"><i class="fal fa-times"></i></button>
-                        </div>
-                        <div class="details-modal-inf">
-                            
-                        </div>
-                    </div>
-                </div>
     
                 <div class="theme-apart">
-                    <h2>Bienvenido, <span class="name-user">Nombre de usuario</span></h2>
+                    <h2>Bienvenido, <span class="name-user">Administración</span></h2>
                 </div>
                 <section class="container-main">
                     <div class="flex-container">
@@ -120,7 +109,7 @@
                                         </div>
                                         <div class="icon"><i class="fal fa-users"></i></div>
                                     </div>
-                                    <p class="dsc-porc">No pongas wbds nomas</p>
+                                    <p class="dsc-porc">Registro de clientes</p>
                                 </div>
                                 <div class="card-rsm bd__sect">
                                     <p class="title">Platillos Vendidos</p>
@@ -411,10 +400,10 @@
 
             if(body.classList.contains('left-navbar')){
                 body.classList.remove('left-navbar');
-                imageAside.innerHTML = '<img src="../Imagenes/luchin.png" alt="logo-luchin">';
+                imageAside.innerHTML = '<img src="../../Imagenes/luchin.png" alt="logo-luchin">';
             }else{
                 body.classList.add('left-navbar');
-                imageAside.innerHTML = '<img class="small" src="../Imagenes/logo.png" alt="logo-luchin">';
+                imageAside.innerHTML = '<img class="small" src="../../Imagenes/logo.png" alt="logo-luchin">';
             }
         })
 
@@ -442,7 +431,6 @@
                 if(!document.body.classList.contains('left-navbar')){
                     const itemClick = this.document.activeElement;
                     const subitem = this.document.activeElement.nextElementSibling;
-                    // console.log(this.document.activeElement.nextElementSibling);
                     if(subitem != null){
                         if(subitem.classList.contains('active')){
                             subitem.classList.remove('active');

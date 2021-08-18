@@ -33,57 +33,6 @@ div[class*='popup-admin']{
     
 
 /* ---------------- */
-
-/* -------------VENTANA EMERGENTE REUTILIZABLE ADMINISTRACION------------- */
-.class-overlay{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 250px;
-    right: 0;
-    background-color: rgba(0, 0, 0, .3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    transition: all ease .3s;
-}
-    .class-overlay .modal-reut{
-        background-color: var(--color-blanco);
-        padding: 1.3rem 2rem;
-        min-width: 40%;
-        max-width: 80%;
-    }
-    .modal-reut .head__modal{
-        position: relative;
-        display: flex;
-        width: 100%;
-    }
-        .modal-reut .button-close-modal{
-            padding: 0;
-            width: 25px;
-            height: 25px;
-            border: none;
-            background-color: transparent;
-            color: var(--color-amarillo);   
-            font-size: 2.7vw; 
-            cursor: pointer;
-
-            position: absolute;     
-            top: 0;
-            right: 0;
-            transition: .3 ease all;
-        }
-            .button-close-modal:hover{
-                font-size: 2.6vw;
-                color: var(--color-rojo-oscuro);      
-            }
-    .details-modal-inf{
-        padding: 10px;
-    }
-
-/* ---------------------------------------- */
-
 .flex-container{
     width: 100%;
     display: flex;

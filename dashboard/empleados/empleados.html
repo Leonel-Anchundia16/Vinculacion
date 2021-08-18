@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados - Adminsitración</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body class="body-admin left-navbr">
+  <div id="root">
+     <aside class="aside-bar aside">
+            <button class="btn__menu" id="button-menu-admin"><i class="fal fa-bars"></i></button>
+            <div class="image-navbar">
+                <img src="../../Imagenes/luchin.png" alt="logo-luchin">
+            </div>
+            <div class="legend">PRINCIPAL</div>
+            <div class="container-item">
+                <a href="../resumen/home.html" class="item-aside">
+                    <i class="estado"></i>
+                    <i class="icon-item far fa-border-all"></i>
+                    <p class="topic-item">Resumen</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="#" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-burger-soda"></i>
+                    <p class="topic-item">Menú</p>
+                    <i class="down-more fas fa-angle-down"></i>                    
+                </a>
+                <div class="subitem-aside">
+                    <a href="../menu/lista-menu.html" class="item-aside-sub"><p class="topic-item sub">Lista de Menú</p></a>
+                    <a href="../menu/add-platillo.html" class="item-aside-sub"><p class="topic-item sub">Agregar Plato</p></a>
+                </div>
+            </div>
+            <div class="container-item">
+                <a href="#" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-bags-shopping"></i>
+                    <p class="topic-item">Ordenes</p>
+                    <i class="down-more fas fa-angle-down"></i>
+                </a>
+                <div class="subitem-aside">
+                    <a href="../ordenes/new-orden.html" class="item-aside-sub"><p class="topic-item sub">Nueva Orden</p></a>
+                    <a href="../ordenes/ordenes.html" class="item-aside-sub"><p class="topic-item sub">Lista de Ordenes</p></a>
+                </div>
+            </div>
+            <div class="legend">ADMINISTRACIÓN</div>
+            <div class="container-item">
+                <a href="../clientes/clientes.html" class="item-aside">
+                    <i class="estado"></i>
+                    <i class="icon-item far fa-users"></i>
+                    <p class="topic-item">Clientes</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="../ventas/ventas.html" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-analytics"></i>
+                    <p class="topic-item">Ventas</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="../promociones/promociones.html" class="item-aside">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-badge-percent"></i>
+                    <p class="topic-item">Promociones</p>
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="../empleados/empleados.html" class="item-aside active">
+                    <i class="estado"></i>
+                    <i class=" icon-item far fa-poll-people"></i>
+                    <p class="topic-item">Empleados</p>
+                </a>
+            </div>
+        </aside>
+
+    <div class="ctn-main-dash">
+        <div class="navbar-align">
+            <div class="item-navbar">
+                <div class="image">
+                    <img src="../../Imagenes/user-admin-profilejpg.jpg" alt="">
+                </div>
+                <p class="name_user">Administración</p>
+            </div>
+            <div class="item-navbar">
+                <button type="button" class="btn-unlogin"><i class="fal fa-sign-out"></i></button>
+            </div>
+        </div>
+        <main class="contenido-admin pos-main-rel">
+
+            <div class="theme-apart">
+                <h2>Empleados</h2>
+                <button type="button" class="button_th_head">Agregar</button>
+            </div>
+
+            <section class="container-main bd__sect">
+              <div class="container-form">
+                <h2 class="mi_clase title_card_cl">Lista de Empleados</h2>
+                <table class="tables_adm">
+                  <thead>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Correo Electrónico</th>
+                    <th>Telefóno</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th></th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Juan David</td>
+                      <td>Perez Loor</td>
+                      <td>juanito000@gmail.com</td>
+                      <td>0999999999</td>
+                      <td>16/10/2000</td>
+                      <td class="action_table">
+                        <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                        <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Leolen Armando</td>
+                        <td>Anchundia Lucas</td>
+                        <td>LeonelLucas@gmail.com</td>
+                        <td>0988888888</td>
+                        <td>16/09/2000</td>
+                        <td class="action_table">
+                          <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                          <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>David Leonardo</td>
+                        <td>Mancilla Reyes</td>
+                        <td>david@gmail.com</td>
+                        <td>0999999999</td>
+                        <td>16/09/2000</td>
+                        <td class="action_table">
+                          <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                          <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Raul David</td>
+                        <td>Alvarez Ortiz</td>
+                        <td>raulalvarez@gmail.com</td>
+                        <td>0998888888</td>
+                        <td>20/10/1995</td>
+                        <td class="action_table">
+                          <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                          <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ibai</td>
+                        <td>Llanos Garatea</td>
+                        <td>ibaillanos@gmail.com</td>
+                        <td>0987777777</td>
+                        <td>26/03/1995</td>
+                        <td class="action_table">
+                          <button class="table-edit" type="button"><i class="fas fa-pencil"></i></button>
+                          <button class="table-delete" type="button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+        </main>
+    </div>
+</div>
+<script>
+    const body = document.getElementById('root');
+    const menuBtn = document.querySelector('.btn__menu');
+    
+    menuBtn.addEventListener('click', ()=>{
+        const imageAside = document.querySelector('.image-navbar');
+
+        if(body.classList.contains('left-navbar')){
+            body.classList.remove('left-navbar');
+            imageAside.innerHTML = '<img src="../Imagenes/luchin.png" alt="logo-luchin">';
+        }else{
+            body.classList.add('left-navbar');
+            imageAside.innerHTML = '<img class="small" src="../Imagenes/logo.png" alt="logo-luchin">';
+        }
+    })
+
+    document.querySelectorAll('.aside-bar .container-item').forEach(item =>{
+        item.addEventListener('mouseenter', (e)=>{
+            if(body.classList.contains('left-navbar')){
+                e.target.classList.add('view');
+                if(e.target.lastElementChild.classList.contains('subitem-aside')){
+                    e.target.lastElementChild.classList.add('active');
+                }
+            }
+        });
+        item.addEventListener('mouseleave', (e)=>{
+            if(body.classList.contains('left-navbar')){
+                e.target.classList.remove('view');
+                if(e.target.lastElementChild.classList.contains('subitem-aside')){
+                    e.target.lastElementChild.classList.remove('active');
+                }
+            }
+        })
+    })
+
+    document.querySelectorAll('.aside-bar .container-item .item-aside').forEach(item =>{
+        item.addEventListener('click', (e)=>{
+            if(!document.body.classList.contains('left-navbar')){
+                const itemClick = this.document.activeElement;
+                const subitem = this.document.activeElement.nextElementSibling;
+                // console.log(this.document.activeElement.nextElementSibling);
+                if(subitem != null){
+                    if(subitem.classList.contains('active')){
+                        subitem.classList.remove('active');
+                        itemClick.classList.remove('view');
+                    }else{
+                        subitem.classList.add('active');
+                        itemClick.classList.add('view');
+                    }
+                }
+            }
+        })
+    })
+</script>
+</body>
+</html>
+

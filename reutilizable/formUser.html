@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="vent-form-user loginForm form_autent active">
+        <div class="head_wind">
+            <button class="login" onclick="AbrirFormulario()"><i class="fas fa-chevron-left"></i></button>
+            <img src="./Imagenes/luchin.png" alt="logo luchin">
+        </div>
+        <form class="form-send log">
+            <h1 class="form__titulo">Iniciar Sesión</h1>
+            <div class="input-contenedor">
+                <div class="row-input cl-2">
+                    <label>Correo Electrónico</label>
+                    <input type="email" required name="emailUser">
+                    <span class="mnj-error alert-email"></span>
+                </div>
+
+                <div class="row-input">
+                    <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                </div>
+                <div class="row-input">
+                    <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                </div>
+                <div class="row-input">
+                    <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                </div>
+                <div class="row-input">
+                    <p class="col-input"><label>Contraseña</label><input class="pass1" type="password" required name="firstPass"><span class="mnj-error alert-password1"></span></p>
+                </div>
+            </div>
+            <div class="pie-form">
+                <button type="submit" onclick="ComprobarDatos()" class="btn-send-infor">Iniciar Sesión</button>
+                <p class="form__link">¿No Tienes Cuenta? <a href="#">Crea una Cuenta </a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
