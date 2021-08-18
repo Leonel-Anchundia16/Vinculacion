@@ -48,7 +48,7 @@ class Carrito{
                 </div>
                 <div class="des">
                     <h3>Descripcion:</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, velit beatae error adipisci omnis minima? Minima debitis quos modi! Cumque ad aliquid dolor fuga nesciunt obcaecati eos, quis perspiciatis tempora?</p>
+                    <p>Ninguna descripción</p>
                 </div>
                 <div class="adicional">
                     <h3>Agrege una información adicional o complementos a su pedido:</h3>
@@ -113,17 +113,6 @@ class Carrito{
     }
 
 
-    // eliminarProductLS(productoID){
-    //     let productoLS;
-
-    //     productoLS=this.obtenerDatosLS();
-    //     productoLS.forEach(function(producto, index){
-    //         if(producto.id === productoID){
-    //             producto.splice(index,1);
-    //         }
-    //         localStorage.setItem('bolsa', JSON.stringify(producto));
-    //     })
-    // }
 
 
     leerDatosLS(){
