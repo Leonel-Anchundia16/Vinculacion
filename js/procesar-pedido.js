@@ -13,14 +13,7 @@ apellidos.addEventListener('keyup', (e) => {
 	apellidos.value = valorInput.replace(/[0-9]/g, '');
 	apellidos.textContent = valorInput;
 });
-telefono.addEventListener('keyup', (e) => {
-	let valorInput = e.target.value;
-    telefono.value = valorInput
-	// Eliminamos espacios en blanco
-	.replace(/\s/g, '')
-	// Eliminar las letras
-	.replace(/\D/g, '');
-} );
+
 direccion.addEventListener('keyup', (e) =>{
     let valorInput=e.target.value;
     //Eliminamos los numeros

@@ -98,7 +98,7 @@
 
                     </div>
                     <div class="row-input">
-                        <p class="col-input"><label>Correo Electrónico</label><input type="email" required></p>
+                        <p class="col-input"><label>Correo Electrónico</label><input type="email" ></p>
                     </div>
 
                     <div class="row-input">
@@ -159,15 +159,15 @@
                         <div class="group-inputs">
                             <div class="form_group" id="group_nombre"> 
                                 <label for="nombre" class="form_label">Nombre</label>
-                                <input type="text" class="form_input" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                                <input type="text" class="form_input" name="nombre" id="nombre" placeholder="Ingrese su Nombre" >
                             </div>
                             <div class="form_group" id="group_apellido"> 
                                 <label for="apellidos" class="form_label">Apellido</label>
-                                <input type="text" class="form_input" name="apellidos" id="apellidos" placeholder="Ingrese su Apellidos">
+                                <input type="text" class="form_input" name="apellidos" id="apellidos" placeholder="Ingrese su Apellidos" >
                             </div>
                             <div class="form_group" id="group_correo"> 
                                 <label for="correo" class="form_label">Correo Electrónico</label>
-                                <input type="email" class="form_input" name="correo" id="correo" placeholder="Ingrese su Correo">
+                                <input type="email" class="form_input" name="correo" id="correo" placeholder="Ingrese su Correo" >
                             </div>
                             <div class="form_group" id="group_telefono"> 
                                 <label for="telefono" class="form_label">Teléfono</label>
@@ -196,7 +196,7 @@
                         <p class="form_error" id="form_error"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <b>Error:</b> Formulario vacio</p>
                         <p class="form_enviado" id="form_enviado"><i class="fa fa-check" aria-hidden="true"></i> Formulario registrado</p>
                     </div>
-                    <button type="submit" class="guardar_pago">GUARDAR Y ENVIAR PAGO</button>
+                    <button type="submit" class="guardar_pago" onclick="validartel()">GUARDAR Y ENVIAR PAGO</button>
                 </div>
             </form>
         </div>

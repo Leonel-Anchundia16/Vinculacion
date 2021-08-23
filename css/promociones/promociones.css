@@ -149,4 +149,22 @@
         .box-prom-rec:hover img {
             height: 300px;
         }
-    
+        @media only screen and (max-width:1000px){
+            .contenido-grid {
+                grid-template-columns: repeat(1, 1fr);
+                width: 100%;
+            }
+            .box-prom-rec{
+                width: auto;
+                margin: 0 20px 0 20px;
+            }
+            .caja_columna {
+                width: 80%;
+                grid-template-columns: repeat(1, 1fr);
+                cursor: pointer;
+            }
+        .caja_columna .caja:hover .detalle-product .descripcion{
+            display: none;
+        }
+        }
+
